@@ -1,0 +1,132 @@
+nav {
+	display: flex;
+}
+nav ul {
+	display: flex;
+	flex-flow: column nowrap;
+	margin: 0;
+	padding:0;
+	list-style: none;
+	border-bottom: 0;
+}
+
+.nav-drop-menu{
+	vertical-align: top;
+	display: inline-block;
+	border-radius: 4px 4px 0 0;
+	z-index: 100;
+	height: auto
+}
+
+.nav-drop-menu a {
+	display: flex;
+	background: var(--mid);
+	color: var(--dark);
+	text-decoration: none;
+	padding: 0.8em 1.8em;
+	margin: 0;
+	width: var(--nav-width);
+	text-transform: uppercase;
+	font-size: 8pt;
+	letter-spacing: 2px;
+	text-shadow: 0 -1px 0 #000;
+	position: relative;
+}
+
+
+.nav-drop-menu li {
+	position: relative;
+}
+
+.nav-drop-menu > li > ul li, .nav-drop-menu a {
+	white-space: wrap;
+
+}
+.nav-drop-menu li {
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: flex-start;
+	border-bottom: 4px solid var(--light);
+}
+.nav-drop-menu a {
+	margin-bottom: 0;
+}
+.nav-drop-menu li:hover,
+.nav-drop-menu li:hover > a {
+	border-bottom-color: var(--dark);
+}
+.nav-drop-menu li:hover > a {
+	color: var(--mid);
+}
+.nav-drop-menu > li:first-child,
+.nav-drop-menu > li:first-child > a,
+.nav-drop-menu ul > li:first-child,
+.nav-drop-menu ul > li:first-child > a {
+	border-radius: 4px 4px 0 0;
+}
+
+.nav-drop-menu > li:last-child,
+.nav-drop-menu > li:last-child > a,
+.nav-drop-menu ul > li:last-child,
+.nav-drop-menu ul > li:last-child > a {
+	border-radius: 0 0 4px 4px;
+}
+
+
+.nav-drop-menu li a:first-child:nth-last-child(2):before {
+	content: "";
+	position: absolute;
+	height: 0;
+	width: 0;
+	border: 5px solid transparent;
+	top: 50% ;
+	right: 5px;
+}
+
+/* submenu positioning*/
+
+.nav-drop-menu ul > li{
+	width: 100%;
+}
+.nav-drop-menu ul > li > a{
+	width: 100%;
+}
+.nav-drop-menu ul {
+	position: absolute;
+	white-space: nowrap;
+	z-index: 20000;
+	left: -99999em;
+}
+.nav-drop-menu > li:hover > ul {
+	left: var(--nav-width);
+	margin-top: 5px;
+	min-width: 100%;
+}
+.nav-drop-menu > li li:hover > ul {
+	left: 100%;
+	margin-left: 0;
+	top: 0;
+}
+
+
+/* arrow hover styling */
+.nav-drop-menu > li > a:first-child:nth-last-child(2):before {
+	border-left-color: var(--light);
+	margin-top: -5px;
+}
+
+.nav-drop-menu > li:hover > a:first-child:nth-last-child(2):before {
+	border: 5px solid transparent;
+	border-left-color: var(--light);
+	margin-top: -5px;
+}
+
+.nav-drop-menu li li > a:first-child:nth-last-child(2):before {
+	border-left-color: var(--light);
+	margin-top: -5px
+}
+.nav-drop-menu li li:hover > a:first-child:nth-last-child(2):before {
+	border: 5px solid transparent;
+	border-right-color: var(--light);
+	right: 10px;
+}

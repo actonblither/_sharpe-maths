@@ -1,0 +1,4 @@
+section#maincol { margin-top: var(--header-height);}
+nav#navbar { margin-top: var(--header-height); }
+header#top { height: var(--header-height); }
+

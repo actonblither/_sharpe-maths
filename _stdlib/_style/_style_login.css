@@ -1,0 +1,67 @@
+
+/*Login Screen*/
+
+.flexcontainer{
+	display: flex;
+	height: 95vh; /* Set the outer container to 100% height. vh = viewport height*/
+	width: 98vw; /* Set the outer container to 100% width. vw = viewport width*/
+	flex-direction: row;
+	justify-self: center;
+	align-self: center;
+	justify-content: center;
+	align-items: center;
+}
+
+.logincontainer{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+	width: 450px;
+	height:auto;
+	padding:20px;
+	border-radius: 8px;
+	border:1px solid #aaa;
+}
+
+.row2{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	outline:0px solid green;
+	align-self:stretch;
+
+}
+.row3{
+	display: flex;
+	align-self:stretch;
+	justify-content:flex-end;
+	margin-right:53px;
+	margin-top:5px;
+}
+
+#login_title{padding:10px;justify-content:flex-start;align-items:flex-start;}
+
+
+label{margin-top:5px;margin-bottom:5px;display: inline-block;}
+
+input[type = text], input[type = password]{height: 28px; width: 355px;}
+
+button#login{
+	background:
+	var(--btn-bg)
+	url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABmJLR0QA/wD/AP+gvaeTAAACk0lEQVQ4EbWUS2gTURSG70wmQUFEY6tmoVQwRdSFggoiiIogWVgEBUEEH0ECKpGWLgKhyURIslAUQcSIBV8rcadGLIqgwVekC+1CxG60NgUFsVYwj5nxu3lcmlaDFRz+f/5z/nPvuffOZKIJ0fpKpVLtpVLJp+u65fF4RiKRyLdWM7TfFU3TbMPvgXugHzbgEAzCm/AC4ybQJkxrmEgkDjmOc4ZR8+ArmNU0bQzV8Zeiu2An/IwfjMfjt4kVmhqy4ikqvfAlPEH+HJ0G/C7Ms7CDpkdpmiGuQjVkZ0F2cBn3ltfr3R8Oh4vEfwRN2yhm4VoYIH+AimpDEll8jzEMN5H/RBVisVjAMIwvaF6ZBMlk0lculwcJv8OVzKvoBBLd3ObyJo9jNjUjP4iftW37KfEWMemKRqMF0j7o5+h7UdFouI8kzw6eoQo8hgMk/bAELXiHpptRBZ/Pd5XkK4+r1pDf2QKMDiHEQ6hAs90M6scYQsfQF3Ac3qXpOrSKUChUJsjB9VDolUplsQzgCFSgyTKSHD/m7RzHIv4Bt8Fh8iXoZHwgaWchw6BokwjUJbVBiqeJJYVpmkJe6Ft0DZyKxlxbd7vdo1RtdrQc/Vd0MvETC9p6/dt8gxGAGpwR0un0fCZshE+gess3SPy8iC50RigWi8eYMJtHdh1VDS+SjHLsc2x7IfFfgbHyeUYYnOPzG0BrDSlMsMJhDPn2BvgCFhG3BHNWM+AetGAQOrDWUAascB+VhVV8TkMc/wiTPHhNwJtDrQ9T/oHMQnfivUOr0Kv3+o3CFSHEVjjO8S+x627iqThP7STma5fLtYE5j4kVDBXVAwbkMpnMikKhsIM/hHzd/ohKCpokLcu6xrhHeA78v/gFPtnyGAQx2UsAAAAASUVORK5CYII=)
+	4px 55%
+	no-repeat;
+}
+
+.btext{margin-top:10px;}
+
+.err{
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	color: #f00;
+	font-weight: bold;
+	margin-top: 5px;
+}
