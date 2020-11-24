@@ -21,13 +21,14 @@ include('app_config.php');
 		<link rel = 'stylesheet' href = '<?php echo __s_lib_url__;?>/_style/_style_topic.css' type = 'text/css' />
 		<link rel = 'stylesheet' href = '<?php echo __s_app_url__;?>/_style/_style.css' type = 'text/css' />
 
-		<script src = '<?php echo __s_applib_url__;?>/jquery/jquery.js'></script>
-		<script src = '<?php echo __s_applib_url__;?>/jquery/jquery-ui.min.js'></script>
-		<script src = '<?php echo __s_applib_url__;?>/jquery/iziToast.min.js'></script>
-		<script src = '<?php echo __s_applib_url__;?>/jquery/tooltipster/js/tooltipster.bundle.js'></script>
-		<script src = '<?php echo __s_applib_url__;?>/jquery/dependsOn.js'></script>
-		<script src = '<?php echo __s_applib_url__;?>/jquery/anytime.js'></script>
+		<script src = '<?php echo __s_applib_url__;?>jquery/jquery.js'></script>
+		<script src = '<?php echo __s_applib_url__;?>jquery/jquery-ui.min.js'></script>
+		<script src = '<?php echo __s_applib_url__;?>jquery/iziToast.min.js'></script>
+		<script src = '<?php echo __s_applib_url__;?>jquery/tooltipster/js/tooltipster.bundle.js'></script>
+		<script src = '<?php echo __s_applib_url__;?>jquery/dependsOn.js'></script>
+		<script src = '<?php echo __s_applib_url__;?>jquery/anytime.js'></script>
 		<script src = '<?php echo __s_applib_url__;?>js/_stdlib.js'></script>
+		<script src = '<?php echo __s_applib_url__;?>classes/ckeditor/ckeditor.js'></script>
 
 <script>
 MathJax = {

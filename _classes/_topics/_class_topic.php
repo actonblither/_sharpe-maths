@@ -74,7 +74,22 @@ class _topic extends _setup{
 		$_tab->_set_tab_labels(array('Indroduction', 'Examples', 'Exercises'));
 		$_tab->_set_tab_links(array('intro-1', 'example-3', 'exercise-4'));
 		$_tab->_set_tab_help(array('', '', '', ''));
-		$_tab->_set_tab_pages(array($this->_topic_intro, $this->_topic_eg, $this->_topic_ex));
+		if (!is_logged_in()){
+			$_tab->_set_tab_pages(array($this->_topic_intro, $this->_topic_eg, $this->_topic_ex));
+		}else{
+			$_el = new _form_element();
+			$_el->_set_el_field_id('topic_intro');
+			$_el->_set_el_field_value($this->_topic_intro);
+			$_el->_set_el_width(100);
+			$_el->_set_el_height(100);
+			$_el->_set_el_width_units('%');
+			$_el->_set_el_height_units('%');
+
+			$array[] = $_el->_build_ckeditor();
+			$array[] = $this->_topic_eg;
+			$array[] = $this->_topic_ex;
+			$_tab->_set_tab_pages($array);
+		}
 		return $_tab->_build_all();
 	}
 

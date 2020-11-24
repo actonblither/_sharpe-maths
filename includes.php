@@ -9,8 +9,8 @@ define('__s_lib_url__', 'http://localhost/sharpe-maths/_stdlib/');
 define('__s_icon_url__', 'http://localhost/sharpe-maths/_stdlib/_images/_icons/');
 define('__s_applib_url__', __s_lib_url__.'_applib/');
 define('__s_app_title__', 'Sharpe-Maths Teaching Guide');
-define('__s_cfg_ini_pth__', 'G:/AppServ/_smath_cfg/_smath_cfg_v2.ini');
-define('__s_session_folder__', 'G:/AppServ/_smath_v2_sessions/');
+define('__s_cfg_ini_pth__', 'C:/AppServ/_smath_cfg/_smath_cfg_v2.ini');
+define('__s_session_folder__', 'C:/AppServ/_smath_v2_sessions/');
 define('__s_single_tab_approach__', true);
 define('__s_app_login_screen_logo_path__', __s_app_folder__.'_images/_icons/app_logo.png');
 
@@ -25,6 +25,7 @@ include(__s_lib_folder__.'_classes/_navmenu/_class_navmenu.php');
 include(__s_lib_folder__.'_classes/_config/_class_cfg.php');
 include(__s_lib_folder__.'_classes/_pages/_class_pages.php');
 include(__s_lib_folder__.'_classes/_list/_class_list.php');
+include(__s_lib_folder__.'_classes/_form_elements/_class_form_element.php');
 include(__s_app_folder__.'_classes/_config/_class_cfg.php');
 include(__s_app_folder__.'_classes/_topics/_config/_cfg_topic_tpl.php');
 include(__s_app_folder__.'_classes/_topics/_class_topic.php');
