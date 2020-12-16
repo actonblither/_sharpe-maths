@@ -1,4 +1,249 @@
 section#maincol { margin-top: var(--header-height);}
 nav#navbar { margin-top: var(--header-height); }
-header#top { height: var(--header-height); }
+header#top { height: var(--header-height); z-index: 200;}
+
+@CHARSET "ISO-8859-1";
+
+p:not(.t){
+	margin: 5px 0 5px 0;
+	line-height: 24px;
+}
+
+p.t{
+	margin: 0;
+}
+
+h3.top{
+	display: flex;
+	margin: -7px 0 7px 0;
+	align-self: start;
+	justify-self: start;
+}
+
+ul.topic_example,
+ul.topic_exercise,
+ul.puzzle{
+	list-style: none;
+	margin: 10px;
+	width: 98%;
+}
+
+ul.topic_example > li,
+ul.topic_exercise > li,
+ul.puzzle > li{
+	list-style: none;
+	padding: 3px;
+	width: 98%;
+}
+
+ul.topic_example > li:not(.top) > li{
+	min-height: 45px;
+}
+
+div.ex_eg{
+	flex-flow: row wrap;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+div.ex_eg h3{
+	flex-flow: row nowrap;
+	color: var(--dark);
+	margin-left: 5px;
+	font-weight: normal;
+}
+
+.open{display: flex;}
+
+.topic_example > li,
+.topic_exercise > li,
+.puzzle > li{
+	display: flex;
+	border-radius: 4px;
+	margin-bottom: 2px;
+	border: 1px solid var(--dark);
+}
+
+.topic_example > li > div > div{
+	padding: 0;
+}
+
+.topic_example > li > div.label{
+	text-align: right;
+	font-weight: bold;
+	width: 20px;
+	max-width: 25px;
+	align-items: flex-start;
+	overflow: hidden;
+	margin-right: 10px;
+}
+
+.topic_example li.top div.label{
+	padding: 0;
+	margin: 0;
+	max-height: 20px;
+	line-height: 20px;
+}
+
+.topic_example > li > div.text{
+	flex-flow: column wrap;
+	width: 45%;
+}
+
+img.shrink{
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+
+.topic_example > li > div.note{
+	flex-flow: column wrap;
+	width: 45%;
+}
+
+.topic_example > li > div.note p{
+	line-height: 23px;
+}
+.topic_example > li.top > div{
+	padding: 0;
+	margin: 0;
+}
+
+/* TOPIC EXERCISE CLASSES*/
+
+.topic_exercise > li > div.label){
+	align-self: flex-start;
+	font-weight: bold;
+	width: 5%;
+}
+
+.topic_exercise > li > div.question{
+	flex-flow: column wrap;
+	justify-content: flex-start;
+	width: 65%;
+	margin-left: 40px;
+}
+
+.topic_exercise > li > div.answer{
+	flex-flow: column wrap;
+	justify-content: flex-start;
+	align-items: flex-end;
+	width: 25%;
+}
+
+ul.indent{
+	margin-left: 25px;
+	list-style-type: disc;
+}
+
+ul#exercises{list-style-type: none;}
+
+ol.indent{
+	margin-left: 25px;
+	line-height: 24px;
+}
+
+div.topic{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+
+div.topic > div{
+	display: flex;
+	flex-flow: row wrap;
+	width: 45%;
+	padding: 10px;
+}
+
+div.list, div.list div{
+	flex-flow: column wrap;
+}
+
+ol.roman, ol.abc{
+	display: flex;
+	flex-flow: column wrap;
+	margin-left: 10px;
+}
+
+ol.roman{list-style-type: lower-roman;}
+ol.abc{list-style-type: lower-alpha;}
+
+ol.abc, li ol.roman li{
+	margin-left: 30px;
+	padding:0 0 0 10px;
+	line-height: 25px;
+}
+
+section.fd-col-l ol, section.fd-col-l ul{
+	margin-left: 20px;
+}
+
+ul.glossary{
+	border: 1px solid var(--dark);
+	border-radius: 4px;
+	padding: 4px;
+	list-style-type: none;
+	margin: 5px 0 5px 0;
+}
+
+ul.puzzle_container{
+	padding: 4px;
+	list-style-type: none;
+	margin: 5px 0 5px 0;
+}
+
+ul.glossary > li, ul.puzzle_container > li{
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: flex-start;
+	align-items: flex-start;
+	width:100%;
+}
+
+ul.glossary > li > div, ul.puzzle_container > li > div{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-start;
+	align-items: flex-start;
+	align-self: flex-start;
+}
+
+ul.glossary > li > div.label, ul.puzzle_container > li > div.label{
+	justify-content: flex-end;
+	align-items: flex-start;
+	min-width: 120px;
+	margin: 0 0 7px 0;
+	font-weight: normal;
+	opacity: 30%;
+}
+
+ul.glossary > li > div.text, ul.puzzle_container > li > div.text{
+	flex-flow: column wrap;
+	justify-content: flex-start;
+	align-items: flex-start;
+	width: 90%;
+	margin: 5px 0 7px 0;
+	color: var(--dark);
+}
+
+li.line{
+	border: 0;
+	border-radius: 0;
+	border-bottom: 1px solid var(--dark);
+}
+
+div.note, div.text{
+	flex-flow: row wrap !important;
+	line-height: 23px !important;
+}
+
+div.note{width: 40%;min-width: 200px;}
+div.text{width: 50%; min-width: 200px;}
+
+div.full{width: 100%; height: 20px;}
+
+ul.glossary ul{margin-left:30px; list-style-type: disc;}
 

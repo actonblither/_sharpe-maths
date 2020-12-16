@@ -1,1 +1,2 @@
-private $_topic_tab_bar_path;
+	private $_img;
+	private $_title;

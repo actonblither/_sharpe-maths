@@ -2,7 +2,7 @@
 $_base_folder = base64_decode($_POST['app_folder']);
 $_base_folder = filter_var($_base_folder, FILTER_SANITIZE_STRING);
 include_once($_base_folder.'app_config.php');
-_cl($_base_folder.'app_config.php');
+
 
 $_un = rvs($_POST['un']);
 $_pw = rvs($_POST['pw']);

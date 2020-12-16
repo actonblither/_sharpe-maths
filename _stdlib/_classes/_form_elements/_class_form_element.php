@@ -3,7 +3,9 @@ class _form_element {
 	private $_dbh;
 	private $_db_tbl;
 	private $_el_display_field;
+	private $_el_data_id;
 	private $_el_fieldset_id;
+	private $_el_id_value;
 	private $_el_field_id;
 	private $_el_field_value;
 	private $_el_field_class;
@@ -62,145 +64,65 @@ class _form_element {
 		}
 	}
 
+	public function _delete_jq_code(){
+		if (is_logged_in()){
+			$tmp .= "";
+		}
+	}
+
+	public function _delete_img_code(){
+		if (is_logged_in()){
+			$tmp .= "<div><img class='w14 h14 point del_qu m5' src = '".__s_lib_url__."_images/_icons/close14.png' /></div>";
+		}
+	}
+
+	public function _build_save_btn(){
+		$tmp .= "<button type = 'button' class = 'point page-save save ".$this->_el_field_class."' style = 'width:".$this->_el_width.$this->_el_width_units."' data-db_tbl = '".$this->_db_tbl."' data-id = '".$this->_el_id_value."' data-field = '".$this->_el_field_id."'>".$this->_el_field_value."</button>";
+		return $tmp;
+	}
+
 	public function _build_text_input(){
 		if (empty($this->_el_width)){$this->_el_width = '400';}
 		$this->_el_field_value = str_replace("'","&#39;", $this->_el_field_value);
 
 		$maxlength = $this->_fetch_varchar_field_length($this->_db_tbl, $this->_el_field_id);
 
-		$tmp =  "<input type = 'text' id = '".$this->_el_field_id."' name = '".$this->_el_field_id."' value = '".$this->_el_field_value."' ";
+		$tmp =  "<input type = 'text' id = '".$this->_el_field_id."_".$this->_el_id_value."' name = '".$this->_el_field_id."' style='width: ".$this->_el_width.$this->_el_width_units."' value = '".$this->_el_field_value."' ";
 		if (!empty($this->_el_pattern)){$tmp.= "pattern = '".$this->_el_pattern."' ";}
-		$tmp .= "maxlength = '".$maxlength."' class = 'field' style = 'width:".$this->_el_width.$this->_el_width_units.";' />";
+		$tmp .= "maxlength = '".$maxlength."' data-id = '".$this->_el_id_value."' data-db_tbl = '".$this->_db_tbl."' data-field = '".$this->_el_field_id."' class = 'field' />";
 		return $tmp;
 	}
 
-	public function _build_read_only_text_input(){
-		if (empty($this->_el_width)){$this->_el_width = 400;}
-		$this->_el_field_value = str_replace("'","&#39;", $this->_el_field_value);
-		$maxlength = $this->_fetch_varchar_field_length($this->_db_tbl, $this->_el_field_id);
-		return "<input readonly type = 'text' id = '".$this->_el_field_id."' name = '".$this->_el_field_id."' value = '".$this->_el_field_value."' maxlength = '".$maxlength."' class = 'field blend' style = 'width:".$this->_el_width.$this->_el_width_units.";' />";
-	}
-
-	public function _build_password_input(){
-		return "<input type = 'password' id = '".$this->_el_field_id."' name = '".$this->_el_field_id."' value = '' class = 'field' style = 'width:".$this->_el_width.$this->_el_width_units.";' />";
-	}
-
-	public function _build_checkbox(){
-		if ($this->_el_hidden){ $style = " style = 'display: none;' ";}else{$style = '';}
-		$tmp = '<input type = "checkbox" name = "'.$this->_el_field_id.'" id = "'.$this->_el_field_id.'" class = "field point" '.$style;
-		$tmp.= frmchecked($this->_el_field_value);
-		$tmp.= ' />';
-		return $tmp;
-	}
 
 	public function _build_textarea(){
 		$this->_el_field_value = str_replace("'","&#39;", $this->_el_field_value);
-		$tmp = "<textarea id = '".$this->_el_field_id."' name = '".$this->_el_field_id."' class = 'field' style = 'width:".$this->_el_width.$this->_el_width_units."; height:".$this->_el_height.$this->_el_height_units.";'>";
+		$tmp = "<textarea id = '".$this->_el_field_id."_".$this->_el_id_value."' data-field = '".$this->_el_field_id."' data-id = '".$this->_el_id_value."' data-db_tbl = '".$this->_db_tbl."' name = '".$this->_el_field_id."' class = 'field m5'  style = 'width:".$this->_el_width.$this->_el_width_units.";height:".$this->_el_height.$this->_el_height_units."'>";
 		$tmp .= $this->_el_field_value;
 		$tmp .= '</textarea>';
 		return $tmp;
-	}
 
-	public function _build_hidden_input(){
-		return "<input type = 'hidden' id = '".$this->_el_field_id."' name = '".$this->_el_field_id."' value = '".$this->_el_field_value."' class = 'field' />";
-	}
-
-	public function _build_file_picker(){
-		return "<input type = 'file' id = '".$this->_el_field_id."' name = '".$this->_el_field_id."' class = 'field' />";
 	}
 
 	public function _build_ckeditor(){
 		$this->_el_field_value = str_replace("'","&#39;", $this->_el_field_value);
-		$tmp = "<div class = 'ck-dummy'><textarea id = '".$this->_el_field_id."' name = '".$this->_el_field_id."' class = '".$this->_el_field_class."'>".PHP_EOL;
-		$tmp.= $this->_el_field_value;
+		if (!empty($this->_el_field_class)){$this->_el_field_class .= ' ';}
+		$tmp .= "<div class = 'ck-dummy'><textarea id = '".$this->_el_field_id."_".$this->_el_id_value."' name = '".$this->_el_field_id."' data-id = '".$this->_el_id_value."' data-db_tbl = '".$this->_db_tbl."' data-field = '".$this->_el_field_id."' class = '".$this->_el_field_class."field'>".PHP_EOL;
+		$tmp .= $this->_el_field_value;
 		$tmp .= '</textarea>';
 		$tmp .= "<script>
 			CKEDITOR.replace('".$this->_el_field_id."',{
 				language: 'en',
 				width: '".$this->_el_width.$this->_el_width_units."',
-				height: '".$this->_el_height.$this->_el_height_units."'
+				height: '600px',
+				basicEntities : false,
+				entities : false,
+				forceSimpleAmpersand : true
 			});
 			</script></div>";
 		return $tmp;
 	}
 
-	public function _build_timer_element(){
-		$tmp = "
-			<script>
-				function updatedisplay(watch) {
-					$('#".$this->_el_field_id."').val(watch.toString());
-				}
-				var timer_obj = new Stopwatch(updatedisplay, 50);
-				$(document).ready(function () {
-					function set_date_time(){
-						var d = new Date();
-						$('#".$this->_form_id_prefix.$this->_el_timer_dt."').val(moment().format('DD-MM-YYYY H:m:s'));
-					}
-					$(document).on('click', '#".$this->_list_id_prefix."_start_btn', function(){
-						timer_obj.start();
-						set_date_time();
-						$('#".$this->_list_id_prefix."_start_btn').addClass('hidden');
-						$('#".$this->_list_id_prefix."_stop_btn').removeClass('hidden');
-					});
-					$(document).on('click', '#".$this->_list_id_prefix."_stop_btn', function(){
-						timer_obj.stop();
-						$('#".$this->_list_id_prefix."_start_btn').removeClass('hidden');
-						$('#".$this->_list_id_prefix."_stop_btn').addClass('hidden');
-						$('#".$this->_list_id_prefix."_ftlsave').removeClass('hidden');
-					});
-				});
-			</script>";
-		$tmp.= "<div class = 'f-row'><input type = 'text' class = 'date-input field' name = '";
-		$tmp.= $this->_el_field_id."' id = '".$this->_el_field_id."' value = '00:00:00' readonly ";
-		$tmp.= "onKeyPress = 'return disableEnterKey(event)' style = 'width:".$this->_el_width.$this->_el_width_units.";' />";
-		$tmp.= "<button type = 'button' class = 'button time' id = '".$this->_list_id_prefix."_start_btn' name = '".$this->_list_id_prefix."_start_btn'>Start</button>";
-		$tmp.= "<button class = 'button time hidden' id = '".$this->_list_id_prefix."_stop_btn' type = 'button'>Stop</button></div>";
-		return $tmp;
-	}
 
-
-
-	public function _build_date(){
-		if (empty($this->_el_field_value) || $this->_el_field_value == date($this->_dt_format, strtotime(''))){
-			if ($this->_dt_start_now){$this->_el_field_value = now($this->_dt_format);}
-			if ($this->_dt_start_empty){$this->_el_field_value = '';}
-		}else{
-			$this->_el_field_value = date($this->_dt_format, strtotime($this->_el_field_value));
-		}
-
-		$tmp = '<script>'.PHP_EOL;
-		$tmp .= '$( function() {'.PHP_EOL;
-		if ($this->_dt_show_clear_img){
-			$tmp .= "$('.clear-date').on('click',function(){".PHP_EOL;
-			$tmp .= "var d_id = $(this).attr('id');".PHP_EOL;
-			$tmp .= "d_id = d_id.substring(3);".PHP_EOL;
-			$tmp .= "$('#' + d_id).val('');".PHP_EOL;
-			$tmp .= "});".PHP_EOL;
-		}
-
-		$tmp .= '$("#'.$this->_el_field_id.'").AnyTime_noPicker().AnyTime_picker({'.PHP_EOL;
-
-		$js_date_fmt = $this->_php_to_js_dt_format($this->_dt_format);
-		$tmp .= 'format:"'.$js_date_fmt.'",'.PHP_EOL;
-		$tmp .= '});';
-		$tmp .= '});</script>';
-		$tmp .= "<div class = 'inline-center'><input type = 'text' id = '".$this->_el_field_id."' name = '".$this->_el_field_id."' value = '".$this->_el_field_value."' class = 'point dt_input ".$this->_el_style_class."' placeholder = '".$this->_el_place_holder."' style = 'width:".$this->_el_width.$this->_el_width_units.";' readonly />";
-
-		if ($this->_dt_show_clear_img){
-			if (file_exists(__s_app_icon_folder__.'/20/clear20.png')){
-				$clear_ico = __s_app_icon_url__.'/20/clear20.png';
-			}else{
-				$clear_ico = __s_icon_url__.'/20/clear20.png';
-			}
-			$tmp .= "<img class = 'ttip clear-date' id = 'cd_".$this->_el_field_id."' src = '".$clear_ico."' title = 'Clear the date.' alt = 'Clear' />";
-		}
-		$tmp .= '</div>';
-		if ($this->_el_return == 'echo'){
-			echo $tmp;
-		}else{
-			return $tmp;
-		}
-	}
 
 	private function _php_to_js_dt_format($dt_format){
 		if (empty($dt_format)){return '';}
@@ -226,25 +148,7 @@ class _form_element {
 		return $fmt;
 	}
 
-	public function _build_radio_input_set(){
-		$sql = 'select id, '.$this->_el_display_field.' from '.$this->_db_tbl.' where display = 1 and archived = 0 order by order_num';
-		$rows = $this->_dbh->_fetch_db_rows($sql);
-		if (!empty($rows)){
-			$tmp = '<fieldset class = "radio-group" id = "'.$this->_el_fieldset_id.'">';
-			foreach ($rows as $r){
-				$tmp .= '<label class = "radioset"><input type = "radio" name = "'.$this->_el_field_id.'" value = "'.$r['id'].'" ';
-				if ($this->_el_field_value == $r['id']){$tmp .= "checked ";}
-				$tmp .= '/> '.$r[$this->_el_display_field].'</label>'.PHP_EOL;
-			}
-			$tmp .= '</fieldset>';
-		}
-		if ($this->_el_return == 'echo'){
-			echo $tmp;
-		}else{
 
-			return $tmp;
-		}
-	}
 
 	public function _fetch_varchar_field_length(){
 		$sql = 'show columns from '.$this->_db_tbl.' where Field = "'.$this->_el_field_id.'"';
@@ -259,6 +163,8 @@ class _form_element {
 		}
 	}
 
+	public function _set_db_tbl($t) {$this->_db_tbl = $t;}
+	public function _set_el_data_id($t) {$this->_el_data_id = $t;}
 	public function _set_el_field_value($t) {$this->_el_field_value = $t;}
 	public function _set_el_field_id($t) {$this->_el_field_id = $t;}
 	public function _set_el_field_class($t) {$this->_el_field_class = $t;}
@@ -266,219 +172,19 @@ class _form_element {
 	public function _set_el_height($t) {$this->_el_height = $t;}
 	public function _set_el_width_units($t) {$this->_el_width_units = $t;}
 	public function _set_el_height_units($t) {$this->_el_height_units = $t;}
+	public function _set_el_pattern($t) {$this->_el_pattern = $t;}
+	public function _set_el_id_value($t) {$this->_el_id_value = $t;}
 }
 
-class _parent_child_select_chain{
-	private $_jq;
-	private $_dbh;
-	private $_parent_id_select;
-	private $_child_id_select;
-	private $_parent_text_field;
-	private $_child_text_field;
-
-	public function __construct($params){
-		$this->_dbh = new _db();
-
-		if (!is_array($params['my_child_vals'])){
-			$params['my_child_vals'] = (array) $params['my_child_vals'];
-		}
-		$_my_child_vals_arr = rvaz($params['my_child_vals']);
-		$_my_child_vals_str = implode(',', $_my_child_vals_arr);
-
-		if (!is_array($params['my_parent_vals'])){
-			$params['my_parent_vals'] = (array) $params['my_parent_vals'];
-		}
-		$_my_parent_vals_arr = rvaz($params['my_parent_vals']);
-		$_my_parent_vals_str = implode(',', $_my_parent_vals_arr);
-
-		if (empty($_my_child_vals_str)){
-			$_my_child_vals_str = '0';
-		}
-		if (empty($_my_parent_vals_str)){
-			$_my_parent_vals_str = '0';
-		}
-		$_parent_table = rvs($params['parent_table']);
-		$_child_table = rvs($params['child_table']);
-		$_link_table = rvs($params['link_table']);
-		$_parent_sel_id = rvs($params['parent_sel_id']);
-		$_child_sel_id = rvs($params['child_sel_id']);
-		$_parent_db_sel_id = rvs($params['parent_db_sel_id']);
-		$_child_db_sel_id = rvs($params['child_db_sel_id']);
-		$_parent_text_field = rvs($params['parent_text_field'], 'title');
-		$_child_text_field = rvs($params['child_text_field'], 'title');
-
-
-		$_multiple = rvb($params['multiple']);
-
-		if (empty($_parent_db_sel_id)){$_parent_db_sel_id=$_parent_sel_id;}
-		if (empty($_child_db_sel_id)){$_child_db_sel_id=$_child_sel_id;}
-
-
-		$_height = rvz($params['height']);
-		$_placeholder = rvs($params['placeholder']);
-
-		$this->_jq = '
-			<script>
-				$(document).ready(function(){
-					$(document).on("change","#'.$_parent_sel_id.'", function(){
-						var sel = $("select#'.$_parent_sel_id.'").val();
-						$.ajax({
-							type: "POST",
-							url: "'.__s_app_url__.'/_stdlib_ajax/_parent_child_chain_select.php",
-							data: {
-								"parent_values" 	: sel,
-								"my_parent_str" 	: "'.$_my_parent_vals_str.'",
-								"my_child_str" 	: "'.$_my_child_vals_str.'",
-								"parent_table" 	: "'.$_parent_table.'",
-								"child_table" 		: "'.$_child_table.'",
-								"parent_sel_id" 	: "'.$_parent_sel_id.'",
-								"child_sel_id" 	: "'.$_child_sel_id.'",
-								"parent_db_sel_id" 	: "'.$_parent_db_sel_id.'",
-								"child_db_sel_id" 	: "'.$_child_db_sel_id.'",
-								"link_table" 		: "'.$_link_table.'",
-								"placeholder"		: "'.$_placeholder.'",
-								"multiple"			: "'.$_multiple.'",
-								"parent_text_field" 	: "'.$_parent_text_field.'",
-								"child_text_field" 	: "'.$_child_text_field.'",
-								"app_folder"		:	"'.base64_encode(__s_app_folder__).'"
-							},
-							beforeSend :function(){
-								$("#ajax-loader").show();
-							},
-							complete : function(){
-								$("#ajax-loader").hide();
-							},
-							success: function(data){
-								$("#'.$_child_sel_id.' option:gt(0)").remove();
-								$("#'.$_child_sel_id.'").html(data);
-							}
-						});
-					});
-				});
-			</script>';
-
-		$sql = 'select id,'.$_parent_text_field.' from '.$_parent_table.' where '.$_parent_text_field.' <> "" and display=1 and archived=0 order by '.$_parent_text_field;
-
-		$_parents = $this->_dbh->_fetch_db_rows($sql);
-		$_parent_name = array();
-		$_parent_id = array();
-		if (empty($_parents)===false){
-			foreach ($_parents as $p){
-				$_parent_name[$p['id']] = $p[$_parent_text_field];
-			}
-		}
-		$_parent_name_str = implode(',', $_parent_name);
-		if (!empty($_my_parent_vals_arr)){
-			if (!empty($_link_table)){
-				$count = 0;
-				$result = array();
-				if (!empty($_my_parent_vals_arr)){
-					foreach ($_my_parent_vals_arr as $par){
-						$sql = 'select distinct j.id, j.'.$_child_text_field.' from '.$_child_table.' j left join '.$_link_table.' jl on j.id = jl.'.$_child_db_sel_id.' where jl.'.$_parent_db_sel_id.' = '.$par.'  and j.display=1 and j.archived=0 order by j.'.$_parent_text_field;
-						if (is_int($par)){
-							$result[$par] = $this->_dbh->_fetch_db_rows($sql);
-						}
-					}
-				}
-			}else{
-				$count = 0;
-				$result = array();
-				if (!empty($_my_parent_vals_arr)){
-					foreach ($_my_parent_vals_arr as $par){
-						$sql = 'select distinct id,'.$_child_text_field.' from '.$_child_table.' where '.$_parent_db_sel_id. ' = '.$par.' and display=1 and archived=0 order by '.$_child_text_field;
-
-						if (is_int($par)){
-							$result[$par] = $this->_dbh->_fetch_db_rows($sql);
-						}
-					}
-				}
-			}
-			$_children = $result;
-		}
-
-		// Start parent select create
-		$this->_parent_id_select = "
-			<select class = 'field' id = '".$_parent_sel_id."' name = '".$_parent_sel_id;
-		if ($_multiple==1 || $_multiple==true){
-			$this->_parent_id_select .= "[]' multiple ";
-		}else{
-			$this->_parent_id_select .= "' ";
-		}
-		if ($_height>0){
-			$this->_parent_id_select .= " style = 'height: ".$_height."px'";
-		}
-		$this->_parent_id_select .= ">";
-		if (!empty($_placeholder)){
-			$this->_parent_id_select .= "<option value = '' class = 'not-set'>".$_placeholder."</option>".PHP_EOL;
-		}
-		if (!empty($_parents)){
-			foreach($_parents as $c){
-				$this->_parent_id_select .= "<option value = '".$c['id']."' ";
-				if (in_array($c['id'], $_my_parent_vals_arr)){
-					$this->_parent_id_select.= "selected = 'selected'";
-				}
-				$this->_parent_id_select.= '>'.$c[$_parent_text_field].'</option>';
-			}
-		}
-		$this->_parent_id_select .= '</select>';
-
-		//End of Parent select code
-
-
-		// Start of child select code
-
-		$this->_child_id_select= "
-			<select class = 'field' id = '".$_child_sel_id."' name = '".$_child_sel_id;
-		if ($_multiple == 1 || $_multiple == true){
-			$this->_child_id_select .= "[]' multiple ";
-		}else{
-			$this->_child_id_select .= "' ";
-		}
-		if ($_height>0){
-			$this->_child_id_select .= ' style = "height: '.$_height.'px"';
-		}
-		$this->_child_id_select .= ">";
-
-		$tmp = '';
-		if (!empty($_placeholder)){
-			$tmp .= "<option class = 'not-set' value = ''>$_placeholder</option>".PHP_EOL;
-		}
-		if (!empty($_children)){
-			foreach($_children as $key=>$val_arr){
-				$parent_id = '';
-				if ($_multiple == 1 || $_multiple == true){
-					$tmp .= "<option disabled = 'disabled' value = ''>".$_parent_name[$key]."</option>".PHP_EOL;
-					$parent_id = $key.'_';
-				}
-				if ($val_arr!=false){
-					foreach ($val_arr as $val){
-						$tmp .= "<option value = '".$parent_id.$val['id']."' ";
-						if (in_array($val['id'], $_my_child_vals_arr)){ $tmp .= " selected = 'selected' ";}
-						$tmp.= ">".$val[$_child_text_field]."</option>";
-					}
-				}
-			}
-		}
-		$this->_child_id_select.=$tmp.'</select>';
-		//End of child select code
-	}
-
-	public function _get_parent_id_select(){return $this->_parent_id_select;}
-	public function _get_child_id_select(){return $this->_child_id_select;}
-	public function _get_parent_child_jquery(){return $this->_jq;}
-
-}//end class
-
-// Requires access to the _datetime() class.
 
 class _select{
 
 	private $_dbh;
-
 	private $_db_display_field;
 	private $_db_sql;
 	private $_db_table;
-
+	private $_el_data_db_tbl;
+	private $_el_data_id;
 	private $_el_classes;// array containing style classes
 	private $_el_label;
 	private $_el_opt_val;
@@ -500,6 +206,7 @@ class _select{
 	public function __construct($params = []) {
 		$this->_dbh = new _db();
 		if (!empty($params)){
+
 			$this->_db_display_field = rvs($params['db_display_field']);
 			$this->_db_sql = rvs($params['db_sql']);
 			$this->_db_table = rvs($params['db_table']);
@@ -510,6 +217,9 @@ class _select{
 			$this->_el_number_inc = rvs($params['el_number_inc']);
 			$this->_el_number_min = rvs($params['el_number_min']);
 			$this->_el_number_max = rvs($params['el_number_max']);
+
+			$this->_el_data_id = rvz($params['el_data_id']);
+			$this->_el_data_db_tbl = rvs($params['el_data_db_tbl']);
 
 			$this->_el_value = rv($params['el_value'],'');
 			$this->_el_style = rvs($params['el_style']);
@@ -658,15 +368,15 @@ class _select{
 	}
 
 	private function _build_number_select(){
-		$tmp = '<select id = "'.$this->_el_name.'" name = "'.$this->_el_name.'" class = "field">';
-		$tmp .= '<option value = "" class = "not-set">Not set...</option>';
+		$tmp = "<select data-db_tbl = '".$this->_el_data_db_tbl."' data-id = '".$this->_el_data_id."' id = '".$this->_el_name."' name = '".$this->_el_name."' class = 'sel-field'>";
+		$tmp .= "<option value = '' class = 'not-set'>Not set...</option>";
 		for ($i = $this->_el_number_min; $i <= $this->_el_number_max; $i++){
-			$value = $i*$this->_el_number_inc;
-			$tmp .= '<option value = "'.$value.'" ';
+			$value = $i * $this->_el_number_inc;
+			$tmp .= "<option value = '".$value."' ";
 			if ($value == $this->_el_value){$tmp .= 'selected = "selected"';}
-			$tmp .= '>'.$value.'</option>';
+			$tmp .= ">".$value."</option>";
 		}
-		$tmp .= '</select>';
+		$tmp .= "</select>";
 		return $tmp;
 	}
 
@@ -701,6 +411,7 @@ class _select{
 	public function _set_el_number_max($t) {$this->_el_number_max = $t;}
 	public function _set_el_number_inc($t) {$this->_el_number_inc = $t;}
 	public function _set_el_value($t) {$this->_el_value = $t;}
+
 	public function _set_el_field_value($t) {$this->_el_field_value = $t;}
 	public function _set_el_field_id($t) {$this->_el_field_id = $t;}
 	public function _set_el_style($t) {$this->_el_style = $t;}

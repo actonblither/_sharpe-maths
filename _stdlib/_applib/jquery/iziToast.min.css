@@ -15,7 +15,7 @@
 	-moz-user-select:none;
 	-ms-user-select:none;
 	user-select:none;
-	min-height:54px
+	min-height:54px;
 }
 
 .iziToast>.iziToast-progressbar{
@@ -96,7 +96,7 @@
 	height:auto;
 	min-height:36px;
 	margin:0 0 0 15px;
-	text-align:left
+	text-align: left
 }
 
 .iziToast>.iziToast-body:after{
@@ -109,7 +109,7 @@
 	margin:10px 0 0;
 	padding-right:2px;
 	display:inline-block;
-	float:left
+	float: right;
 }
 
 .iziToast>.iziToast-body .iziToast-inputs{
@@ -251,12 +251,12 @@
 }
 
 .iziToast-wrapper{
-	z-index:99999;
+	z-index:3000000;
 	position:fixed;
 	width:100%;
 	pointer-events:none;
 	display:flex;
-	flex-direction:column
+	flex-direction:column;
 }
 
 .iziToast-wrapper .iziToast.iziToast-balloon:before{

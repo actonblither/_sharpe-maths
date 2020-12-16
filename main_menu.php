@@ -28,12 +28,25 @@ switch ($_main){
 		$_logout->_logout();
 		break;
 
+	case 'contact':
+		$_c = new _contact();
+		break;
+
 	case 'page':
-		$h = new _pages();
+		if ($_id == 4){
+			$g = new _puzzle();
+			$g->_fetch_all_puzzles();
+		}else{
+			$h = new _pages();
+		}
 		break;
 
 	case 'topic':
-		$h = new _topic();
+		if ($_id == 5){
+			$h = new _glossary();
+		}else{
+			$h = new _topic();
+		}
 		break;
 
 }

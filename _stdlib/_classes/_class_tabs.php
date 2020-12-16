@@ -41,7 +41,10 @@ class _tabs{
 
 					$('#".$this->_tab_nav_id." a.tab-active').removeClass('tab-active');
 					var cookie = readCookie('tab-pref');
-					if (!cookie){cookie = '".$this->_tab_links[0]."';}
+					if (!cookie){
+						cookie = '_1_intro-1';
+						createCookie('tab-pref', cookie, 0);
+					}
 					$('#'+cookie).addClass('tab-active');
 					$(document).on('click', '#".$this->_tab_nav_id." a.tab-nav', function(e){
 						e.preventDefault();

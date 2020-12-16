@@ -2,9 +2,9 @@
 <section id = 'main_frm'>
 	<header id = 'top' class = 'fixed-header'>
 		<div class = 'w190'>
-			<img id = 'menu' class = 'ml5 mb5 point ttip' src = '<?php echo __s_icon_url__;?>32/menu32.png' alt = 'Menu' title = 'Toggle the navigation menu' />
+			<div class = 'w40'><img id = 'menu' class = 'ml5 mb5 point ttip' src = '<?php echo __s_icon_url__;?>32/menu32.png' alt = 'Menu' title = 'Toggle the navigation menu' /></div>
 		</div>
-		<img id = 'main-logo' class = 'ttip' src = '_images/app_logo.png' alt = '<?php echo __s_app_title__;?>' title = '<?php echo __s_app_title__;?>' />
+		<div class = 'w300'><img id = 'main-logo' class = 'ttip' src = '_images/app_logo.png' alt = '<?php echo __s_app_title__;?>' title = '<?php echo __s_app_title__;?>' /></div>
 		<div id = 'user-info'>
 			<div id = 'now-date' class = 'mr20'></div>
 			<div id = 'user-name'></div>
@@ -22,14 +22,15 @@
 			?>
 		</section>
 	</div>
-	<footer id = 'footer' class = 'fixed-footer'>
-		<div id = 'idds'>
-			<!--<a href = 'http://www.idds.uk' title = 'Click here to go to the IDDS website.' target = '_blank'>Code and database: &copy; IDDS</a>-->
+	<header id = 'footer' class = 'fixed-footer'>
+		<div id = 'idds' class = 'ml5'>
+			<a href='index.php?main=page&amp;id=12'>About me</a>
+			<a href = 'index.php?main=contact' class='ml10'>Contact</a>
 		</div>
 		<div id = 'icon8'>
 			<a href = 'https://icons8.com' target = '_blank'>Icons: &copy; Icons8</a>
 		</div>
-	</footer>
+	</header>
 	<div id = 'ajax-loader' class = 'hidden'></div>
 		<div id = 'modal-timeout'></div>
 <?php

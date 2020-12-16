@@ -36,8 +36,8 @@
  *variables is the minute.
  */
 
-	var _idle_max_minutes  = 160;
-	var _idle_warn_minutes = 155;
+	var _idle_max_minutes  = 1600;
+	var _idle_warn_minutes = 1595;
 
 /* This next little section sets the value of focused to true or false
  * depending on whether the tab is focused (on top/active etc).

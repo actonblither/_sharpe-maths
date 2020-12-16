@@ -62,7 +62,36 @@ function remove_between($_start, $_end, $_str){
 }
 
 
+function is_genuine_phone_number($num){
+	//if ($this->_ct_c_only){return 'na';}
+	if (empty(trim($num))){return 'empty';}
+	if (!checkUKTelephone ($num, $errorNo, $errorText)) {
+		return false;
+	}else {
+		return true;
+	}
+}
 
+function is_genuine_email($email){
+	if (empty($email)){return 'empty';}
+	$_v = new _email_validator();
+	$_e = $_v->_check($email);
+	if ($_e){
+		return true;
+	}else{
+		return false;
+	}
+}
+
+function is_genuine_website($url){
+	if (empty($url)){return 'empty';}
+	$_val = validate_url($url);
+	if ($_val) {
+		return true;
+	}else{
+		return false;
+	}
+}
 
 
 

@@ -28,6 +28,7 @@ class _navmenu{
 			$_page_id[$i] = rvz($_line[3]);
 		}
 
+
 		for ($j = 0; $j < count($_depth); $j++){
 			if (isset($_depth[$j+1]) && $_depth[$j+1] > $_depth[$j]){
 				$_start_child[$j] = 1;
@@ -43,7 +44,7 @@ class _navmenu{
 		}
 
 		// Now build the list
-		for ($k = 0; $k < count($_depth)-1; $k++){
+		for ($k = 0; $k < count($_depth); $k++){
 			if (isset($_page_id[$k]) && $_page_id[$k] > 0){
 				$_link = "index.php?main=page&id=".$_page_id[$k];
 			}else{
@@ -82,7 +83,7 @@ class _navmenu{
 	}
 
 	private function _build_navmenu(&$output, $parent = 0, $indent = 0){
-		$_sql = 'select * from _app_nav_routes where parent_id = :parent_id and display = 1 and archived = 0 order by parent_id, order_num';
+		$_sql = 'select * from _app_nav_routes where parent_id = :parent_id and display = 1 and archived = 0 order by order_num';
 		$_d = array('parent_id' => $parent);
 		$_f = array('i');
 		$_rows = $this->_dbh->_fetch_db_rows_p($_sql, $_d, $_f);

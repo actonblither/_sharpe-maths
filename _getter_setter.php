@@ -1,5 +1,6 @@
 <?php
-include '_stdlib/_lib/_stdlib.php';
+$pth = './_stdlib/_lib/_stdlib.php';
+include $pth;
 
 $_gs = new _getter_setter();
 $_gs->_set_filename('./vars.txt');
@@ -7,6 +8,7 @@ $_gs->_set_alpha_sort(false);
 $_gs->_set_return_setters(true);
 $_gs->_set_return_getters(true);
 $_gs->_echo_classes();
+
 
 class _getter_setter{
 	private $_filename;

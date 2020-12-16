@@ -1,7 +1,7 @@
 <?php
 header('Content-Type: text/html; charset=utf-8;');
-error_reporting(E_ALL);
-//error_reporting(E_ERROR && ~E_WARNING && ~E_NOTICE);
+//error_reporting(E_ALL);
+error_reporting(E_ERROR && ~E_WARNING && ~E_NOTICE);
 date_default_timezone_set('Europe/London');
 
 session_start();
