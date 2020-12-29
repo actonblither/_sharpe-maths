@@ -6,7 +6,7 @@ class _navmenu{
 	public function __construct(){
 		$this->_dbh = new _db();
 		$output = '';
-		$tmp = $this->_fetch_menu_toggle_jq();
+		$tmp = '';
 
 		$this->_build_navmenu($output, 0);
 		$tmp .= $this->_parse_menu_list($output);
@@ -37,7 +37,8 @@ class _navmenu{
 			}
 
 			if (isset($_depth[$j-1]) && $_depth[$j] < $_depth[$j-1]){
-				$_end_child[$j-1] = 1;
+				$_end_child[$j-1] = abs($_depth[$j-1]-$_depth[$j]);
+				//This is to deal with the issue of requiring more than one </ul></li> if the last child is the last item in the submenu
 			}else{
 				$_end_child[$j-1] = 0;
 			}
@@ -55,30 +56,13 @@ class _navmenu{
 			}else{
 				$tmp .= "<li id = '".$_id[$k]."'><a href = '".$_link."'>".$_title[$k]."</a></li>";
 			}
-			if ($_end_child[$k]){
-				$tmp .= "</ul></li>";
-			}else{
-
+			if ($_end_child[$k] > 0){
+				for($i = 0; $i < $_end_child[$k]; $i++){
+					$tmp .= "</ul></li>";
+				}
 			}
 		}
 		$tmp .= "</ul>";
-		return $tmp;
-	}
-
-	private function _fetch_menu_toggle_jq(){
-		$tmp = "<script>$(document).on('click', '#menu', function(){
-			if ($('#navbar').hasClass('hidden')){
-				$('#navbar').removeClass('hidden');";
-		if ($_SESSION['s_sticky_navbar'] == 1){
-			$tmp .= "createCookie('navbar', 1, 5);";
-		}
-		$tmp .= "}else{
-			$('#navbar').addClass('hidden');";
-		if ($_SESSION['s_sticky_navbar'] == 1){
-			$tmp .= "createCookie('navbar', 0, 5);";
-		}
-		$tmp .= "}
-			});</script>";
 		return $tmp;
 	}
 

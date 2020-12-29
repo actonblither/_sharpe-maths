@@ -40,6 +40,7 @@ include(__s_lib_folder__.'_classes/_navmenu/_class_navmenu.php');
 include(__s_lib_folder__.'_classes/_config/_class_cfg.php');
 include(__s_lib_folder__.'_classes/_pages/_class_pages.php');
 include(__s_lib_folder__.'_classes/_list/_class_list.php');
+include(__s_lib_folder__.'_classes/_small_classes.php');
 include(__s_lib_folder__.'_classes/_email_validator/_class_email_validator.php');
 include(__s_lib_folder__.'_classes/_form_elements/_class_form_element.php');
 include(__s_lib_folder__.'_classes/_form_elements/_class_delete.php');
@@ -49,8 +50,10 @@ include(__s_app_folder__.'_classes/_topics/_config/_cfg_topic_tpl.php');
 include(__s_app_folder__.'_classes/_topics/_class_topic.php');
 include(__s_app_folder__.'_classes/_glossary/_class_glossary.php');
 include(__s_app_folder__.'_classes/_puzzles/_class_puzzles.php');
+include(__s_app_folder__.'_classes/_topics/_class_intro.php');
+include(__s_app_folder__.'_classes/_topics/_class_exercise.php');
+include(__s_app_folder__.'_classes/_topics/_class_example.php');
 $_SESSION['s_version'] = 'v2.10';
-$_SESSION['s_sticky_navbar'] = 0;
 if (!isset($_SESSION['s_main'])){$_SESSION['s_main'] = 'page';}
 
 ob_start(null, 0, PHP_OUTPUT_HANDLER_STDFLAGS ^ PHP_OUTPUT_HANDLER_REMOVABLE);

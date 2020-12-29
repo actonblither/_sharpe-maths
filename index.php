@@ -31,8 +31,11 @@ include('app_config.php');
 
 <script>
 	MathJax = {
+
+		loader: {load: ['[tex]/cancel']},
 		tex: {
-			inlineMath: [['$', '$'], ['\\(', '\\)']]
+			inlineMath: [['$', '$'], ['\\(', '\\)']],
+			packages: {'[+]': ['cancel']}
 		},
 		svg: {
 			fontCache: 'global',
@@ -42,6 +45,17 @@ include('app_config.php');
 	};
 
 	$(document).ready(function(e){
+
+		$(document).on('click', '#menu', function(){
+			if ($('#navbar').hasClass('hidden')){
+				$('#navbar').removeClass('hidden');
+				createCookie('navbar', 1, 5);
+			}else{
+				$('#navbar').addClass('hidden');
+				createCookie('navbar', 0, 5);
+			}
+
+		});
 
 		$(document).on('click', '.reveal', function(e) {
 			e.preventDefault();
@@ -128,6 +142,10 @@ include('app_config.php');
 	});
 
 	$(document).on('change', '.sel-field', function(e){
+		_save_field(this, e);
+	});
+
+	$(document).on('change', '.sel-link-field', function(e){
 		_save_field(this, e, true);
 	});
 
@@ -146,10 +164,19 @@ include('app_config.php');
 		var data_id = $(f).attr('data-id');
 		var data_field = $(f).attr('data-field');
 		var db_tbl = $(f).attr('data-db_tbl');
+		var _el_type = $(f).attr('data-el-type');
 
 		if (link == false){
 			var data_field_id = data_field + "_" + data_id;
 			var data_value = $('#'+data_field_id).val();
+			if (_el_type === 'checkbox'){
+				data_value = $('#'+data_field_id).is(':checked');
+				if (data_value == true){
+					data_value = 1;
+				}else{
+					data_value = 0;
+				}
+			}
 		}else{
 			var data_value = [];
 			$('#link_id_'+data_id + ' option').each(function(i) {
@@ -164,6 +191,7 @@ include('app_config.php');
 		fd.append('field', data_field);
 		fd.append('value', data_value);
 		fd.append('db_tbl', db_tbl);
+		fd.append('data-el-type', _el_type);
 		fd.append('app_folder', '<?php echo base64_encode(__s_app_folder__);?>');
 			$.ajax({
 				type		: 'POST',
@@ -244,20 +272,49 @@ include('app_config.php');
 		}
 	});
 
-	$(document).on('click', '.answer', function(e){
+	$(document).on('click', '.eye', function(e){
 		e.preventDefault();
 		e.stopImmediatePropagation();
-		var id = $(this).attr('id').substring(7);
-		if ($('#visible'+id).hasClass('eye')){
-			$('#visible'+id).removeClass('eye');
-			$('#visible'+id).addClass('ans');
-			$('#visible'+id).html($('#ans_store'+id).html());
+		console.log($(this).attr('id'));
+		var id = $(this).attr('id').substring(3);
+		if ($('#eye'+id).hasClass('hidden')){
+			$('#eye'+id).removeClass('hidden');
+			$('#ans'+id).addClass('hidden');
 		}else{
-			$('#visible'+id).addClass('eye');
-			$('#visible'+id).removeClass('ans');
-			$('#visible'+id).html($('#eye_store'+id).html());
+			$('#eye'+id).addClass('hidden');
+			$('#ans'+id).removeClass('hidden');
 		}
 	});
+
+<?php if (is_logged_in()){?>
+	$('.sortable-list').sortable({
+		items: 'li.ex',
+		update: function(event, ui) {
+			var new_list = $(this).sortable('toArray').toString();
+			var db_tbl = $(this.firstChild.nextSibling).attr('data-db_tbl');
+			var fd = new FormData();
+			fd.set('nlist', new_list);
+			fd.set('gen_table', db_tbl);
+			fd.set('app_folder', '<?php echo base64_encode(__s_app_folder__);?>');
+			$.ajax({
+				type: 'POST',
+				async : true,
+				cache : false,
+				processData	: false,
+				contentType	: false,
+				url: '<?php echo __s_lib_url__;?>_ajax/_record_order_update.php',
+				data: fd,
+				dataType: 'json',
+				success: function (data) {
+					var title = data['title'];
+					var message = data['message'];
+					var status = data['status'];
+					add_note(title, message, status);
+				}
+			});
+		}
+	});
+<?php }?>
 
 	$(document).on('mouseenter', '.ttip:not(.tooltipstered)', function(){
 		$(this).tooltipster({
@@ -270,6 +327,13 @@ include('app_config.php');
 		}).tooltipster('show');
 	});
 });
+function _navbar_cookie(){
+	if (readCookie('navbar') == 0 || readCookie('navbar') == null){
+		$('#navbar').addClass('hidden');
+	}else{
+		$('#navbar').removeClass('hidden');
+	}
+}
 </script>
 
 
@@ -277,7 +341,7 @@ include('app_config.php');
 
 
 	</head>
-	<body class = 'pb20'>
+	<body class = 'pb20' onload='_navbar_cookie();'>
 
 	<?php
 	include_once('./main.php');

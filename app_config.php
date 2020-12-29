@@ -6,6 +6,8 @@ date_default_timezone_set('Europe/London');
 
 session_start();
 
+$_SESSION['s_sticky_navbar'] = 1;
+
 if (isset($_SESSION['s_is_logged_in'])){$GLOBALS['s_is_logged_in'] = $_SESSION['s_is_logged_in'];}
 if (isset($_SESSION['s_auid'])){$GLOBALS['s_auid'] = $_SESSION['s_auid'];}
 if (isset($_SESSION['s_session_id'])){$GLOBALS['session_id'] = $_SESSION['s_session_id'];}

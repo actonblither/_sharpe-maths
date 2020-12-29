@@ -10,15 +10,23 @@ $_field = rvs($_POST['field']);
 $_db_tbl = rvs($_POST['db_tbl']);
 $_topic_id = rvz($_POST['topic_id']);
 $_value = rvs($_POST['value']);
+$_el_type = rvs($_POST['data-el-type']);
+$_type = 's';
+if ($_el_type === 'checkbox'){
+	$_type = 'i';
+	$_value = rvz($_POST['value']);
+}
+
+
 
 $_ex_id = rvz($_POST['ex_id']);
-
 $_dbh = new _db();
 
 if ($_link == false){
 	$_sql = "update ".$_db_tbl." set ".$_field." = :".$_field." where id = :id";
 	$_d = array($_field => $_value, 'id' => $_id);
-	$_f = array('s', 'i');
+	$_f = array($_type, 'i');
+	//_cl($_sql);_cl($_d);
 	$_result = $_dbh->_update_sql($_sql, $_d, $_f);
 	if ($_result){
 		$_return['status'] = 'success';

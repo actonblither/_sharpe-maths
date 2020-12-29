@@ -89,20 +89,26 @@ class _form_element {
 
 		$tmp =  "<input type = 'text' id = '".$this->_el_field_id."_".$this->_el_id_value."' name = '".$this->_el_field_id."' style='width: ".$this->_el_width.$this->_el_width_units."' value = '".$this->_el_field_value."' ";
 		if (!empty($this->_el_pattern)){$tmp.= "pattern = '".$this->_el_pattern."' ";}
-		$tmp .= "maxlength = '".$maxlength."' data-id = '".$this->_el_id_value."' data-db_tbl = '".$this->_db_tbl."' data-field = '".$this->_el_field_id."' class = 'field' />";
+		$tmp .= "maxlength = '".$maxlength."' data-el-type = 'varchar' data-id = '".$this->_el_id_value."' data-db_tbl = '".$this->_db_tbl."' data-field = '".$this->_el_field_id."' class = 'field' />";
 		return $tmp;
 	}
 
 
 	public function _build_textarea(){
 		$this->_el_field_value = str_replace("'","&#39;", $this->_el_field_value);
-		$tmp = "<textarea id = '".$this->_el_field_id."_".$this->_el_id_value."' data-field = '".$this->_el_field_id."' data-id = '".$this->_el_id_value."' data-db_tbl = '".$this->_db_tbl."' name = '".$this->_el_field_id."' class = 'field m5'  style = 'width:".$this->_el_width.$this->_el_width_units.";height:".$this->_el_height.$this->_el_height_units."'>";
+		$tmp = "<textarea id = '".$this->_el_field_id."_".$this->_el_id_value."' data-el-type = 'textarea' data-field = '".$this->_el_field_id."' data-id = '".$this->_el_id_value."' data-db_tbl = '".$this->_db_tbl."' name = '".$this->_el_field_id."' class = 'field m5'  style = 'width:".$this->_el_width.$this->_el_width_units.";height:".$this->_el_height.$this->_el_height_units."'>";
 		$tmp .= $this->_el_field_value;
 		$tmp .= '</textarea>';
 		return $tmp;
 
 	}
 
+	public function _build_checkbox(){
+		if ($this->_el_field_value == 1){$_checked = ' checked ';}else{$_checked = ' ';}
+		$tmp = "<input type = 'checkbox' id = '".$this->_el_field_id."_".$this->_el_id_value."' data-el-type = 'checkbox' data-field = '".$this->_el_field_id."' data-id = '".$this->_el_id_value."' data-db_tbl = '".$this->_db_tbl."' name = '".$this->_el_field_id."' class = 'field m5'".$_checked."/>";
+		return $tmp;
+
+	}
 	public function _build_ckeditor(){
 		$this->_el_field_value = str_replace("'","&#39;", $this->_el_field_value);
 		if (!empty($this->_el_field_class)){$this->_el_field_class .= ' ';}
@@ -266,8 +272,8 @@ class _select{
 		}else{
 			$tmp = '';
 		}
-		$tmp .= '<select name = "'.$this->_el_name.'" id = "'.$this->_el_name.'" class = "field'.$hidden.'" style = "width:'.$this->_el_width.'px;">';
-		$tmp .= '<option value = 0 class = "not-set">Not set...</option>';
+		$tmp .= "<select name = '".$this->_el_name."' id = '".$this->_el_name."' class = 'field".$hidden."  style = 'width:".$this->_el_width."px;' data-field = '".$this->_el_field_id."' data-id = '".$this->_el_id_value."' data-db_tbl = '".$this->_db_tbl."'>";
+		$tmp .= "<option value = 0 class = 'not-set'>Not set...</option>";
 		if (empty($this->_db_sql)){
 			$this->_db_sql = 'select id,'.$this->_db_display_field.' from '.$this->_db_table.' where display=1 and archived=0 order by order_num,'.$this->_db_display_field;
 		}
@@ -368,7 +374,7 @@ class _select{
 	}
 
 	private function _build_number_select(){
-		$tmp = "<select data-db_tbl = '".$this->_el_data_db_tbl."' data-id = '".$this->_el_data_id."' id = '".$this->_el_name."' name = '".$this->_el_name."' class = 'sel-field'>";
+		$tmp = "<select data-db_tbl = '".$this->_el_data_db_tbl."' data-field = '".$this->_el_name."' data-id = '".$this->_el_data_id."' id = '".$this->_el_name."_".$this->_el_data_id."' name = '".$this->_el_name."' class = 'sel-field'>";
 		$tmp .= "<option value = '' class = 'not-set'>Not set...</option>";
 		for ($i = $this->_el_number_min; $i <= $this->_el_number_max; $i++){
 			$value = $i * $this->_el_number_inc;

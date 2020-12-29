@@ -1,0 +1,12 @@
+[29-Dec-2020 12:42:24 Europe/London] PHP Fatal error:  Uncaught Error: Call to undefined method _form_element::_build_checkbox() in G:\AppServ\www\sharpe-maths\_classes\_topics\_class_exercise.php:243
+Stack trace:
+#0 G:\AppServ\www\sharpe-maths\_classes\_topics\_class_exercise.php(104): _exercise->_build_ex_edit_list()
+#1 G:\AppServ\www\sharpe-maths\_classes\_topics\_class_exercise.php(86): _exercise->_build_exercise(Array)
+#2 G:\AppServ\www\sharpe-maths\_classes\_topics\_class_exercise.php(57): _exercise->_build_exercises()
+#3 G:\AppServ\www\sharpe-maths\_classes\_topics\_class_topic.php(125): _exercise->_fetch_exercises()
+#4 G:\AppServ\www\sharpe-maths\_classes\_topics\_class_topic.php(36): _topic->_build_exercises()
+#5 G:\AppServ\www\sharpe-maths\main_menu.php(48): _topic->__construct()
+#6 G:\AppServ\www\sharpe-maths\main.php(27): include_once('G:\\AppServ\\www\\...')
+#7 G:\AppServ\www\sharpe-maths\index.php(337): include_once('G:\\AppServ\\www\\...')
+#8 {main}
+  thrown in G:\AppServ\www\sharpe-maths\_classes\_topics\_class_exercise.php on line 243

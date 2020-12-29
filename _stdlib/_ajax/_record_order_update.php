@@ -11,7 +11,7 @@ $ordered_array = array_filter(explode(',', $ordered_list));
 $id_array = [];
 
 foreach($ordered_array as $o){
-	$id_array[] = substr($o, 2);
+	$id_array[] = substr($o, 1);
 }
 $_sql = "update ".$_t." set order_num = :order_num where id = :id";
 for($i = 0; $i < count($id_array); $i++){
@@ -21,9 +21,21 @@ for($i = 0; $i < count($id_array); $i++){
 	$_f = array('i', 'i');
 	$_result = $_dbh->_update_sql($_sql, $_d, $_f);
 	if ($_result){
-		echo $id.' ';
+		$err = false;
 	}else{
-		echo 'fail';
+		$err = true;
 	}
 }
+
+if ($err == false){
+	$_return['status'] = 'success';
+	$_return['title'] = 'Order success';
+	$_return['message'] = 'The order of the list items has been successfully updated.';
+}else{
+	$_return['status'] = 'failure';
+	$_return['title'] = 'Order failure';
+	$_return ['message'] = 'There was a problem ordering the list items. Please try again.';
+}
+
+echo json_encode($_return);
 ?>

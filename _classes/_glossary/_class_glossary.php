@@ -21,6 +21,12 @@ class _glossary extends _setup{
 	}
 
 	private function _load_glossary(){
+
+
+		$_title_img = $this->_build_img('h132.png', 'Title');
+		$_desc_img = $this->_build_img('details32.png', 'Description');
+		$_context_img = $this->_build_img('context32.png', 'Example of use');
+		$_alt_img = $this->_build_img('alternative32.png', 'See also');
 		$tmp = "<section class = 'glossary'>";
 		$_sql = "select * from ".$this->_g_db_tbl." where left(title, 1) = :letter and display = :display and archived = :archived order by title";
 		$_d = array('letter' => $this->_g_letter, 'display' => 1, 'archived' => 0);
@@ -36,17 +42,29 @@ class _glossary extends _setup{
 				$_r['connectors'] = $this->_build_connector_str($_r['id']);
 			}
 			$tmp .= "<ul class='glossary'>";
-			$tmp .= "<li><div class='label'<p>Title:&nbsp;</p></div><div class='text'><h3 class='top'>".$_r['title']."</h3></div></li>";
+			$tmp .= "<li><div class='label'<p>$_title_img</p></div><div class='title'><h3>".$_r['title']."</h3></div></li>";
 			$tmp .= "<li class='line'></li>";
-			$tmp .= "<li><div class='label'><p>Description:&nbsp;</p></div><div class='text'>".$_r['body']."</div></li>";
+			$tmp .= "<li><div class='label'><p>$_desc_img</p></div><div class='text'>".$_r['body']."</div></li>";
 			$tmp .= "<li class='line'></li>";
-			$tmp .= "<li><div class='label'><p>Example of use:&nbsp;</p></div><div class='text'>".$_r['example_of_use']."</div></li>";
+			$tmp .= "<li><div class='label'><p>$_context_img</p></div><div class='text'>".$_r['example_of_use']."</div></li>";
 			$tmp .= "<li class='line'></li>";
-			$tmp .= "<li><div class='label'><p>See also:&nbsp;</p></div><div class='text'><p class='t'>".$_r['connectors']."</p></div></li>";
+			$tmp .= "<li><div class='label'><p>$_alt_img</p></div><div class='text'><p class='t'>".$_r['connectors']."</p></div></li>";
 			$tmp .= "</ul>";
 		}
 		$tmp .= "</section>";
 		return $tmp;
+	}
+
+	private function _build_img($_name, $_title){
+		$_class = array('w32', 'h32', 'ttip');
+		$_img_url = __s_app_url__."_images/_icons/";
+		$_t = new _img();
+		$_t->_set_img_name($_name);
+		$_t->_set_alt($_title);
+		$_t->_set_title($_title);
+		$_t->_set_class($_class);
+		$_t->_set_url($_img_url);
+		return $_t->_fetch_img();
 	}
 
 	private function _build_connector_str($_id){
@@ -89,9 +107,9 @@ class _glossary extends _setup{
 		$_el->_set_el_field_value($_field_value);
 		$_el->_set_db_tbl($_db_tbl);
 		$_el->_set_el_id_value($_data_id);
-		$_el->_set_el_width(30);
+		$_el->_set_el_width(500);
 		$_el->_set_el_height(100);
-		$_el->_set_el_width_units('%');
+		$_el->_set_el_width_units('px');
 		$_el->_set_el_height_units('%');
 		return $_el->_build_text_input();
 	}
@@ -104,7 +122,7 @@ class _glossary extends _setup{
 		$_d = array('display' => 1, 'archived' => 0);
 		$_f = array('i', 'i');
 		$_rows = $this->_dbh->_fetch_db_rows_p($_sql, $_d, $_f);
-		$tmp = "<select id = 'link_id_".$_id."' multiple data-id = '".$_id."' data-field = 'id_1' data-db_tbl = '_app_link_glossary' class = 'sel-field h300'>";
+		$tmp = "<select id = 'link_id_".$_id."' multiple data-id = '".$_id."' data-field = 'id_1' data-db_tbl = '_app_link_glossary' class = 'sel-link-field h300'>";
 		if (!empty($_rows)){
 			for ($i = 0; $i < count($_rows); $i++){
 				//Only output the option if it does not self-connects
@@ -130,7 +148,7 @@ class _glossary extends _setup{
 	}
 
 	private function _build_glossary_nav(){
-		$tmp = "<nav id='glossary'>";
+		$tmp = "<nav id = 'glossary' class = 'wrap'>";
 		for ($_i = 65; $_i < 91; $_i++){
 			$tmp .= "<a href = 'index.php?main=topic&id=5&gid=".$_i."'>".chr($_i)."</a>&nbsp;&nbsp;";
 		}

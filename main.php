@@ -1,3 +1,10 @@
+<?php
+if ($_COOKIE['navbar'] == 0){
+	$_hidden = "class = 'hidden'";
+}else{
+	$_hidden = "";
+}
+?>
 <a id = 'nav-skip' href = "#maincol">Skip to main content</a>
 <section id = 'main_frm'>
 	<header id = 'top' class = 'fixed-header'>
@@ -13,7 +20,7 @@
 		</div>
 	</header>
 	<div id = 'maincontent'>
-		<nav id = 'navbar'><?php $nav = new _navmenu();?></nav>
+		<nav id = 'navbar' <?php echo $_hidden;?>><?php $nav = new _navmenu();?></nav>
 		<section id = 'maincol'>
 			<?php
 			ob_start();

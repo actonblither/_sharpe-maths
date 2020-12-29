@@ -18,7 +18,7 @@ $_d = array('topic_id' => $_topic_id, 'ex_id' => $_ex_insert_id);
 $_f = array('i');
 $_qu_insert_id = $_dbh->_insert_sql($_sql, $_d, $_f);
 
-$_new_ex = new _topic(false);
+$_new_ex = new _exercise();
 $_new_ex->_set_topic_id($_topic_id);
 $_new_ex->_set_topic_ex_id($_ex_insert_id);
 $_new_line = $_new_ex->_build_new_exercise($_topic_id, $_ex_insert_id);
