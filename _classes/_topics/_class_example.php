@@ -3,6 +3,7 @@ class _example{
 
 	private $_dbh;
 	private $_examples;
+	private $_eg_title;
 	private $_make_eg_tab = false;
 	private $_rows;
 	private $_topic_id;
@@ -22,9 +23,9 @@ class _example{
 	}
 
 	private function _build_examples(){
-
+		$tmp = "";
 		if (is_logged_in()){
-			$tmp = "<script>$(document).ready(function(e){";
+			$tmp .= "<script>$(document).ready(function(e){";
 			$tmp .= $this->_build_add_new_example_jq();
 			$tmp .= "});</script>";
 		}
@@ -40,25 +41,25 @@ class _example{
 		if (!empty($this->_rows)){
 			foreach ($this->_rows as $_row){
 				$_id = $_row['id'];
-				$tmp .= "<li id = 'n".$_id."' data-db_tbl='_app_topic_eg' class='ex'>";
+				$tmp .= "<li id = 'n".$_id."' data-db-tbl='_app_topic_eg' class='ex'>";
 				$tmp .= "<ul id = 'egh".$_id."' class = 'topic_example'>";
 
 				if (is_logged_in()){
-					$this->_ex_title = $this->_build_varchar('_app_topic_eg', 'title', $_row['title'], $_id);
-					$_method = $this->_build_text('_app_topic_eg', 'method', $_row['method'], $_id);
-					$_method_note = $this->_build_text('_app_topic_eg', 'method_note', $_row['method_note'], $_id);
-					$_question = $this->_build_text('_app_topic_eg', 'question', $_row['question'], $_id);
-					$_question_note = $this->_build_text('_app_topic_eg', 'question_note', $_row['question_note'], $_id);
-					$_answer = $this->_build_text('_app_topic_eg', 'answer', $_row['answer'], $_id);
-					$_answer_note = $this->_build_text('_app_topic_eg', 'answer_note', $_row['answer_note'], $_id);
+					$this->_eg_title = $this->_build_varchar('_app_topic_eg', 'teg_title', $_row['teg_title'], $_id);
+					$_method = $this->_build_text('_app_topic_eg', 'teg_method', $_row['teg_method'], $_id);
+					$_method_note = $this->_build_text('_app_topic_eg', 'teg_method_note', $_row['teg_method_note'], $_id);
+					$_question = $this->_build_text('_app_topic_eg', 'teg_question', $_row['teg_question'], $_id);
+					$_question_note = $this->_build_text('_app_topic_eg', 'teg_question_note', $_row['teg_question_note'], $_id);
+					$_answer = $this->_build_text('_app_topic_eg', 'teg_answer', $_row['teg_answer'], $_id);
+					$_answer_note = $this->_build_text('_app_topic_eg', 'teg_answer_note', $_row['teg_answer_note'], $_id);
 				}else{
-					$this->_ex_title = $_row['title'];
-					$_method = $_row['method'];
-					$_method_note = $_row['method_note'];
-					$_question = $_row['question'];
-					$_question_note = $_row['question_note'];
-					$_answer = $_row['answer'];
-					$_answer_note = $_row['answer_note'];
+					$this->_eg_title = $_row['teg_title'];
+					$_method = $_row['teg_method'];
+					$_method_note = $_row['teg_method_note'];
+					$_question = $_row['teg_question'];
+					$_question_note = $_row['teg_question_note'];
+					$_answer = $_row['teg_answer'];
+					$_answer_note = $_row['teg_answer_note'];
 				}
 
 				//First build the table containing the example
@@ -71,9 +72,9 @@ class _example{
 				$tmp .= "<div class = 'w32'><img alt = 'Open' title='Click to open the example.' id = 'io".$_id."' class = 'open_eg point ttip' src='".__s_lib_url__."_images/_icons/closed.png' />";
 				$tmp .= "<img alt = 'Close' title='Click to close the example.' class = 'hidden open_eg point ttip' id = 'ic".$_id."' src='".__s_lib_url__."_images/_icons/opened.png' /></div>";
 				if (is_logged_in()){
-					$tmp .= "<div class='row w90pc'><h3>WE $_count:</h3> $this->_ex_title</div>";
+					$tmp .= "<div class='row w90pc'><h3>WE $_count:</h3> $this->_eg_title</div>";
 				}else{
-					$tmp .= "<div class='row w70pc'><h3>Worked example $_count:  $this->_ex_title</h3></div>";
+					$tmp .= "<div class='row w70pc'><h3>Worked example $_count:  $this->_eg_title</h3></div>";
 				}
 
 				$tmp .= "</li></ul>";
@@ -129,20 +130,20 @@ class _example{
 
 	public function _build_new_example($id){
 		$_id = (int) $id;
-		$this->_ex_title = $this->_build_varchar('_app_topic_eg', 'title', '', $_id);
-		$_method = $this->_build_text('_app_topic_eg', 'method','', $_id);
-		$_method_note = $this->_build_text('_app_topic_eg', 'method_note', '', $_id);
-		$_question = $this->_build_text('_app_topic_eg', 'question', '', $_id);
-		$_question_note = $this->_build_text('_app_topic_eg', 'question_note', '', $_id);
-		$_answer = $this->_build_text('_app_topic_eg', 'answer','', $_id);
-		$_answer_note = $this->_build_text('_app_topic_eg', 'answer', '', $_id);
+		$this->_eg_title = $this->_build_varchar('_app_topic_eg', 'teg_title', '', $_id);
+		$_method = $this->_build_text('_app_topic_eg', 'teg_method','', $_id);
+		$_method_note = $this->_build_text('_app_topic_eg', 'teg_method_note', '', $_id);
+		$_question = $this->_build_text('_app_topic_eg', 'teg_question', '', $_id);
+		$_question_note = $this->_build_text('_app_topic_eg', 'teg_question_note', '', $_id);
+		$_answer = $this->_build_text('_app_topic_eg', 'teg_answer','', $_id);
+		$_answer_note = $this->_build_text('_app_topic_eg', 'teg_answer', '', $_id);
 
 
 		//First build the table containing the example
 		$tmp .= "<div id = 't".$_id."' class = 'ex_eg w80pc'>";
-		$tmp .= "<div class='w32'><img id = 'io".$_id."' class = 'open_ex point' src='".__s_lib_url__."_images/_icons/closed.png' />";
-		$tmp .= "<img class = 'hidden open_ex point' id = 'ic".$_id."' src='".__s_lib_url__."_images/_icons/opened.png' /></div>";
-		$tmp .= "<div><h3>New example:</h3></div> $this->_ex_title</div>";
+		$tmp .= "<div class='w32'><img id = 'io".$_id."' class = 'open_eg point' src='".__s_lib_url__."_images/_icons/closed.png' />";
+		$tmp .= "<img class = 'hidden open_eg point' id = 'ic".$_id."' src='".__s_lib_url__."_images/_icons/opened.png' /></div>";
+		$tmp .= "<div><h3>New example:</h3></div> $this->_eg_title</div>";
 
 		$tmp .= "<ul id = 'exqs".$_id."' class = 'topic_example hidden'>
 		<li><div class='label'></div><div class='text'></div><div class='text'><strong>Notes</strong></div></li>

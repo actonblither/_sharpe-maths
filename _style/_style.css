@@ -4,14 +4,7 @@ header#top { height: var(--header-height); z-index: 200;}
 
 @CHARSET "ISO-8859-1";
 
-p:not(.t){
-	margin: 5px 0 5px 0;
-	line-height: 24px;
-}
 
-p.t{
-	margin: 0;
-}
 
 h3.top{
 	display: flex;
@@ -22,6 +15,7 @@ h3.top{
 
 ul.topic_example,
 ul.topic_exercise,
+ul.topic_exposition,
 ul.puzzle{
 	list-style: none;
 	margin: 5px 0 25px 0;
@@ -30,11 +24,10 @@ ul.puzzle{
 
 ul.topic_example > li,
 ul.topic_exercise > li,
+ul.topic_exposition > li,
 ul.puzzle > li{
 	list-style: none;
 	padding: 3px;
-	width: 98%;
-
 }
 
 
@@ -43,12 +36,14 @@ ul.topic_example > li:not(.top) > li{
 }
 
 div.ex_eg{
+	display: flex;
 	flex-flow: row wrap;
 	justify-content: flex-start;
 	align-items: center;
 }
 
 div.ex_eg h3{
+	display: flex;
 	flex-flow: row nowrap;
 	color: var(--dark);
 	margin-left: 5px;
@@ -61,6 +56,7 @@ div.ex_eg h3{
 
 .topic_example > li,
 .topic_exercise > li,
+.topic_exposition > li,
 .puzzle > li{
 	display: flex;
 	flex-flow: row wrap;
@@ -75,12 +71,13 @@ div.ex_eg h3{
 }
 
 .topic_example > li > div.label{
+	display: flex;
 	text-align: right;
 	font-weight: bold;
 	min-width: 32px;
 	max-width: 40px;
 	align-items: flex-start;
-	overflow: hidden;
+	overflow: auto;
 	margin-right: 10px;
 }
 
@@ -92,24 +89,21 @@ div.ex_eg h3{
 }
 
 .topic_example > li > div.text{
+	display: flex;
 	flex-flow: column wrap;
 	width: 45%;
-	overflow: hidden;
+	overflow: auto;
 }
 
-img.shrink{
-	display: block;
-	width: 100%;
-	height: auto;
-}
 
 .topic_example > li > div.note{
+	display: flex;
 	flex-flow: column wrap;
 	width: 45%;
-	overflow: hidden;
+	overflow: auto;
 }
 
-.topic_example > li > div.note p{
+.topic_example > li > div.note > p{
 	line-height: 24px;
 }
 .topic_example > li.top > div{
@@ -120,12 +114,14 @@ img.shrink{
 /* TOPIC EXERCISE CLASSES*/
 
 .topic_exercise > li > div.label{
+	display: flex;
 	align-self: flex-start;
 	font-weight: bold;
 	width: 5%;
 }
 
 .topic_exercise > li > div.question{
+	display: flex;
 	flex-flow: column wrap;
 	justify-content: flex-start;
 	width: 55%;
@@ -133,6 +129,7 @@ img.shrink{
 }
 
 .topic_exercise > li > div.answer{
+	display: flex;
 	flex-flow: column wrap;
 	justify-content: flex-start;
 	align-items: flex-end;
@@ -140,12 +137,14 @@ img.shrink{
 }
 
 .topic_exercise > li > div.label_e{
+	display: flex;
 	align-self: flex-start;
 	font-weight: bold;
 	width: 5%;
 }
 
 .topic_exercise > li > div.question_e{
+	display: flex;
 	flex-flow: column wrap;
 	justify-content: flex-start;
 	width: 55%;
@@ -153,6 +152,7 @@ img.shrink{
 }
 
 .topic_exercise > li > div.answer_e{
+	display: flex;
 	flex-flow: column wrap;
 	justify-content: flex-end;
 	align-items: flex-end;
@@ -160,6 +160,7 @@ img.shrink{
 }
 
 .topic_exercise > li > div.difficulty_e{
+	display: flex;
 	flex-flow: column wrap;
 	justify-content: flex-start;
 	align-items: flex-end;
@@ -169,9 +170,14 @@ img.shrink{
 ul.indent{
 	margin-left: 25px;
 	list-style-type: disc;
+	height:auto;
 }
 
-ul#exercises{list-style-type: none;}
+ul#exercises,
+ul#exposition,
+ul#puzzles,
+ul#examples
+{list-style-type: none;}
 
 ol.indent{
 	margin-left: 25px;
@@ -193,10 +199,11 @@ div.topic > div{
 }
 
 div.list, div.list div{
+	display: flex;
 	flex-flow: column wrap;
 }
 
-ol.roman, ol.abc{
+ol.roman, ol.abc, ol.num{
 	display: flex;
 	flex-flow: column wrap;
 	margin-left: 10px;
@@ -204,12 +211,23 @@ ol.roman, ol.abc{
 
 ol.roman{list-style-type: lower-roman;}
 ol.abc{list-style-type: lower-alpha;}
+ol.num{list-style-type: decimal;}
+ol.num2{list-style-type: decimal;}
 
-ol.abc, li ol.roman li{
+ol.abc > li,
+ol.roman > li,
+ol.num > li{
 	margin-left: 30px;
 	padding:0 0 0 10px;
 	line-height: 25px;
+	margin-bottom: 20px;
 }
+
+ol.num2 > li{
+	margin-left: 30px;
+	line-height: 25px;
+}
+
 
 section.fd-col-l ol, section.fd-col-l ul{
 	margin-left: 20px;
@@ -221,7 +239,7 @@ ul.glossary{
 	padding: 4px;
 	list-style-type: none;
 	margin: 5px 0 25px 0;
-	overflow: hidden;
+	overflow: auto;
 }
 
 ul.puzzle_container{
@@ -258,23 +276,30 @@ ul.glossary > li > div.label, ul.puzzle_container > li > div.label{
 }
 
 ul.glossary > li > div.title{
+	display: flex;
 	flex-flow: row wrap;
 	justify-content: flex-start;
 	align-items: center;
 	width: 90%;
 	margin: 5px 0 7px 0;
 	color: var(--dark);
-	overflow: hidden;
+	overflow: auto;
 }
 
 ul.glossary > li > div.text, ul.puzzle_container > li > div.text{
+	display: flex;
 	flex-flow: column wrap;
 	justify-content: flex-start;
 	align-items: flex-start;
 	width: 90%;
+	height: auto;
 	margin: 5px 0 7px 0;
 	color: var(--dark);
-	overflow: hidden;
+	overflow: auto;
+}
+
+ul.blank{
+	list-style: none;
 }
 
 li.line{
@@ -284,6 +309,7 @@ li.line{
 }
 
 div.note, div.text{
+	display: flex;
 	flex-flow: column wrap !important;
 	line-height: 23px !important;
 }
@@ -303,4 +329,55 @@ li.instructions{
 	min-height: 50px;
 	width: 100%;
 	border: 1px solid var(--dark);
+}
+
+.topic-label{
+	font-family: Tahoma, Geneva, sans-serif;
+	color: var(--dark);
+	font-size: 12pt;
+}
+
+.topic-title{
+	font-family: Tahoma, Geneva, sans-serif;
+	color: var(--light);
+	font-size: 15pt;
+}
+
+div.canvas{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-start;
+	align-items: flex-start;
+	min-width: 630px;
+	max-width:630px;
+	width: 50%;
+}
+div.instructions{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-start;
+	align-items: flex-start;
+	width: 50%;
+}
+
+figure.hp{
+	display: inline-flex;
+	flex-flow: column wrap;
+	justify-content: flex-start;
+	align-items: center;
+
+}
+
+figure.hp > img{
+	display: inline-flex;
+	justify-contents: flex-start;
+	align-items: center;
+	border: 2px solid var(--dark);
+	border-radius: 4px;
+	margin-bottom: 5px;
+}
+
+figure.hp > figcaption{
+	display: inline-flex;
+	margin-bottom: 20px;
 }

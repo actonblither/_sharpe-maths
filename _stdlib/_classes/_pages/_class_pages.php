@@ -35,7 +35,7 @@ class _pages extends _setup{
 		$_el_btn->_set_el_width_units('px');
 		$_el_btn->_build_save_btn();
 
-		return $_el_btn->_build_save_btn().$_el->_build_textarea();
+		return $_el_btn->_build_save_btn().$_el->_build_ckeditor();
 	}
 
 	private function _build_page_start(){

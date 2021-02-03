@@ -66,18 +66,18 @@ class _form_element {
 
 	public function _delete_jq_code(){
 		if (is_logged_in()){
-			$tmp .= "";
+			$tmp = "";
 		}
 	}
 
 	public function _delete_img_code(){
 		if (is_logged_in()){
-			$tmp .= "<div><img class='w14 h14 point del_qu m5' src = '".__s_lib_url__."_images/_icons/close14.png' /></div>";
+			$tmp = "<div><img class='w14 h14 point del_qu m5' src = '".__s_lib_url__."_images/_icons/close14.png' /></div>";
 		}
 	}
 
 	public function _build_save_btn(){
-		$tmp .= "<button type = 'button' class = 'point page-save save ".$this->_el_field_class."' style = 'width:".$this->_el_width.$this->_el_width_units."' data-db_tbl = '".$this->_db_tbl."' data-id = '".$this->_el_id_value."' data-field = '".$this->_el_field_id."'>".$this->_el_field_value."</button>";
+		$tmp = "<button type = 'button' class = 'point page-save save ".$this->_el_field_class."' style = 'width:".$this->_el_width.$this->_el_width_units."' data-db-tbl = '".$this->_db_tbl."' data-id = '".$this->_el_id_value."' data-field = '".$this->_el_field_id."'>".$this->_el_field_value."</button>";
 		return $tmp;
 	}
 
@@ -89,14 +89,14 @@ class _form_element {
 
 		$tmp =  "<input type = 'text' id = '".$this->_el_field_id."_".$this->_el_id_value."' name = '".$this->_el_field_id."' style='width: ".$this->_el_width.$this->_el_width_units."' value = '".$this->_el_field_value."' ";
 		if (!empty($this->_el_pattern)){$tmp.= "pattern = '".$this->_el_pattern."' ";}
-		$tmp .= "maxlength = '".$maxlength."' data-el-type = 'varchar' data-id = '".$this->_el_id_value."' data-db_tbl = '".$this->_db_tbl."' data-field = '".$this->_el_field_id."' class = 'field' />";
+		$tmp .= "maxlength = '".$maxlength."' data-el-type = 'varchar' data-id = '".$this->_el_id_value."' data-db-tbl = '".$this->_db_tbl."' data-field = '".$this->_el_field_id."' class = 'field' />";
 		return $tmp;
 	}
 
 
 	public function _build_textarea(){
 		$this->_el_field_value = str_replace("'","&#39;", $this->_el_field_value);
-		$tmp = "<textarea id = '".$this->_el_field_id."_".$this->_el_id_value."' data-el-type = 'textarea' data-field = '".$this->_el_field_id."' data-id = '".$this->_el_id_value."' data-db_tbl = '".$this->_db_tbl."' name = '".$this->_el_field_id."' class = 'field m5'  style = 'width:".$this->_el_width.$this->_el_width_units.";height:".$this->_el_height.$this->_el_height_units."'>";
+		$tmp = "<textarea id = '".$this->_el_field_id."_".$this->_el_id_value."' data-el-type = 'textarea' data-field = '".$this->_el_field_id."' data-id = '".$this->_el_id_value."' data-db-tbl = '".$this->_db_tbl."' name = '".$this->_el_field_id."' class = 'field m5'  style = 'width:".$this->_el_width.$this->_el_width_units.";height:".$this->_el_height.$this->_el_height_units."'>";
 		$tmp .= $this->_el_field_value;
 		$tmp .= '</textarea>';
 		return $tmp;
@@ -105,14 +105,14 @@ class _form_element {
 
 	public function _build_checkbox(){
 		if ($this->_el_field_value == 1){$_checked = ' checked ';}else{$_checked = ' ';}
-		$tmp = "<input type = 'checkbox' id = '".$this->_el_field_id."_".$this->_el_id_value."' data-el-type = 'checkbox' data-field = '".$this->_el_field_id."' data-id = '".$this->_el_id_value."' data-db_tbl = '".$this->_db_tbl."' name = '".$this->_el_field_id."' class = 'field m5'".$_checked."/>";
+		$tmp = "<input type = 'checkbox' id = '".$this->_el_field_id."_".$this->_el_id_value."' data-el-type = 'checkbox' data-field = '".$this->_el_field_id."' data-id = '".$this->_el_id_value."' data-db-tbl = '".$this->_db_tbl."' name = '".$this->_el_field_id."' class = 'field m5'".$_checked."/>";
 		return $tmp;
 
 	}
 	public function _build_ckeditor(){
 		$this->_el_field_value = str_replace("'","&#39;", $this->_el_field_value);
 		if (!empty($this->_el_field_class)){$this->_el_field_class .= ' ';}
-		$tmp .= "<div class = 'ck-dummy'><textarea id = '".$this->_el_field_id."_".$this->_el_id_value."' name = '".$this->_el_field_id."' data-id = '".$this->_el_id_value."' data-db_tbl = '".$this->_db_tbl."' data-field = '".$this->_el_field_id."' class = '".$this->_el_field_class."field'>".PHP_EOL;
+		$tmp .= "<div class = 'ck-dummy'><textarea id = '".$this->_el_field_id."_".$this->_el_id_value."' name = '".$this->_el_field_id."' data-id = '".$this->_el_id_value."' data-db-tbl = '".$this->_db_tbl."' data-field = '".$this->_el_field_id."' class = '".$this->_el_field_class."field'>".PHP_EOL;
 		$tmp .= $this->_el_field_value;
 		$tmp .= '</textarea>';
 		$tmp .= "<script>
@@ -122,7 +122,8 @@ class _form_element {
 				height: '600px',
 				basicEntities : false,
 				entities : false,
-				forceSimpleAmpersand : true
+				forceSimpleAmpersand : true,
+				allowedContent : true
 			});
 			</script></div>";
 		return $tmp;
@@ -188,7 +189,13 @@ class _select{
 	private $_dbh;
 	private $_db_display_field;
 	private $_db_sql;
-	private $_db_table;
+	private $_db_tbl;
+	private $_db_link_tbl;
+	private $_db_tbl_sel;
+	private $_db_link_tbl_field_1;
+	private $_db_link_tbl_field_2;
+
+
 	private $_el_data_db_tbl;
 	private $_el_data_id;
 	private $_el_classes;// array containing style classes
@@ -212,10 +219,15 @@ class _select{
 	public function __construct($params = []) {
 		$this->_dbh = new _db();
 		if (!empty($params)){
-
 			$this->_db_display_field = rvs($params['db_display_field']);
 			$this->_db_sql = rvs($params['db_sql']);
-			$this->_db_table = rvs($params['db_table']);
+			$this->_db_tbl = rvs($params['db_tbl']);
+
+			$this->_db_tbl = '_app_puzzle';
+			$this->_db_tbl_sel = '_app_topic';
+			$this->_db_link_tbl = '_app_puzzle_topic_link';
+			$this->_db_link_tbl_field_1 = 'topic_id';
+			$this->_db_link_tbl_field_2 = 'puzzle_id';
 
 			$this->_el_classes = rvs($params['el_classes']);
 			$this->_el_label = rv($params['el_label']);
@@ -240,7 +252,9 @@ class _select{
 
 	public function _build_select(){
 		$tmp = '';
-		if ($this->_el_type === 'yn+sel'){
+		if ($this->_el_type === 'multiple'){
+			$tmp .= $this->_build_select_multiple();
+		}else if($this->_el_type === 'yn+sel'){
 			$tmp .= $this->_build_yn_select();
 			$tmp .= $this->_build_select_element();
 		}else if ($this->_el_type === 'sel'){
@@ -258,6 +272,31 @@ class _select{
 		return $tmp;
 	}
 
+	private function _build_select_multiple(){
+		$_sql = "select id, title from ".$this->_db_tbl_sel." where display = :display and archived = :archived";
+		$_d = array('display' => 1, 'archived' => 0);
+		$_f = array('i', 'i');
+		$_rows = $this->_dbh->_fetch_db_rows_p($_sql, $_d, $_f);
+		$tmp = "<select data-db-tbl = '".$this->_db_link_tbl."' data-field1 = '".$this->_db_link_tbl_field_1."' data-el-type = 'sel_mult' data-field2 = '".$this->_db_link_tbl_field_2."' data-value2 = '".$this->_el_data_id."' id = 'link_id_".$this->_el_data_id."' data-id = 'link_id_".$this->_el_data_id."' class = 'sel-link-field h300' multiple>";
+		if (!empty($_rows)){
+			for ($i = 0; $i < count($_rows); $i++){
+				if ($_rows[$i]['id'] !== $this->_id){
+					$_sql = "select * from ".$this->_db_link_tbl." where (".$this->_db_link_tbl_field_1." = ".$_rows[$i]['id'].") and (".$this->_db_link_tbl_field_2." = ".$this->_el_data_id.")";
+					//_cl($_sql);
+					$_sel_row = $this->_dbh->_fetch_db_row($_sql);
+					if ($_sel_row[$this->_db_link_tbl_field_1] === $_rows[$i]['id'] && $_sel_row[$this->_db_link_tbl_field_2] === $this->_el_data_id){
+						$_sel_text = "selected = 'selected'";
+					}else{
+						$_sel_text = '';
+					}
+					$tmp .= "<option value='".$_rows[$i]['id']."' ".$_sel_text.">".$_rows[$i]['title']."</option>";
+				}
+			}
+		}
+		$tmp .= "</select>";
+		return $tmp;
+	}
+
 	private function _build_select_element(){
 		if ($this->_el_type == 'yn+sel'){
 			$this->_el_name .= '_id';
@@ -272,10 +311,11 @@ class _select{
 		}else{
 			$tmp = '';
 		}
-		$tmp .= "<select name = '".$this->_el_name."' id = '".$this->_el_name."' class = 'field".$hidden."  style = 'width:".$this->_el_width."px;' data-field = '".$this->_el_field_id."' data-id = '".$this->_el_id_value."' data-db_tbl = '".$this->_db_tbl."'>";
+
+		$tmp .= "<select data-db-tbl = '".$this->_el_data_db_tbl."' data-field = '".$this->_el_name."' data-id = '".$this->_el_data_id."' id = '".$this->_el_name."_".$this->_el_data_id."' name = '".$this->_el_name."' class = 'sel-field'>";
 		$tmp .= "<option value = 0 class = 'not-set'>Not set...</option>";
 		if (empty($this->_db_sql)){
-			$this->_db_sql = 'select id,'.$this->_db_display_field.' from '.$this->_db_table.' where display=1 and archived=0 order by order_num,'.$this->_db_display_field;
+			$this->_db_sql = 'select id,'.$this->_db_display_field.' from '.$this->_db_tbl.' where display=1 and archived=0 order by order_num,'.$this->_db_display_field;
 		}
 		$rows = $this->_dbh->_fetch_db_rows($this->_db_sql);
 		if (empty($this->_el_opt_val)){$this->_el_opt_val = 'id';}
@@ -348,7 +388,7 @@ class _select{
 	private function _build_enum_select(){
 		$tmp = '<select name = "'.$this->_el_name.'" id = "'.$this->_el_name.'" class = "field">';
 		$tmp .= '<option value = "" class = "not-set">Not set...</option>';
-		$sql = "show fields from ".$this->_db_table." where field = '".$this->_el_name."'";
+		$sql = "show fields from ".$this->_db_tbl." where field = '".$this->_el_name."'";
 		$row = $this->_dbh->_fetch_db_row($sql);
 		$str = $row['Type'];
 		$str = str_replace('enum(', '', $str);
@@ -374,7 +414,7 @@ class _select{
 	}
 
 	private function _build_number_select(){
-		$tmp = "<select data-db_tbl = '".$this->_el_data_db_tbl."' data-field = '".$this->_el_name."' data-id = '".$this->_el_data_id."' id = '".$this->_el_name."_".$this->_el_data_id."' name = '".$this->_el_name."' class = 'sel-field'>";
+		$tmp = "<select data-db-tbl = '".$this->_el_data_db_tbl."' data-field = '".$this->_el_name."' data-id = '".$this->_el_data_id."' id = '".$this->_el_name."_".$this->_el_data_id."' name = '".$this->_el_name."' class = 'sel-field'>";
 		$tmp .= "<option value = '' class = 'not-set'>Not set...</option>";
 		for ($i = $this->_el_number_min; $i <= $this->_el_number_max; $i++){
 			$value = $i * $this->_el_number_inc;
@@ -407,7 +447,7 @@ class _select{
 	// SETTERS
 	public function _set_db_display_field($t) {$this->_db_display_field = $t;}
 	public function _set_db_sql($t) {$this->_db_sql = $t;}
-	public function _set_db_table($t) {$this->_db_table = $t;}
+	public function _set_db_tbl($t) {$this->_db_tbl = $t;}
 
 	public function _set_el_classes($t) {$this->_el_classes = $t;}
 	public function _set_el_label($t) {$this->_el_label = $t;}

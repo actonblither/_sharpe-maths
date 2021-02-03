@@ -2,7 +2,7 @@
 $_base_folder = base64_decode($_POST['app_folder']);
 $_base_folder = filter_var($_base_folder, FILTER_SANITIZE_STRING);
 include($_base_folder.'/app_config.php');
-_cl($_POST);
+//_cl($_POST);
 $_dbh = new _db();
 $_db_main_tbl = rvs($_POST['db_main_tbl']);
 $_db_main_tbl_field = rvs($_POST['db_main_tbl_field']);
@@ -18,8 +18,6 @@ if (!empty($_db_sub_tbls)){
 		$_sql = "delete from ".$_t." where ".$_f." = :".$_f;
 		$_d = array($_f => $_db_tbl_field_value);
 		$_f = array('i');
-		_cl($_sql);
-		_cl($_d);
 		$_result = $_dbh->_delete_sql($_sql, $_d, $_f);
 	}
 

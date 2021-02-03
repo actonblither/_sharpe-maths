@@ -1,51 +1,42 @@
 
-/*Login Screen*/
-
-.flexcontainer{
+div#logincontainer{
 	display: flex;
-	height: 95vh; /* Set the outer container to 100% height. vh = viewport height*/
-	width: 98vw; /* Set the outer container to 100% width. vw = viewport width*/
-	flex-direction: row;
-	justify-self: center;
-	align-self: center;
-	justify-content: center;
+	flex-flow: row wrap;
 	align-items: center;
-}
-
-.logincontainer{
-	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
 	justify-content: center;
-	width: 450px;
+	width: 80%;
 	height:auto;
-	padding:20px;
-	border-radius: 8px;
-	border:1px solid #aaa;
+	padding: 20px;
+
 }
 
-.row2{
+div#logincontainer > div.inner{
 	display: flex;
-	flex-direction: row;
-	align-items: center;
-	outline:0px solid green;
-	align-self:stretch;
-
+	flex-flow: column nowrap;
+	width:480px;
+	align-items: flex-start;
+	align-self: center;
+	border-radius: 4px;
+	border:1px solid var(--dark);
+	padding: 20px;
 }
-.row3{
+
+div#logincontainer > div.inner > div.row{
 	display: flex;
-	align-self:stretch;
-	justify-content:flex-end;
-	margin-right:53px;
-	margin-top:5px;
+	flex-flow: row nowrap;
+	margin: 10px;
 }
 
-#login_title{padding:10px;justify-content:flex-start;align-items:flex-start;}
+div#logincontainer > div.inner > div.row > div.label{justify-content: flex-end; width: 80px;}
+div#logincontainer > div.inner > div.row > div.input{justify-content: flex-end; width: 300px;}
+div#logincontainer > div.inner > div.row > div.button{width: 30px;}
 
-
-label{margin-top:5px;margin-bottom:5px;display: inline-block;}
-
-input[type = text], input[type = password]{height: 28px; width: 355px;}
+div#logincontainer > div.inner > div.row > div.input > input[type = text],
+div#logincontainer > div.inner > div.row > div.input > input[type = password]{
+	margin:0;
+	height: 28px;
+	width: 100%;
+}
 
 button#login{
 	background:
@@ -55,7 +46,6 @@ button#login{
 	no-repeat;
 }
 
-.btext{margin-top:10px;}
 
 .err{
 	display: flex;

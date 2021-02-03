@@ -80,7 +80,7 @@ class _datetime{
 		$tmp .= '});';
 		$tmp .= '});</script>';
 		if (!empty($this->_class)){$this->_class = ' '.$this->_class;}
-		$tmp .= "<div class = 'inline-center'><input type = 'text' id = '".$this->_name."' name = '".$this->_name."' value = '".$this->_value."' class = 'point dt_input".$this->_class."' placeholder = '".$this->_place_holder."' style = 'width:".$this->_input_width."px;' readonly />";
+		$tmp .= "<div class = 'ifc'><input type = 'text' id = '".$this->_name."' name = '".$this->_name."' value = '".$this->_value."' class = 'point dt_input".$this->_class."' placeholder = '".$this->_place_holder."' style = 'width:".$this->_input_width."px;' readonly />";
 
 		if ($this->_show_clear_img){
 			if (file_exists(__s_app_icon_folder__.'/20/clear20.png')){

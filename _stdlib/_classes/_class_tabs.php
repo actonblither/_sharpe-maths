@@ -5,17 +5,17 @@ class _tabs{
 	private $_tab_labels;//array
 	private $_tab_links;//array
 	private $_tab_pages;//array
-	
+
 	public function __construct(){}
-	
+
 	public function _build_all(){
 		return $this->_build_jq().$this->_build_tabs().$this->_build_pages();
 	}
-	
+
 	public function _build_search(){
 		return $this->_build_jq().$this->_build_tabs();
 	}
-	
+
 	public function _build_tabs(){
 		$count = 1;
 		$tmp = "
@@ -34,16 +34,15 @@ class _tabs{
 		$tmp .= '</nav>';
 		return $tmp;
 	}
-	
+
 	public function _build_jq(){
 		$tmp = "<script>
 				$(document).ready(function(){
-			
 					$('#".$this->_tab_nav_id." a.tab-active').removeClass('tab-active');
 					var cookie = readCookie('tab-pref');
 					if (!cookie){
 						cookie = '_1_intro-1';
-						createCookie('tab-pref', cookie, 0);
+						createCookie('tab-pref', cookie, 100);
 					}
 					$('#'+cookie).addClass('tab-active');
 					$(document).on('click', '#".$this->_tab_nav_id." a.tab-nav', function(e){
@@ -51,7 +50,7 @@ class _tabs{
 						e.stopImmediatePropagation();
 						///Deal with the tabs
 						var old_section_id = $('#".$this->_tab_nav_id." a.tab-active').attr('href');
-							
+
 						$('#".$this->_tab_nav_id." a.tab-active').removeClass('tab-active');
 						$(this).addClass('tab-active');
 						///Now deal with the <div> visibility
@@ -64,24 +63,26 @@ class _tabs{
 			</script>";
 		return $tmp;
 	}//end _get_jq
-	
+
+
+
 	public function _build_pages(){
 		if (isset($_COOKIE['tab-pref'])){
 			$cookie = $_COOKIE['tab-pref'];
 			$div_id = substr($cookie, 3);
 			if (!in_array($div_id, $this->_tab_links)){
-				$div_id = $this->_tab_link[0];
+				$div_id = $this->_tab_links[0];
 			}
 		}else{
 			$div_id = $this->_tab_links[0];
 		}
-		
-		
+
+
 		$tmp = "
 		<div class = '".$this->_tab_nav_divs."'>";
 		for($i = 0; $i < count($this->_tab_labels); $i++){
 			$tmp .= "<div class = 'tab-contents";
-			if ($this->_tab_links[$i] !== $div_id){$tmp .= " hidden'";}else{$tmp .= "'";}
+			if ($this->_tab_links[$i] === $div_id){$tmp .= "'";}else{$tmp .= " hidden'";}
 			$tmp .= " id = '".$this->_tab_links[$i]."'>";
 			$tmp .= $this->_tab_pages[$i];
 			$tmp .= "</div>";
@@ -89,7 +90,7 @@ class _tabs{
 		$tmp .= "</div>";
 		return $tmp;
 	}
-	
+
 	//Setters
 	public function _set_tab_nav_id($n){
 		$this->_tab_nav_id = $n;
@@ -99,5 +100,5 @@ class _tabs{
 	public function _set_tab_help($n){$this->_tab_help = $n;}
 	public function _set_tab_links($n){$this->_tab_links = $n;}
 	public function _set_tab_pages($n){$this->_tab_pages = $n;}
-	
+
 }//end class

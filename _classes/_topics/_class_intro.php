@@ -36,7 +36,7 @@ class _intro{
 		$_el->_set_el_height(400);
 		$_el->_set_el_width_units('%');
 		$_el->_set_el_height_units('px');
-		$this->_intro = $_el->_build_textarea();
+		$this->_intro = $_el->_build_ckeditor();
 
 		$_el_btn = new _form_element();
 		$_el_btn->_set_db_tbl('_app_topic');

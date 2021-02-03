@@ -13,7 +13,7 @@
     font-family: system-ui;
 }
 
-#gdpr-cookie-message p{display: flex; flex-flow: row wrap;}
+#gdpr-cookie-message p{display: block;}
 
 #gdpr-cookie-message .container {
     margin: 0 auto;

@@ -27,7 +27,7 @@ class _puzzle{
 
 	public function _fetch_topic_puzzles(){
 		$this->_set_pz_page_title('Topic puzzle page');
-		$_sql = 'select * from _app_puzzles where display = :display and archived = :archived and topic_id = :topic_id order by difficulty';
+		$_sql = 'select p.* from _app_puzzles p left join _app_puzzle_topic_link pt on pt.puzzle_id = p.id where p.display = :display and p.archived = :archived and pt.topic_id = :topic_id order by p.difficulty';
 		$_d = array('display' => 1, 'archived' => 0, 'topic_id' => $this->_topic_id);
 		$_f = array('i', 'i', 'i');
 		$_rows = $this->_dbh->_fetch_db_rows_p($_sql, $_d, $_f);
@@ -46,7 +46,8 @@ class _puzzle{
 	}
 
 	private function _build_puzzle_page($_rows){
-		if ($this->_show_title){$tmp = $this->_build_title_bar();}
+		$tmp = "";
+		if ($this->_show_title){$tmp .= $this->_build_title_bar();}
 
 		$tmp .= "<ul id = 'puzzle_page' class = 'puzzle'>";
 			if (!empty($_rows)){
@@ -60,8 +61,14 @@ class _puzzle{
 
 					$tmp .= "<li class = 'row'>";
 					$tmp .= "<ul class = 'puzzle_container w100pc'>";
-					$tmp .= $this->_build_li('puzzle', $this->_id, $this->_puzzle);
-					$tmp .= $this->_build_hse_li($this->_id);
+
+					if (is_logged_in()){
+						$tmp .= $this->_build_li_edit('puzzle', $this->_id, $this->_puzzle);
+						$tmp .= $this->_build_hse_li_edit($this->_id);
+					}else{
+						$tmp .= $this->_build_li('puzzle', $this->_id, $this->_puzzle);
+						$tmp .= $this->_build_hse_li($this->_id);
+					}
 					$tmp .= "</ul>";
 
 					$tmp .= "</li>";
@@ -90,6 +97,23 @@ class _puzzle{
 		return $tmp;
 	}
 
+	private function _build_hse_li_edit($_id){
+		$this->_hint = $this->_build_textarea('_app_puzzles', 'hint', $this->_hint, $_id);
+		$this->_solution = $this->_build_textarea('_app_puzzles', 'solution', $this->_solution, $_id);
+		$this->_explanation = $this->_build_textarea('_app_puzzles', 'explanation', $this->_explanation, $_id);
+		$tmp = "
+	<li>
+		<div class = 'w100pc mr10' id = 'hc".$_id."'><span class = 'h4'>Hint: &nbsp;</span>".$this->_hint."</div>
+	</li>
+	<li>
+		<div class = 'w100pc mr10' id = 'sc".$_id."'><span class = 'h4'>Solution: &nbsp;</span>".$this->_solution."</div>
+	</li>
+	<li>
+		<div class = 'w100pc mr10' id = 'ec".$_id."'><span class = 'h4'>Explanation: &nbsp;</span>".$this->_explanation."</div>
+	</li>";
+		return $tmp;
+	}
+
 	private function _build_li($_pr, $_id, $_txt){
 		$tmp = "<li id = '".$_pr.$_id."' class = 'row'>
 							<div class = 'w50 c ico_bin'>".$this->_fetch_icon($_pr, null, $_id)."</div>
@@ -97,6 +121,67 @@ class _puzzle{
 						</li>";
 		return $tmp;
 }
+
+private function _build_li_edit($_pr, $_id, $_txt){
+	$_txt = $this->_build_textarea('_app_puzzles', 'puzzle', $_txt, $_id);
+
+	$_topic_sel_el = $this->_build_select();
+
+	$tmp =
+	"<li>
+			<span class = 'h4 mr20'>Puzzle:&nbsp;".$this->_title."</span>Topic link: ".$_topic_sel_el."
+	</li>
+	<li>".$_txt."</li>";
+	return $tmp;
+}
+
+private function _build_select(){
+	$_params = array(
+		'el_type' => 'multiple',
+		'el_name' => 'topic_id',
+		'el_value' => $this->_topic_id,
+		'db_display_field' => 'title',
+		'db_tbl_sel' => '_app_topic',
+		'db_tbl' => '_app_puzzle',
+		'db_link_tbl' => '_app_puzzle_topic_link',
+		'el_data_id' => $this->_id,
+		'el_data_db_tbl' => '_app_puzzle_topic_link',
+		'db_link_tbl_field_1' => 'topic_id',
+		'db_link_tbl_field_2' => 'puzzle_id'
+	);
+	$_topic_sel = new _select($_params);
+	return $_topic_sel->_build_select();
+}
+
+private function _build_textarea($_db_tbl, $_field_name, $_field_value, $_data_id){
+	$_el = new _form_element();
+	$_el->_set_el_field_id($_field_name);
+	$_el->_set_el_field_value($_field_value);
+	$_el->_set_db_tbl($_db_tbl);
+	$_el->_set_el_id_value($_data_id);
+	$_el->_set_el_width(100);
+	$_el->_set_el_height(200);
+	$_el->_set_el_width_units('%');
+	$_el->_set_el_height_units('px');
+	return $_el->_build_textarea();
+}
+
+private function _build_varchar($_db_tbl, $_field_name, $_field_value, $_data_id){
+	$_el = new _form_element();
+	$_el->_set_el_field_id($_field_name);
+	$_el->_set_el_field_value($_field_value);
+	$_el->_set_db_tbl($_db_tbl);
+	$_el->_set_el_id_value($_data_id);
+	$_el->_set_el_width(500);
+	$_el->_set_el_width_units('px');
+	return $_el->_build_text_input();
+}
+
+private function _build_add_new_exercise_btn(){
+	$tmp = "<button type = 'button' class = 'w150 add_new_ex add mt5 ml10' id = 'to".$this->_topic_id."'>Add new exercise</button>";
+	return $tmp;
+}
+
 
 	private function _fetch_icon($_pr, $_pre, $_id){
 		$_ico = $_pr."32.png";

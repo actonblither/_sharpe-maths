@@ -11,12 +11,10 @@ class _glossary extends _setup{
 	public function __construct(){
 		parent::__construct();
 		$this->_gid = rvz($_REQUEST['gid']);
-		if (isset($this->_gid) && is_int($this->_gid) && $this->_gid > 0){
-			$this->_g_letter = chr($this->_gid);
-		}
-		echo $this->_build_glossary_nav();
 		echo "<h1>Glossary of terms</h1>";
-		echo "<h2>$this->_g_letter</h2>";
+		echo "<div class='row w300'><label for = 'sfilter'><h4>Filter:</h4></label>";
+		echo "<input id = 'sfilter' class = 'w150 mr5 ml5 ttip' style = 'height:26px;' title = 'Type into this field to filter the list down to those records which contains those letters or words.' type = 'text' /></div>";
+		echo "<h3>$this->_g_letter</h3>";
 		echo $this->_load_glossary();
 	}
 
@@ -28,9 +26,9 @@ class _glossary extends _setup{
 		$_context_img = $this->_build_img('context32.png', 'Example of use');
 		$_alt_img = $this->_build_img('alternative32.png', 'See also');
 		$tmp = "<section class = 'glossary'>";
-		$_sql = "select * from ".$this->_g_db_tbl." where left(title, 1) = :letter and display = :display and archived = :archived order by title";
-		$_d = array('letter' => $this->_g_letter, 'display' => 1, 'archived' => 0);
-		$_f = array('s', 'i', 'i');
+		$_sql = "select * from ".$this->_g_db_tbl." where display = :display and archived = :archived order by title";
+		$_d = array('display' => 1, 'archived' => 0);
+		$_f = array('i', 'i');
 		$_rows = $this->_dbh->_fetch_db_rows_p($_sql, $_d, $_f);
 		foreach ($_rows as $_r){
 			if (is_logged_in()){
@@ -42,13 +40,13 @@ class _glossary extends _setup{
 				$_r['connectors'] = $this->_build_connector_str($_r['id']);
 			}
 			$tmp .= "<ul class='glossary'>";
-			$tmp .= "<li><div class='label'<p>$_title_img</p></div><div class='title'><h3>".$_r['title']."</h3></div></li>";
+			$tmp .= "<li><div class='label'<p>$_title_img</p></div><div class='title filter-field h3'><p>".$_r['title']."</p></div></li>";
 			$tmp .= "<li class='line'></li>";
-			$tmp .= "<li><div class='label'><p>$_desc_img</p></div><div class='text'>".$_r['body']."</div></li>";
+			$tmp .= "<li><div class='label'><p>$_desc_img</p></div><div class='text filter-field'><p>".$_r['body']."</p></div></li>";
 			$tmp .= "<li class='line'></li>";
-			$tmp .= "<li><div class='label'><p>$_context_img</p></div><div class='text'>".$_r['example_of_use']."</div></li>";
+			$tmp .= "<li><div class='label'><p>$_context_img</p></div><div class='text'><p>".$_r['example_of_use']."</p></div></li>";
 			$tmp .= "<li class='line'></li>";
-			$tmp .= "<li><div class='label'><p>$_alt_img</p></div><div class='text'><p class='t'>".$_r['connectors']."</p></div></li>";
+			$tmp .= "<li><div class='label'><p>$_alt_img</p></div><div class='text'><p>".$_r['connectors']."</p></div></li>";
 			$tmp .= "</ul>";
 		}
 		$tmp .= "</section>";
@@ -122,10 +120,10 @@ class _glossary extends _setup{
 		$_d = array('display' => 1, 'archived' => 0);
 		$_f = array('i', 'i');
 		$_rows = $this->_dbh->_fetch_db_rows_p($_sql, $_d, $_f);
-		$tmp = "<select id = 'link_id_".$_id."' multiple data-id = '".$_id."' data-field = 'id_1' data-db_tbl = '_app_link_glossary' class = 'sel-link-field h300'>";
+		$tmp = "<select id = 'link_id_".$_id."' multiple data-id = '".$_id."' data-field = 'id_1' data-db-tbl = '_app_link_glossary' class = 'sel-link-field h300'>";
 		if (!empty($_rows)){
 			for ($i = 0; $i < count($_rows); $i++){
-				//Only output the option if it does not self-connects
+				//Only output the option if it does not self-connect
 				if ($_rows[$i]['id'] !== $_id){
 					$_sql = "(select id_1, id_2 from _app_link_glossary where (id_1 = ".$_rows[$i]['id'].") and (id_2 = ".$_id.")) union (select id_1, id_2 from _app_link_glossary where (id_1 = ".$_id.") and (id_2 = ".$_rows[$i]['id']."))";
 					$_sel_row = $this->_dbh->_fetch_db_row($_sql);

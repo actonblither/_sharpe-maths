@@ -10,10 +10,10 @@ include('app_config.php');
 		<link rel = 'stylesheet' href = '<?php echo __s_applib_url__;?>/jquery/iziToast.min.css' type = 'text/css' />
 		<link rel = 'stylesheet' href = '<?php echo __s_applib_url__;?>/jquery/anytime.css' type = 'text/css' />
 		<link rel = 'stylesheet' href = '<?php echo __s_applib_url__;?>/jquery/tooltipster/css/tooltipster.bundle.css' type = 'text/css' />
-
 		<link rel = 'stylesheet' href = '<?php echo __s_app_url__;?>/_style/_app_style.css' type = 'text/css' />
 		<link rel = 'stylesheet' href = '<?php echo __s_lib_url__;?>/_style/_style_complete.css' type = 'text/css' />
 		<link rel = 'stylesheet' href = '<?php echo __s_app_url__;?>/_style/_style.css' type = 'text/css' />
+		<link rel = 'stylesheet' href = '<?php echo __s_lib_url__;?>/_style/_style_login.css' type = 'text/css' />
 
 		<link rel = 'stylesheet' href = '<?php echo __s_applib_url__;?>/jquery/ihavecookies/ihavecookies.css' type = 'text/css' />
 
@@ -26,8 +26,8 @@ include('app_config.php');
 		<script src = '<?php echo __s_applib_url__;?>js/_stdlib.js'></script>
 		<script src = '<?php echo __s_applib_url__;?>classes/ckeditor/ckeditor.js'></script>
 		<script src = '<?php echo __s_applib_url__;?>jquery/ihavecookies/jquery.ihavecookies.js'></script>
-
-<script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+		<script src = '<?php echo __s_applib_url__;?>js/fabric.4.3.js'></script>
+		<script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
 
 <script>
 	MathJax = {
@@ -40,21 +40,44 @@ include('app_config.php');
 		svg: {
 			fontCache: 'global',
 			displayAlign: 'left',
-			scale: 1.0
+			scale: 1
 		}
 	};
 
+	function _sure(message){
+		if (confirm(message)){
+			return true;
+		}else{
+			return false;
+		}
+	}
+
 	$(document).ready(function(e){
+
+		$(document).on('keyup','#sfilter', function(){
+			var str = $(this).val().toLowerCase();
+			$('.filter-field').parent('li').parent('ul').filter(function(){
+				$(this).toggle($(this).text().toLowerCase().indexOf(str) > -1)
+			});
+		});
+
+		$(document).on('click', 'li.expand', function(evt){
+			evt.stopImmediatePropagation();
+			console.log($(this));
+			if ($(this).hasClass('link') == false){
+				var id = $(this).attr('id');
+				$('ul#uxp'+id).slideToggle().toggleClass('hidden');
+			}
+		});
 
 		$(document).on('click', '#menu', function(){
 			if ($('#navbar').hasClass('hidden')){
 				$('#navbar').removeClass('hidden');
-				createCookie('navbar', 1, 5);
+				createCookie('navbar', 1, 365);
 			}else{
 				$('#navbar').addClass('hidden');
-				createCookie('navbar', 0, 5);
+				createCookie('navbar', 0, 365);
 			}
-
 		});
 
 		$(document).on('click', '.reveal', function(e) {
@@ -110,12 +133,15 @@ include('app_config.php');
 		});
 
 
-
+	var now = new Date();
+	var time = now.getTime();
+	var expireTime = time + 60 * 60 * 24 * 365;
 	var options = {
 		title: 'Accept Cookies?',
 		message: 'Cookies are used on this site, to improve usability. The site will operate with reduced functionality without them. However, no tracking or marketing cookies are employed at all.',
 		delay: 600,
-		expires: 1,
+
+		expires: expireTime,
 		link: '',
 		onAccept: function(){
 			var myPreferences = $.fn.ihavecookies.cookie();
@@ -163,8 +189,12 @@ include('app_config.php');
 
 		var data_id = $(f).attr('data-id');
 		var data_field = $(f).attr('data-field');
-		var db_tbl = $(f).attr('data-db_tbl');
+		var db_tbl = $(f).attr('data-db-tbl');
+		var data_field1 = $(f).attr('data-field1');
+		var data_field2 = $(f).attr('data-field2');
+		var data_value2 = $(f).attr('data-value2');
 		var _el_type = $(f).attr('data-el-type');
+
 
 		if (link == false){
 			var data_field_id = data_field + "_" + data_id;
@@ -178,10 +208,11 @@ include('app_config.php');
 				}
 			}
 		}else{
-			var data_value = [];
-			$('#link_id_'+data_id + ' option').each(function(i) {
-				if (this.selected == true) {
-					data_value.push(this.value);
+
+			var data_value1 = [];
+			$('#link_id_' + data_value2 + ' option').each(function() {
+				if (this.selected) {
+					data_value1.push(this.value);
 				}
 			});
 		}
@@ -190,6 +221,11 @@ include('app_config.php');
 		fd.append('id', data_id);
 		fd.append('field', data_field);
 		fd.append('value', data_value);
+
+		fd.append('data_field1', data_field1);
+		fd.append('data_field2', data_field2);
+		fd.append('data_value1', data_value1);
+		fd.append('data_value2', data_value2);
 		fd.append('db_tbl', db_tbl);
 		fd.append('data-el-type', _el_type);
 		fd.append('app_folder', '<?php echo base64_encode(__s_app_folder__);?>');
@@ -218,7 +254,7 @@ include('app_config.php');
 				}
 			});
 		}
-
+	<?php }?>
 
 
 		/* 	ti = title
@@ -239,7 +275,7 @@ include('app_config.php');
 			if (st == 'failure'){iziToast.info({title: ti, message: me});}
 			if (st == 'info'){iziToast.info({title: ti, message: me});}
 		}
-<?php }?>
+
 
 
 	$(document).on('click', '.open_eg', function(e){
@@ -272,6 +308,21 @@ include('app_config.php');
 		}
 	});
 
+	$(document).on('click', '.open_exp', function(e){
+		e.preventDefault();
+		e.stopImmediatePropagation();
+		var id = $(this).attr('id').substring(2);
+		if ($('ul#exps'+id).hasClass('hidden')){
+			$('ul#exps'+id).removeClass('hidden');
+			$('img#jc'+id).removeClass('hidden');
+			$('img#jo'+id).addClass('hidden');
+		}else{
+			$('ul#exps'+id).addClass('hidden');
+			$('img#jo'+id).removeClass('hidden');
+			$('img#jc'+id).addClass('hidden');
+		}
+	});
+
 	$(document).on('click', '.eye', function(e){
 		e.preventDefault();
 		e.stopImmediatePropagation();
@@ -288,10 +339,10 @@ include('app_config.php');
 
 <?php if (is_logged_in()){?>
 	$('.sortable-list').sortable({
-		items: 'li.ex',
+		items: 'li.ex, li.eg, li.exp',
 		update: function(event, ui) {
 			var new_list = $(this).sortable('toArray').toString();
-			var db_tbl = $(this.firstChild.nextSibling).attr('data-db_tbl');
+			var db_tbl = $(this.firstChild.nextSibling).attr('data-db-tbl');
 			var fd = new FormData();
 			fd.set('nlist', new_list);
 			fd.set('gen_table', db_tbl);

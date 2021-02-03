@@ -20,7 +20,10 @@ if ($_COOKIE['navbar'] == 0){
 		</div>
 	</header>
 	<div id = 'maincontent'>
-		<nav id = 'navbar' <?php echo $_hidden;?>><?php $nav = new _navmenu();?></nav>
+		<nav id = 'navbar' <?php echo $_hidden;?>><?php
+			$nav = new _navmenu();
+			$_SESSION['s_topic_order'] = $nav->_get_topic_order();
+		?></nav>
 		<section id = 'maincol'>
 			<?php
 			ob_start();
@@ -32,6 +35,7 @@ if ($_COOKIE['navbar'] == 0){
 	<header id = 'footer' class = 'fixed-footer'>
 		<div id = 'idds' class = 'ml5'>
 			<a href='index.php?main=page&amp;id=12'>About me</a>
+			<a href = 'index.php?main=page&amp;id=14' class='ml10'>Mission statement</a>
 			<a href = 'index.php?main=contact' class='ml10'>Contact</a>
 		</div>
 		<div id = 'icon8'>

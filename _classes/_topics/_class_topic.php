@@ -2,8 +2,11 @@
 class _topic extends _setup{
 
 	private $_topic_id;
+	private $_topic_order_num;
+	private $_topic_parent_id;
 	private $_topic_route_id;
 	private $_topic_tab_bar;
+	private $_topic_order_array;
 
 	private $_topic_title_bar_img;
 	private $_topic_title;
@@ -12,11 +15,13 @@ class _topic extends _setup{
 	private $_topic_ex;
 	private $_topic_eg;
 	private $_topic_pz;
+	private $_topic_exp;
 
 	private $_show_intro_tab = false;
 	private $_show_eg_tab = false;
 	private $_show_ex_tab = false;
 	private $_show_pz_tab = false;
+	private $_show_exp_tab = false;
 
 	private $_ex_count;
 	private $_ex_title;
@@ -27,6 +32,7 @@ class _topic extends _setup{
 	public function __construct($auto = true){
 		parent::__construct();
 		$this->_dbh = new _db();
+		$this->_topic_order_array = $_SESSION['s_topic_order'];
 		$this->_topic_route_id = rvz($_REQUEST['id']);
 		$this->_fetch_topic_id();
 
@@ -35,15 +41,13 @@ class _topic extends _setup{
 		$this->_build_examples();
 		$this->_build_exercises();
 		$this->_build_puzzles();
+		$this->_build_exposition();
 
 		if ($auto){echo $this->_build_topic();}
 	}
 
 	public function _build_topic(){
-		// Fill the _list_form_container with access to the clicked upon topic
-		// 1. TITLE BAR
-		// 2. MENU TABS
-		$tmp = $this->_build_title_bar();
+		$tmp = $this->_build_navigation_bar();
 		$tmp .= $this->_build_tab_bar();
 		return $tmp;
 	}
@@ -63,15 +67,63 @@ class _topic extends _setup{
 		$_sql = 'select id from _app_topic where route_id = :route_id';
 		$_d = array('route_id' => $this->_get_topic_route_id());
 		$_f = array('i');
-		$this->_topic_id = $this->_dbh->_fetch_db_datum_p($_sql, $_d, $_f);
+		$_id = $this->_dbh->_fetch_db_datum_p($_sql, $_d, $_f);
+		$this->_topic_id = $_id;
+
+		$_sql = 'select parent_id, order_num from _app_nav_routes where id = :id';
+		$_d = array('id' => $this->_topic_route_id);
+		$_f = array('i');
+		$_row = $this->_dbh->_fetch_db_row_p($_sql, $_d, $_f);
+		$this->_topic_parent_id = $_row['parent_id'];
+		$this->_topic_order_num = $_row['order_num'];
 	}
 
 
-	private function _build_title_bar(){
-		$_tb = new _title_bar();
-		$_tb->_set_img($this->_get_topic_title_bar_img());
-		$_tb->_set_title($this->_get_topic_title());
-		return $_tb->_build_title_bar();
+	private function _build_navigation_bar(){
+		$index = array_search($this->_topic_route_id, $this->_topic_order_array);
+		if($index !== false && $index > 0 ) $prev = $this->_topic_order_array[$index-1];
+		if($index !== false && $index < count($this->_topic_order_array)-1) $next = $this->_topic_order_array[$index+1];
+
+		$tmp = "<div class='c w100pc sb border'>";
+		if (rvz($prev) > 0){
+			$_sql = 'select title from _app_nav_routes where id = :id';
+			$_d = array('id' => $prev);
+			$_f = array('i');
+			$_prev = $this->_dbh->_fetch_db_datum_p($_sql, $_d, $_f);
+
+			$tmp .= "
+<div class='ifc w25pc col ml10 hh'>
+	<div class='topic-label'>Previous topic:</div>
+	<div class='topic-title'>".$_prev."</div>
+</div>
+<div class='ifc w10pc'>
+	<a class = 'ttip' title = '".$_prev."' href = 'index.php?main=topic&id=".$prev."'>
+		<img src='_stdlib/_images/_icons/arrow_left50.png' alt='previous topic' />
+	</a>
+</div>";
+		}else{
+			$tmp .= "<div class='ifc w25pc ml20 hh'></div><div class='w10pc'></div>";
+		}
+		$tmp .= "<div class='ifc col w25pc hh c'><div class='topic-label'>Current topic:</div><div class='topic-title'>".$this->_get_topic_title()."</div></div>";
+		if (rvz($next) > 0){
+			$_sql = 'select title from _app_nav_routes where id = :id';
+			$_d = array('id' => $next);
+			$_f = array('i');
+			$_next = $this->_dbh->_fetch_db_datum_p($_sql, $_d, $_f);
+			$tmp .= "
+<div class='ifc w10pc r'>
+	<a class='ttip row' title='".$_next."' href = 'index.php?main=topic&id=".$next."'>
+		<img src='_stdlib/_images/_icons/arrow_right50.png' alt='next topic' />
+	</a>
+</div>
+	<div class='ifc w25pc col mr20 hh'><div class='topic-label'>Next topic:</div><div class='topic-title'>".$_next."</div></div>";
+		}else{
+			$tmp .= "<div class='ifc w15pc'></div><div class='ifc w25pc mr10 hh'></div>";
+		}
+		$tmp .="</div>";
+
+
+		return $tmp;
 	}
 
 
@@ -99,6 +151,14 @@ class _topic extends _setup{
 			$_hlp_arr[] = '';
 			$_txt_arr[] = $this->_topic_ex;
 		}
+
+		if ($this->_show_exp_tab){
+			$_tab_arr[] = 'Activities';
+			$_lnk_arr[] = 'activ-5';
+			$_hlp_arr[] = '';
+			$_txt_arr[] = $this->_topic_exp;
+		}
+
 		if ($this->_show_pz_tab){
 			$_tab_arr[] = 'Puzzles';
 			$_lnk_arr[] = 'puzzles-4';
@@ -112,6 +172,12 @@ class _topic extends _setup{
 		$_tab->_set_tab_pages($_txt_arr);
 
 		return $_tab->_build_all();
+	}
+
+	private function _build_exposition(){
+		 $_exp = new _exposition($this->_topic_id);
+		$this->_topic_exp = $_exp->_fetch_exposition();
+		$this->_show_exp_tab = $_exp->_get_make_exp_tab();
 	}
 
 	private function _build_puzzles(){
@@ -138,7 +204,23 @@ class _topic extends _setup{
 		$this->_show_intro_tab = $_intro->_get_make_intro_tab();
 	}
 
+	private function _get_next($array, $key) {
+		$currentKey = key($array);
+		while ($currentKey !== null && $currentKey != $key) {
+			next($array);
+			$currentKey = key($array);
+		}
+		return next($array);
+	}
 
+	private function _get_prev($array, $key) {
+		$currentKey = key($array);
+		while ($currentKey !== null && $currentKey != $key) {
+			prev($array);
+			$currentKey = key($array);
+		}
+		return prev($array);
+	}
 
 	public function _get_topic_id() { return $this->_topic_id; }
 	public function _get_topic_route_id() { return $this->_topic_route_id; }

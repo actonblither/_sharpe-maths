@@ -19,7 +19,7 @@ class _exercise{
 	private $_diff_min;
 	private $_ex_answer_storage;
 	private $_make_ex_tab = false;
-	private $_show_difficulty = true;//Manually set during development. Set to false when live
+	private $_show_difficulty = false;//Manually set during development. Set to false when live
 
 	public function __construct($_tid){
 		$this->_dbh = new _db();
@@ -84,7 +84,7 @@ class _exercise{
 		$this->_ex_count = 1;
 		if (!empty($_rows)){
 			foreach ($_rows as $_row){
-				$tmp .= "<li id = 'e".$_row['id']."' data-db_tbl='_app_topic_ex' class='ex'>";
+				$tmp .= "<li id = 'e".$_row['id']."' data-db-tbl='_app_topic_ex' class='ex'>";
 				$tmp .= $this->_build_exercise($_row);
 				$tmp .= "</li>";
 				$this->_ex_count++;
@@ -98,13 +98,13 @@ class _exercise{
 	private function _build_exercise($_row){
 		$this->_topic_ex_id = $_row['id'];
 		$this->_topic_ex_num_qs = $_row['number_of_questions'];
-		$this->_ex_title = $_row['title'];
-		$this->_ex_instructions = $_row['instructions'];
-		$this->_ex_shuffle = $_row['shuffle'];
+		$this->_ex_title = $_row['tex_title'];
+		$this->_ex_instructions = $_row['tex_instructions'];
+		$this->_ex_shuffle = $_row['tex_shuffle'];
 		if (is_logged_in()){
-			$this->_ex_title = $this->_build_varchar('_app_topic_ex', 'title', $this->_ex_title, $this->_topic_ex_id);
-			$this->_ex_instructions = $this->_build_text('_app_topic_ex', 'instructions', $this->_ex_instructions, $this->_topic_ex_id);
-			$this->_ex_shuffle = $this->_build_checkbox('_app_topic_ex', 'shuffle', $this->_ex_shuffle, $this->_topic_ex_id);
+			$this->_ex_title = $this->_build_varchar('_app_topic_ex', 'tex_title', $this->_ex_title, $this->_topic_ex_id);
+			$this->_ex_instructions = $this->_build_text('_app_topic_ex', 'tex_instructions', $this->_ex_instructions, $this->_topic_ex_id);
+			$this->_ex_shuffle = $this->_build_checkbox('_app_topic_ex', 'tex_shuffle', $this->_ex_shuffle, $this->_topic_ex_id);
 			return $this->_build_ex_edit_list();
 		}else{
 			return $this->_build_ex_view_list();
@@ -115,7 +115,7 @@ class _exercise{
 	private function _build_ex_view_list(){
 		$tmp = "<ul id = 'exh".$this->_topic_ex_id."' class = 'topic_exercise'>";
 		$tmp .= "<li id = 'aa".$this->_topic_ex_id."' class='w100pc open_ex point'><div class='ex_eg w100pc'>";
-		$tmp .= "<div class='w32 hauto'><img title = 'Click to open exercise.' alt = 'Open' class = 'open_ex point ttip' id = 'ao".$this->_topic_ex_id."' src='".__s_lib_url__."_images/_icons/closed.png' />";
+		$tmp .= "<div><img title = 'Click to open exercise.' alt = 'Open' class = 'open_ex point ttip' id = 'ao".$this->_topic_ex_id."' src='".__s_lib_url__."_images/_icons/closed.png' />";
 		$tmp .= "<img title = 'Click to close exercise.' alt = 'Close' class = 'hidden open_ex point ttip' id = 'ac".$this->_topic_ex_id."' src='".__s_lib_url__."_images/_icons/opened.png' /></div>";
 		$tmp .= "<h3>Exercise $this->_ex_count: $this->_ex_title</h3></div></li>";
 		$tmp .= "</ul>";
@@ -334,8 +334,8 @@ class _exercise{
 
 		$_count = $this->_dbh->_fetch_db_datum_p($_sql, $_d, $_f);
 
-		$this->_ex_title = $this->_build_varchar('_app_topic_ex', 'title', '', $this->_topic_ex_id);
-		$this->_ex_instructions = $this->_build_varchar('_app_topic_ex', 'instructions', '', $this->_topic_ex_id);
+		$this->_ex_title = $this->_build_varchar('_app_topic_ex', 'tex_title', '', $this->_topic_ex_id);
+		$this->_ex_instructions = $this->_build_varchar('_app_topic_ex', 'tex_instructions', '', $this->_topic_ex_id);
 		$this->_del_ex = $this->_build_del_ex_jq_code(false);
 		$this->_del_ex->_set_db_tbl_field_value($id);
 		$tmp = "<ul id = 'exh".$this->_topic_ex_id."' class = 'sortable-list topic_exercise'>";

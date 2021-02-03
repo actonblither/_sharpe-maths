@@ -25,7 +25,8 @@ class _login{
 		}
 
 		if ($_auid > 0){
-			setcookie('session_id', $this->_get_session_id_cookie($_auid), 0, '/', 'localhost', true);
+			$days =  time()+60*60*24*365;
+			setcookie('session_id', $this->_get_session_id_cookie($_auid), $days, '/', 'localhost', true);
 			$GLOBALS['s_auid'] = (int) $_auid;
 			$GLOBALS['s_auid_tmp'] = (int) $_auid;
 			$GLOBALS['s_va'] = 0;
@@ -51,7 +52,7 @@ class _login{
 			$GLOBALS['s_sticky_navbar'] = $_row['s_sticky_navbar'];
 			$GLOBALS['session_id'] = $_row['session_id'];
 			$_SESSION['s_session_id'] = $_row['session_id'];
-			setcookie('session_id', $_row['session_id'], 0, '', 'localhost', true);
+			setcookie('session_id', $_row['session_id'], $days, '', 'localhost', true);
 
 			$_config = $this->_build_session_array();
 
@@ -147,11 +148,12 @@ class _login{
 	}
 
 	protected function _check_credentials(){
+		$days =  time() + 60 * 60 * 24 * 365;
 		$sql = 'select id, pw, session_id from __sys_admin_users where username = :username';
 		$_d = array('username' => $this->_un);
 		$_f = array('s');
 		$_row = $this->_dbh->_fetch_db_row_p($sql, $_d, $_f);
-		setcookie('session_id', $_row['session_id'], 0, '/', 'localhost', true);
+		setcookie('session_id', $_row['session_id'], $days, '/', 'localhost', true);
 		if (password_verify($this->_pw, $_row['pw'])){
 
 			$GLOBALS['s_is_logged_in'] = 1;

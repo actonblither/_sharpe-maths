@@ -37,10 +37,11 @@ class _delete extends _setup{
 			$tmp .= "$(document).ready(function(){";
 		}
 		$tmp .= "$(document).on('click', '.".$this->_img_class."', function(e){
+					if (_sure('Are you sure you want to delete this item?')){
 					e.preventDefault();
 					e.stopImmediatePropagation();
 					var id = $(this).attr('id').substring(".$this->_id_prefix_length.");
-					var fd = new FormData();
+var fd = new FormData();
 					fd.append('app_folder', '".base64_encode(__s_app_folder__)."');
 					fd.append('db_main_tbl', '".$this->_db_main_tbl."');
 					fd.append('db_main_tbl_field', '".$this->_db_main_tbl_field."');
@@ -63,6 +64,7 @@ class _delete extends _setup{
 		}
 			$tmp .= "}
 					});
+}
 				});";
 		if ($this->_add_document_ready){
 			$tmp .= "});";
