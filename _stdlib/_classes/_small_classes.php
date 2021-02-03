@@ -6,7 +6,7 @@ class _title_bar{
 	public function __construct(){}
 
 	public function _build_title_bar(){
-		$_tmp = "<div class = 'page-title list-title'>";
+		$_tmp = "<div class = 'page-title'>";
 		$_img = $this->_get_img();
 		$_title = $this->_get_title();
 		if (!empty($_img)){

@@ -10,17 +10,18 @@ class _glossary extends _setup{
 
 	public function __construct(){
 		parent::__construct();
-		$this->_gid = rvz($_REQUEST['gid']);
-		echo "<h1>Glossary of terms</h1>";
-		echo "<div class='row w300'><label for = 'sfilter'><h4>Filter:</h4></label>";
-		echo "<input id = 'sfilter' class = 'w150 mr5 ml5 ttip' style = 'height:26px;' title = 'Type into this field to filter the list down to those records which contains those letters or words.' type = 'text' /></div>";
-		echo "<h3>$this->_g_letter</h3>";
-		echo $this->_load_glossary();
+	}
+
+	public function _build_glossary(){
+		$tmp = "<h1>Glossary of terms</h1>";
+		$tmp .= "<div class='row w300'><label for = 'sfilter'><h4>Filter:</h4></label>";
+		$tmp .= "<input id = 'sfilter' class = 'w150 mr5 ml5 ttip' style = 'height:26px;' title = 'Type into this field to filter the list down to those records which contains those letters or words.' type = 'text' /></div>";
+		$tmp .= "<h3>$this->_g_letter</h3>";
+		$tmp .= $this->_load_glossary();
+		return $tmp;
 	}
 
 	private function _load_glossary(){
-
-
 		$_title_img = $this->_build_img('h132.png', 'Title');
 		$_desc_img = $this->_build_img('details32.png', 'Description');
 		$_context_img = $this->_build_img('context32.png', 'Example of use');

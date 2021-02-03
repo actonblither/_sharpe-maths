@@ -23,3 +23,22 @@ Stack trace:
 #2 G:\AppServ\www\sharpe-maths\index.php(389): include_once('G:\\AppServ\\www\\...')
 #3 {main}
   thrown in G:\AppServ\www\sharpe-maths\_stdlib\_classes\_navbar\_templates\_navbar_template.php on line 11
+[03-Feb-2021 17:52:44 Europe/London] PHP Fatal error:  Uncaught Error: Call to undefined method _pages::_set_page_id() in G:\AppServ\www\sharpe-maths\main_menu.php:42
+Stack trace:
+#0 G:\AppServ\www\sharpe-maths\main.php(30): include_once()
+#1 G:\AppServ\www\sharpe-maths\index.php(432): include_once('G:\\AppServ\\www\\...')
+#2 {main}
+  thrown in G:\AppServ\www\sharpe-maths\main_menu.php on line 42
+[03-Feb-2021 17:55:22 Europe/London] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function _pages::__construct(), 0 passed in G:\AppServ\www\sharpe-maths\main_menu.php on line 41 and exactly 1 expected in G:\AppServ\www\sharpe-maths\_stdlib\_classes\_pages\_class_pages.php:7
+Stack trace:
+#0 G:\AppServ\www\sharpe-maths\main_menu.php(41): _pages->__construct()
+#1 G:\AppServ\www\sharpe-maths\main.php(30): include_once('G:\\AppServ\\www\\...')
+#2 G:\AppServ\www\sharpe-maths\index.php(432): include_once('G:\\AppServ\\www\\...')
+#3 {main}
+  thrown in G:\AppServ\www\sharpe-maths\_stdlib\_classes\_pages\_class_pages.php on line 7
+[03-Feb-2021 17:55:37 Europe/London] PHP Fatal error:  Uncaught Error: Call to undefined method _pages::_set_page_id() in G:\AppServ\www\sharpe-maths\main_menu.php:42
+Stack trace:
+#0 G:\AppServ\www\sharpe-maths\main.php(30): include_once()
+#1 G:\AppServ\www\sharpe-maths\index.php(432): include_once('G:\\AppServ\\www\\...')
+#2 {main}
+  thrown in G:\AppServ\www\sharpe-maths\main_menu.php on line 42

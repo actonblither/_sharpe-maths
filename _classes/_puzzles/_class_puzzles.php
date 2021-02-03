@@ -42,7 +42,7 @@ class _puzzle{
 		$_d = array('display' => 1, 'archived' => 0);
 		$_f = array('i', 'i');
 		$_rows = $this->_dbh->_fetch_db_rows_p($_sql, $_d, $_f);
-		echo $this->_build_puzzle_page($_rows);
+		return $this->_build_puzzle_page($_rows);
 	}
 
 	private function _build_puzzle_page($_rows){

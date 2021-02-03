@@ -2,7 +2,7 @@
 include('app_config.php');
 ?>
 <!DOCTYPE html>
-<html lang = 'en'>
+<html lang = 'en' xmlns:m="http://www.w3.org/1998/Math/MathML">
 	<head>
 		<title><?php echo __s_app_title__;?></title>
 		<meta name = 'Author' content = 'RLBS' />
@@ -44,6 +44,7 @@ include('app_config.php');
 		}
 	};
 
+
 	function _sure(message){
 		if (confirm(message)){
 			return true;
@@ -63,12 +64,53 @@ include('app_config.php');
 
 		$(document).on('click', 'li.expand', function(evt){
 			evt.stopImmediatePropagation();
-			console.log($(this));
 			if ($(this).hasClass('link') == false){
 				var id = $(this).attr('id');
 				$('ul#uxp'+id).slideToggle().toggleClass('hidden');
 			}
 		});
+
+		$(document).on('click', 'li.link', function(evt){
+			_load_page(evt, this);
+		});
+
+		$(document).on('click', 'img.nav_arrow', function(evt){
+			_load_page(evt, this);
+		});
+
+		var _load_page = function(evt, f){
+			evt.stopImmediatePropagation();
+			var id = $(f).attr('data-id');
+			var main = $(f).attr('data-main');
+
+			var fd = new FormData();
+			fd.append('main', main);
+			fd.append('id', id);
+			fd.append('app_folder', '<?php echo base64_encode(__s_app_folder__);?>');
+				$.ajax({
+					type		: 'POST',
+					cache			: false,
+					dataType : 'json',
+					processData	: false,
+					contentType	: false,
+					url		: '_ajax/_load_page.php',
+					data		: fd,
+					beforeSend: function() {
+						$('#ajax-loader').removeClass('hidden');
+					},
+					success : function(data) {
+						var page = data['page'];
+						$('#maincol').html(page);
+						MathJax.typeset();
+					},
+					complete: function(){
+						$('#ajax-loader').addClass('hidden');
+					},
+					error: function(){
+						$('#ajax-loader').addClass('hidden');
+					}
+				});
+		}
 
 		$(document).on('click', '#menu', function(){
 			if ($('#navbar').hasClass('hidden')){

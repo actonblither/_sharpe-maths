@@ -2,13 +2,18 @@
 class _pages extends _setup{
 
 	private $_page_text;
+	private $_page_id;
 
-	public function __construct(){
+	public function __construct($_id = null){
 		parent::__construct();
+		if ($_id){$this->_page_id = $_id;}
+	}
+
+	public function _build_page(){
 		if (is_logged_in()){
-			echo $this->_build_edit_page();
+			return $this->_build_edit_page();
 		}else{
-			echo $this->_build_page_start().$this->_build_page_text().$this->_build_page_end();
+			return $this->_build_page_start().$this->_build_page_text().$this->_build_page_end();
 		}
 	}
 
@@ -49,10 +54,17 @@ class _pages extends _setup{
 	}
 
 	private function _build_page_text(){
+		if (!isset($this->_page_id)){
+			$_sql = "select page_id from _app_nav_routes where id = :id";
+			$_d = array('id' => $this->_get_id());
+			$_f = array('i');
+			$this->_page_id = $this->_dbh->_fetch_db_datum_p($_sql, $_d, $_f);
+		}
 		$_sql = 'select body from __sys_pages where id = :id';
-		$_d = array('id' => $this->_get_id());
+		$_d = array('id' => $this->_page_id);
 		$_f = array('i');
 		$_text = $this->_dbh->_fetch_db_datum_p($_sql, $_d, $_f);
+		//_cl($_text, 'PAGE TEXT');
 		return $_text;
 	}
 

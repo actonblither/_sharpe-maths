@@ -26,7 +26,7 @@ function createCookie(name, value, days) {
 	}
 	else var expires = "";
 	document.cookie = name + "=" + (value || "") + expires + "; path=/; samesite=strict;";
-	console.log(document.cookie);
+	//console.log(document.cookie);
 }
 
 function readCookie(name) {

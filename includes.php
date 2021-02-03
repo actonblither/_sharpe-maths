@@ -36,7 +36,6 @@ include(__s_lib_folder__.'_classes/_db_connect/_class_db_connect.php');
 include(__s_lib_folder__.'_classes/_login/_class_login.php');
 include(__s_lib_folder__.'_classes/_class_setup.php');
 include(__s_lib_folder__.'_classes/_class_tabs.php');
-include(__s_lib_folder__.'_classes/_navbar/_class_navbar.php');
 include(__s_lib_folder__.'_classes/_navmenu/_class_navmenu.php');
 include(__s_lib_folder__.'_classes/_pages/_class_pages.php');
 include(__s_lib_folder__.'_classes/_list/_class_list.php');

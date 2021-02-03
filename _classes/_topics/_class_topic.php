@@ -34,19 +34,17 @@ class _topic extends _setup{
 		$this->_dbh = new _db();
 		$this->_topic_order_array = $_SESSION['s_topic_order'];
 		$this->_topic_route_id = rvz($_REQUEST['id']);
-		$this->_fetch_topic_id();
+		if ($auto){echo $this->_build_topic();}
+	}
 
+	public function _build_topic(){
+		$this->_fetch_topic_id();
 		$this->_load_topic_data();
 		$this->_build_intro_text();
 		$this->_build_examples();
 		$this->_build_exercises();
 		$this->_build_puzzles();
 		$this->_build_exposition();
-
-		if ($auto){echo $this->_build_topic();}
-	}
-
-	public function _build_topic(){
 		$tmp = $this->_build_navigation_bar();
 		$tmp .= $this->_build_tab_bar();
 		return $tmp;
@@ -83,7 +81,6 @@ class _topic extends _setup{
 		$index = array_search($this->_topic_route_id, $this->_topic_order_array);
 		if($index !== false && $index > 0 ) $prev = $this->_topic_order_array[$index-1];
 		if($index !== false && $index < count($this->_topic_order_array)-1) $next = $this->_topic_order_array[$index+1];
-
 		$tmp = "<div class='c w100pc sb border'>";
 		if (rvz($prev) > 0){
 			$_sql = 'select title from _app_nav_routes where id = :id';
@@ -92,15 +89,13 @@ class _topic extends _setup{
 			$_prev = $this->_dbh->_fetch_db_datum_p($_sql, $_d, $_f);
 
 			$tmp .= "
-<div class='ifc w25pc col ml10 hh'>
-	<div class='topic-label'>Previous topic:</div>
-	<div class='topic-title'>".$_prev."</div>
-</div>
-<div class='ifc w10pc'>
-	<a class = 'ttip' title = '".$_prev."' href = 'index.php?main=topic&id=".$prev."'>
-		<img src='_stdlib/_images/_icons/arrow_left50.png' alt='previous topic' />
-	</a>
-</div>";
+				<div class='ifc w25pc col ml10 hh'>
+					<div class='topic-label'>Previous topic:</div>
+					<div class='topic-title prev'>".$_prev."</div>
+				</div>
+				<div class='ifc w10pc'>
+					<img class='point nav_arrow' data-id='".$prev."' data-main= 'topic' src='_stdlib/_images/_icons/arrow_left50.png' alt='Previous topic' />
+				</div>";
 		}else{
 			$tmp .= "<div class='ifc w25pc ml20 hh'></div><div class='w10pc'></div>";
 		}
@@ -111,12 +106,10 @@ class _topic extends _setup{
 			$_f = array('i');
 			$_next = $this->_dbh->_fetch_db_datum_p($_sql, $_d, $_f);
 			$tmp .= "
-<div class='ifc w10pc r'>
-	<a class='ttip row' title='".$_next."' href = 'index.php?main=topic&id=".$next."'>
-		<img src='_stdlib/_images/_icons/arrow_right50.png' alt='next topic' />
-	</a>
-</div>
-	<div class='ifc w25pc col mr20 hh'><div class='topic-label'>Next topic:</div><div class='topic-title'>".$_next."</div></div>";
+				<div class='ifc w10pc r'>
+					<img class='point nav_arrow' data-id='".$next."' data-main= 'topic' src='_stdlib/_images/_icons/arrow_right50.png' alt='Next topic' />
+				</div>
+				<div class='ifc w25pc col mr20 hh'><div class='topic-label'>Next topic:</div><div class='topic-title'>".$_next."</div></div>";
 		}else{
 			$tmp .= "<div class='ifc w15pc'></div><div class='ifc w25pc mr10 hh'></div>";
 		}
@@ -248,6 +241,7 @@ class _topic extends _setup{
 	public function _set_topic_ex($_t) { $this->_topic_ex = $_t; }
 	public function _set_topic_eg($_t) { $this->_topic_eg = $_t; }
 	public function _set_topic_pz($_t) { $this->_topic_pz = $_t; }
+	public function _set_topic_order_array($_t){$this->_topic_order_array = $_t;}
 	public function _set_ex_count($_t) { $this->_ex_count = $_t; }
 	public function _set_ex_title($_t) { $this->_ex_title = $_t; }
 	public function _set_ex_instructions($_t) { $this->_ex_instructions = $_t; }

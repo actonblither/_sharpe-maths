@@ -6,8 +6,8 @@ var options = {
 	link: '#privacy',
 	onAccept: function(){
 		var myPreferences = $.fn.ihavecookies.cookie();
-		console.log('Yay! The following preferences were saved...');
-		console.log(myPreferences);
+		//console.log('Yay! The following preferences were saved...');
+		//console.log(myPreferences);
 	},
 	uncheckBoxes: true,
 	acceptBtnLabel: 'Accept Cookies',
@@ -20,7 +20,7 @@ var options = {
 $(document).ready(function() {
 	$('body').ihavecookies(options);
 	if ($.fn.ihavecookies.preference('marketing') === true) {
-		console.log('This should run because marketing is accepted.');
+		//console.log('This should run because marketing is accepted.');
 	}
 
 	$('#ihavecookiesBtn').on('click', function(){

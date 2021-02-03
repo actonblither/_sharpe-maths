@@ -30,7 +30,6 @@ class _navmenu{
 			$_link[$i] = rvz($_line[4]);
 		}
 
-
 		for ($j = 0; $j < count($_depth); $j++){
 			if (isset($_depth[$j+1]) && $_depth[$j+1] > $_depth[$j]){
 				$_start_child[$j] = 1;
@@ -48,22 +47,22 @@ class _navmenu{
 
 		// Now build the list
 		for ($k = 0; $k < count($_depth); $k++){
-			/* if (isset($_page_id[$k]) && $_page_id[$k] > 0){
-				$_link_href = "index.php?main=page&id=".$_page_id[$k];
+			if (isset($_page_id[$k]) && $_page_id[$k] > 0){
+				$_link_data = " data-main = 'page' ";
 			}else{
-				$_link_href = "index.php?main=topic&id=".$_id[$k];
-			} */
+				$_link_data = " data-main = 'topic' ";
+			}
 			if ($_start_child[$k]){
 				if ($_link[$k]){
-					$tmp .= "<li class='link' id = '".$_id[$k]."'><a href = '".$_link_href."'>".$_title[$k]."</a><ul id='uxp".$_id[$k]."' class='hidden'>";
+					$tmp .= "<li class='link point' data-id = '".$_id[$k]."' ".$_link_data.">".$_title[$k]."<ul id='uxp".$_id[$k]."' class='hidden'>";
 				}else{
-					$tmp .= "<li class='expand' id = '".$_id[$k]."'><span class='point w100pc'>".$_title[$k]."</span><ul class='hidden' id = 'uxp".$_id[$k]."'>";
+					$tmp .= "<li class='expand point' id = '".$_id[$k]."'><span class='point w100pc'>".$_title[$k]."</span><ul class='hidden' id = 'uxp".$_id[$k]."'>";
 				}
 			}else{
 				if ($_link[$k]){
-					$tmp .= "<li class='link' id = '".$_id[$k]."'><a href = '".$_link_href."'>".$_title[$k]."</a></li>";
+					$tmp .= "<li class='link point' data-id = '".$_id[$k]."' ".$_link_data.">".$_title[$k]."</li>";
 				}else{
-					$tmp .= "<li class='expand' id = '".$_id[$k]."'><span class='point w100pc'>".$_title[$k]."</span></li>";
+					$tmp .= "<li class='expand point' id = '".$_id[$k]."'><span class='point w100pc'>".$_title[$k]."</span></li>";
 				}
 			}
 			if (rvz($_end_child[$k]) > 0){

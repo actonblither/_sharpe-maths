@@ -13,7 +13,8 @@ if (is_logged_in()){
 
 <?php
 $_main = rvs($_REQUEST['main'], 'page');
-$_id = rvz($_REQUEST['id']);
+$_id = rvz($_REQUEST['id'], 1);
+
 $_SESSION['s_main'] = $_main;
 $GLOBALS['s_main'] = $_main;
 
@@ -33,12 +34,8 @@ switch ($_main){
 		break;
 
 	case 'page':
-		if ($_id == 4){
-			$g = new _puzzle();
-			$g->_fetch_all_puzzles();
-		}else{
-			$h = new _pages();
-		}
+		$h = new _pages(1);
+		echo $h->_build_page();
 		break;
 
 	case 'topic':
