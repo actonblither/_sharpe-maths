@@ -3,27 +3,31 @@
  */
 
 :root{
-	/* Orange shades - Main app colour scheme */
-	--lightest: #FDF8F2;
-	--light: #dfffdf;
-	--light-mid: #c7e0c8;/* Light salmon */
-	--mid: #84bb87;/* Orange (crayola) */
-	--mid-dark: #5ca560; /* Vivid orange */
-	--dark: #315933;/* Burnt orange */
+	/* Main app colour scheme */
+	--white: #FFFFFF; /* 100% */
+	--s95pc: #eff6ef; /* 95% lightest */
+	--s90pc: #deeddf; /* 90% */
+	--s85pc: #cee4cf; /* 85% */
+	--s80pc: #bddbbf; /* 80% lighter */
+	--s75pc: #add2af; /* 75% */
+	--s70pc: #9cc99f; /* 70% */
+	--s65pc: #8cc08e; /* 65% light */
+	--s60pc: #7bb77e; /* 60% */
+	--s55pc: #6bae6e; /* 55% */
+	--s50pc: #5ba45e; /* 50% light-mid */
+	--s45pc: #519455; /* 45% */
+	--s40pc: #48844b; /* 40% */
+	--s35pc: #3f7342; /* 35% mid */
+	--s30pc: #366339; /* 30% */
+	--s25pc: #2d522f; /* 25% */
+	--s20pc: #244226; /* 20% mid-dark */
+	--s15pc: #1b311c; /* 15% */
+	--s10pc: #122113; /* 10% dark */
+	--s05pc: #091009; /* 05% */
+	--black: #000000; /* 00% */
 
 	--rgb_toast_color: rgba(49, 89, 51, 0.95);
 	--rgb_upload_surround: rgba(49, 89, 51, 0.7);
-
-	--bg-gen: #89cc68;/* May green */
-	--bg-gen-hover: #7CB85E;/* India green */
-
-	--tx-gen-hover: #242424;
-
-	--tx-black: #000000;/* Black */
-	--tx-dark: #565656;/* Dark grey */
-	--tx-mid: #9D9C9C;/* Mid grey */
-	--tx-light: #A09F9F;/* Quick silver */
-	--tx-white: #FFFFFF;/* White */
 
 	--grey-black: #111111;
 	--grey-dark: #333333;
@@ -33,18 +37,10 @@
 
 	--grey-border: var(--grey-light);/*border*/
 
-	--cal-entry: #244488;
-	--cal-appt: var(--bg-ncs-mid);
-	--cal-rec: var(--bg-rec-mid);
-
-	--cal-today-bg: var(--dark);
-	--cal-on-bg: var(--mid);
-	--cal-weekend-bg: var(--light);
-
-	--btn-bg: var(--light);
+	--btn-bg: var(--s65pc);
 	--btn-bg-hover: #d9e8ce;
 
-	--btn-text: var(--grey-dark);
+	--btn-text: #fff;
 	--btn-text-hover: pink;
 
 	--btn-border: var(--grey-border);
@@ -52,7 +48,8 @@
 	--error: #cd0a0a;
 
 	--header-height: 50px;
-	--footer-height: 20px;
-	--nav-width: 180px;
+	--footer-height: 15px;
+	--footer-fontsize: 8pt;
+	--nav-menu-width: 210px;
 }
 

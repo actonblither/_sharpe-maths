@@ -8,15 +8,13 @@ class _navmenu{
 		$this->_dbh = new _db();
 		$output = '';
 		$tmp = '';
-
 		$this->_build_navmenu($output, 0);
 		$tmp .= $this->_parse_menu_list($output);
 		echo $tmp;
 	}
 
 	private function _parse_menu_list($output){
-
-		$tmp = "<ul class = 'nav-menu'>";
+		$tmp = "<ul class = 'nav-menu-side'>";
 		$arr = array_filter(explode('**', $output));
 		$_start_child = array();
 		$_end_child = array();
@@ -28,6 +26,7 @@ class _navmenu{
 			$_title[$i] = rvs($_line[2]);
 			$_page_id[$i] = rvz($_line[3]);
 			$_link[$i] = rvz($_line[4]);
+			$_pic_class[$i] = rvs($_line[5]);
 		}
 
 		for ($j = 0; $j < count($_depth); $j++){
@@ -47,22 +46,26 @@ class _navmenu{
 
 		// Now build the list
 		for ($k = 0; $k < count($_depth); $k++){
+			//Get the menu class and add it to the li if it exists
+			if (!empty($_pic_class[$k])){$_lclass = ' bg_img '.$_pic_class[$k];}else{$_lclass = '';}
 			if (isset($_page_id[$k]) && $_page_id[$k] > 0){
 				$_link_data = " data-main = 'page' ";
 			}else{
 				$_link_data = " data-main = 'topic' ";
 			}
+			$_x = rvs($_COOKIE['uxp'.$_id[$k]], 'c');
+			if ($_x == 'c'){$_class = 'hidden';}else if ($_x == 'o'){$_class = '';}else{$_class = 'hidden';}
 			if ($_start_child[$k]){
 				if ($_link[$k]){
-					$tmp .= "<li class='link point' data-id = '".$_id[$k]."' ".$_link_data.">".$_title[$k]."<ul id='uxp".$_id[$k]."' class='hidden'>";
+					$tmp .= "<li id='navli".$_id[$k]."' class='link point".$_lclass."' data-id = '".$_id[$k]."' ".$_link_data.">".$_title[$k]."<ul id='uxp".$_id[$k]."' class='".$_class."'>";
 				}else{
-					$tmp .= "<li class='expand point' id = '".$_id[$k]."'><span class='point w100pc'>".$_title[$k]."</span><ul class='hidden' id = 'uxp".$_id[$k]."'>";
+					$tmp .= "<li id='navli".$_id[$k]."' class='expand point".$_lclass."' data-id = '".$_id[$k]."'><span class='point w100pc'>".$_title[$k]."</span><ul class='".$_class."' id = 'uxp".$_id[$k]."'>";
 				}
 			}else{
 				if ($_link[$k]){
-					$tmp .= "<li class='link point' data-id = '".$_id[$k]."' ".$_link_data.">".$_title[$k]."</li>";
+					$tmp .= "<li id='navli".$_id[$k]."' class='link point".$_lclass."' data-id = '".$_id[$k]."' ".$_link_data.">".$_title[$k]."</li>";
 				}else{
-					$tmp .= "<li class='expand point' id = '".$_id[$k]."'><span class='point w100pc'>".$_title[$k]."</span></li>";
+					$tmp .= "<li id='navli".$_id[$k]."' class='expand point".$_lclass."' data-id = '".$_id[$k]."'><span class='point w100pc'>".$_title[$k]."</span></li>";
 				}
 			}
 			if (rvz($_end_child[$k]) > 0){
@@ -72,6 +75,7 @@ class _navmenu{
 			}
 		}
 		$tmp .= "</ul>";
+		$tmp .= "<img id = 'navswitch' width = '30' height = '30' class = 'point ttip' src = '".__s_lib_url__."_images/_icons/switch50.png' alt = 'Switch menu' title = 'Toggle the navigation menu to left or right' />";
 		//_cl($tmp);
 		return $tmp;
 	}
@@ -82,7 +86,7 @@ class _navmenu{
 		$_f = array('i');
 		$_rows = $this->_dbh->_fetch_db_rows_p($_sql, $_d, $_f);
 		foreach ($_rows as $_r) {
-			$output .= $indent."||".$_r['id']."||".$_r['title']."||".$_r['page_id']."||".$_r['link']."**";
+			$output .= $indent."||".$_r['id']."||".$_r['title']."||".$_r['page_id']."||".$_r['link']."||".$_r['class']."**";
 			if ($_r['link'] === 1 && empty($_r['page_id'])){
 				$this->_topic_order[] = $_r['id'];
 			}

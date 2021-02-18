@@ -80,10 +80,10 @@ class _example{
 				$tmp .= "</li></ul>";
 
 				$tmp .= "<ul id = 'egqs".$_id."' class = 'topic_example hidden'>
-				<li class='top nb'><div class='label'></div><div class='text'></div><div class='note b'>Notes</div></li>";
-				$tmp .= $this->_build_example_li("<img class='block32 ttip' title = 'Problem' alt = 'Problem' src = './_images/_icons/problem32.png' />", $_question, $_question_note);
-				$tmp .= $this->_build_example_li("<img class='block32 ttip' title = 'Method' alt = 'Method' src = './_images/_icons/method32.png' />", $_method, $_method_note);
-				$tmp .= $this->_build_example_li("<img class='block32 ttip' title = 'Solution' alt = 'Solution' src = './_images/_icons/solution32.png' />", $_answer, $_answer_note);
+				<li class='top nb'><div class='label'></div><div class='text'></div><div class='title'>Notes</div></li>";
+				$tmp .= $this->_build_example_li("<img class='ttip' title = 'Problem' alt = 'Problem' src = './_images/_icons/problem32.png' />", $_question, $_question_note);
+				$tmp .= $this->_build_example_li("<img class='ttip' title = 'Method' alt = 'Method' src = './_images/_icons/method32.png' />", $_method, $_method_note);
+				$tmp .= $this->_build_example_li("<img class='ttip' title = 'Solution' alt = 'Solution' src = './_images/_icons/solution32.png' />", $_answer, $_answer_note);
 				$tmp .= "</ul></li>";
 				$_count++;
 			}
@@ -94,7 +94,7 @@ class _example{
 	}
 
 	private function _build_example_li($_l, $_t, $_n){
-		return "<li><div class='label'>".$_l."</div><div class='text'>".$_t."</div><div class='note'>".$_n."</div></li>";
+		return "<li><div class='label'>".$_l."</div><div class='text'>".$_t."</div><div class='note ml20'>".$_n."</div></li>";
 	}
 
 	private function _build_add_new_example_btn(){

@@ -15,16 +15,16 @@ h3.top{
 
 ul.topic_example,
 ul.topic_exercise,
-ul.topic_exposition,
+ul.topic_activity,
 ul.puzzle{
 	list-style: none;
 	margin: 5px 0 25px 0;
-	width: 98%;
+	width: 100%;
 }
 
 ul.topic_example > li,
 ul.topic_exercise > li,
-ul.topic_exposition > li,
+ul.topic_activity > li,
 ul.puzzle > li{
 	list-style: none;
 	padding: 3px;
@@ -35,17 +35,19 @@ ul.topic_example > li:not(.top) > li{
 	min-height: 45px;
 }
 
-div.ex_eg{
+div.ex_eg,
+div.ex {
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: flex-start;
 	align-items: center;
+	width: 100%;
 }
 
 div.ex_eg h3{
 	display: flex;
 	flex-flow: row nowrap;
-	color: var(--dark);
+	color: var(--s25pc);
 	margin-left: 5px;
 	font-weight: normal;
 }
@@ -56,14 +58,14 @@ div.ex_eg h3{
 
 .topic_example > li,
 .topic_exercise > li,
-.topic_exposition > li,
+.topic_activity > li,
 .puzzle > li{
 	display: flex;
 	flex-flow: row wrap;
 	border-radius: 4px;
 	margin-bottom: 2px;
 	min-height: 50px;
-	border: 1px solid var(--dark);
+	border: 1px solid var(--s25pc);
 }
 
 .topic_example > li > div > div{
@@ -95,6 +97,15 @@ div.ex_eg h3{
 	overflow: auto;
 }
 
+.topic_example > li > div.title{
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	font-weight: bold;
+	width: 45%;
+	margin: 0;
+	padding: 0;
+}
 
 .topic_example > li > div.note{
 	display: flex;
@@ -133,7 +144,7 @@ div.ex_eg h3{
 	flex-flow: column wrap;
 	justify-content: flex-start;
 	align-items: flex-end;
-	width: 36%;
+	width: 35%;
 }
 
 .topic_exercise > li > div.label_e{
@@ -174,10 +185,10 @@ ul.indent{
 }
 
 ul#exercises,
-ul#exposition,
+ul#activity,
 ul#puzzles,
 ul#examples
-{list-style-type: none;}
+{list-style-type: none; width: 100%;}
 
 ol.indent{
 	margin-left: 25px;
@@ -229,12 +240,13 @@ ol.num2 > li{
 }
 
 
-section.fd-col-l ol, section.fd-col-l ul{
+section.fd-col-l ol,
+section.fd-col-l ul {
 	margin-left: 20px;
 }
 
 ul.glossary{
-	border: 1px solid var(--dark);
+	border: 1px solid var(--s25pc);
 	border-radius: 4px;
 	padding: 4px;
 	list-style-type: none;
@@ -248,7 +260,8 @@ ul.puzzle_container{
 	margin: 5px 0 5px 0;
 }
 
-ul.glossary > li, ul.puzzle_container > li{
+ul.glossary > li,
+ul.puzzle_container > li{
 	display: flex;
 	flex-flow: row nowrap;
 	justify-content: flex-start;
@@ -256,7 +269,8 @@ ul.glossary > li, ul.puzzle_container > li{
 	width:100%;
 }
 
-ul.glossary > li > div, ul.puzzle_container > li > div{
+ul.glossary > li > div,
+ul.puzzle_container > li > div{
 	display: flex;
 	flex-flow: column wrap;
 	justify-content: flex-start;
@@ -264,7 +278,8 @@ ul.glossary > li > div, ul.puzzle_container > li > div{
 	align-self: flex-start;
 }
 
-ul.glossary > li > div.label, ul.puzzle_container > li > div.label{
+ul.glossary > li > div.label,
+ul.puzzle_container > li > div.label{
 	flex-flow: row wrap;
 	justify-content: flex-start;
 	align-items: flex-start;
@@ -282,11 +297,12 @@ ul.glossary > li > div.title{
 	align-items: center;
 	width: 90%;
 	margin: 5px 0 7px 0;
-	color: var(--dark);
+	color: var(--s25pc);
 	overflow: auto;
 }
 
-ul.glossary > li > div.text, ul.puzzle_container > li > div.text{
+ul.glossary > li > div.text,
+ul.puzzle_container > li > div.text{
 	display: flex;
 	flex-flow: column wrap;
 	justify-content: flex-start;
@@ -294,7 +310,7 @@ ul.glossary > li > div.text, ul.puzzle_container > li > div.text{
 	width: 90%;
 	height: auto;
 	margin: 5px 0 7px 0;
-	color: var(--dark);
+	color: var(--s25pc);
 	overflow: auto;
 }
 
@@ -305,7 +321,7 @@ ul.blank{
 li.line{
 	border: 0;
 	border-radius: 0;
-	border-bottom: 1px solid var(--dark);
+	border-bottom: 1px solid var(--s25pc);
 }
 
 div.note, div.text{
@@ -328,18 +344,18 @@ li.instructions{
 	margin-bottom: 2px;
 	min-height: 50px;
 	width: 100%;
-	border: 1px solid var(--dark);
+	border: 1px solid var(--s25pc);
 }
 
 .topic-label{
 	font-family: Tahoma, Geneva, sans-serif;
-	color: var(--dark);
+	color: var(--s25pc);
 	font-size: 12pt;
 }
 
 .topic-title{
 	font-family: Tahoma, Geneva, sans-serif;
-	color: var(--light);
+	color: var(--s95pc);
 	font-size: 15pt;
 }
 
@@ -352,6 +368,7 @@ div.canvas{
 	max-width:630px;
 	width: 50%;
 }
+
 div.instructions{
 	display: flex;
 	flex-flow: row wrap;
@@ -372,7 +389,7 @@ figure.hp > img{
 	display: inline-flex;
 	justify-contents: flex-start;
 	align-items: center;
-	border: 2px solid var(--dark);
+	border: 2px solid var(--s25pc);
 	border-radius: 4px;
 	margin-bottom: 5px;
 }

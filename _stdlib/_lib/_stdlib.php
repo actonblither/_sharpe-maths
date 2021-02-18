@@ -10,7 +10,7 @@ function _lg($str, $title = ''){
 }
 
 function is_logged_in() {
-	if (rvz($GLOBALS['s_is_logged_in']) && rvz($GLOBALS['s_auid']) > 0){
+	if (rvz($_SESSION['s_is_logged_in']) && rvz($_SESSION['s_auid']) > 0){
 		return true;
 	}else{
 		return false;
@@ -328,7 +328,7 @@ function p_sel() {
 
 // HEADER FUNCTIONS
 function redirect( $url, $message = '', $delay = 0) {
-	echo '<meta http-equiv=\'Refresh\' content=\''.$delay.'\'; url = '.$url.'\'>';
+	return "<meta http-equiv='Refresh' content='".$delay."'; url = ".$url.">";
 }
 
 // DATE FUNCTIONS
@@ -350,25 +350,13 @@ function is_folder_empty($dir)  {
 function _set_browser_tab_title() {
 	if (isset($_SESSION['s_main'])){
 		$_dbh = new _db();
-		if (!empty($_SESSION['s_mode'])){
-			$sql = 'select title_text, view_archive from __sys_page_titles where main = :main and mode = :mode';
-			$_d = array('main' => $_SESSION['s_main'], 'mode' => $_SESSION['s_mode']);
-			$_f = array('s', 's');
+		if (!empty($_SESSION['s_id'])){
+			$sql = 'select title from _app_nav_routes where id = :id';
+			$_d = array('id' => $_SESSION['s_id']);
+			$_f = array('i');
+			$title = $_dbh->_fetch_db_datum_p($sql, $_d, $_f);
 		}else{
-			$sql = 'select title_text, view_archive from __sys_page_titles where main = :main';
-			$_d = array('main' => $_SESSION['s_main']);
-			$_f = array('s');
-		}
-		$_rows = $_dbh->_fetch_db_row_p($sql, $_d, $_f);
-		$title = $_rows['title_text'];
-		$va = $_rows['view_archive'];
-		if ($va){
-			rvz($_SESSION['s_va']);
-			if ($_SESSION['s_va'] == 0){
-				$title .= ': live';
-			}else{
-				$title .= ': archive';
-			}
+			$tmp = 'SHARPE-MATHS ONLINE RESOURCES';
 		}
 
 		$tmp = "<script>
@@ -376,8 +364,6 @@ function _set_browser_tab_title() {
 				$('title').html('".$title."');
 			});
 			</script>";
-	}else{
-		$tmp = 'IDDS Home';
 	}
 	return $tmp;
 }

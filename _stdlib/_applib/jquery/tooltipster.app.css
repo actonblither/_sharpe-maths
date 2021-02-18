@@ -1,7 +1,7 @@
 
 .tooltipster-sidetip.tooltipster-base.tooltipster .tooltipster-box {
-	background: var(--mid);
-	border: 3px solid var(--dark);
+	background: var(--s35pc);
+	border: 3px solid var(--s25pc);
 	border-radius: 6px;
 	box-shadow: 5px 5px 2px 0 rgba(0,0,0,0.4);
 }
@@ -18,25 +18,25 @@
 }
 
 .tooltipster-sidetip.tooltipster-bottom .tooltipster-arrow-background {
-	border-bottom-color: var(--dark);
+	border-bottom-color: var(--s25pc);
 	left: 0;
 	top: 3px;
 }
 
 .tooltipster-sidetip.tooltipster-left .tooltipster-arrow-background {
-	border-left-color: var(--dark);
+	border-left-color: var(--s25pc);
 	left: -3px;
 	top: 0;
 }
 
 .tooltipster-sidetip.tooltipster-right .tooltipster-arrow-background {
-	border-right-color: var(--dark);
+	border-right-color: var(--s25pc);
 	left: 3px;
 	top: 0;
 }
 
 .tooltipster-sidetip.tooltipster-top .tooltipster-arrow-background {
-	border-top-color: var(--dark);
+	border-top-color: var(--s25pc);
 	left: 0;
 	top: -3px;
 }
@@ -50,17 +50,17 @@
 }
 
 .tooltipster-sidetip.tooltipster-bottom .tooltipster-arrow-border {
-	border-bottom-color: var(--dark);
+	border-bottom-color: var(--s25pc);
 }
 
 .tooltipster-sidetip.tooltipster-left .tooltipster-arrow-border {
-	border-left-color: var(--dark);
+	border-left-color: var(--s25pc);
 }
 
 .tooltipster-sidetip.tooltipster-right .tooltipster-arrow-border {
-	border-right-color: var(--dark);
+	border-right-color: var(--s25pc);
 }
 
 .tooltipster-sidetip.tooltipster-top .tooltipster-arrow-border {
-	border-top-color: var(--dark);
+	border-top-color: var(--s25pc);
 }

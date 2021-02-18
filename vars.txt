@@ -1,2 +1,0 @@
-	private $_img;
-	private $_title;

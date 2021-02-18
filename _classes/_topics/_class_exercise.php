@@ -1,6 +1,5 @@
 <?php
 class _exercise{
-
 	private $_dbh;
 	private $_exercises;
 	private $_topic_id;
@@ -36,8 +35,11 @@ class _exercise{
 		$this->_diff_min = $_row['min'];
 		$this->_diff_max = $_row['max'];
 		$_num_qus = $this->_topic_ex_num_qs;
+		//_cl($_num_qus, 'NUM Qs');
 		$_levels = $this->_diff_max - $this->_diff_min + 1;
+		//_cl($_levels, 'LEVELS');
 		$_num_qus_per_level = intdiv($_num_qus, $_levels) + 1;
+		//_cl($_num_qus_per_level, '_num_qus_per_level');
 		$_qus_array = array();
 		for ($_i = 1; $_i <= $_levels; $_i++){
 			$_sql = 'select * from _app_topic_ex_q where ex_id = :ex_id and difficulty = '.$_i;
@@ -52,6 +54,7 @@ class _exercise{
 				$_count++;
 			}
 		}
+		//_cl($_qus_array);
 		return $_qus_array;
 	}
 
@@ -275,9 +278,7 @@ class _exercise{
 		$tmp .= "<li><div class='mr5 b'>Instructions:</div><div class='w90pc'>$this->_ex_instructions</div></li>";
 		if (!empty($this->_topic_ex_qs)){
 			$_exq_count = 0;
-
 			do {
-
 				$_qid = $this->_topic_ex_qs[$_exq_count]['id'];
 				$this->_del_q->_set_db_tbl_field_value($_qid);
 				$_q_count = $_exq_count + 1;

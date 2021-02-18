@@ -15,7 +15,7 @@ class _setup {
 
 	public function _fetch_current_admin_user_name(){
 		$sql = 'select concat(firstname, " ", lastname) from __sys_admin_users where id = :id';
-		$_d = array('id' => $GLOBALS['s_auid']);
+		$_d = array('id' => $_SESSION['s_auid']);
 		$_f = array('i');
 		$name = $this->_dbh->_fetch_db_datum_p($sql, $_d, $_f);
 		return stripslashes($name);
@@ -31,7 +31,7 @@ class _setup {
 
 	public function _fetch_access_code(){
 		$sql = 'select code from __sys_list_admin_users_security_codes where id = :id';
-		$_d = array('id' => $GLOBALS['s_priv']);
+		$_d = array('id' => $_SESSION['s_priv']);
 		$_f = array('i');
 		$p = $this->_dbh->_fetch_db_datum_p($sql, $_d, $_f);
 		return stripslashes($p);

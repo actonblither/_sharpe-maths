@@ -13,12 +13,24 @@ class _glossary extends _setup{
 	}
 
 	public function _build_glossary(){
-		$tmp = "<h1>Glossary of terms</h1>";
-		$tmp .= "<div class='row w300'><label for = 'sfilter'><h4>Filter:</h4></label>";
-		$tmp .= "<input id = 'sfilter' class = 'w150 mr5 ml5 ttip' style = 'height:26px;' title = 'Type into this field to filter the list down to those records which contains those letters or words.' type = 'text' /></div>";
-		$tmp .= "<h3>$this->_g_letter</h3>";
+		$tmp = $this->_fetch_page_title();
+		$tmp .= $this->_fetch_filter_row();
 		$tmp .= $this->_load_glossary();
 		return $tmp;
+	}
+
+	private function _fetch_page_title(){
+		$_title = new _title_bar();
+		$_title->_set_title('Glossary of mathematical terms');
+		$_title->_set_img('glossary32.png');
+		$_title->_set_img_alt('Glossary');
+		return $_title->_build_title_bar();
+	}
+
+	private function _fetch_filter_row(){
+		$_f = new _filter();
+		$_f->_set_label('Glossary filter');
+		return $_f->_build_filter();
 	}
 
 	private function _load_glossary(){

@@ -1,4 +1,18 @@
 <?php
+$_main = rvs($_REQUEST['main'], $_SESSION['s_main']);
+$_id = rvz($_REQUEST['id'], $_SESSION['s_id']);
+
+if ($_SESSION['s_id'] === 89 || $_SESSION['s_id'] === 90){
+	$_SESSION['s_id'] = 1;
+	$_id = 1;
+}
+
+if (empty($_main)){$_main = 'page';}
+if (empty($_id)){$_id = 1;}
+$_SESSION['s_main'] = $_main;
+$_SESSION['s_id'] = $_id;
+
+
 if (is_logged_in()){
 	$_setup = new _setup();?>
 	<script>
@@ -6,22 +20,17 @@ if (is_logged_in()){
 		var user_priv = '<?php echo ($_setup->_fetch_access_name());?>';
 		$('#user-name').html("<span class = 'b'>User:<?php if (defined('__s_app_au_name__')){ echo __s_app_au_name__;}?><\/span> " + user_name);
 		$('#user-priv').html("<span class = 'b'>Priv:<\/span> " + user_priv);
-		$('#logout').html("<a class = 'b' href = 'index.php?main=logout'>Logout</a>");
+		$('#logout').html("Logout");
+		$('li#navli<?php echo $_SESSION['s_id'];?>').addClass('nms');
 	</script>
-<?php }?>
-
-
-<?php
-$_main = rvs($_REQUEST['main'], 'page');
-$_id = rvz($_REQUEST['id'], 1);
-
-$_SESSION['s_main'] = $_main;
-$GLOBALS['s_main'] = $_main;
+<?php }else{?>
+	<script>$('li#navli<?php echo $_SESSION['s_id'];?>').addClass('nms');</script>
+<?php }
 
 switch ($_main){
 	case 'login':
 		$_login = new _login();
-		$_login->_get_login_page();
+		echo $_login->_get_login_page();
 		break;
 
 	case 'logout':
@@ -31,18 +40,25 @@ switch ($_main){
 
 	case 'contact':
 		$_c = new _contact();
+		echo $_c->_build_contact_form();
 		break;
 
 	case 'page':
-		$h = new _pages(1);
-		echo $h->_build_page();
+		if ($_id == 4){
+			$g = new _puzzle();
+			echo $g->_fetch_all_puzzles();
+		}else{
+			$h = new _pages($_id);
+			echo $h->_build_page();
+		}
 		break;
 
 	case 'topic':
 		if ($_id == 5){
 			$h = new _glossary();
 		}else{
-			$h = new _topic();
+			$h = new _topic($_id);
+			echo $h->_build_topic();
 		}
 		break;
 

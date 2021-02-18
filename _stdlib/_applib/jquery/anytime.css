@@ -61,8 +61,8 @@
  */
 
 .AnyTime-win {
-  background-color:var(--light);
-  border:3px solid var(--dark);
+  background-color:var(--s65pc);
+  border:3px solid var(--s25pc);
   display:inline-block;
   font:normal normal normal xx-small/normal sans-serif;
   -moz-border-radius:4px;
@@ -95,7 +95,7 @@
  */
 
 .AnyTime-pkr .AnyTime-hdr {
-  background-color:var(--dark);
+  background-color:var(--s25pc);
   color:#fff;
   font-family:Arial,Helvetica,sans-serif;
   font-size:medium;
@@ -111,8 +111,8 @@
  */
 
 .AnyTime-pkr .AnyTime-x-btn {
-  background-color:var(--mid);
-  border:1px solid var(--dark);
+  background-color:var(--s35pc);
+  border:1px solid var(--s25pc);
   color:#FFF;
   cursor:default;
   float:right;
@@ -235,13 +235,13 @@
 
 .AnyTime-pkr .AnyTime-dom-table {
   background-color:#F0F0F1;
-  border:1px solid var(--dark);
+  border:1px solid var(--s25pc);
   border-spacing:1px;
   width:20em;
   }
 
 .AnyTime-pkr th.AnyTime-dow {
-  background-color:var(--dark);
+  background-color:var(--s25pc);
   color:white;
   font-family:Arial,Helvetica,sans-serif;
   font-size:95%;
@@ -270,8 +270,8 @@
 .AnyTime-pkr .AnyTime-sec-ten-btn-empty,
 .AnyTime-pkr .AnyTime-sec-one-btn-empty
   {
-  background-color:var(--mid);
-  border:1px solid var(--dark);
+  background-color:var(--s35pc);
+  border:1px solid var(--s25pc);
   }
 
 /*  .AnyTime-time contains all content (labels and pseudo-buttons) for selecting
@@ -441,7 +441,7 @@
 
 .AnyTime-pkr .AnyTime-cur-btn {
   border:1px solid #333334;
-  background-color:var(--dark);
+  background-color:var(--s25pc);
   color:#FCFCFE;
   font-weight:bold;
   }

@@ -36,7 +36,7 @@ if (is_logged_in()){
 					},
 					success : function(data){
 						if (data['status'] == 1){
-							//window.location = 'index.php';
+							$('head').append(data['page']);
 						}else{
 							$('#message').html(data['message']);
 							$('#un').val('');
@@ -60,7 +60,7 @@ if (is_logged_in()){
 			<div class = 'row'>
 				<div class = 'label'><label for = 'pw' class = 'b ml5'>Password:</label></div>
 				<div class = 'input'><input class = 'login' name = 'pw' id = 'pw' type = 'password' placeholder = 'Your password...' /></div>
-				<div class= 'img'><img id = 'padlock' src = '<?php echo __s_icon_url__;?>/20/secure20.png' class = 'ml10 w20 h20' alt = 'Secure' /></div>
+				<div class= 'img'><img id = 'padlock' src = '<?php echo __s_lib_icon_url__;?>20/secure20.png' class = 'ml10 w20 h20' alt = 'Secure' /></div>
 			</div>
 			<div class= 'row'>
 				<div class = 'label'><label for = 'pw' class = 'b ml5'></label></div>

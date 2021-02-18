@@ -14,6 +14,7 @@ $_auid = $_login->_login();
 if ($_auid){
 	$_return['message'] = '';
 	$_return['status'] = 1;
+	$_return['page'] = redirect(__s_app_url__);
 	$_SESSION['s_is_logged_in'] = 1;
 	$_SESSION['s_auid'] = $_auid;
 }else{

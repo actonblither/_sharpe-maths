@@ -1,23 +1,24 @@
 <?php
 class _title_bar{
 	private $_img;
+	private $_img_alt;
 	private $_title;
 
 	public function __construct(){}
 
 	public function _build_title_bar(){
-		$_tmp = "<div class = 'page-title'>";
+		$_tmp = "<div class = 'page-title mb10'>";
 		$_img = $this->_get_img();
 		$_title = $this->_get_title();
 		if (!empty($_img)){
-			$_img = "_images/_title_bar_img/".$_img;
-			$_img_path = __s_app_folder__.$_img;
-			$_img_url = __s_app_url__.$_img;
+			$_img = "_images/_icons/32/".$_img;
+			$_img_path = __s_lib_folder__.$_img;
+			$_img_url = __s_lib_url__.$_img;
 			if (file_exists($_img_path)){
-				$_tmp .= "<img src = '".$_img_url."' alt = '".ucwords($_title)."' />";
+				$_tmp .= "<img class='ml20 mr20' src = '".$_img_url."' alt = '".ucwords($this->_img_alt)."' />";
 			}
 		}
-		$_tmp .= $_title . '</div>';
+		$_tmp .= "<span class='page-title-text'>" . ucwords($_title) . '</span></div>';
 		return $_tmp;
 	}
 
@@ -26,9 +27,35 @@ class _title_bar{
 
 
 	public function _set_img($_t) { $this->_img = $_t; }
+	public function _set_img_alt($_t) { $this->_img_alt = $_t; }
 	public function _set_title($_t) { $this->_title = $_t; }
 
 
+}
+
+class _filter{
+	private $_label = 'Filter';
+	private $_input_width_class = 'w300';
+	private $_input_css_id = 'sfilter';
+	private $_input_title = 'Type into this field to filter the list down to those records which contains those letters or words.';
+
+	public function __construct(){}
+
+	public function _build_filter(){
+		$tmp = "<div class='filter-row'><label class='ml10' for = '".$this->_input_css_id."'><h4>".$this->_label.":</h4></label>
+		<input id = '".$this->_input_css_id."' class = '".$this->_input_width_class." mr5 ml5 ttip' title = '".$this->_input_title."' type = 'text' /></div>";
+		return $tmp;
+	}
+
+	public function _get_label() { return $this->_label; }
+	public function _get_input_width_class() { return $this->_input_width_class; }
+	public function _get_input_css_id() { return $this->_input_css_id; }
+	public function _get_input_title() { return $this->_input_title; }
+
+	public function _set_label($_t) { $this->_label = $_t; }
+	public function _set_input_width_class($_t) { $this->_input_width_class = $_t; }
+	public function _set_input_css_id($_t) { $this->_input_css_id = $_t; }
+	public function _set_input_title($_t) { $this->_input_title = $_t; }
 }
 
 class _img{

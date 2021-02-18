@@ -110,6 +110,7 @@ class _form_element {
 
 	}
 	public function _build_ckeditor(){
+		$tmp = '';
 		$this->_el_field_value = str_replace("'","&#39;", $this->_el_field_value);
 		if (!empty($this->_el_field_class)){$this->_el_field_class .= ' ';}
 		$tmp .= "<div class = 'ck-dummy'><textarea id = '".$this->_el_field_id."_".$this->_el_id_value."' name = '".$this->_el_field_id."' data-id = '".$this->_el_id_value."' data-db-tbl = '".$this->_db_tbl."' data-field = '".$this->_el_field_id."' class = '".$this->_el_field_class."field'>".PHP_EOL;

@@ -8,7 +8,7 @@ $_topic_id = rvz($_POST['topic_id']);
 
 $_dbh = new _db();
 
-$_sql = "insert into _app_topic_exp set topic_id = :topic_id";
+$_sql = "insert into _app_topic_act set topic_id = :topic_id";
 $_d = array('topic_id' => $_topic_id);
 $_f = array('i');
 $_exp_insert_id = $_dbh->_insert_sql($_sql, $_d, $_f);

@@ -83,10 +83,10 @@ class _datetime{
 		$tmp .= "<div class = 'ifc'><input type = 'text' id = '".$this->_name."' name = '".$this->_name."' value = '".$this->_value."' class = 'point dt_input".$this->_class."' placeholder = '".$this->_place_holder."' style = 'width:".$this->_input_width."px;' readonly />";
 
 		if ($this->_show_clear_img){
-			if (file_exists(__s_app_icon_folder__.'/20/clear20.png')){
-				$clear_ico = __s_app_icon_url__.'/20/clear20.png';
+			if (file_exists(__s_app_icon_folder__.'20/clear20.png')){
+				$clear_ico = __s_app_icon_url__.'20/clear20.png';
 			}else{
-				$clear_ico = __s_icon_url__.'/20/clear20.png';
+				$clear_ico = __s_lib_icon_url__.'20/clear20.png';
 			}
 			$tmp .= "&nbsp;<img class = 'ttip clear-date' id = 'cd_".$this->_name."' src = '".$clear_ico."' title = 'Clear the date.' alt = 'Clear' />";
 		}

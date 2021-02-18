@@ -19,7 +19,7 @@ class _tabs{
 	public function _build_tabs(){
 		$count = 1;
 		$tmp = "
-		<nav id = '".$this->_tab_nav_id."' class = 'sub-tabs' aria-label = 'sub-tabs menu'>";
+		<nav id = '".$this->_tab_nav_id."' class = 'sub-tabs' aria-label = 'sub-tabs'>";
 		for($i = 0; $i < count($this->_tab_labels); $i++){
 			$tmp .= "<div class = 'tab-gap'><div class = 'gap-a'></div><div class = 'base'></div></div>";
 			$tmp .= "<div class = 'tab-container'>";
@@ -38,13 +38,16 @@ class _tabs{
 	public function _build_jq(){
 		$tmp = "<script>
 				$(document).ready(function(){
-					$('#".$this->_tab_nav_id." a.tab-active').removeClass('tab-active');
 					var cookie = readCookie('tab-pref');
 					if (!cookie){
 						cookie = '_1_intro-1';
 						createCookie('tab-pref', cookie, 100);
 					}
-					$('#'+cookie).addClass('tab-active');
+					if ($('#'+cookie).length > 0){
+						$('#".$this->_tab_nav_id." a.tab-active').removeClass('tab-active');
+						$('#'+cookie).addClass('tab-active');
+					}
+
 					$(document).on('click', '#".$this->_tab_nav_id." a.tab-nav', function(e){
 						e.preventDefault();
 						e.stopImmediatePropagation();
@@ -69,20 +72,21 @@ class _tabs{
 	public function _build_pages(){
 		if (isset($_COOKIE['tab-pref'])){
 			$cookie = $_COOKIE['tab-pref'];
-			$div_id = substr($cookie, 3);
-			if (!in_array($div_id, $this->_tab_links)){
-				$div_id = $this->_tab_links[0];
+			$_cookie_tab = substr($cookie, 3);
+			if (in_array($_cookie_tab, $this->_tab_links)){
+				$_active_tab = $_cookie_tab;
+			}else{
+				$_active_tab = $this->_tab_links[0];
 			}
 		}else{
-			$div_id = $this->_tab_links[0];
+			$_active_tab = $this->_tab_links[0];
 		}
-
 
 		$tmp = "
 		<div class = '".$this->_tab_nav_divs."'>";
 		for($i = 0; $i < count($this->_tab_labels); $i++){
 			$tmp .= "<div class = 'tab-contents";
-			if ($this->_tab_links[$i] === $div_id){$tmp .= "'";}else{$tmp .= " hidden'";}
+			if ($this->_tab_links[$i] === $_active_tab){$tmp .= "'";}else{$tmp .= " hidden'";}
 			$tmp .= " id = '".$this->_tab_links[$i]."'>";
 			$tmp .= $this->_tab_pages[$i];
 			$tmp .= "</div>";
@@ -94,8 +98,9 @@ class _tabs{
 	//Setters
 	public function _set_tab_nav_id($n){
 		$this->_tab_nav_id = $n;
-		$this->_tab_nav_divs = $n.'_divs';
+		$this->_tab_nav_divs = $n.'-divs';
 	}
+
 	public function _set_tab_labels($n){$this->_tab_labels = $n;}
 	public function _set_tab_help($n){$this->_tab_help = $n;}
 	public function _set_tab_links($n){$this->_tab_links = $n;}

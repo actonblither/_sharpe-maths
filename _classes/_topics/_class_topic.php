@@ -15,13 +15,15 @@ class _topic extends _setup{
 	private $_topic_ex;
 	private $_topic_eg;
 	private $_topic_pz;
-	private $_topic_exp;
+	private $_topic_act;
+	private $_topic_geo;
 
 	private $_show_intro_tab = false;
 	private $_show_eg_tab = false;
 	private $_show_ex_tab = false;
 	private $_show_pz_tab = false;
-	private $_show_exp_tab = false;
+	private $_show_act_tab = false;
+	private $_show_geo_tab = false;
 
 	private $_ex_count;
 	private $_ex_title;
@@ -29,12 +31,11 @@ class _topic extends _setup{
 	private $_row;
 
 
-	public function __construct($auto = true){
+	public function __construct($_id = null){
 		parent::__construct();
 		$this->_dbh = new _db();
 		$this->_topic_order_array = $_SESSION['s_topic_order'];
-		$this->_topic_route_id = rvz($_REQUEST['id']);
-		if ($auto){echo $this->_build_topic();}
+		$this->_topic_route_id = rvz($_id);
 	}
 
 	public function _build_topic(){
@@ -44,7 +45,7 @@ class _topic extends _setup{
 		$this->_build_examples();
 		$this->_build_exercises();
 		$this->_build_puzzles();
-		$this->_build_exposition();
+		$this->_build_activity();
 		$tmp = $this->_build_navigation_bar();
 		$tmp .= $this->_build_tab_bar();
 		return $tmp;
@@ -81,17 +82,18 @@ class _topic extends _setup{
 		$index = array_search($this->_topic_route_id, $this->_topic_order_array);
 		if($index !== false && $index > 0 ) $prev = $this->_topic_order_array[$index-1];
 		if($index !== false && $index < count($this->_topic_order_array)-1) $next = $this->_topic_order_array[$index+1];
-		$tmp = "<div class='c w100pc sb border'>";
+		$tmp = "<div class='c w100pc sb page-title mb5'>";
 		if (rvz($prev) > 0){
-			$_sql = 'select title from _app_nav_routes where id = :id';
-			$_d = array('id' => $prev);
+			$_prev_topic_id = $this->_fetch_topic_id_from_route_id($prev);
+			$_sql = 'select title from _app_topic where id = :id';
+			$_d = array('id' => $_prev_topic_id);
 			$_f = array('i');
-			$_prev = $this->_dbh->_fetch_db_datum_p($_sql, $_d, $_f);
+			$_prev_title = $this->_dbh->_fetch_db_datum_p($_sql, $_d, $_f);
 
 			$tmp .= "
 				<div class='ifc w25pc col ml10 hh'>
 					<div class='topic-label'>Previous topic:</div>
-					<div class='topic-title prev'>".$_prev."</div>
+					<div class='topic-title prev'>".$_prev_title."</div>
 				</div>
 				<div class='ifc w10pc'>
 					<img class='point nav_arrow' data-id='".$prev."' data-main= 'topic' src='_stdlib/_images/_icons/arrow_left50.png' alt='Previous topic' />
@@ -101,15 +103,16 @@ class _topic extends _setup{
 		}
 		$tmp .= "<div class='ifc col w25pc hh c'><div class='topic-label'>Current topic:</div><div class='topic-title'>".$this->_get_topic_title()."</div></div>";
 		if (rvz($next) > 0){
-			$_sql = 'select title from _app_nav_routes where id = :id';
-			$_d = array('id' => $next);
+			$_next_topic_id = $this->_fetch_topic_id_from_route_id($next);
+			$_sql = 'select title from _app_topic where id = :id';
+			$_d = array('id' => $_next_topic_id);
 			$_f = array('i');
-			$_next = $this->_dbh->_fetch_db_datum_p($_sql, $_d, $_f);
+			$_next_title = $this->_dbh->_fetch_db_datum_p($_sql, $_d, $_f);
 			$tmp .= "
 				<div class='ifc w10pc r'>
 					<img class='point nav_arrow' data-id='".$next."' data-main= 'topic' src='_stdlib/_images/_icons/arrow_right50.png' alt='Next topic' />
 				</div>
-				<div class='ifc w25pc col mr20 hh'><div class='topic-label'>Next topic:</div><div class='topic-title'>".$_next."</div></div>";
+				<div class='ifc w25pc col mr20 hh'><div class='topic-label'>Next topic:</div><div class='topic-title'>".$_next_title."</div></div>";
 		}else{
 			$tmp .= "<div class='ifc w15pc'></div><div class='ifc w25pc mr10 hh'></div>";
 		}
@@ -145,13 +148,6 @@ class _topic extends _setup{
 			$_txt_arr[] = $this->_topic_ex;
 		}
 
-		if ($this->_show_exp_tab){
-			$_tab_arr[] = 'Activities';
-			$_lnk_arr[] = 'activ-5';
-			$_hlp_arr[] = '';
-			$_txt_arr[] = $this->_topic_exp;
-		}
-
 		if ($this->_show_pz_tab){
 			$_tab_arr[] = 'Puzzles';
 			$_lnk_arr[] = 'puzzles-4';
@@ -159,18 +155,32 @@ class _topic extends _setup{
 			$_txt_arr[] = $this->_topic_pz;
 		}
 
+		if ($this->_show_act_tab){
+			$_tab_arr[] = 'Activities';
+			$_lnk_arr[] = 'activ-5';
+			$_hlp_arr[] = '';
+			$_txt_arr[] = $this->_topic_act;
+		}
+
+		if ($this->_show_geo_tab){
+			$_tab_arr[] = 'Geogebra';
+			$_lnk_arr[] = 'geogebra-6';
+			$_hlp_arr[] = '';
+			$_txt_arr[] = $this->_topic_geo;
+		}
+
+
 		$_tab->_set_tab_labels($_tab_arr);
 		$_tab->_set_tab_links($_lnk_arr);
 		$_tab->_set_tab_help($_hlp_arr);
 		$_tab->_set_tab_pages($_txt_arr);
-
 		return $_tab->_build_all();
 	}
 
-	private function _build_exposition(){
-		 $_exp = new _exposition($this->_topic_id);
-		$this->_topic_exp = $_exp->_fetch_exposition();
-		$this->_show_exp_tab = $_exp->_get_make_exp_tab();
+	private function _build_activity(){
+		$_act = new _activity($this->_topic_id);
+		$this->_topic_act = $_act->_fetch_activity();
+		$this->_show_act_tab = $_act->_get_make_act_tab();
 	}
 
 	private function _build_puzzles(){
@@ -191,10 +201,23 @@ class _topic extends _setup{
 		$this->_show_eg_tab = $_eg->_get_make_eg_tab();
 	}
 
+	private function _build_geogebra(){
+		$_geo = new _geogebra($this->_topic_id);
+		$this->_topic_geo = $_geo->_fetch_geogebra();
+		$this->_show_geo_tab = $_geo->_get_make_geo_tab();
+	}
+
 	private function _build_intro_text(){
 		$_intro = new _intro($this->_topic_id);
 		$this->_topic_intro = $_intro->_fetch_intro_text();
 		$this->_show_intro_tab = $_intro->_get_make_intro_tab();
+	}
+
+	private function _fetch_topic_id_from_route_id($id){
+		$_sql = 'select id from _app_topic where route_id = :route_id';
+		$_d = array('route_id' => $id);
+		$_f = array('i');
+		return $this->_dbh->_fetch_db_datum_p($_sql, $_d, $_f);
 	}
 
 	private function _get_next($array, $key) {
@@ -224,6 +247,8 @@ class _topic extends _setup{
 	public function _get_topic_ex() { return $this->_topic_ex; }
 	public function _get_topic_eg() { return $this->_topic_eg; }
 	public function _get_topic_pz() { return $this->_topic_pz; }
+	public function _get_topic_act() { return $this->_topic_act; }
+	public function _get_topic_geo() { return $this->_topic_geo; }
 	public function _get_ex_count() { return $this->_ex_count; }
 	public function _get_ex_title() { return $this->_ex_title; }
 	public function _get_ex_instructions() { return $this->_ex_instructions; }
@@ -231,6 +256,8 @@ class _topic extends _setup{
 	public function _get_show_eg_tab() { return $this->_show_eg_tab; }
 	public function _get_show_ex_tab() { return $this->_show_ex_tab; }
 	public function _get_show_pz_tab() { return $this->_show_pz_tab; }
+	public function _get_show_act_tab() { return $this->_show_act_tab; }
+	public function _get_show_geo_tab() { return $this->_show_geo_tab; }
 
 	public function _set_topic_id($_t) { $this->_topic_id = $_t; }
 	public function _set_topic_route_id($_t) { $this->_topic_route_id = $_t; }
