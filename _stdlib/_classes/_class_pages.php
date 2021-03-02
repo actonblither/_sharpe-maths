@@ -49,7 +49,7 @@ class _pages extends _setup{
 	}
 
 	private function _build_page_start(){
-		$tmp = "<section class = 'fd-col-l'>";
+		$tmp = "<section class = 'cwrap'>";
 		return $tmp;
 	}
 

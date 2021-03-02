@@ -4,9 +4,11 @@ div#logincontainer{
 	flex-flow: row wrap;
 	align-items: center;
 	justify-content: center;
+	align-items: center;
 	width: 80%;
 	height:auto;
 	padding: 20px;
+	margin-left: 200px;
 
 }
 

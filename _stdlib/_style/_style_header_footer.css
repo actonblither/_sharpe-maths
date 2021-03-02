@@ -1,0 +1,113 @@
+@CHARSET "ISO-8859-1";
+
+header#fixed-header, footer#fixed-footer{
+	position: fixed;
+	width: 100%;
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: center;
+	flex: 1;
+	border-radius: 0;
+	padding-bottom: 0;
+	background-color: var(--s90pc);
+	z-index: 100;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+header#fixed-header{
+	top: 0;
+	justify-content: space-between;
+	height: var(--header-height);
+	border-bottom: 1px solid var(--s10pc);
+	background-image: url("../../_images/title-bar-bg.png");
+}
+
+header#fixed-header > div{
+	display: flex;
+	flex-flow: row nowrap;
+	flex: 0 1 auto;
+	justify-content: flex-start;
+}
+
+header#fixed-header > div > img{
+	display: flex;
+	flex-flow: row nowrap;
+	flex: 0 1 auto;
+	justify-content: flex-start;
+}
+
+header#fixed-header img#navburger,
+header#fixed-header img#navswitch{
+	width: 40px;
+	height: 40px;
+	-webkit-transition: all .2s linear;
+	-moz-transition: all .2s linear;
+	-ms-transition: all .2s linear;
+	-o-transition: all .2s linear;
+	transition: all .2s linear;
+}
+
+header#fixed-header img#navburger:hover,
+header#fixed-header img#navswitch:hover {
+	width: 42px;
+	height: 42px;
+	filter: drop-shadow(1px 1px 1px #666);
+}
+
+header#fixed-header div#user-info{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	color: var(--s25pc);
+	flex: 1;
+	margin: 5px 5px 0 5px;
+}
+
+
+header#fixed-header div#version{
+	color: var(--s25pc);
+	opacity: 50%;
+	position: fixed;
+	top:5px;
+	right: 10px;
+	font-weight: bold;
+}
+
+footer#fixed-footer{
+	position: fixed;
+	bottom: 0;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	align-items: center;
+	bottom: 0;
+	height: var(--footer-height);
+	border-top: 1px solid var(--s10pc);
+}
+
+footer#fixed-footer div#idds,
+footer#fixed-footer div#icon8{
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: center;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	border-bottom: 0;
+	font-size: var(--footer-fontsize);
+	color: var(--s25pc);
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+footer#fixed-footer div#idds{
+	justify-content: flex-start;
+	padding-left: 5px;
+}
+
+footer#fixed-footer div#icon8{
+	justify-content: flex-end;
+	padding-right: 10px;
+}

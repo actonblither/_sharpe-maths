@@ -1,201 +1,20 @@
-section#maincol { margin-top: var(--header-height);}
-nav#navbar { margin-top: var(--header-height); }
-header#top { height: var(--header-height); z-index: 200;}
-
 @CHARSET "ISO-8859-1";
 
-
-
-h3.top{
-	display: flex;
-	margin: -7px 0 7px 0;
-	align-self: start;
-	justify-self: start;
-}
-
-ul.topic_example,
-ul.topic_exercise,
-ul.topic_activity,
-ul.puzzle{
-	list-style: none;
-	margin: 5px 0 25px 0;
-	width: 100%;
-}
-
-ul.topic_example > li,
-ul.topic_exercise > li,
-ul.topic_activity > li,
-ul.puzzle > li{
-	list-style: none;
-	padding: 3px;
-}
-
-
-ul.topic_example > li:not(.top) > li{
-	min-height: 45px;
-}
-
-div.ex_eg,
-div.ex {
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: flex-start;
-	align-items: center;
-	width: 100%;
-}
-
-div.ex_eg h3{
-	display: flex;
-	flex-flow: row nowrap;
-	color: var(--s25pc);
-	margin-left: 5px;
-	font-weight: normal;
-}
-
-.open{display: flex;}
-
-
-
-.topic_example > li,
-.topic_exercise > li,
-.topic_activity > li,
-.puzzle > li{
-	display: flex;
-	flex-flow: row wrap;
-	border-radius: 4px;
-	margin-bottom: 2px;
-	min-height: 50px;
-	border: 1px solid var(--s25pc);
-}
-
-.topic_example > li > div > div{
-	padding: 0;
-}
-
-.topic_example > li > div.label{
-	display: flex;
-	text-align: right;
-	font-weight: bold;
-	min-width: 32px;
-	max-width: 40px;
-	align-items: flex-start;
-	overflow: auto;
-	margin-right: 10px;
-}
-
-.topic_example li.top div.label{
-	padding: 0;
-	margin: 0;
-	max-height: 20px;
-	line-height: 20px;
-}
-
-.topic_example > li > div.text{
-	display: flex;
-	flex-flow: column wrap;
-	width: 45%;
-	overflow: auto;
-}
-
-.topic_example > li > div.title{
-	display: flex;
-	justify-content: center;
-	align-items: flex-end;
-	font-weight: bold;
-	width: 45%;
-	margin: 0;
-	padding: 0;
-}
-
-.topic_example > li > div.note{
-	display: flex;
-	flex-flow: column wrap;
-	width: 45%;
-	overflow: auto;
-}
-
-.topic_example > li > div.note > p{
-	line-height: 24px;
-}
-.topic_example > li.top > div{
-	padding: 0;
-	margin: 0;
-}
-
-/* TOPIC EXERCISE CLASSES*/
-
-.topic_exercise > li > div.label{
-	display: flex;
-	align-self: flex-start;
-	font-weight: bold;
-	width: 5%;
-}
-
-.topic_exercise > li > div.question{
-	display: flex;
-	flex-flow: column wrap;
-	justify-content: flex-start;
-	width: 55%;
-	margin-left: 20px;
-}
-
-.topic_exercise > li > div.answer{
-	display: flex;
-	flex-flow: column wrap;
-	justify-content: flex-start;
-	align-items: flex-end;
-	width: 35%;
-}
-
-.topic_exercise > li > div.label_e{
-	display: flex;
-	align-self: flex-start;
-	font-weight: bold;
-	width: 5%;
-}
-
-.topic_exercise > li > div.question_e{
-	display: flex;
-	flex-flow: column wrap;
-	justify-content: flex-start;
-	width: 55%;
-	margin-left: 5px;
-}
-
-.topic_exercise > li > div.answer_e{
-	display: flex;
-	flex-flow: column wrap;
-	justify-content: flex-end;
-	align-items: flex-end;
-	width: 30%;
-}
-
-.topic_exercise > li > div.difficulty_e{
-	display: flex;
-	flex-flow: column wrap;
-	justify-content: flex-start;
-	align-items: flex-end;
-	width: 5%;
-}
 
 ul.indent{
 	margin-left: 25px;
 	list-style-type: disc;
-	height:auto;
+	height: auto;
 }
-
-ul#exercises,
-ul#activity,
-ul#puzzles,
-ul#examples
-{list-style-type: none; width: 100%;}
 
 ol.indent{
-	margin-left: 25px;
-	line-height: 24px;
+	margin-left: 0px;
+	line-height: var(--p-line-height);
 }
 
-div.topic{
+
+div.topic,
+div.topic > div{
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: flex-start;
@@ -203,8 +22,6 @@ div.topic{
 }
 
 div.topic > div{
-	display: flex;
-	flex-flow: row wrap;
 	width: 45%;
 	padding: 10px;
 }
@@ -214,50 +31,16 @@ div.list, div.list div{
 	flex-flow: column wrap;
 }
 
-ol.roman, ol.abc, ol.num{
-	display: flex;
-	flex-flow: column wrap;
-	margin-left: 10px;
-}
 
-ol.roman{list-style-type: lower-roman;}
-ol.abc{list-style-type: lower-alpha;}
-ol.num{list-style-type: decimal;}
-ol.num2{list-style-type: decimal;}
-
-ol.abc > li,
-ol.roman > li,
-ol.num > li{
-	margin-left: 30px;
-	padding:0 0 0 10px;
-	line-height: 25px;
-	margin-bottom: 20px;
-}
-
-ol.num2 > li{
-	margin-left: 30px;
-	line-height: 25px;
-}
-
-
-section.fd-col-l ol,
-section.fd-col-l ul {
-	margin-left: 20px;
-}
 
 ul.glossary{
 	border: 1px solid var(--s25pc);
 	border-radius: 4px;
-	padding: 4px;
 	list-style-type: none;
-	margin: 5px 0 25px 0;
-	overflow: auto;
 }
 
 ul.puzzle_container{
-	padding: 4px;
 	list-style-type: none;
-	margin: 5px 0 5px 0;
 }
 
 ul.glossary > li,
@@ -266,7 +49,7 @@ ul.puzzle_container > li{
 	flex-flow: row nowrap;
 	justify-content: flex-start;
 	align-items: flex-start;
-	width:100%;
+	flex: 1;
 }
 
 ul.glossary > li > div,
@@ -298,7 +81,7 @@ ul.glossary > li > div.title{
 	width: 90%;
 	margin: 5px 0 7px 0;
 	color: var(--s25pc);
-	overflow: auto;
+
 }
 
 ul.glossary > li > div.text,
@@ -311,7 +94,7 @@ ul.puzzle_container > li > div.text{
 	height: auto;
 	margin: 5px 0 7px 0;
 	color: var(--s25pc);
-	overflow: auto;
+
 }
 
 ul.blank{
@@ -324,14 +107,7 @@ li.line{
 	border-bottom: 1px solid var(--s25pc);
 }
 
-div.note, div.text{
-	display: flex;
-	flex-flow: column wrap !important;
-	line-height: 23px !important;
-}
 
-div.note{width: 40%;min-width: 200px;}
-div.text{width: 50%; min-width: 200px;}
 
 div.full{width: 100%; height: 20px;}
 
@@ -343,7 +119,7 @@ li.instructions{
 	border-radius: 4px;
 	margin-bottom: 2px;
 	min-height: 50px;
-	width: 100%;
+	flex: 1 1 auto;
 	border: 1px solid var(--s25pc);
 }
 
@@ -358,6 +134,21 @@ li.instructions{
 	color: var(--s95pc);
 	font-size: 15pt;
 }
+
+@media only screen and (max-width: 600px) {
+	.topic-label{font-size: 2vw;}
+	.topic-title{font-size: 2.3vw;}
+	.nav_arrow{width: 8vw;}
+	img#main-logo {width: 45vw; height: auto;}
+	img#navburger {width: 2.0vw; height: auto;}
+	img#navburger:hover {width: 2.1vw; height: auto;}
+	img#navswitch {width: 2.0vw; height: auto;}
+	img#navswitch:hover {width: 2.1vw; height: auto;}
+	header.fixed-header {height: 25px; overflow:hidden;}
+	div#maincontent{top: 27px;}
+}
+
+
 
 div.canvas{
 	display: flex;
@@ -398,3 +189,4 @@ figure.hp > figcaption{
 	display: inline-flex;
 	margin-bottom: 20px;
 }
+

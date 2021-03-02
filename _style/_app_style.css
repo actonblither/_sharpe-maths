@@ -48,8 +48,16 @@
 	--error: #cd0a0a;
 
 	--header-height: 50px;
+	--header-offset: 52px;
 	--footer-height: 15px;
 	--footer-fontsize: 8pt;
 	--nav-menu-width: 210px;
+	--p-line-height: 28px;
 }
 
+.grey-light{background-color: var(--grey-light);}
+.grey-mid{background-color: var(--grey-mid);}
+.grey-dark{background-color: var(--grey-dark);}
+
+.error{background-color: transparent; color: var(--error);}
+.alert{color: red; font-weight: bold;}

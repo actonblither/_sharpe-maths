@@ -21,6 +21,63 @@ function _format_header($str){
 	return '<h1>'.$str.'</h1>';
 }
 
+
+//FORM ELEMENT FUNCTIONS
+
+function _build_textarea($_params){
+	$_el = new _form_element();
+	$_el->_set_el_field_id($_params['field_name']);
+	$_el->_set_el_field_value($_params['field_value']);
+	$_el->_set_db_tbl($_params['db_tbl']);
+	$_el->_set_el_id_value($_params['id']);
+	$_el->_set_el_width(rvz($_params['el_width'], 400));
+	$_el->_set_el_height(rvz($_params['el_height'], 200));
+	$_el->_set_el_width_units(rvs($_params['el_width_units'], 'px'));
+	$_el->_set_el_height_units(rvs($_params['el_height_units'], 'px'));
+	return $_el->_build_textarea();
+}
+
+function _build_varchar($_params){
+	$_el = new _form_element();
+	$_el->_set_el_field_id($_params['field_name']);
+	$_el->_set_el_field_value($_params['field_value']);
+	$_el->_set_db_tbl($_params['db_tbl']);
+	$_el->_set_el_id_value($_params['id']);
+	$_el->_set_el_width($_params['el_width']);
+	$_el->_set_el_width_units($_params['el_width_units']);
+	return $_el->_build_text_input();
+}
+
+function _build_checkbox($_params){
+	$_el = new _form_element();
+	$_el->_set_el_field_id($_params['field_name']);
+	$_el->_set_el_field_value($_params['field_value']);
+	$_el->_set_db_tbl($_params['db_tbl']);
+	$_el->_set_el_id_value($_params['id']);
+	return $_el->_build_checkbox();
+}
+
+function _build_del_header($_params, $jq = true){
+	$_del_h = new _delete($_params);
+	if ($jq){
+		return $_del_h->_delete_jq();
+	}else{
+		return $_del_h->_delete_img();
+	}
+}
+
+function _build_del_item($_params, $jq = true){
+	//_cl($_params, 'PARAMS STDLIB');
+	$_del_q = new _delete($_params);
+	if ($jq){
+		return $_del_q->_delete_jq();
+	}else{
+		return $_del_q->_delete_img();
+	}
+}
+
+
+
 // String functions
 
 function instr($needle, $haystack) {
@@ -60,40 +117,6 @@ function remove_between($_start, $_end, $_str){
 	}
 	return $_str;
 }
-
-
-function is_genuine_phone_number($num){
-	//if ($this->_ct_c_only){return 'na';}
-	if (empty(trim($num))){return 'empty';}
-	if (!checkUKTelephone ($num, $errorNo, $errorText)) {
-		return false;
-	}else {
-		return true;
-	}
-}
-
-function is_genuine_email($email){
-	if (empty($email)){return 'empty';}
-	$_v = new _email_validator();
-	$_e = $_v->_check($email);
-	if ($_e){
-		return true;
-	}else{
-		return false;
-	}
-}
-
-function is_genuine_website($url){
-	if (empty($url)){return 'empty';}
-	$_val = validate_url($url);
-	if ($_val) {
-		return true;
-	}else{
-		return false;
-	}
-}
-
-
 
 // Array functions
 
@@ -374,8 +397,6 @@ function handle_uncaught_exception($e) {
 
 	$error = $message = date("Y-m-d H:i:s - ");
 	$error .= $e->getMessage() . " in file " . $e->getFile() . " on line " . $e->getLine() . "\n";
-
-	if (__s_remote__){_mail_me($error, 'UNCAUGHT EXCEPTION IN CODE');}
 
 	// Log details of error in the _php_code_errors.log file
 	$err = new _db();

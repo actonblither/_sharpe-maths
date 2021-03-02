@@ -9,9 +9,12 @@ if ($_SESSION['s_id'] === 89 || $_SESSION['s_id'] === 90){
 
 if (empty($_main)){$_main = 'page';}
 if (empty($_id)){$_id = 1;}
+
 $_SESSION['s_main'] = $_main;
 $_SESSION['s_id'] = $_id;
 
+//_cl($_SESSION['s_main']);
+//_cl($_SESSION['s_id']);
 
 if (is_logged_in()){
 	$_setup = new _setup();?>
@@ -28,15 +31,6 @@ if (is_logged_in()){
 <?php }
 
 switch ($_main){
-	case 'login':
-		$_login = new _login();
-		echo $_login->_get_login_page();
-		break;
-
-	case 'logout':
-		$_logout = new _login();
-		$_logout->_logout();
-		break;
 
 	case 'contact':
 		$_c = new _contact();
@@ -44,9 +38,15 @@ switch ($_main){
 		break;
 
 	case 'page':
-		if ($_id == 4){
+		if ($_id === 4){
 			$g = new _puzzle();
 			echo $g->_fetch_all_puzzles();
+		}else if ($_id === 5){
+			$h = new _glossary();
+			echo $h->_build_glossary();
+		}else if ($_id === 88){
+			$_c = new _contact();
+			echo $_c->_build_contact_form();
 		}else{
 			$h = new _pages($_id);
 			echo $h->_build_page();
@@ -54,12 +54,8 @@ switch ($_main){
 		break;
 
 	case 'topic':
-		if ($_id == 5){
-			$h = new _glossary();
-		}else{
-			$h = new _topic($_id);
-			echo $h->_build_topic();
-		}
+		$h = new _topic($_id);
+		echo $h->_build_topic();
 		break;
 
 }

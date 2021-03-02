@@ -10,10 +10,16 @@ include('app_config.php');
 		<meta name = 'description' content = 'Resources for teaching mathematics remotely or in the classroom or for revision.' />
 		<meta name = 'viewport' content = 'width=device-width, initial-scale=1.0' />
 
+
 		<link rel = 'shortcut icon' href = '<?php echo __s_app_url__;?>_images/favicon.ico' />
 		<link rel = 'stylesheet' href = '<?php echo __s_applib_url__;?>jquery/tooltipster/css/tooltipster.bundle.min.css' type = 'text/css' />
 		<link rel = 'stylesheet' href = '<?php echo __s_app_url__;?>_style/_app_style.css' type = 'text/css' />
 		<link rel = 'stylesheet' href = '<?php echo __s_lib_url__;?>_style/_style_complete.css' type = 'text/css' />
+		<link rel = 'stylesheet' href = '<?php echo __s_lib_url__;?>_style/_style_navmenu.css' type = 'text/css' />
+		<link rel = 'stylesheet' href = '<?php echo __s_lib_url__;?>_style/_style_tabs.css' type = 'text/css' />
+		<link rel = 'stylesheet' href = '<?php echo __s_lib_url__;?>_style/_style_form_elements.css' type = 'text/css' />
+		<link rel = 'stylesheet' href = '<?php echo __s_lib_url__;?>_style/_style_header_footer.css' type = 'text/css' />
+
 		<link rel = 'stylesheet' href = '<?php echo __s_app_url__;?>_style/_style.css' type = 'text/css' />
 		<link rel = 'stylesheet' href = '<?php echo __s_lib_url__;?>_style/_style_login.css' type = 'text/css' />
 
@@ -31,9 +37,8 @@ include('app_config.php');
 		<script src = '<?php echo __s_applib_url__;?>jquery/anytime.js'></script>
 		<?php }?>
 
-
 		<script src = '<?php echo __s_applib_url__;?>jquery/tooltipster/js/tooltipster.bundle.min.js'></script>
-		<script src = '<?php echo __s_applib_url__;?>js/_stdlib.js'></script>
+		<script src = '<?php echo __s_lib_url__;?>_js/_stdlib.js'></script>
 		<script src = '<?php echo __s_applib_url__;?>jquery/ihavecookies/jquery.ihavecookies.js'></script>
 		<script src = '<?php echo __s_applib_url__;?>js/fabric.4.3.js'></script>
 
@@ -83,31 +88,10 @@ include('app_config.php');
 			}
 			<?php }?>
 
-			function _navbar_cookie(){
-				if (readCookie('navbar') == 0 || readCookie('navbar') == null){
-					$('#navbar').css('display', 'none');
-					$('#navburger').attr('src', '<?php echo __s_lib_url__;?>_images/_icons/menu50.png');
-				}else{
-					$('#navbar').css('display', 'flex');
-					$('#navburger').attr('src', '<?php echo __s_lib_url__;?>_images/_icons/close50.png');
-				}
 
-				if (readCookie('nav-position') == 'l' || readCookie('nav-position') == null){
-					$('#maincontent').css('flex-direction', 'row');
-					$('#top').css('flex-direction', 'row');
-					$('#navbar').css('margin-left', '0');
-					$('#navbar').css('margin-right', '5px');
-				}else{
-					$('#maincontent').css('flex-direction', 'row-reverse');
-					$('#top').css('flex-direction', 'row-reverse');
-					$('#navbar').css('margin-left', '5px');
-					$('#navbar').css('margin-right', '0');
-				}
-
-			}
 		</script>
 	</head>
-	<body class = 'pb20' onload='_navbar_cookie();'>
+	<body>
 	<?php
 	include_once('./main.php');
 	echo _set_browser_tab_title();?>
@@ -126,9 +110,9 @@ include('app_config.php');
 				var id = $(this).attr('data-id');
 				$('ul#uxp'+id).toggleClass('hidden');
 				if (readCookie('uxp'+id) == 'c'){
-					createCookie('uxp'+id, 'o', 1);
+					createCookie('uxp'+id, 'o', 365);
 				}else{
-					createCookie('uxp'+id, 'c', 1);
+					createCookie('uxp'+id, 'c', 365);
 				}
 			}
 		});
@@ -185,88 +169,49 @@ include('app_config.php');
 		}
 
 		$(document).on('click', '#navburger', function(){
-			var new_src;
-			if (this.src == '<?php echo __s_lib_url__;?>_images/_icons/menu50.png'){
-				new_src = '<?php echo __s_lib_url__;?>_images/_icons/close50.png';
-				createCookie('navbar', 1, 365);
+			var tog;
+			var burger_src;
+			if (readCookie('navbar') == 'off'){
+				burger_src = './_stdlib/_images/_icons/close50.png';
+				tog = 'on';
 			}else{
-				new_src = '<?php echo __s_lib_url__;?>_images/_icons/menu50.png';
-				createCookie('navbar', 0, 365);
+				burger_src = '_stdlib/_images/_icons/menu50.png';
+				tog = 'off';
 			}
-			this.src = new_src;
-			$('#navbar').toggle();
-
+			this.src = burger_src;
+			createCookie('navbar', tog, 365);
+			$('#navbar').toggleClass('hidden');
 		});
 
 
-		$(document).on('click', '#navswitch', function(){
-			var c = $('#maincontent').css('flex-direction');
-			if (c === 'row'){
-				$('#maincontent').css('flex-direction', 'row-reverse');
-				$('#top').css('flex-direction', 'row-reverse');
-				$('#navbar').css('margin-right', '0');
-				$('#navbar').css('margin-left', '5px');
-				createCookie('nav-position', 'r', 365);
-			}else{
-				$('#maincontent').css('flex-direction', 'row');
-				$('#top').css('flex-direction', 'row');
-				$('#navbar').css('margin-left', '0');
-				$('#navbar').css('margin-right', '5px');
-				createCookie('nav-position', 'l', 365);
-			}
+ 		$(document).on('click', '#navswitch', function(){
+			nav_switch();
 		});
 
+		var nav_switch = function(){
+			var dir = $('#fixed-header').css('flex-direction');
+			var pos = readCookie('nav-position');
+			var new_dir = (dir === 'row') ? 'row-reverse' : 'row';
+			var new_pos = (pos === 'r') ? 'l' : 'r';
+			$('#maincontent').css('flex-direction', new_dir);
+			$('#fixed-header').css('flex-direction', new_dir);
+			$('#navbar').css('margin', '0');
+			var side_margin = (new_pos === 'r') ? 'margin-left' : 'margin-right';
+			$('#navbar').css(side_margin, '2px');
+			//console.log(new_pos);
+			//console.log(new_dir);
+			createCookie('nav-position', new_pos, 365);
+		}
 
 
 		$(document).on('click', '.reveal', function(e) {
 			e.preventDefault();
 			e.stopImmediatePropagation();
 			var id = $(this).attr('data-id');
-			var pre = $(this).attr('data-text_div');
+			var pre = $(this).attr('data-text-div');
 			var text_div = pre + id;
-			if ($('#'+ text_div).hasClass('hidden')){
-				$('#hc'+id).addClass('hidden');
-				$('#sc'+id).addClass('hidden');
-				$('#ec'+id).addClass('hidden');
-				$('#' + text_div).removeClass('hidden');
-			}else{
-				$('#' + text_div).addClass('hidden');
-			}
-		});
-
-		$(document).on('click', '#send', function(e){
-			e.preventDefault();
-			e.stopImmediatePropagation();
-			var addr = $('#address').val();
-			var message = $('#message').val();
-			var fd = new FormData();
-			fd.append('addr', addr);
-			fd.append('message', message);
-			fd.append('app_folder', '<?php echo base64_encode(__s_app_folder__);?>');
-			$.ajax({
-				type		: 'POST',
-				cache			: false,
-				dataType : 'json',
-				processData	: false,
-				contentType	: false,
-				url		: '_stdlib/_ajax/_contact_send.php',
-				data		: fd,
-				beforeSend: function() {
-					$('#ajax-loader').removeClass('hidden');
-				},
-				success : function(data) {
-					var title = data['title'];
-					var message = data['message'];
-					var status = data['status'];
-					add_note(title, message, status);
-				},
-				complete: function(){
-					$('#ajax-loader').addClass('hidden');
-				},
-				error: function(){
-					$('#ajax-loader').addClass('hidden');
-				}
-			});
+			//console.log(text_div);
+			$('#'+ text_div).toggleClass('hidden');
 		});
 
 
@@ -392,6 +337,32 @@ include('app_config.php');
 				});
 			}
 		<?php }?>
+
+		$(document).on('click', '.open-list', function(e){
+			e.preventDefault();
+			e.stopImmediatePropagation();
+
+			var id = $(this).attr('id');
+			var oid = $(this).attr('data-list-id');
+			var img_cl_id = $(this).attr('data-img-cl');
+			var img_op_id = $(this).attr('data-img-op');
+			console.log(img_op_id);
+			console.log(img_cl_id);
+			console.log(oid);
+			if ($('ul#' + oid).hasClass('hidden')){
+				$('ul#' + oid).removeClass('hidden');
+				$('img#' + img_cl_id).removeClass('hidden');
+				$('img#' + img_op_id).addClass('hidden');
+				var state = 'open';
+			}else{
+				$('ul#' + oid).addClass('hidden');
+				$('img#' + img_op_id).removeClass('hidden');
+				$('img#' + img_cl_id).addClass('hidden');
+				var state = 'closed';
+			}
+			createCookie(oid, state, 365);
+		});
+
 		$(document).on('click', '.open_eg', function(e){
 			e.preventDefault();
 			e.stopImmediatePropagation();
@@ -437,23 +408,18 @@ include('app_config.php');
 			}
 		});
 
-		$(document).on('click', '.eye', function(e){
-			e.preventDefault();
-			e.stopImmediatePropagation();
-			//console.log($(this).attr('id'));
-			var id = $(this).attr('id').substring(3);
-			if ($('#eye'+id).hasClass('hidden')){
-				$('#eye'+id).removeClass('hidden');
-				$('#ans'+id).addClass('hidden');
-			}else{
-				$('#eye'+id).addClass('hidden');
-				$('#ans'+id).removeClass('hidden');
-			}
-		});
+
+		$(document).on('click', '.card', function(){
+			var id = $(this).attr('id');
+			//console.log(id);
+			$('#' + id + ' .back').toggleClass('hidden');
+			$('#' + id + ' .front').toggleClass('hidden');
+		})
+
 
 	<?php if (is_logged_in()){?>
 		$('.sortable-list').sortable({
-			items: 'li.ex, li.eg, li.act',
+			items: 'li.row-container',
 			update: function(event, ui) {
 				var new_list = $(this).sortable('toArray').toString();
 				var db_tbl = $(this.firstChild.nextSibling).attr('data-db-tbl');

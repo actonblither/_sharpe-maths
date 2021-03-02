@@ -3,6 +3,7 @@ class _navmenu{
 	private $_dbh;
 	private $_parent_id = 1;
 	private $_topic_order = array();
+	private $_menu;
 
 	public function __construct(){
 		$this->_dbh = new _db();
@@ -10,8 +11,10 @@ class _navmenu{
 		$tmp = '';
 		$this->_build_navmenu($output, 0);
 		$tmp .= $this->_parse_menu_list($output);
-		echo $tmp;
+		$this->_menu = $tmp;
 	}
+
+
 
 	private function _parse_menu_list($output){
 		$tmp = "<ul class = 'nav-menu-side'>";
@@ -53,8 +56,10 @@ class _navmenu{
 			}else{
 				$_link_data = " data-main = 'topic' ";
 			}
-			$_x = rvs($_COOKIE['uxp'.$_id[$k]], 'c');
-			if ($_x == 'c'){$_class = 'hidden';}else if ($_x == 'o'){$_class = '';}else{$_class = 'hidden';}
+			$_element = 'uxp'.$_id[$k];
+			$_x = rvs($_COOKIE[$_element], 'c');
+
+			if ($_x == 'c'){ $_class = 'hidden'; }else{ $_class = ''; }
 			if ($_start_child[$k]){
 				if ($_link[$k]){
 					$tmp .= "<li id='navli".$_id[$k]."' class='link point".$_lclass."' data-id = '".$_id[$k]."' ".$_link_data.">".$_title[$k]."<ul id='uxp".$_id[$k]."' class='".$_class."'>";
@@ -63,7 +68,7 @@ class _navmenu{
 				}
 			}else{
 				if ($_link[$k]){
-					$tmp .= "<li id='navli".$_id[$k]."' class='link point".$_lclass."' data-id = '".$_id[$k]."' ".$_link_data.">".$_title[$k]."</li>";
+					$tmp .= "<li id='navli".$_id[$k]."' class='link point mb2".$_lclass."' data-id = '".$_id[$k]."' ".$_link_data.">".$_title[$k]."</li>";
 				}else{
 					$tmp .= "<li id='navli".$_id[$k]."' class='expand point".$_lclass."' data-id = '".$_id[$k]."'><span class='point w100pc'>".$_title[$k]."</span></li>";
 				}
@@ -75,7 +80,6 @@ class _navmenu{
 			}
 		}
 		$tmp .= "</ul>";
-		$tmp .= "<img id = 'navswitch' width = '30' height = '30' class = 'point ttip' src = '".__s_lib_url__."_images/_icons/switch50.png' alt = 'Switch menu' title = 'Toggle the navigation menu to left or right' />";
 		//_cl($tmp);
 		return $tmp;
 	}
@@ -96,7 +100,6 @@ class _navmenu{
 		}
 	}
 
-	public function _get_topic_order(){
-		return $this->_topic_order;
-	}
+	public function _get_navmenu(){ return $this->_menu; }
+	public function _get_topic_order(){ return $this->_topic_order; }
 }

@@ -43,7 +43,7 @@ class _form_element {
 			$this->_el_hidden = rvb($_params['el_hidden']);
 			$this->_el_place_holder = rvs($_params['el_place_holder'], 'Not set...');
 			$this->_el_style_class = rvs($_params['el_style_class']);
-			$this->_el_width = rvs($_params['el_width'], '400');
+			$this->_el_width = rvs($_params['el_width'], '250');
 			$this->_el_height = rvs($_params['el_height'], '200');
 			$this->_el_width_units = rvs($_params['el_width_units'], 'px');
 			$this->_el_height_units = rvs($_params['el_height_units'], 'px');
@@ -82,7 +82,7 @@ class _form_element {
 	}
 
 	public function _build_text_input(){
-		if (empty($this->_el_width)){$this->_el_width = '400';}
+		if (empty($this->_el_width)){$this->_el_width = '250';}
 		$this->_el_field_value = str_replace("'","&#39;", $this->_el_field_value);
 
 		$maxlength = $this->_fetch_varchar_field_length($this->_db_tbl, $this->_el_field_id);

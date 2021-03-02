@@ -82,7 +82,7 @@ class _topic extends _setup{
 		$index = array_search($this->_topic_route_id, $this->_topic_order_array);
 		if($index !== false && $index > 0 ) $prev = $this->_topic_order_array[$index-1];
 		if($index !== false && $index < count($this->_topic_order_array)-1) $next = $this->_topic_order_array[$index+1];
-		$tmp = "<div class='c w100pc sb page-title mb5'>";
+		$tmp = "<div class='c page-title mb5'>";
 		if (rvz($prev) > 0){
 			$_prev_topic_id = $this->_fetch_topic_id_from_route_id($prev);
 			$_sql = 'select title from _app_topic where id = :id';
