@@ -274,7 +274,7 @@ class _select{
 	}
 
 	private function _build_select_multiple(){
-		$_sql = "select id, title from ".$this->_db_tbl_sel." where display = :display and archived = :archived";
+		$_sql = "select id, ".$this->_db_display_field." from ".$this->_db_tbl_sel." where display = :display and archived = :archived";
 		$_d = array('display' => 1, 'archived' => 0);
 		$_f = array('i', 'i');
 		$_rows = $this->_dbh->_fetch_db_rows_p($_sql, $_d, $_f);

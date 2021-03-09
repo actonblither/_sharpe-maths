@@ -20,7 +20,7 @@ header#fixed-header{
 	top: 0;
 	justify-content: space-between;
 	height: var(--header-height);
-	border-bottom: 1px solid var(--s10pc);
+	border-bottom: 1px solid var(--s35pc);
 	background-image: url("../../_images/title-bar-bg.png");
 }
 
@@ -84,7 +84,7 @@ footer#fixed-footer{
 	align-items: center;
 	bottom: 0;
 	height: var(--footer-height);
-	border-top: 1px solid var(--s10pc);
+	border-top: 1px solid var(--s35pc);
 }
 
 footer#fixed-footer div#idds,

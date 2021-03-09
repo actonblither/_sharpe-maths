@@ -1,0 +1,467 @@
+08:03:2021 12:01:45
+PDO PREPARE ERROR in method _insert_sql
+string(910) "08:03:2021 12:01:45
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-03-08 12:01:45
+    [ERROR MESSAGE] => SQLSTATE[42S22]: Column not found: 1054 Unknown column 'topic_id' in 'field list'
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => insert into _app_puzzles set topic_id = :topic_id, ex_id = :ex_id
+    [_d] => Array
+        (
+            [topic_id] => 61
+            [ex_id] => 0
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('insert into _ap...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(66): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_ajax\_add_puzzle.php(15): _db->_insert_sql('insert into _ap...', Array, Array)
+#3 {main}
+)
+
+"
+
+08:03:2021 12:02:51
+PDO EXCECUTE ERROR in method _fetch_db_row
+string(1634) "08:03:2021 12:02:51
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-03-08 12:02:51
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths._app_puzzle' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 275
+    [_sql] => show columns from _app_puzzle where Field = "pz_title"
+    [_d] => Array
+        (
+        )
+
+    [_f] => Array
+        (
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(275): PDOStatement->execute()
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(165): _db->_pdo_execute('PDO EXCECUTE ER...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_form_elements\_class_form_element.php(163): _db->_fetch_db_row('show columns fr...')
+#3 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_form_elements\_class_form_element.php(88): _form_element->_fetch_varchar_field_length('_app_puzzle', 'pz_title')
+#4 G:\xampp\htdocs\sharpe-maths\_stdlib\_lib\_stdlib.php(48): _form_element->_build_text_input()
+#5 G:\xampp\htdocs\sharpe-maths\_classes\_class_puzzles.php(127): _build_varchar(Array)
+#6 G:\xampp\htdocs\sharpe-maths\_classes\_class_puzzles.php(72): _puzzle->_build_form_elements(Array, 6, 0)
+#7 G:\xampp\htdocs\sharpe-maths\_classes\_class_puzzles.php(17): _puzzle->_build_l_1_rows()
+#8 G:\xampp\htdocs\sharpe-maths\_classes\_class_topic.php(187): _puzzle->__construct(59)
+#9 G:\xampp\htdocs\sharpe-maths\_classes\_class_topic.php(47): _topic->_build_puzzles()
+#10 G:\xampp\htdocs\sharpe-maths\_ajax\_load_page.php(40): _topic->_build_topic()
+#11 {main}
+)
+
+"
+
+08:03:2021 12:02:51
+PDO EXCECUTE ERROR in method _fetch_db_row
+string(1634) "08:03:2021 12:02:51
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-03-08 12:02:51
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths._app_puzzle' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 275
+    [_sql] => show columns from _app_puzzle where Field = "pz_title"
+    [_d] => Array
+        (
+        )
+
+    [_f] => Array
+        (
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(275): PDOStatement->execute()
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(165): _db->_pdo_execute('PDO EXCECUTE ER...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_form_elements\_class_form_element.php(163): _db->_fetch_db_row('show columns fr...')
+#3 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_form_elements\_class_form_element.php(88): _form_element->_fetch_varchar_field_length('_app_puzzle', 'pz_title')
+#4 G:\xampp\htdocs\sharpe-maths\_stdlib\_lib\_stdlib.php(48): _form_element->_build_text_input()
+#5 G:\xampp\htdocs\sharpe-maths\_classes\_class_puzzles.php(127): _build_varchar(Array)
+#6 G:\xampp\htdocs\sharpe-maths\_classes\_class_puzzles.php(72): _puzzle->_build_form_elements(Array, 8, 1)
+#7 G:\xampp\htdocs\sharpe-maths\_classes\_class_puzzles.php(17): _puzzle->_build_l_1_rows()
+#8 G:\xampp\htdocs\sharpe-maths\_classes\_class_topic.php(187): _puzzle->__construct(59)
+#9 G:\xampp\htdocs\sharpe-maths\_classes\_class_topic.php(47): _topic->_build_puzzles()
+#10 G:\xampp\htdocs\sharpe-maths\_ajax\_load_page.php(40): _topic->_build_topic()
+#11 {main}
+)
+
+"
+
+08:03:2021 12:03:00
+PDO EXCECUTE ERROR in method _fetch_db_row
+string(1634) "08:03:2021 12:03:00
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-03-08 12:03:00
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths._app_puzzle' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 275
+    [_sql] => show columns from _app_puzzle where Field = "pz_title"
+    [_d] => Array
+        (
+        )
+
+    [_f] => Array
+        (
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(275): PDOStatement->execute()
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(165): _db->_pdo_execute('PDO EXCECUTE ER...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_form_elements\_class_form_element.php(163): _db->_fetch_db_row('show columns fr...')
+#3 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_form_elements\_class_form_element.php(88): _form_element->_fetch_varchar_field_length('_app_puzzle', 'pz_title')
+#4 G:\xampp\htdocs\sharpe-maths\_stdlib\_lib\_stdlib.php(48): _form_element->_build_text_input()
+#5 G:\xampp\htdocs\sharpe-maths\_classes\_class_puzzles.php(127): _build_varchar(Array)
+#6 G:\xampp\htdocs\sharpe-maths\_classes\_class_puzzles.php(72): _puzzle->_build_form_elements(Array, 6, 0)
+#7 G:\xampp\htdocs\sharpe-maths\_classes\_class_puzzles.php(17): _puzzle->_build_l_1_rows()
+#8 G:\xampp\htdocs\sharpe-maths\_classes\_class_topic.php(187): _puzzle->__construct(59)
+#9 G:\xampp\htdocs\sharpe-maths\_classes\_class_topic.php(47): _topic->_build_puzzles()
+#10 G:\xampp\htdocs\sharpe-maths\_ajax\_load_page.php(40): _topic->_build_topic()
+#11 {main}
+)
+
+"
+
+08:03:2021 12:03:00
+PDO EXCECUTE ERROR in method _fetch_db_row
+string(1634) "08:03:2021 12:03:00
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-03-08 12:03:00
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths._app_puzzle' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 275
+    [_sql] => show columns from _app_puzzle where Field = "pz_title"
+    [_d] => Array
+        (
+        )
+
+    [_f] => Array
+        (
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(275): PDOStatement->execute()
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(165): _db->_pdo_execute('PDO EXCECUTE ER...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_form_elements\_class_form_element.php(163): _db->_fetch_db_row('show columns fr...')
+#3 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_form_elements\_class_form_element.php(88): _form_element->_fetch_varchar_field_length('_app_puzzle', 'pz_title')
+#4 G:\xampp\htdocs\sharpe-maths\_stdlib\_lib\_stdlib.php(48): _form_element->_build_text_input()
+#5 G:\xampp\htdocs\sharpe-maths\_classes\_class_puzzles.php(127): _build_varchar(Array)
+#6 G:\xampp\htdocs\sharpe-maths\_classes\_class_puzzles.php(72): _puzzle->_build_form_elements(Array, 8, 1)
+#7 G:\xampp\htdocs\sharpe-maths\_classes\_class_puzzles.php(17): _puzzle->_build_l_1_rows()
+#8 G:\xampp\htdocs\sharpe-maths\_classes\_class_topic.php(187): _puzzle->__construct(59)
+#9 G:\xampp\htdocs\sharpe-maths\_classes\_class_topic.php(47): _topic->_build_puzzles()
+#10 G:\xampp\htdocs\sharpe-maths\_ajax\_load_page.php(40): _topic->_build_topic()
+#11 {main}
+)
+
+"
+
+08:03:2021 12:03:08
+PDO EXCECUTE ERROR in method _fetch_db_row
+string(1634) "08:03:2021 12:03:08
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-03-08 12:03:08
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths._app_puzzle' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 275
+    [_sql] => show columns from _app_puzzle where Field = "pz_title"
+    [_d] => Array
+        (
+        )
+
+    [_f] => Array
+        (
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(275): PDOStatement->execute()
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(165): _db->_pdo_execute('PDO EXCECUTE ER...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_form_elements\_class_form_element.php(163): _db->_fetch_db_row('show columns fr...')
+#3 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_form_elements\_class_form_element.php(88): _form_element->_fetch_varchar_field_length('_app_puzzle', 'pz_title')
+#4 G:\xampp\htdocs\sharpe-maths\_stdlib\_lib\_stdlib.php(48): _form_element->_build_text_input()
+#5 G:\xampp\htdocs\sharpe-maths\_classes\_class_puzzles.php(127): _build_varchar(Array)
+#6 G:\xampp\htdocs\sharpe-maths\_classes\_class_puzzles.php(72): _puzzle->_build_form_elements(Array, 6, 0)
+#7 G:\xampp\htdocs\sharpe-maths\_classes\_class_puzzles.php(17): _puzzle->_build_l_1_rows()
+#8 G:\xampp\htdocs\sharpe-maths\_classes\_class_topic.php(187): _puzzle->__construct(59)
+#9 G:\xampp\htdocs\sharpe-maths\_classes\_class_topic.php(47): _topic->_build_puzzles()
+#10 G:\xampp\htdocs\sharpe-maths\_ajax\_load_page.php(40): _topic->_build_topic()
+#11 {main}
+)
+
+"
+
+08:03:2021 12:03:08
+PDO EXCECUTE ERROR in method _fetch_db_row
+string(1634) "08:03:2021 12:03:08
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-03-08 12:03:08
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths._app_puzzle' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 275
+    [_sql] => show columns from _app_puzzle where Field = "pz_title"
+    [_d] => Array
+        (
+        )
+
+    [_f] => Array
+        (
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(275): PDOStatement->execute()
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(165): _db->_pdo_execute('PDO EXCECUTE ER...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_form_elements\_class_form_element.php(163): _db->_fetch_db_row('show columns fr...')
+#3 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_form_elements\_class_form_element.php(88): _form_element->_fetch_varchar_field_length('_app_puzzle', 'pz_title')
+#4 G:\xampp\htdocs\sharpe-maths\_stdlib\_lib\_stdlib.php(48): _form_element->_build_text_input()
+#5 G:\xampp\htdocs\sharpe-maths\_classes\_class_puzzles.php(127): _build_varchar(Array)
+#6 G:\xampp\htdocs\sharpe-maths\_classes\_class_puzzles.php(72): _puzzle->_build_form_elements(Array, 8, 1)
+#7 G:\xampp\htdocs\sharpe-maths\_classes\_class_puzzles.php(17): _puzzle->_build_l_1_rows()
+#8 G:\xampp\htdocs\sharpe-maths\_classes\_class_topic.php(187): _puzzle->__construct(59)
+#9 G:\xampp\htdocs\sharpe-maths\_classes\_class_topic.php(47): _topic->_build_puzzles()
+#10 G:\xampp\htdocs\sharpe-maths\_ajax\_load_page.php(40): _topic->_build_topic()
+#11 {main}
+)
+
+"
+
+08:03:2021 12:03:21
+PDO EXCECUTE ERROR in method _fetch_db_row
+string(1634) "08:03:2021 12:03:21
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-03-08 12:03:21
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths._app_puzzle' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 275
+    [_sql] => show columns from _app_puzzle where Field = "pz_title"
+    [_d] => Array
+        (
+        )
+
+    [_f] => Array
+        (
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(275): PDOStatement->execute()
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(165): _db->_pdo_execute('PDO EXCECUTE ER...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_form_elements\_class_form_element.php(163): _db->_fetch_db_row('show columns fr...')
+#3 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_form_elements\_class_form_element.php(88): _form_element->_fetch_varchar_field_length('_app_puzzle', 'pz_title')
+#4 G:\xampp\htdocs\sharpe-maths\_stdlib\_lib\_stdlib.php(48): _form_element->_build_text_input()
+#5 G:\xampp\htdocs\sharpe-maths\_classes\_class_puzzles.php(127): _build_varchar(Array)
+#6 G:\xampp\htdocs\sharpe-maths\_classes\_class_puzzles.php(72): _puzzle->_build_form_elements(Array, 6, 0)
+#7 G:\xampp\htdocs\sharpe-maths\_classes\_class_puzzles.php(17): _puzzle->_build_l_1_rows()
+#8 G:\xampp\htdocs\sharpe-maths\_classes\_class_topic.php(187): _puzzle->__construct(59)
+#9 G:\xampp\htdocs\sharpe-maths\_classes\_class_topic.php(47): _topic->_build_puzzles()
+#10 G:\xampp\htdocs\sharpe-maths\_ajax\_load_page.php(40): _topic->_build_topic()
+#11 {main}
+)
+
+"
+
+08:03:2021 12:03:21
+PDO EXCECUTE ERROR in method _fetch_db_row
+string(1634) "08:03:2021 12:03:21
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-03-08 12:03:21
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths._app_puzzle' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 275
+    [_sql] => show columns from _app_puzzle where Field = "pz_title"
+    [_d] => Array
+        (
+        )
+
+    [_f] => Array
+        (
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(275): PDOStatement->execute()
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(165): _db->_pdo_execute('PDO EXCECUTE ER...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_form_elements\_class_form_element.php(163): _db->_fetch_db_row('show columns fr...')
+#3 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_form_elements\_class_form_element.php(88): _form_element->_fetch_varchar_field_length('_app_puzzle', 'pz_title')
+#4 G:\xampp\htdocs\sharpe-maths\_stdlib\_lib\_stdlib.php(48): _form_element->_build_text_input()
+#5 G:\xampp\htdocs\sharpe-maths\_classes\_class_puzzles.php(127): _build_varchar(Array)
+#6 G:\xampp\htdocs\sharpe-maths\_classes\_class_puzzles.php(72): _puzzle->_build_form_elements(Array, 8, 1)
+#7 G:\xampp\htdocs\sharpe-maths\_classes\_class_puzzles.php(17): _puzzle->_build_l_1_rows()
+#8 G:\xampp\htdocs\sharpe-maths\_classes\_class_topic.php(187): _puzzle->__construct(59)
+#9 G:\xampp\htdocs\sharpe-maths\_classes\_class_topic.php(47): _topic->_build_puzzles()
+#10 G:\xampp\htdocs\sharpe-maths\_ajax\_load_page.php(40): _topic->_build_topic()
+#11 {main}
+)
+
+"
+
+08:03:2021 12:30:49
+PDO EXCECUTE ERROR in method _fetch_db_row
+string(2015) "08:03:2021 12:30:49
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-03-08 12:30:49
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths._app_puzzle' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 275
+    [_sql] => show columns from _app_puzzle where Field = "pz_title"
+    [_d] => Array
+        (
+        )
+
+    [_f] => Array
+        (
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(275): PDOStatement->execute()
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(165): _db->_pdo_execute('PDO EXCECUTE ER...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_form_elements\_class_form_element.php(163): _db->_fetch_db_row('show columns fr...')
+#3 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_form_elements\_class_form_element.php(88): _form_element->_fetch_varchar_field_length('_app_puzzle', 'pz_title')
+#4 G:\xampp\htdocs\sharpe-maths\_stdlib\_lib\_stdlib.php(48): _form_element->_build_text_input()
+#5 G:\xampp\htdocs\sharpe-maths\_classes\_class_puzzles.php(127): _build_varchar(Array)
+#6 G:\xampp\htdocs\sharpe-maths\_classes\_class_puzzles.php(72): _puzzle->_build_form_elements(Array, 6, 0)
+#7 G:\xampp\htdocs\sharpe-maths\_classes\_class_puzzles.php(17): _puzzle->_build_l_1_rows()
+#8 G:\xampp\htdocs\sharpe-maths\_classes\_class_topic.php(187): _puzzle->__construct(59)
+#9 G:\xampp\htdocs\sharpe-maths\_classes\_class_topic.php(47): _topic->_build_puzzles()
+#10 G:\xampp\htdocs\sharpe-maths\main_menu.php(58): _topic->_build_topic()
+#11 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_header_body.php(58): include_once('G:\\xampp\\htdocs...')
+#12 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_header_body.php(35): _header_body->_build_body_maincol()
+#13 G:\xampp\htdocs\sharpe-maths\main.php(9): _header_body->_build_body()
+#14 G:\xampp\htdocs\sharpe-maths\index.php(96): include_once('G:\\xampp\\htdocs...')
+#15 {main}
+)
+
+"
+
+08:03:2021 12:30:49
+PDO EXCECUTE ERROR in method _fetch_db_row
+string(2015) "08:03:2021 12:30:49
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-03-08 12:30:49
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths._app_puzzle' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 275
+    [_sql] => show columns from _app_puzzle where Field = "pz_title"
+    [_d] => Array
+        (
+        )
+
+    [_f] => Array
+        (
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(275): PDOStatement->execute()
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(165): _db->_pdo_execute('PDO EXCECUTE ER...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_form_elements\_class_form_element.php(163): _db->_fetch_db_row('show columns fr...')
+#3 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_form_elements\_class_form_element.php(88): _form_element->_fetch_varchar_field_length('_app_puzzle', 'pz_title')
+#4 G:\xampp\htdocs\sharpe-maths\_stdlib\_lib\_stdlib.php(48): _form_element->_build_text_input()
+#5 G:\xampp\htdocs\sharpe-maths\_classes\_class_puzzles.php(127): _build_varchar(Array)
+#6 G:\xampp\htdocs\sharpe-maths\_classes\_class_puzzles.php(72): _puzzle->_build_form_elements(Array, 8, 1)
+#7 G:\xampp\htdocs\sharpe-maths\_classes\_class_puzzles.php(17): _puzzle->_build_l_1_rows()
+#8 G:\xampp\htdocs\sharpe-maths\_classes\_class_topic.php(187): _puzzle->__construct(59)
+#9 G:\xampp\htdocs\sharpe-maths\_classes\_class_topic.php(47): _topic->_build_puzzles()
+#10 G:\xampp\htdocs\sharpe-maths\main_menu.php(58): _topic->_build_topic()
+#11 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_header_body.php(58): include_once('G:\\xampp\\htdocs...')
+#12 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_header_body.php(35): _header_body->_build_body_maincol()
+#13 G:\xampp\htdocs\sharpe-maths\main.php(9): _header_body->_build_body()
+#14 G:\xampp\htdocs\sharpe-maths\index.php(96): include_once('G:\\xampp\\htdocs...')
+#15 {main}
+)
+
+"
+
+08:03:2021 12:31:25
+PDO EXCECUTE ERROR in method _fetch_db_row
+string(2015) "08:03:2021 12:31:25
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-03-08 12:31:25
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths._app_puzzle' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 275
+    [_sql] => show columns from _app_puzzle where Field = "pz_title"
+    [_d] => Array
+        (
+        )
+
+    [_f] => Array
+        (
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(275): PDOStatement->execute()
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(165): _db->_pdo_execute('PDO EXCECUTE ER...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_form_elements\_class_form_element.php(163): _db->_fetch_db_row('show columns fr...')
+#3 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_form_elements\_class_form_element.php(88): _form_element->_fetch_varchar_field_length('_app_puzzle', 'pz_title')
+#4 G:\xampp\htdocs\sharpe-maths\_stdlib\_lib\_stdlib.php(48): _form_element->_build_text_input()
+#5 G:\xampp\htdocs\sharpe-maths\_classes\_class_puzzles.php(127): _build_varchar(Array)
+#6 G:\xampp\htdocs\sharpe-maths\_classes\_class_puzzles.php(72): _puzzle->_build_form_elements(Array, 6, 0)
+#7 G:\xampp\htdocs\sharpe-maths\_classes\_class_puzzles.php(17): _puzzle->_build_l_1_rows()
+#8 G:\xampp\htdocs\sharpe-maths\_classes\_class_topic.php(187): _puzzle->__construct(59)
+#9 G:\xampp\htdocs\sharpe-maths\_classes\_class_topic.php(47): _topic->_build_puzzles()
+#10 G:\xampp\htdocs\sharpe-maths\main_menu.php(58): _topic->_build_topic()
+#11 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_header_body.php(58): include_once('G:\\xampp\\htdocs...')
+#12 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_header_body.php(35): _header_body->_build_body_maincol()
+#13 G:\xampp\htdocs\sharpe-maths\main.php(9): _header_body->_build_body()
+#14 G:\xampp\htdocs\sharpe-maths\index.php(96): include_once('G:\\xampp\\htdocs...')
+#15 {main}
+)
+
+"
+
+08:03:2021 12:31:25
+PDO EXCECUTE ERROR in method _fetch_db_row
+string(2015) "08:03:2021 12:31:25
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-03-08 12:31:25
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths._app_puzzle' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 275
+    [_sql] => show columns from _app_puzzle where Field = "pz_title"
+    [_d] => Array
+        (
+        )
+
+    [_f] => Array
+        (
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(275): PDOStatement->execute()
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(165): _db->_pdo_execute('PDO EXCECUTE ER...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_form_elements\_class_form_element.php(163): _db->_fetch_db_row('show columns fr...')
+#3 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_form_elements\_class_form_element.php(88): _form_element->_fetch_varchar_field_length('_app_puzzle', 'pz_title')
+#4 G:\xampp\htdocs\sharpe-maths\_stdlib\_lib\_stdlib.php(48): _form_element->_build_text_input()
+#5 G:\xampp\htdocs\sharpe-maths\_classes\_class_puzzles.php(127): _build_varchar(Array)
+#6 G:\xampp\htdocs\sharpe-maths\_classes\_class_puzzles.php(72): _puzzle->_build_form_elements(Array, 8, 1)
+#7 G:\xampp\htdocs\sharpe-maths\_classes\_class_puzzles.php(17): _puzzle->_build_l_1_rows()
+#8 G:\xampp\htdocs\sharpe-maths\_classes\_class_topic.php(187): _puzzle->__construct(59)
+#9 G:\xampp\htdocs\sharpe-maths\_classes\_class_topic.php(47): _topic->_build_puzzles()
+#10 G:\xampp\htdocs\sharpe-maths\main_menu.php(58): _topic->_build_topic()
+#11 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_header_body.php(58): include_once('G:\\xampp\\htdocs...')
+#12 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_header_body.php(35): _header_body->_build_body_maincol()
+#13 G:\xampp\htdocs\sharpe-maths\main.php(9): _header_body->_build_body()
+#14 G:\xampp\htdocs\sharpe-maths\index.php(96): include_once('G:\\xampp\\htdocs...')
+#15 {main}
+)
+
+"
+

@@ -39,6 +39,16 @@ class _puzzle{
 		$this->_list = new _list($this->_list_params);
 	}
 
+	public function _fetch_all_puzzles(){
+		$this->_show_title = true;
+		if ($this->_show_title){$this->_set_pz_page_title('General puzzle page');}
+		$_sql = 'select * from _app_puzzles where display = :display and archived = :archived order by difficulty';
+		$_d = array('display' => 1, 'archived' => 0);
+		$_f = array('i', 'i');
+		$_rows = $this->_dbh->_fetch_db_rows_p($_sql, $_d, $_f);
+		return $this->_build_puzzle_page($_rows);
+	}
+
 	private function _build_l_1_rows(){
 		$_sql = 'select p.* from _app_puzzles p left join _app_puzzle_topic_link pt on pt.puzzle_id = p.id where p.display = :display and p.archived = :archived and pt.topic_id = :topic_id order by p.difficulty';
 		$_d = array('display' => 1, 'archived' => 0, 'topic_id' => $this->_topic_id);

@@ -48,8 +48,7 @@ class _delete extends _setup{
 					e.preventDefault();
 					e.stopImmediatePropagation();
 					var id = $(this).attr('id').substring(".$this->_id_prefix_length.");
-console.log(id);
-var fd = new FormData();
+					var fd = new FormData();
 					fd.append('app_folder', '".base64_encode(__s_app_folder__)."');
 					fd.append('main_db_tbl', '".$this->_main_db_tbl."');
 					fd.append('main_db_tbl_field', '".$this->_main_db_tbl_field."');

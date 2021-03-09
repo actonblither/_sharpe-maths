@@ -39,8 +39,8 @@ switch ($_main){
 
 	case 'page':
 		if ($_id === 4){
-			$g = new _puzzle();
-			echo $g->_fetch_all_puzzles();
+			//$g = new _puzzle();
+			//echo $g->_fetch_all_puzzles();
 		}else if ($_id === 5){
 			$h = new _glossary();
 			echo $h->_build_glossary();

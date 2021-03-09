@@ -33,15 +33,13 @@ if ($_main === 'page'){
 		$_return['page'] .= $h->_build_page();
 	}
 }else if ($_main === 'topic'){
-	if ($_id === 5){
-
-	}else{
-		$h = new _topic($_id);
-		$h->_set_main($_main);
-		$h->_set_topic_order_array($_SESSION['s_topic_order']);
-		$_return['page'] .= $h->_build_topic();
-	}
+	$h = new _topic($_id);
+	$h->_set_main($_main);
+	$h->_set_topic_order_array($_SESSION['s_topic_order']);
+	//$_return['page'] .= base64_encode($h->_build_topic());
+	$_return['page'] .= $h->_build_topic();
 }
+
 $_return['page-title'] = _set_browser_tab_title();
 echo json_encode($_return);
 ?>

@@ -6,7 +6,7 @@ class _glossary extends _setup{
 	private $_g_description;
 	private $_g_example_usage;
 	private $_g_db_tbl = '_app_glossary';
-	private $_g_link_tbl = '_app_link_glossary';
+	private $_g_link_tbl = '_app_glossary_link';
 
 	public function __construct(){
 		parent::__construct();
@@ -79,7 +79,7 @@ class _glossary extends _setup{
 	}
 
 	private function _build_connector_str($_id){
-		$_sql = 'select distinct g.* from _app_glossary g left join _app_link_glossary lg on (lg.id_1 = g.id or lg.id_2 = g.id) where g.display = :display and g.archived = :archived and (lg.id_1 = :id or lg.id_2 = :id2) order by left(g.title, 1);';
+		$_sql = 'select distinct g.* from _app_glossary g left join _app_glossary_link lg on (lg.id_1 = g.id or lg.id_2 = g.id) where g.display = :display and g.archived = :archived and (lg.id_1 = :id or lg.id_2 = :id2) order by left(g.title, 1);';
 		$_d = array('display' => 1, 'archived' => 0, 'id' => $_id, 'id2' => $_id);
 		$_f = array('i', 'i');
 		$_rows = $this->_dbh->_fetch_db_rows_p($_sql, $_d, $_f);
@@ -126,19 +126,19 @@ class _glossary extends _setup{
 	}
 
 	private function _build_multiple_select($_id){
-		$_db_tbl = '_app_link_glossary';
+		$_db_tbl = '_app_glossary_link';
 		$_db_tbl_field_1 = 'id_1';
 		$_db_tbl_field_2 = 'id_2';
 		$_sql = 'select * from _app_glossary where display = :display and archived = :archived order by left(title, 1);';
 		$_d = array('display' => 1, 'archived' => 0);
 		$_f = array('i', 'i');
 		$_rows = $this->_dbh->_fetch_db_rows_p($_sql, $_d, $_f);
-		$tmp = "<select id = 'link_id_".$_id."' multiple data-id = '".$_id."' data-field = 'id_1' data-db-tbl = '_app_link_glossary' class = 'sel-link-field h300'>";
+		$tmp = "<select id = 'link_id_".$_id."' multiple data-id = '".$_id."' data-field = 'id_1' data-db-tbl = '_app_glossary_link' class = 'sel-link-field h300'>";
 		if (!empty($_rows)){
 			for ($i = 0; $i < count($_rows); $i++){
 				//Only output the option if it does not self-connect
 				if ($_rows[$i]['id'] !== $_id){
-					$_sql = "(select id_1, id_2 from _app_link_glossary where (id_1 = ".$_rows[$i]['id'].") and (id_2 = ".$_id.")) union (select id_1, id_2 from _app_link_glossary where (id_1 = ".$_id.") and (id_2 = ".$_rows[$i]['id']."))";
+					$_sql = "(select id_1, id_2 from _app_glossary_link where (id_1 = ".$_rows[$i]['id'].") and (id_2 = ".$_id.")) union (select id_1, id_2 from _app_glossary_link where (id_1 = ".$_id.") and (id_2 = ".$_rows[$i]['id']."))";
 					$_sel_row = $this->_dbh->_fetch_db_row($_sql);
 					if ($_sel_row['id_1'] === $_rows[$i]['id'] && $_sel_row['id_2'] === $_id || $_sel_row['id_2'] === $_rows[$i]['id'] && $_sel_row['id_1'] === $_id){
 						$_sel_text = "selected = 'selected'";

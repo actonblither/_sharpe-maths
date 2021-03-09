@@ -4,7 +4,6 @@
 		$_h = new _header_body();
 		echo $_h->_build_header();
 	?>
-
 </header>
 <section id = 'maincontent'>
 	<?php echo $_h->_build_body();?>

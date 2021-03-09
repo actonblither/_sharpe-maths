@@ -27,7 +27,7 @@ ul.nav-menu-side{
 
 ul.nav-menu-side li.expand{
 	border-radius: 4px;
-	border: 1px solid var(--s25pc);
+	border: 1px solid var(--s35pc);
 	padding: 5px;
 	margin: 1px 0 1px 0;
 	background-color: var(--s85pc);
@@ -43,7 +43,7 @@ ul.nav-menu-side li.expand:hover{
 
 ul.nav-menu-side li.link{
 	border-radius: 4px;
-	border: 1px solid var(--s25pc);
+	border: 1px solid var(--s35pc);
 	padding: 5px;
 	color: var(--s10pc);
 	background-color: var(--s75pc);
@@ -63,7 +63,7 @@ ul.nav-menu-side > li.link{
 	background-color: var(--s90pc);
 	color: var(--s05pc);
 	font-style: normal;
-	border: 1px solid var(--s25pc);
+	border: 1px solid var(--s35pc);
 }
 
 ul.nav-menu-side > li.link:hover{
@@ -76,7 +76,7 @@ ul.nav-menu-side > li.expand{
 	background-color: var(--s85pc);
 	color: var(--s05pc);
 	font-style: italic;
-	border: 1px solid var(--s25pc);
+	border: 1px solid var(--s35pc);
 }
 
 ul.nav-menu-side > li.expand:hover{

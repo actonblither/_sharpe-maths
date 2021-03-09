@@ -45,7 +45,7 @@ if ($_link == false){
 		$_return ['message'] = 'There was a problem updating the field ('.$_field.'). Please try again.';
 	}
 }else{
-	if ($_db_tbl == '_app_link_glossary'){
+	if ($_db_tbl == '_app_glossary_link'){
 		$_val = explode(',', $_value);
 		$_t = $_db_tbl;
 		$_d = array('id_2' => $_id);

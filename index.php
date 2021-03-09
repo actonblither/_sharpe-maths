@@ -54,7 +54,7 @@ include('app_config.php');
 				svg: {
 					fontCache: 'global',
 					displayAlign: 'left',
-					scale: 1.15
+					scale: 1
 				}
 			};
 
@@ -154,6 +154,7 @@ include('app_config.php');
 					$('#ajax-loader').removeClass('hidden');
 				},
 				success : function(data) {
+					//var page = atob(data['page']);
 					var page = data['page'];
 					$('#maincol').html(page);
 					MathJax.typeset();
@@ -198,8 +199,7 @@ include('app_config.php');
 			$('#navbar').css('margin', '0');
 			var side_margin = (new_pos === 'r') ? 'margin-left' : 'margin-right';
 			$('#navbar').css(side_margin, '2px');
-			//console.log(new_pos);
-			//console.log(new_dir);
+
 			createCookie('nav-position', new_pos, 365);
 		}
 
@@ -210,7 +210,6 @@ include('app_config.php');
 			var id = $(this).attr('data-id');
 			var pre = $(this).attr('data-text-div');
 			var text_div = pre + id;
-			//console.log(text_div);
 			$('#'+ text_div).toggleClass('hidden');
 		});
 
@@ -346,9 +345,7 @@ include('app_config.php');
 			var oid = $(this).attr('data-list-id');
 			var img_cl_id = $(this).attr('data-img-cl');
 			var img_op_id = $(this).attr('data-img-op');
-			console.log(img_op_id);
-			console.log(img_cl_id);
-			console.log(oid);
+
 			if ($('ul#' + oid).hasClass('hidden')){
 				$('ul#' + oid).removeClass('hidden');
 				$('img#' + img_cl_id).removeClass('hidden');
@@ -419,7 +416,7 @@ include('app_config.php');
 
 	<?php if (is_logged_in()){?>
 		$('.sortable-list').sortable({
-			items: 'li.row-container',
+			items: 'li.rc',
 			update: function(event, ui) {
 				var new_list = $(this).sortable('toArray').toString();
 				var db_tbl = $(this.firstChild.nextSibling).attr('data-db-tbl');

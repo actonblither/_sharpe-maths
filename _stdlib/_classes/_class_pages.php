@@ -82,7 +82,7 @@ class _pages extends _setup{
 		$_sql = 'select body from __sys_pages where id = :id';
 		$_d = array('id' => $this->_page_id);
 		$_f = array('i');
-		$this->_page_body = $this->_dbh->_fetch_db_datum_p($_sql, $_d, $_f);
+		$this->_page_body = "<div class = 'pl10'>".$this->_dbh->_fetch_db_datum_p($_sql, $_d, $_f)."</div>";
 	}
 
 }

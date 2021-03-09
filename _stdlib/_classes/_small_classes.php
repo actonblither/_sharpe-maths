@@ -35,6 +35,8 @@ class _list{
 	private $_del_sub_class;
 	private $_delete_items = true;
 	private $_ids;
+	private $_extra_jq;
+	private $_edit_fields;
 
 
 	public function __construct($_params){
@@ -67,6 +69,8 @@ class _list{
 		$this->_div_class = rva($_params['div_class']);
 		$this->_ids = rva($_params['ids']);
 		$this->_delete_items = rvb($_params['delete_items']);
+		$this->_extra_jq = rvs($_params['extra_jq']);
+		$this->_edit_fields = rvs($_params['edit_fields']);
 		//_cl($_params, 'PARAMS');
 
 		$this->_del_header_params = array(
@@ -101,6 +105,9 @@ class _list{
 
 			$tmp .= "<script>$(document).ready(function(e){";
 			$tmp .= $this->_build_add_new_jq();
+			if (!empty($this->_extra_jq)){
+				$tmp .= $this->_extra_jq;
+			}
 
 
 			$tmp .= _build_del_header($this->_del_header_params, true);
@@ -114,8 +121,7 @@ class _list{
 		}
 
 		if ($this->_is_logged_in){
-			$tmp .= $this->_build_add_new_btn();
-
+			$tmp .= $this->_build_add_new_btn(150);
 			$tmp .= "<ul id = '".$this->_l_0_ul_id."' class='sortable-list'>";
 		}else{
 			$tmp .= "<ul id = '".$this->_l_0_ul_id."'>";
@@ -126,23 +132,27 @@ class _list{
 			foreach ($this->_rows as $_row){
 				$_a = $_count + 1;
 				$_id = $_row['id'];
-				$tmp .= "<li id = '".$this->_l_0_li_id_prefix.$_id."' data-db-tbl='".$this->_main_db_tbl."'>";
+				$tmp .= "<li class = 'rc' id = '".$this->_l_0_li_id_prefix.$_id."' data-db-tbl='".$this->_main_db_tbl."'>";
 
 				$tmp .= "<ul id = '".$this->_l_1_header_ul_id.$_id."' class = 'topic-header-list w100pc'>";
 
 				if ($this->_is_logged_in){
 					$this->_del_header_params['main_db_tbl_field_value'] = $_id;
 					$tmp .= _build_del_header($this->_del_header_params, false);
-					$tmp .= "<li id = '".$this->_l_1_header_li_id_prefix.$_id."' class = 'point open-list' data-list-id = '".$this->_l_1_item_ul_id.$_id."' data-img-cl = '".$this->_img_closed_id_prefix.$_id."' data-img-op = '".$this->_img_opened_id_prefix.$_id."'>";
+					$tmp .= "<li id = '".$this->_l_1_header_li_id_prefix.$_id."' class = 'point' data-list-id = '".$this->_l_1_item_ul_id.$_id."' data-img-cl = '".$this->_img_closed_id_prefix.$_id."' data-img-op = '".$this->_img_opened_id_prefix.$_id."'>";
 				}else{
 					$tmp .= "<li id = '".$this->_l_1_header_li_id_prefix.$_id."' class='point open-list' data-list-id = '".$this->_l_1_item_ul_id.$_id."' data-img-cl = '".$this->_img_closed_id_prefix.$_id."' data-img-op = '".$this->_img_opened_id_prefix.$_id."'>";
 				}
 				$tmp .= "<div class='row w40 p5'>";
-				$tmp .= "<img width = '32' height = '32' alt = 'Open' title='Click to open the example.' id = '".$this->_img_opened_id_prefix.$_id."' class = 'ttip' src='".__s_lib_url__."_images/_icons/closed.png' />";
-				$tmp .= "<img width = '32' height = '32' alt = 'Close' title='Click to close the example.' class = 'hidden ttip' id = '".$this->_img_closed_id_prefix.$_id."' src='".__s_lib_url__."_images/_icons/opened.png' />";
+				$tmp .= "<img width = '32' height = '32' alt = 'Open' title='Click to open the example.' id = '".$this->_img_opened_id_prefix.$_id."' class = 'ttip open-list' src='".__s_lib_url__."_images/_icons/closed.png' data-list-id = '".$this->_l_1_item_ul_id.$_id."' data-img-cl = '".$this->_img_closed_id_prefix.$_id."' data-img-op = '".$this->_img_opened_id_prefix.$_id."' />";
+				$tmp .= "<img width = '32' height = '32' alt = 'Close' title='Click to close the example.' class = 'hidden ttip open-list' id = '".$this->_img_closed_id_prefix.$_id."' src='".__s_lib_url__."_images/_icons/opened.png' data-list-id = '".$this->_l_1_item_ul_id.$_id."' data-img-cl = '".$this->_img_closed_id_prefix.$_id."' data-img-op = '".$this->_img_opened_id_prefix.$_id."' />";
 				$tmp .= "</div>";
 				if ($this->_is_logged_in){
-					$tmp .= "<div class='row f1'><span class = 'h3n nowrap'>".$this->_l_1_header_title." #".$_a.": </span>". $this->_title[$_count]."</div>";
+					if (!empty($this->_edit_fields[$_count])){
+						$tmp .= "<div class='row f1'><span class = 'h3n nowrap'>".$this->_l_1_header_title." #".$_a.": </span>". $this->_title[$_count].' '.$this->_edit_fields[$_count]."</div>";
+					}else{
+						$tmp .= "<div class='row f1'><span class = 'h3n nowrap'>".$this->_l_1_header_title." #".$_a.": </span>". $this->_title[$_count]."</div>";
+					}
 				}else{
 					$tmp .= "<div class='row f1'><span class = 'h3n'>".$this->_l_1_header_title." #".$_a.": ". $this->_title[$_count]."</span></div>";
 
@@ -230,12 +240,13 @@ class _list{
 	}
 
 
+
 	private function _build_li($_l, $_t, $_n){
 		return "<li><div class='label'>".$_l."</div><div class='the-rest'><div class='text'>".$_t."</div><div class='note'>".$_n."</div></div></li>";
 	}
 
-	private function _build_add_new_btn(){
-		$tmp = "<button type = 'button' class = 'add_new_".$this->_add_new_text." add w200 mb5' id = 'to".$this->_topic_id."'>Add new ".str_replace('_', ' ', $this->_add_new_text)."</button>";
+	private function _build_add_new_btn($_wc = 200){
+		$tmp = "<button type = 'button' class = 'add_new_".$this->_add_new_text." add w".$_wc." mb5' id = 'to".$this->_topic_id."'>Add new ".str_replace('_', ' ', $this->_add_new_text)."</button>";
 		return $tmp;
 	}
 

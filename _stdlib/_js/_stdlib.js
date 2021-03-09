@@ -25,7 +25,7 @@ function createCookie(name, value, days) {
 		var expires = "; expires=" + date.toGMTString();
 	}
 	else var expires = "";
-	document.cookie = name + "=" + (value || "") + expires + "; path=/; samesite=lax; secure;";
+	document.cookie = name + "=" + (value || "") + expires + "; path=/; samesite=strict;";
 	//console.log(document.cookie);
 }
 

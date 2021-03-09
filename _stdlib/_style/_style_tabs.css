@@ -1,43 +1,46 @@
 @CHARSET "ISO-8859-1";
 
-nav.nav-tab-class{
+.nav-tab-class{
 	display: flex;
 	flex-flow: row nowrap;
 	flex: 1;
 	padding: 0;
 	margin: 0;
 	background-color: var(--s65pc);
-	border: 1px solid var(--grey-light);
 	border-radius: 4px 4px 0 0;
+	border: 1px solid var(--s35pc);
+	border-bottom: 0;
+
 }
 
 .nav-tab-class > div.tab-container,
 .nav-tab-class > div.tab-gap{
 	display: flex;
 	flex-flow: column nowrap;
+	padding: 0;
+	margin: 0;
+	border-bottom: 0;
+
 }
 
-.nav-tab-class > div.tab-gap{
-
-}
 
 .nav-tab-class > div.tab-container > a{
 	display: flex;
 	font-family: Tahoma, Geneva, sans-serif;
-	flex-flow: row nowrap;
+	flex-flow: column nowrap;
 	align-items: center;
 	justify-content: center;
 	height: 18px;
-	padding: 4px 4px 4px 4px;
+	padding: 4px;
 	margin-bottom: 0;
 	margin-top: 3px;
 	border-radius: 4px 4px 0 0;
-	border: 1px solid var(--s35pc);
-
 	color: var(--s10pc);
 	background-color: var(--s90pc);
 	text-decoration:none;
 	font-weight: bold;
+	border: 1px solid var(--s35pc);
+	border-bottom: 0;
 
 	/*
 	This produces a shrinking text.
@@ -48,18 +51,18 @@ nav.nav-tab-class{
 }
 
 .nav-tab-class > div.tab-gap{
-	width: 5px;
+	width: 3px;
 	justify-content: flex-end;
 	padding : 0;
-	border-bottom: 1px solid var(--grey-border);
-	margin-bottom: 0px;
+	margin-bottom: 0;
 }
 
-.nav-tab-class > div.tab-gap > div.base{
+/* .nav-tab-class > div.tab-gap > div.base,
+.nav-tab-class > div.tab-container > div.base{
 	border-top: 1px solid var(--s15pc);
 	border-bottom: 0;
 	height: 6px;
-}
+} */
 
 .nav-tab-class > div.tab-gap > div.gap-a{
 	font-family: Tahoma, Geneva, sans-serif;
@@ -71,13 +74,7 @@ nav.nav-tab-class{
 	border: 0;
 }
 
-.nav-tab-class > .tab-container:first-child .base{
-	border-left: 1px solid var(--grey-border);
-	margin-bottom: 1px;
-}
-
 .nav-tab-class > div.tab-gap:last-child{
-
 	flex: 1;
 }
 
@@ -86,7 +83,7 @@ nav.nav-tab-class{
 	height: 6px;
 	background-color: var(--s25pc);
 	border-width:0 1px 1px 1px;
-	border-color: var(--grey-light);
+	border-color: var(--s45pc);
 	border-radius: 0 0 0 0;
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -95,13 +92,13 @@ nav.nav-tab-class{
 .nav-tab-class > div.tab-container > a.tab-active{
 	background-color: var(--s35pc);
 	color: var(--s95pc);
+	border-color: var(--s75pc);
 }
 
 .nav-tab-class > div > div.base{
 	background-color: var(--s35pc);
-	border-bottom: 1px solid var(--grey-light);
+	border-bottom: 1px solid var(--s35pc);
 }
-
 
 div.top-tabs-divs{
 	display: flex;
