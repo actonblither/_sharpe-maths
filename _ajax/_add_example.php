@@ -13,10 +13,8 @@ $_d = array('topic_id' => $_topic_id);
 $_f = array('i');
 $_eg_insert_id = $_dbh->_insert_sql($_sql, $_d, $_f);
 
-$_new_ex = new _example(false);
-$_new_ex->_set_topic_id($_topic_id);
-$_new_line = $_new_ex->_build_new_example($_topic_id, $_eg_insert_id);
-$_new_line .= "<ul id = 'egqs".$_eg_insert_id."' class = 'topic_example hidden'>";
-$_new_line .= '</ul>';
+$_new_ex = new _example($_topic_id);
+$_new_line = $_new_ex->_build_new_example($_eg_insert_id);
+
 echo json_encode($_new_line);
 ?>

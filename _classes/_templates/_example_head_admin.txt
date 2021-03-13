@@ -1,0 +1,56 @@
+<ul id="{_head_list_id}{_item_id}" class="topic-header-list w100pc">
+	<li id="il{_item_id}" class="point open-list" data-list-id="{_sub_list_id}{_item_id}" data-img-cl="ic{_item_id}" data-img-op="io{_item_id}">
+		<div class="row w40 p5">
+			<img alt="Open" title="Click to open the {_item_name}." id="io{_item_id}" class="ttip open-list hidden" src="{_icon_lib_url}closed.png" data-list-id="{_sub_list_id}{_item_id}" data-img-cl="ic{_item_id}" data-img-op="io{_item_id}" width="32" height="32">
+			<img alt="Close" title="Click to close the {_item_name}." class="ttip open-list" id="ic{_item_id}" src="{_icon_lib_url}opened.png" data-list-id="{_sub_list_id}{_item_id}" data-img-cl="ic{_item_id}" data-img-op="io{_item_id}" width="32" height="32">
+		</div>
+		<div class="row f1">
+			<span class="h3n">{_title_prefix} #{_count}: {_item_title}</span>
+		</div>
+	</li>
+</ul>
+
+<ul id="{_sub_list_id}{_item_id}" class="topic-item-list{_oc_class}">
+	<li class="nb thin">
+		<div class="label"></div><div class="the-rest"><div class="text"></div><div class="note-title blc">Notes</div></div>
+	</li>
+	<li>
+		<div class="label">
+			<img class="ttip" title="Problem" alt="Problem" src="{_icon_app_url}problem32.png">
+		</div>
+		<div class="the-rest wrap">
+			<div class="text" data-children-count="1">
+				<textarea id="teg_question_{_item_id}" data-el-type="textarea" data-field="teg_question" data-id="{_item_id}" data-db-tbl="_app_topic_eg" name="teg_question" class="field m5" style="width:100%;height:200px">{_question}</textarea>
+			</div>
+			<div class="note" data-children-count="1">
+				<textarea id="teg_question_note_{_item_id}" data-el-type="textarea" data-field="teg_question_note" data-id="{_item_id}" data-db-tbl="_app_topic_eg" name="teg_question_note" class="field m5" style="width:100%;height:200px">{_question_note}</textarea>
+			</div>
+		</div>
+	</li>
+	<li>
+		<div class="label">
+			<img class="ttip" title="Method" alt="Method" src="{_icon_app_url}method32.png">
+		</div>
+		<div class="the-rest wrap">
+			<div class="text" data-children-count="1">
+				<textarea id="teg_method_{_item_id}" data-el-type="textarea" data-field="teg_method" data-id="{_item_id}" data-db-tbl="_app_topic_eg" name="teg_method" class="field m5" style="width:100%;height:200px">{_method}</textarea>
+			</div>
+			<div class="note" data-children-count="1">
+				<textarea id="teg_method_note_{_item_id}" data-el-type="textarea" data-field="teg_method_note" data-id="{_item_id}" data-db-tbl="_app_topic_eg" name="teg_method_note" class="field m5" style="width:100%;height:200px">{_method_note}</textarea>
+			</div>
+		</div>
+	</li>
+	<li>
+		<div class="label">
+			<img class="ttip" title="Solution" alt="Solution" src="{_icon_app_url}solution32.png">
+		</div>
+		<div class="the-rest wrap">
+			<div class="text" data-children-count="1">
+				<textarea id="teg_answer_{_item_id}" data-el-type="textarea" data-field="teg_answer" data-id="{_item_id}" data-db-tbl="_app_topic_eg" name="teg_answer" class="field m5" style="width:100%;height:200px">{_answer}</textarea>
+			</div>
+			<div class="note" data-children-count="1">
+				<textarea id="teg_answer_note_{_item_id}" data-el-type="textarea" data-field="teg_answer_note" data-id="{_item_id}" data-db-tbl="_app_topic_eg" name="teg_answer_note" class="field m5" style="width:100%;height:200px">{_answer_note}</textarea>
+			</div>
+		</div>
+	</li>
+</ul>

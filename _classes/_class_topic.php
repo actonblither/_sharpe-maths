@@ -197,8 +197,8 @@ class _topic extends _setup{
 
 	private function _build_examples(){
 		$_eg = new _example($this->_topic_id);
-		$this->_topic_eg = $_eg->_fetch_examples();
-		$this->_show_eg_tab = $_eg->_get_make_eg_tab();
+		$this->_topic_eg = $_eg->_get_items();
+		$this->_show_eg_tab = $_eg->_get_make_item_tab();
 	}
 
 	private function _build_geogebra(){

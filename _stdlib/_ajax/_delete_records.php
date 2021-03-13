@@ -20,12 +20,13 @@ if (!empty($_sub_db_tbls)){
 		$_f = array('i');
 		$_result = $_dbh->_delete_sql($_sql, $_d, $_f);
 	}
-
 }
 //Finally delete the main tbl records
 $_sql = "delete from ".$_main_db_tbl." where ".$_main_db_tbl_field." = :".$_main_db_tbl_field;
 $_d = array($_main_db_tbl_field => $_main_db_tbl_field_value);
 $_f = array('i');
 $_result = $_dbh->_delete_sql($_sql, $_d, $_f);
+//_cl($_sql);
+//_cl($_d);
 echo json_encode($_result);
 ?>

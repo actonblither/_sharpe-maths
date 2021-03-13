@@ -76,7 +76,14 @@ function _build_del_item($_params, $jq = true){
 	}
 }
 
-
+function _build_add_new($_params, $_ret = 'jq'){
+	$_an = new _add_new($_params);
+	if ($_ret === 'jq'){
+		return $_an->_build_add_new_jq();
+	}else{
+		return $_an->_build_add_new_btn();
+	}
+}
 
 // String functions
 
