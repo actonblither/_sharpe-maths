@@ -1,0 +1,124 @@
+17:03:2021 16:14:31
+PDO EXCECUTE ERROR in method _insert
+string(948) "17:03:2021 16:14:31
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-03-17 16:14:31
+    [ERROR MESSAGE] => SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '40-42' for key 'PRIMARY'
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 275
+    [_sql] => insert into _app_glossary_topic_link set topic_id = :topic_id, glossary_id = :glossary_id
+    [_d] => Array
+        (
+            [topic_id] => 42
+            [glossary_id] => 40
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(275): PDOStatement->execute()
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(54): _db->_pdo_execute('PDO EXCECUTE ER...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_save_field.php(90): _db->_insert('_app_glossary_t...', Array, Array)
+#3 {main}
+)
+
+"
+
+17:03:2021 16:14:31
+PDO EXCECUTE ERROR in method _insert
+string(948) "17:03:2021 16:14:31
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-03-17 16:14:31
+    [ERROR MESSAGE] => SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '41-42' for key 'PRIMARY'
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 275
+    [_sql] => insert into _app_glossary_topic_link set topic_id = :topic_id, glossary_id = :glossary_id
+    [_d] => Array
+        (
+            [topic_id] => 42
+            [glossary_id] => 41
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(275): PDOStatement->execute()
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(54): _db->_pdo_execute('PDO EXCECUTE ER...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_save_field.php(90): _db->_insert('_app_glossary_t...', Array, Array)
+#3 {main}
+)
+
+"
+
+17:03:2021 17:43:59
+PDO EXCECUTE ERROR in method _insert
+string(948) "17:03:2021 17:43:59
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-03-17 17:43:59
+    [ERROR MESSAGE] => SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '41-42' for key 'PRIMARY'
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 275
+    [_sql] => insert into _app_glossary_topic_link set topic_id = :topic_id, glossary_id = :glossary_id
+    [_d] => Array
+        (
+            [topic_id] => 42
+            [glossary_id] => 41
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(275): PDOStatement->execute()
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(54): _db->_pdo_execute('PDO EXCECUTE ER...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_save_field.php(90): _db->_insert('_app_glossary_t...', Array, Array)
+#3 {main}
+)
+
+"
+
+17:03:2021 18:08:35
+PDO EXCECUTE ERROR in method _insert
+string(948) "17:03:2021 18:08:35
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-03-17 18:08:35
+    [ERROR MESSAGE] => SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '42-40' for key 'PRIMARY'
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 275
+    [_sql] => insert into _app_glossary_topic_link set glossary_id = :glossary_id, topic_id = :topic_id
+    [_d] => Array
+        (
+            [glossary_id] => 42
+            [topic_id] => 40
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(275): PDOStatement->execute()
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(54): _db->_pdo_execute('PDO EXCECUTE ER...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_save_field.php(91): _db->_insert('_app_glossary_t...', Array, Array)
+#3 {main}
+)
+
+"
+

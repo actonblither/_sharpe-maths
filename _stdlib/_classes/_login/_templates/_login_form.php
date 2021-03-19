@@ -18,7 +18,7 @@ if (is_logged_in()){
 			var _login = function(e){
 				var un = $('#un').val();
 				var pw = $('#pw').val();
-				var url = '<?php echo __s_app_url__.'_ajax/_login.php';?>';
+				var url = '<?php echo __s_lib_url__.'_ajax/_login.php';?>';
 				var fd = new FormData();
 				fd.append('un', un);
 				fd.append('pw', pw);

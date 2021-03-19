@@ -283,7 +283,6 @@ class _select{
 			for ($i = 0; $i < count($_rows); $i++){
 				if ($_rows[$i]['id'] !== $this->_id){
 					$_sql = "select * from ".$this->_db_link_tbl." where (".$this->_db_link_tbl_field_1." = ".$_rows[$i]['id'].") and (".$this->_db_link_tbl_field_2." = ".$this->_el_data_id.")";
-					//_cl($_sql);
 					$_sel_row = $this->_dbh->_fetch_db_row($_sql);
 					if ($_sel_row[$this->_db_link_tbl_field_1] === $_rows[$i]['id'] && $_sel_row[$this->_db_link_tbl_field_2] === $this->_el_data_id){
 						$_sel_text = "selected = 'selected'";

@@ -13,8 +13,6 @@ if (empty($_id)){$_id = 1;}
 $_SESSION['s_main'] = $_main;
 $_SESSION['s_id'] = $_id;
 
-//_cl($_SESSION['s_main']);
-//_cl($_SESSION['s_id']);
 
 if (is_logged_in()){
 	$_setup = new _setup();?>
@@ -42,7 +40,7 @@ switch ($_main){
 			//$g = new _puzzle();
 			//echo $g->_fetch_all_puzzles();
 		}else if ($_id === 5){
-			$h = new _glossary();
+			$h = new _glossary2();
 			echo $h->_build_glossary();
 		}else if ($_id === 88){
 			$_c = new _contact();

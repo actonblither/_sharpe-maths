@@ -1,0 +1,22 @@
+<li class="rc" data-db-tbl="{_main_db_tbl}">
+	<ul id="{_head_list_id}{_item_id}" class="topic-header-list w100pc">
+		<li id="{_open_close_id_prefix}l{_item_id}" class="point" data-list-id="{_sub_list_id}{_item_id}" data-img-cl="{_open_close_id_prefix}c{_item_id}" data-img-op="{_open_close_id_prefix}o{_item_id}">
+			<img id="img{_item_id}" class="w14 h14 {_del_class} point m5" src="{_icon_lib_url}close14.png" />
+			<div class="row w40 p5">
+				<img alt="Open" title="Click to open the {_item_name}." id="{_open_close_id_prefix}o{_item_id}" class="ttip point open-list{_occ_class}" src="{_icon_lib_url}closed.png" data-list-id="{_sub_list_id}{_item_id}" data-img-cl="{_open_close_id_prefix}c{_item_id}" data-img-op="{_open_close_id_prefix}o{_item_id}" width="32" height="32">
+				<img alt="Close" title="Click to close the {_item_name}." id="{_open_close_id_prefix}c{_item_id}" class="ttip point open-list{_oco_class}" src="{_icon_lib_url}opened.png" data-list-id="{_sub_list_id}{_item_id}" data-img-cl="{_open_close_id_prefix}c{_item_id}" data-img-op="{_open_close_id_prefix}o{_item_id}" width="32" height="32">
+			</div>
+			<div class="wrap al_c f1">
+				<span class="h3n">{_title_prefix} #{_list_count}: </span>
+				<input type="text" id="{_title_field_name}_{_item_id}" name="{_title_field_name}" value="{_item_title}" maxlength="255" data-el-type="varchar" data-id="{_item_id}" data-db-tbl="{_main_db_tbl}" data-field="{_title_field_name}" class="field w500" />
+				{_head_elements}
+			</div>
+		</li>
+	</ul>
+
+	<ul id="{_sub_list_id}{_item_id}" class="topic-item-list{_oco_class}">
+		{_sub_instructions}
+		{_sub_body}
+		{_sub_tpl}
+	</ul>
+</li>

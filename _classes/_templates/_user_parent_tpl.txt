@@ -1,4 +1,4 @@
-<ul id = "{_parent_list_id}">
+<ul id = "{_parent_list_id}" class = 'parent-class'>
 	<li class = "rc" data-db-tbl = "{_main_db_tbl}">
 		{_tab_items}
 	</li>

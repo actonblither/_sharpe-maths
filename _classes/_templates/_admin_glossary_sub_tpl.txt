@@ -1,0 +1,25 @@
+<li>
+	<div class="label">
+		<img class="ttip" title="Description" alt="Description" src="{_icon_app_url}details32.png">
+	</div>
+	<div class="the-rest wrap">
+		<textarea id="body_{_item_id}" data-el-type="textarea" data-field="body" data-id="{_item_id}" data-db-tbl="_app_glossary" name="body" class="field w97pc m5">{_body}</textarea>
+	</div>
+</li>
+<li>
+	<div class="label">
+		<img class="ttip" title="Example of use" alt="Example of use" src="{_icon_app_url}context32.png">
+	</div>
+	<div class="the-rest wrap">
+		<textarea id="example_of_use_{_item_id}" data-el-type="textarea" data-field="example_of_use" data-id="{_item_id}" data-db-tbl="_app_glossary" name="example_of_use" class="field w97pc m5">{_example_of_use}</textarea>
+	</div>
+</li>
+<li>
+	<div class="label">
+		<img class="ttip" title="Similar" alt="Similar" src="{_icon_app_url}similar32.png">
+	</div>
+	<div class="the-rest wrap">
+		Self link (glossary items){_self_link_select}
+		Topic/Glossary link{_topic_link_select}
+	</div>
+</li>

@@ -1,0 +1,8 @@
+<li>
+	<div class="label">
+		<img class="ttip" title="Instructions" alt="Instructions" src="{_icon_lib_url}32/instructions32.png">
+	</div>
+	<div class="the-rest wrap p10">
+		{_instructions}
+	</div>
+</li>

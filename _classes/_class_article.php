@@ -1,31 +1,27 @@
 <?php
-class _example extends _topic_tab{
-	protected $_main_db_tbl = '_app_topic_eg';
-	protected $_parent_list_id = 'examples';
-	protected $_head_list_id = 'egh';
-	protected $_sub_list_id = 'egi';
-	protected $_item_name = 'example';
-	protected $_item_class = '_example';
-	protected $_item_sql;
-	protected $_del_img_class = 'del_m_eg';
-	protected $_title_prefix = 'Worked example';
-	protected $_title_field_name = 'teg_title';
-	protected $_field_prefix = 'teg_';
-	protected $_open_close_id_prefix = 'i';
+class _article extends _topic_tab{
+	protected $_main_db_tbl = '_app_topic_art';
+	protected $_parent_list_id = 'articles';
+	protected $_head_list_id = 'arh';
+	protected $_sub_list_id = 'ari';
+	protected $_item_name = 'article';
+	protected $_item_class = '_article';
+	protected $_del_img_class = 'del_m_art';
+	protected $_title_prefix = 'Article';
+	protected $_title_field_name = 'tart_title';
+	protected $_field_prefix = 'tart_';
+	protected $_open_close_id_prefix = 'u';
 	protected $_sr;//search replace array
 
 	public function __construct($_tid){
 		parent::__construct($_tid);
 		$this->_dbh = new _db();
 		$this->_topic_id = $_tid;
-
 		$this->_is_logged_in = is_logged_in();
-		if ($this->_is_logged_in){
-			$this->_tpl_sub = __s_app_url__.'_classes/_templates/_admin_example_sub_tpl.txt';
-		}else{
-			$this->_tpl_sub = __s_app_url__.'_classes/_templates/_user_example_sub_tpl.txt';
-		}
-		$this->_sub_sql = false;
+
+
+		$this->_sub_instructions = false;
+		$this->_sub_body = true;
 		$this->_build_items();
 	}
 
@@ -46,17 +42,11 @@ class _example extends _topic_tab{
 				'_icon_app_url' => __s_app_icon_url__,
 				'_occ_class' => $this->_occ_class,
 				'_oco_class' => $this->_oco_class,
-				'_item_title' => rvs($_r['teg_title']),
+				'_item_title' => rvs($_r['tart_title']),
 				'_item_name' => $this->_item_name,
-				'_question' => rvs($_r['teg_question']),
-				'_question_note' => rvs($_r['teg_question_note']),
-				'_method' => rvs($_r['teg_method']),
-				'_method_note' => rvs($_r['teg_method_note']),
-				'_answer' => rvs($_r['teg_answer']),
-				'_answer_note' => rvs($_r['teg_answer_note']),
+				'_body' => rvs($_r['tart_body']),
 				'_field_prefix' => $this->_field_prefix
 		);
-
 		$_page = file_get_contents($_tpl);
 		foreach ($this->_sr as $_key => $_value){
 			$_page = str_replace('{'.$_key.'}', $_value, $_page);

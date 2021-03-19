@@ -26,6 +26,7 @@ div#logincontainer > div.inner{
 div#logincontainer > div.inner > div.row{
 	display: flex;
 	flex-flow: row nowrap;
+	align-items: center;
 	margin: 10px;
 }
 
@@ -38,9 +39,11 @@ div#logincontainer > div.inner > div.row > div.input > input[type = password]{
 	margin:0;
 	height: 28px;
 	width: 100%;
+	padding-left: 8px;
 }
 
 button#login{
+	width: 100px;
 	background:
 	var(--btn-bg)
 	url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABmJLR0QA/wD/AP+gvaeTAAACk0lEQVQ4EbWUS2gTURSG70wmQUFEY6tmoVQwRdSFggoiiIogWVgEBUEEH0ECKpGWLgKhyURIslAUQcSIBV8rcadGLIqgwVekC+1CxG60NgUFsVYwj5nxu3lcmlaDFRz+f/5z/nPvuffOZKIJ0fpKpVLtpVLJp+u65fF4RiKRyLdWM7TfFU3TbMPvgXugHzbgEAzCm/AC4ybQJkxrmEgkDjmOc4ZR8+ArmNU0bQzV8Zeiu2An/IwfjMfjt4kVmhqy4ikqvfAlPEH+HJ0G/C7Ms7CDpkdpmiGuQjVkZ0F2cBn3ltfr3R8Oh4vEfwRN2yhm4VoYIH+AimpDEll8jzEMN5H/RBVisVjAMIwvaF6ZBMlk0lculwcJv8OVzKvoBBLd3ObyJo9jNjUjP4iftW37KfEWMemKRqMF0j7o5+h7UdFouI8kzw6eoQo8hgMk/bAELXiHpptRBZ/Pd5XkK4+r1pDf2QKMDiHEQ6hAs90M6scYQsfQF3Ac3qXpOrSKUChUJsjB9VDolUplsQzgCFSgyTKSHD/m7RzHIv4Bt8Fh8iXoZHwgaWchw6BokwjUJbVBiqeJJYVpmkJe6Ft0DZyKxlxbd7vdo1RtdrQc/Vd0MvETC9p6/dt8gxGAGpwR0un0fCZshE+gess3SPy8iC50RigWi8eYMJtHdh1VDS+SjHLsc2x7IfFfgbHyeUYYnOPzG0BrDSlMsMJhDPn2BvgCFhG3BHNWM+AetGAQOrDWUAascB+VhVV8TkMc/wiTPHhNwJtDrQ9T/oHMQnfivUOr0Kv3+o3CFSHEVjjO8S+x627iqThP7STma5fLtYE5j4kVDBXVAwbkMpnMikKhsIM/hHzd/ohKCpokLcu6xrhHeA78v/gFPtnyGAQx2UsAAAAASUVORK5CYII=)

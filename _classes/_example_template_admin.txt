@@ -1,5 +1,0 @@
-<ul id = '{_parent_list_id}' class='sortable-list'>
-	<li class="rc" id="n{_item_id}" data-db-tbl="{_main_db_tbl}">
-		{_tab_items}
-	</li>
-</ul>

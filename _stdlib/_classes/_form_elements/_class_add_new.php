@@ -15,6 +15,9 @@ class _add_new extends _setup{
 	private $_id_prefix_length;
 	private $_topic_id;
 	private $_item_class;
+	private $_admin_template;
+	private $_topic_link_tbl;
+	private $_topic_link_tbl_field;
 
 	public function __construct($_params){
 		parent::__construct();
@@ -30,11 +33,14 @@ class _add_new extends _setup{
 		$this->_btn_width = rvz($_params['btn_width']);
 		$this->_topic_id = rvz($_params['topic_id']);
 		$this->_item_class = rvs($_params['item_class']);
+		$this->_admin_template = rvs($_params['admin_template']);
+		$this->_topic_link_tbl = rvs($_params['topic_link_tbl']);
+		$this->_topic_link_tbl_field = rvs($_params['topic_link_tbl_field']);
 	}
 
 
 	public function _build_add_new_btn(){
-		$tmp = "<button type = 'button' class = 'add_new_".$this->_item_name." add w".$this->_btn_width." mb5' id = 'to".$this->_topic_id."'>Add new example</button>";
+		$tmp = "<button type = 'button' class = 'add_new_".$this->_item_name." add w".$this->_btn_width." mb5' id = 'to".$this->_topic_id."'>Add new ".$this->_item_name."</button>";
 		return $tmp;
 	}
 
@@ -60,6 +66,9 @@ class _add_new extends _setup{
 					fd.append('topic_id', ".$this->_topic_id.");
 					fd.append('sub_db_tbls', '".json_encode($this->_sub_db_tbls)."');
 					fd.append('sub_db_tbl_fields', '".json_encode($this->_sub_db_tbl_fields)."');
+					fd.append('admin_template', '".$this->_admin_template."');
+					fd.append('topic_link_tbl', '".$this->_topic_link_tbl."');
+					fd.append('topic_link_tbl_field', '".$this->_topic_link_tbl_field."');
 					$.ajax({
 						type: 'POST',
 						async : true,

@@ -6,13 +6,14 @@ include($_base_folder.'/app_config.php');
 $_dbh = new _db();
 $ordered_list = rvs($_POST['nlist']);
 $_t = rvs($_POST['gen_table']);
-
+_cl($_POST);
 $ordered_array = array_filter(explode(',', $ordered_list));
 $id_array = [];
 
 foreach($ordered_array as $o){
 	$id_array[] = substr($o, 1);
 }
+$err = false;
 $_sql = "update ".$_t." set order_num = :order_num where id = :id";
 for($i = 0; $i < count($id_array); $i++){
 	$id = $id_array[$i];

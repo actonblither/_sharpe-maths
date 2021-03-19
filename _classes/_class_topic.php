@@ -16,14 +16,16 @@ class _topic extends _setup{
 	private $_topic_eg;
 	private $_topic_pz;
 	private $_topic_act;
-	private $_topic_geo;
+	private $_topic_glo;
+	private $_topic_art;
 
 	private $_show_intro_tab = false;
 	private $_show_eg_tab = false;
 	private $_show_ex_tab = false;
 	private $_show_pz_tab = false;
 	private $_show_act_tab = false;
-	private $_show_geo_tab = false;
+	private $_show_glo_tab = false;
+	private $_show_art_tab = false;
 
 	private $_ex_count;
 	private $_ex_title;
@@ -46,6 +48,8 @@ class _topic extends _setup{
 		$this->_build_exercises();
 		$this->_build_puzzles();
 		$this->_build_activity();
+		$this->_build_glossary();
+		$this->_build_articles();
 		$tmp = $this->_build_navigation_bar();
 		$tmp .= $this->_build_tab_bar();
 		return $tmp;
@@ -134,6 +138,13 @@ class _topic extends _setup{
 		$_txt_arr[] = $this->_topic_intro;
 
 
+		if ($this->_show_art_tab){
+			$_tab_arr[] = 'Articles';
+			$_lnk_arr[] = 'articles-6';
+			$_hlp_arr[] = '';
+			$_txt_arr[] = $this->_topic_art;
+		}
+
 		if ($this->_show_eg_tab){
 			$_tab_arr[] = 'Worked examples';
 			$_lnk_arr[] = 'example-2';
@@ -162,13 +173,14 @@ class _topic extends _setup{
 			$_txt_arr[] = $this->_topic_act;
 		}
 
-		if ($this->_show_geo_tab){
-			$_tab_arr[] = 'Geogebra';
-			$_lnk_arr[] = 'geogebra-6';
-			$_hlp_arr[] = '';
-			$_txt_arr[] = $this->_topic_geo;
-		}
 
+
+		if ($this->_show_glo_tab){
+			$_tab_arr[] = 'Glossary';
+			$_lnk_arr[] = 'glossary-7';
+			$_hlp_arr[] = '';
+			$_txt_arr[] = $this->_topic_glo;
+		}
 
 		$_tab->_set_tab_labels($_tab_arr);
 		$_tab->_set_tab_links($_lnk_arr);
@@ -177,22 +189,29 @@ class _topic extends _setup{
 		return $_tab->_build_all();
 	}
 
+
+	private function _build_articles(){
+		$_art = new _article($this->_topic_id);
+		$this->_topic_art = $_art->_get_items();
+		$this->_show_art_tab = $_art->_get_make_item_tab();
+	}
+
 	private function _build_activity(){
 		$_act = new _activity($this->_topic_id);
-		$this->_topic_act = $_act->_fetch_activity();
-		$this->_show_act_tab = $_act->_get_make_act_tab();
+		$this->_topic_act = $_act->_get_items();
+		$this->_show_act_tab = $_act->_get_make_item_tab();
 	}
 
 	private function _build_puzzles(){
 		$_pz = new _puzzle($this->_topic_id);
-		$this->_topic_pz = $_pz->_fetch_topic_puzzles();
-		$this->_show_pz_tab = $_pz->_get_make_pz_tab();
+		$this->_topic_pz = $_pz->_get_items();
+		$this->_show_pz_tab = $_pz->_get_make_item_tab();
 	}
 
 	private function _build_exercises(){
 		$_ex = new _exercise($this->_topic_id);
-		$this->_topic_ex = $_ex->_fetch_exercises();
-		$this->_show_ex_tab = $_ex->_get_make_ex_tab();
+		$this->_topic_ex = $_ex->_get_items();
+		$this->_show_ex_tab = $_ex->_get_make_item_tab();
 	}
 
 	private function _build_examples(){
@@ -201,11 +220,12 @@ class _topic extends _setup{
 		$this->_show_eg_tab = $_eg->_get_make_item_tab();
 	}
 
-	private function _build_geogebra(){
-		$_geo = new _geogebra($this->_topic_id);
-		$this->_topic_geo = $_geo->_fetch_geogebra();
-		$this->_show_geo_tab = $_geo->_get_make_geo_tab();
+	private function _build_glossary(){
+		$_eg = new _glossary($this->_topic_id);
+		$this->_topic_glo = $_eg->_get_items();
+		$this->_show_glo_tab = $_eg->_get_make_item_tab();
 	}
+
 
 	private function _build_intro_text(){
 		$_intro = new _intro($this->_topic_id);
@@ -248,7 +268,7 @@ class _topic extends _setup{
 	public function _get_topic_eg() { return $this->_topic_eg; }
 	public function _get_topic_pz() { return $this->_topic_pz; }
 	public function _get_topic_act() { return $this->_topic_act; }
-	public function _get_topic_geo() { return $this->_topic_geo; }
+	public function _get_topic_glo() { return $this->_topic_glo; }
 	public function _get_ex_count() { return $this->_ex_count; }
 	public function _get_ex_title() { return $this->_ex_title; }
 	public function _get_ex_instructions() { return $this->_ex_instructions; }
@@ -257,7 +277,7 @@ class _topic extends _setup{
 	public function _get_show_ex_tab() { return $this->_show_ex_tab; }
 	public function _get_show_pz_tab() { return $this->_show_pz_tab; }
 	public function _get_show_act_tab() { return $this->_show_act_tab; }
-	public function _get_show_geo_tab() { return $this->_show_geo_tab; }
+	public function _get_show_glo_tab() { return $this->_show_glo_tab; }
 
 	public function _set_topic_id($_t) { $this->_topic_id = $_t; }
 	public function _set_topic_route_id($_t) { $this->_topic_route_id = $_t; }

@@ -1,0 +1,5 @@
+<li>
+	<div class="w100pc wrap p10">
+		{_body}
+	</div>
+</li>

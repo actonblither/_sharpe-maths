@@ -49,7 +49,7 @@ class _activity{
 
 		$this->_list_params['div_class'][0] = 'canv';
 		$_count = 0;
-		//_cl($this->_rows, 'ROWS');
+
 		foreach ($this->_rows as $_r){
 			$_id = $_r['id'];
 			if ($this->_is_logged_in){

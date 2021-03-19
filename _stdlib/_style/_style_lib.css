@@ -155,44 +155,6 @@ a#nav-skip{
 
 
 
-/* PLAYING CARD CLASSES */
-div.card{
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: flex-end;
-	align-items: center;
-	cursor: pointer;
-	height: 100%;
-	width: 60%;
-	min-height: 100px;
-	overflow: hidden;
-}
-
-div.card img{
-	padding: 4px;
-}
-div.front, div.back{
-	display: flex;
-	flex-flow: row wrap;
-	flex-basis: 100%;
-	justify-content: flex-end;
-	align-items: center;
-
-	overflow: hidden;
-}
-
-div.front{
-	margin-right: 5px;
-}
-
-div.back{
-	height: 100%;
-	width: 100%;
-	padding-right: 35px;
-}
-
-/* END OF PLAYING CARD CLASSES */
-
 /* END OF TOPIC CLASSES */
 
 .w1pc{width: 1%;}
@@ -217,6 +179,15 @@ div.back{
 .w70pc{width: 70%;}
 .w80pc{width: 80%;}
 .w90pc{width: 90%;}
+.w91pc{width: 91%;}
+.w92pc{width: 92%;}
+.w93pc{width: 93%;}
+.w94pc{width: 94%;}
+.w95pc{width: 95%;}
+.w96pc{width: 96%;}
+.w97pc{width: 97%;}
+.w98pc{width: 98%;}
+.w99pc{width: 99%;}
 .w100pc{width: 100%;}
 
 
@@ -470,10 +441,9 @@ div.back{
 
 .f1{flex: 1;}
 
-.center{
-	align-items: center;
-	justify-content: center;
-}
+.center{align-items: center; justify-content: center;}
+.al_c{align-items: center;}
+.jc_c{justify-content: center;}
 
 .sb{/* Row space between */
 	display: flex;

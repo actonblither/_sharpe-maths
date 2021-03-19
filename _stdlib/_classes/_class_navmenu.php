@@ -80,7 +80,6 @@ class _navmenu{
 			}
 		}
 		$tmp .= "</ul>";
-		//_cl($tmp);
 		return $tmp;
 	}
 

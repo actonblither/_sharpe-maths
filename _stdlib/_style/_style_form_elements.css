@@ -23,12 +23,14 @@ input[type = 'text'],
 input[type = 'button'],
 input[type = 'submit'],
 input[type = 'password']{
-	width: 300px;
+	min-width: 300px;
+	max-height: 28px;
 }
+
+
 
 textarea{
 	min-width: 300px;
-	width: 100%;
 	min-height: 200px;
 	margin: 2px;
 	overflow: auto;

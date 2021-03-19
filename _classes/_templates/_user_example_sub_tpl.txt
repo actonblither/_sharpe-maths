@@ -1,16 +1,3 @@
-<ul id="egh{_item_id}" class="topic-header-list w100pc">
-	<li id="il{_item_id}" class="point open-list" data-list-id="egi{_item_id}" data-img-cl="ic{_item_id}" data-img-op="io{_item_id}">
-		<div class="row w40 p5">
-			<img alt="Open" title="Click to open the example." id="io{_item_id}" class="ttip open-list hidden" src="{_icon_lib_url}closed.png" data-list-id="egi{_item_id}" data-img-cl="ic{_item_id}" data-img-op="io{_item_id}" width="32" height="32">
-			<img alt="Close" title="Click to close the example." class="ttip open-list" id="ic{_item_id}" src="{_icon_lib_url}opened.png" data-list-id="egi{_item_id}" data-img-cl="ic{_item_id}" data-img-op="io{_item_id}" width="32" height="32">
-		</div>
-		<div class="row f1">
-			<span class="h3n">Worked example #{_count}: {_item_title}</span>
-		</div>
-	</li>
-</ul>
-
-<ul id="egi{_item_id}" class="topic-item-list{_oc_class}">
 	<li class="nb thin"><div class="label"></div><div class="the-rest"><div class="text"></div><div class="note-title blc">Notes</div></div></li>
 	<li>
 		<div class="label">
@@ -39,4 +26,3 @@
 			<div class="note">{_answer_note}</div>
 		</div>
 	</li>
-</ul>

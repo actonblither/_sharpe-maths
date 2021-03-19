@@ -24,29 +24,8 @@ function _format_header($str){
 
 //FORM ELEMENT FUNCTIONS
 
-function _build_textarea($_params){
-	$_el = new _form_element();
-	$_el->_set_el_field_id($_params['field_name']);
-	$_el->_set_el_field_value($_params['field_value']);
-	$_el->_set_db_tbl($_params['db_tbl']);
-	$_el->_set_el_id_value($_params['id']);
-	$_el->_set_el_width(rvz($_params['el_width'], 400));
-	$_el->_set_el_height(rvz($_params['el_height'], 200));
-	$_el->_set_el_width_units(rvs($_params['el_width_units'], 'px'));
-	$_el->_set_el_height_units(rvs($_params['el_height_units'], 'px'));
-	return $_el->_build_textarea();
-}
 
-function _build_varchar($_params){
-	$_el = new _form_element();
-	$_el->_set_el_field_id($_params['field_name']);
-	$_el->_set_el_field_value($_params['field_value']);
-	$_el->_set_db_tbl($_params['db_tbl']);
-	$_el->_set_el_id_value($_params['id']);
-	$_el->_set_el_width($_params['el_width']);
-	$_el->_set_el_width_units($_params['el_width_units']);
-	return $_el->_build_text_input();
-}
+
 
 function _build_checkbox($_params){
 	$_el = new _form_element();
@@ -57,33 +36,7 @@ function _build_checkbox($_params){
 	return $_el->_build_checkbox();
 }
 
-function _build_del_header($_params, $jq = true){
-	$_del_h = new _delete($_params);
-	if ($jq){
-		return $_del_h->_delete_jq();
-	}else{
-		return $_del_h->_delete_img();
-	}
-}
 
-function _build_del_item($_params, $jq = true){
-	//_cl($_params, 'PARAMS STDLIB');
-	$_del_q = new _delete($_params);
-	if ($jq){
-		return $_del_q->_delete_jq();
-	}else{
-		return $_del_q->_delete_img();
-	}
-}
-
-function _build_add_new($_params, $_ret = 'jq'){
-	$_an = new _add_new($_params);
-	if ($_ret === 'jq'){
-		return $_an->_build_add_new_jq();
-	}else{
-		return $_an->_build_add_new_btn();
-	}
-}
 
 // String functions
 

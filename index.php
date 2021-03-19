@@ -14,12 +14,12 @@ include('app_config.php');
 		<link rel = 'shortcut icon' href = '<?php echo __s_app_url__;?>_images/favicon.ico' />
 		<link rel = 'stylesheet' href = '<?php echo __s_applib_url__;?>jquery/tooltipster/css/tooltipster.bundle.min.css' type = 'text/css' />
 		<link rel = 'stylesheet' href = '<?php echo __s_app_url__;?>_style/_app_style.css' type = 'text/css' />
-		<link rel = 'stylesheet' href = '<?php echo __s_lib_url__;?>_style/_style_complete.css' type = 'text/css' />
+		<link rel = 'stylesheet' href = '<?php echo __s_lib_url__;?>_style/_style_lib.css' type = 'text/css' />
 		<link rel = 'stylesheet' href = '<?php echo __s_lib_url__;?>_style/_style_navmenu.css' type = 'text/css' />
 		<link rel = 'stylesheet' href = '<?php echo __s_lib_url__;?>_style/_style_tabs.css' type = 'text/css' />
 		<link rel = 'stylesheet' href = '<?php echo __s_lib_url__;?>_style/_style_form_elements.css' type = 'text/css' />
 		<link rel = 'stylesheet' href = '<?php echo __s_lib_url__;?>_style/_style_header_footer.css' type = 'text/css' />
-		<link rel = 'stylesheet' href = '<?php echo __s_lib_url__;?>_style/_style_lists.css' type = 'text/css' />
+		<link rel = 'stylesheet' href = '<?php echo __s_lib_url__;?>_style/_style_list_div.css' type = 'text/css' />
 
 		<link rel = 'stylesheet' href = '<?php echo __s_app_url__;?>_style/_style.css' type = 'text/css' />
 		<link rel = 'stylesheet' href = '<?php echo __s_lib_url__;?>_style/_style_login.css' type = 'text/css' />
@@ -149,7 +149,7 @@ include('app_config.php');
 				dataType : 'json',
 				processData	: false,
 				contentType	: false,
-				url		: '_ajax/_load_page.php',
+				url		: '<?php echo __s_lib_url__;?>_ajax/_load_page.php',
 				data		: fd,
 				beforeSend: function() {
 					$('#ajax-loader').removeClass('hidden');
@@ -211,7 +211,7 @@ include('app_config.php');
 			var id = $(this).attr('data-id');
 			var pre = $(this).attr('data-text-div');
 			var text_div = pre + id;
-			$('#'+ text_div).toggleClass('hidden');
+			$('div#'+ text_div).toggleClass('hidden');
 		});
 
 
@@ -245,6 +245,33 @@ include('app_config.php');
 
 	<?php if (is_logged_in()){?>
 
+	$(document).on('click', '.del_s_ex_q', function(e){
+		if (_sure('Are you sure you want to delete this question?')){
+		e.preventDefault();
+		e.stopImmediatePropagation();
+		var id = $(this).attr('id').substring(3);
+		var fd = new FormData();
+		fd.append('app_folder', '<?php echo base64_encode(__s_app_folder__);?>');
+		fd.append('main_db_tbl', '_app_topic_ex_q');
+		fd.append('main_db_tbl_field', 'id');
+		fd.append('main_db_tbl_field_value', id);
+		$.ajax({
+			type: 'POST',
+			async : true,
+			cache : false,
+			processData	: false,
+			contentType	: false,
+			url: '<?php echo __s_lib_url__;?>_ajax/_delete_records.php',
+			data: fd,
+			dataType: 'json',
+			success: function (data) {
+				$('li#sub' + id).remove();
+			}
+		});
+		}
+	});
+
+
 		$(document).on('blur', '.field', function(e){
 			_save_field(this, e);
 		});
@@ -268,13 +295,15 @@ include('app_config.php');
 			for (instance in CKEDITOR.instances) {
 				CKEDITOR.instances[instance].updateElement();
 			}
-
+			var el_id = $(f).attr('id');
 			var data_id = $(f).attr('data-id');
 			var data_field = $(f).attr('data-field');
 			var db_tbl = $(f).attr('data-db-tbl');
 			var data_field1 = $(f).attr('data-field1');
 			var data_field2 = $(f).attr('data-field2');
-			var data_value2 = $(f).attr('data-value2');
+			var data_value2 = data_id;
+			var data_value1;
+			var link_self_ref = $(f).attr('data-link-self-ref');
 			var _el_type = $(f).attr('data-el-type');
 
 
@@ -290,13 +319,7 @@ include('app_config.php');
 					}
 				}
 			}else{
-
-				var data_value1 = [];
-				$('#link_id_' + data_value2 + ' option').each(function() {
-					if (this.selected) {
-						data_value1.push(this.value);
-					}
-				});
+				data_value1 = $('#'+ el_id).val();
 			}
 			var fd = new FormData();
 			fd.append('link', link);
@@ -310,6 +333,7 @@ include('app_config.php');
 			fd.append('data_value2', data_value2);
 			fd.append('db_tbl', db_tbl);
 			fd.append('data-el-type', _el_type);
+			fd.append('data-link-self-ref', link_self_ref);
 			fd.append('app_folder', '<?php echo base64_encode(__s_app_folder__);?>');
 				$.ajax({
 					type		: 'POST',
@@ -317,7 +341,7 @@ include('app_config.php');
 					dataType : 'json',
 					processData	: false,
 					contentType	: false,
-					url		: '_ajax/_save_field.php',
+					url		: '<?php echo __s_lib_url__;?>_ajax/_save_field.php',
 					data		: fd,
 					beforeSend: function() {
 						$('#ajax-loader').removeClass('hidden');
