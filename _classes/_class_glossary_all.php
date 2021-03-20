@@ -53,6 +53,8 @@ class _glossary2 extends _setup{
 				$_r['connectors'] = $this->_build_connector_str($_r['id']);
 			}
 			$tmp .= "<ul class='glossary'>";
+			$tmp .= "<li id = 'glo".$_r['id']."' class='anchor'></li>";
+
 			$tmp .= "<li><div class='label'<p>$_title_img</p></div><div class='title filter-field h3'><p>".$_r['title']."</p></div></li>";
 			$tmp .= "<li class='line'></li>";
 			$tmp .= "<li><div class='label'><p>$_desc_img</p></div><div class='text filter-field'><p>".$_r['body']."</p></div></li>";
@@ -90,7 +92,7 @@ class _glossary2 extends _setup{
 				$_g_letter = substr($_r['title'], 0, 1);
 				$_gid = ord($_g_letter);
 				if ($_r['id'] !== $_id){
-					$tmp .= "<a href = 'index.php?main=topic&id=5&gid=".$_gid."'>".$_r['title']."</a>, ";
+					$tmp .= "<a href = '#glo".$_r['id']."'>".$_r['title']."</a>, ";
 				}
 			}
 		}

@@ -5,16 +5,19 @@ include($_base_folder.'/app_config.php');
 
 $_dbh = new _db();
 $ordered_list = rvs($_POST['nlist']);
-$_t = rvs($_POST['gen_table']);
-_cl($_POST);
+$_db_tbl = rvs($_POST['gen_table']);
+$_sort_list_prefix = rvs($_POST['sort_list_prefix']);
+$_prefix_len = strlen($_sort_list_prefix);
+
+//_cl($_POST);
 $ordered_array = array_filter(explode(',', $ordered_list));
 $id_array = [];
 
 foreach($ordered_array as $o){
-	$id_array[] = substr($o, 1);
+	$id_array[] = substr($o, $_prefix_len);
 }
 $err = false;
-$_sql = "update ".$_t." set order_num = :order_num where id = :id";
+$_sql = "update ".$_db_tbl." set order_num = :order_num where id = :id";
 for($i = 0; $i < count($id_array); $i++){
 	$id = $id_array[$i];
 	$n = ($i + 1) * 10;

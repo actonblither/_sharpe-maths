@@ -1,42 +1,42 @@
-<li class="nb thin">
-	<div class="label"></div><div class="the-rest"><div class="text"></div><div class="note-title blc">Notes</div></div>
+<li class='nb thin'>
+	<div class='label'></div><div class='the-rest'><div class='text'></div><div class='note-title blc'>Notes</div></div>
 </li>
 <li>
-	<div class="label">
-		<img class="ttip" title="Problem" alt="Problem" src="{_icon_app_url}problem32.png">
+	<div class='label'>
+		<img class='ttip' title='Problem' alt='Problem' src='{_icon_app_url}problem32.png'>
 	</div>
-	<div class="the-rest wrap">
-		<div class="text" data-children-count="1">
-			<textarea id="teg_question_{_item_id}" data-el-type="textarea" data-field="teg_question" data-id="{_item_id}" data-db-tbl="_app_topic_eg" name="teg_question" class="field w97pc m5">{_question}</textarea>
+	<div class='the-rest wrap'>
+		<div class='text' data-children-count='1'>
+			<textarea id='teg_question_{_item_id}' data-el-type='textarea' data-field='teg_question' data-id='{_item_id}' data-db-tbl='_app_topic_eg' name='teg_question' class='field w97pc m5'>{_question}</textarea>
 		</div>
-		<div class="note" data-children-count="1">
-			<textarea id="teg_question_note_{_item_id}" data-el-type="textarea" data-field="teg_question_note" data-id="{_item_id}" data-db-tbl="_app_topic_eg" name="teg_question_note" class="field w97pc m5">{_question_note}</textarea>
-		</div>
-	</div>
-</li>
-<li>
-	<div class="label">
-		<img class="ttip" title="Method" alt="Method" src="{_icon_app_url}method32.png">
-	</div>
-	<div class="the-rest wrap">
-		<div class="text" data-children-count="1">
-			<textarea id="teg_method_{_item_id}" data-el-type="textarea" data-field="teg_method" data-id="{_item_id}" data-db-tbl="_app_topic_eg" name="teg_method" class="field w97pc m5">{_method}</textarea>
-		</div>
-		<div class="note" data-children-count="1">
-			<textarea id="teg_method_note_{_item_id}" data-el-type="textarea" data-field="teg_method_note" data-id="{_item_id}" data-db-tbl="_app_topic_eg" name="teg_method_note" class="field w97pc m5">{_method_note}</textarea>
+		<div class='note' data-children-count='1'>
+			<textarea id='teg_question_note_{_item_id}' data-el-type='textarea' data-field='teg_question_note' data-id='{_item_id}' data-db-tbl='_app_topic_eg' name='teg_question_note' class='field w97pc m5'>{_question_note}</textarea>
 		</div>
 	</div>
 </li>
 <li>
-	<div class="label">
-		<img class="ttip" title="Solution" alt="Solution" src="{_icon_app_url}solution32.png">
+	<div class='label'>
+		<img class='ttip' title='Method' alt='Method' src='{_icon_app_url}method32.png'>
 	</div>
-	<div class="the-rest wrap">
-		<div class="text" data-children-count="1">
-			<textarea id="teg_answer_{_item_id}" data-el-type="textarea" data-field="teg_answer" data-id="{_item_id}" data-db-tbl="_app_topic_eg" name="teg_answer" class="field w97pc m5">{_answer}</textarea>
+	<div class='the-rest wrap'>
+		<div class='text' data-children-count='1'>
+			<textarea id='teg_method_{_item_id}' data-el-type='textarea' data-field='teg_method' data-id='{_item_id}' data-db-tbl='_app_topic_eg' name='teg_method' class='field w97pc m5'>{_method}</textarea>
 		</div>
-		<div class="note" data-children-count="1">
-			<textarea id="teg_answer_note_{_item_id}" data-el-type="textarea" data-field="teg_answer_note" data-id="{_item_id}" data-db-tbl="_app_topic_eg" name="teg_answer_note" class="field w97pc m5">{_answer_note}</textarea>
+		<div class='note' data-children-count='1'>
+			<textarea id='teg_method_note_{_item_id}' data-el-type='textarea' data-field='teg_method_note' data-id='{_item_id}' data-db-tbl='_app_topic_eg' name='teg_method_note' class='field w97pc m5'>{_method_note}</textarea>
+		</div>
+	</div>
+</li>
+<li>
+	<div class='label'>
+		<img class='ttip' title='Solution' alt='Solution' src='{_icon_app_url}solution32.png'>
+	</div>
+	<div class='the-rest wrap'>
+		<div class='text' data-children-count='1'>
+			<textarea id='teg_answer_{_item_id}' data-el-type='textarea' data-field='teg_answer' data-id='{_item_id}' data-db-tbl='_app_topic_eg' name='teg_answer' class='field w97pc m5'>{_answer}</textarea>
+		</div>
+		<div class='note' data-children-count='1'>
+			<textarea id='teg_answer_note_{_item_id}' data-el-type='textarea' data-field='teg_answer_note' data-id='{_item_id}' data-db-tbl='_app_topic_eg' name='teg_answer_note' class='field w97pc m5'>{_answer_note}</textarea>
 		</div>
 	</div>
 </li>

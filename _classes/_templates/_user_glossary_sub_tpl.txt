@@ -1,24 +1,24 @@
 <li>
-	<div class="label">
-		<img class="ttip" title="Description" alt="Description" src="{_icon_app_url}details32.png">
+	<div class='label'>
+		<img class='ttip' title='Description' alt='Description' src='{_icon_app_url}details32.png'>
 	</div>
-	<div class="wrap al_c pt10">
+	<div class='cwrap p10 al_c pt10'>
 		{_body}
 	</div>
 </li>
 <li>
-	<div class="label">
-		<img class="ttip" title="Example of use" alt="Example of use" src="{_icon_app_url}context32.png">
+	<div class='label'>
+		<img class='ttip' title='Example of use' alt='Example of use' src='{_icon_app_url}context32.png'>
 	</div>
-	<div class="wrap">
+	<div class='cwrap p10'>
 		{_example_of_use}
 	</div>
 </li>
 <li>
-	<div class="label">
-		<img class="ttip" title="Solution" alt="Solution" src="{_icon_app_url}similar32.png">
+	<div class='label'>
+		<img class='ttip' title='Solution' alt='Solution' src='{_icon_app_url}similar32.png'>
 	</div>
-	<div class="wrap pt10">
+	<div class='cwrap p10'>
 		{_linked_entries}
 	</div>
 </li>

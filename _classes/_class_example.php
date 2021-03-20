@@ -13,6 +13,7 @@ class _example extends _topic_tab{
 	protected $_field_prefix = 'teg_';
 	protected $_open_close_id_prefix = 'i';
 	protected $_sr;//search replace array
+	protected $_sortable_list_prefix = 'neg';
 
 	public function __construct($_tid){
 		parent::__construct($_tid);
@@ -54,7 +55,8 @@ class _example extends _topic_tab{
 				'_method_note' => rvs($_r['teg_method_note']),
 				'_answer' => rvs($_r['teg_answer']),
 				'_answer_note' => rvs($_r['teg_answer_note']),
-				'_field_prefix' => $this->_field_prefix
+				'_field_prefix' => $this->_field_prefix,
+				'_sortable_list_prefix' => $this->_sortable_list_prefix
 		);
 
 		$_page = file_get_contents($_tpl);

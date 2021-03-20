@@ -1,14 +1,14 @@
-<li id="sub{_item_detail_id}">
-	<div class="label">
-		<img id="img{_item_detail_id}" class="w14 h14 del_s_ex_q point m2" src="{_icon_lib_url}close14.png">
+<li id='sub{_item_detail_id}'>
+	<div class='label'>
+		<img id='img{_item_detail_id}' class='w14 h14 del_s_ex_q point m2' src='{_icon_lib_url}close14.png'>
 		{_item_count}.
 	</div>
-	<div class="the-rest wrap">
-		<div class="question">
-			<textarea id="question_{_item_detail_id}" data-el-type="textarea" data-field="question" data-id="{_item_detail_id}" data-db-tbl="_app_topic_ex_q" name="question" class="field w97pc">{_question}</textarea>
+	<div class='the-rest wrap'>
+		<div class='question'>
+			<textarea id='question_{_item_detail_id}' data-el-type='textarea' data-field='question' data-id='{_item_detail_id}' data-db-tbl='_app_topic_ex_q' name='question' class='field w97pc'>{_question}</textarea>
 		</div>
-		<div class="answer f1">
-			<textarea id="answer_{_item_detail_id}" data-el-type="textarea" data-field="answer" data-id="{_item_detail_id}" data-db-tbl="_app_topic_ex_q" name="answer" class="field w95pc">{_answer}</textarea>
+		<div class='answer f1'>
+			<textarea id='answer_{_item_detail_id}' data-el-type='textarea' data-field='answer' data-id='{_item_detail_id}' data-db-tbl='_app_topic_ex_q' name='answer' class='field w95pc'>{_answer}</textarea>
 		</div>
 	</div>
 </li>

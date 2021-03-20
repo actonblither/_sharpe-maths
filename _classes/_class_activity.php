@@ -12,6 +12,7 @@ class _activity extends _topic_tab{
 	protected $_field_prefix = 'tact_';
 	protected $_open_close_id_prefix = 'a';
 	protected $_sr;//search replace array
+	protected $_sortable_list_prefix = 'nac';
 
 	public function __construct($_tid){
 		parent::__construct($_tid);
@@ -46,7 +47,8 @@ class _activity extends _topic_tab{
 				'_item_name' => $this->_item_name,
 				'_instructions' => rvs($_r['tact_instructions']),
 				'_body' => rvs($_r['tact_body']),
-				'_field_prefix' => $this->_field_prefix
+				'_field_prefix' => $this->_field_prefix,
+				'_sortable_list_prefix' => $this->_sortable_list_prefix
 		);
 		$_page = file_get_contents($_tpl);
 		foreach ($this->_sr as $_key => $_value){

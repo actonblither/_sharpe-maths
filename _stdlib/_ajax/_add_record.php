@@ -11,7 +11,7 @@ $_sub_db_tbl_fields = array_filter(json_decode($_POST['sub_db_tbl_fields']));
 $_admin_template = rvs($_POST['admin_template']);
 $_topic_link_tbl = rvs($_POST['topic_link_tbl']);
 $_topic_link_tbl_field = rvs($_POST['topic_link_tbl_field']);
-_cl($_POST);
+//_cl($_POST);
 $_dbh = new _db();
 
 if (empty($_topic_link_tbl)){

@@ -34,6 +34,7 @@ class _topic_tab{
 	protected $_topic_link_tbl = '';
 	protected $_topic_link_tbl_field = '';
 	protected $_link_self_ref = false;
+	protected $_sortable_list_prefix = 'n';
 
 	public function __construct($_tid){
 		$this->_dbh = new _db();
@@ -140,15 +141,21 @@ class _topic_tab{
 	}
 
 	private function _fetch_sub_tpls($_inner, $_r){
-		if ($this->_head_elements === true){
+		if ($this->_head_elements === true && $this->_is_logged_in){
 			$_head_frm_el = $this->_build_edit_elements($_r);
 			$_inner = str_replace('{_head_elements}', $_head_frm_el, $_inner);
 		}else{
 			$_inner = str_replace('{_head_elements}', '', $_inner);
 		}
+
 		if (!empty($this->_tpl_sub_instructions) && $this->_sub_instructions === true){
 			$_instr = $this->_fetch_template($this->_tpl_sub_instructions, $_r);
-			$_inner = str_replace('{_sub_instructions}', $_instr, $_inner);
+			$_instruction_field = $this->_field_prefix.'instructions';
+			if (!empty($_r[$_instruction_field]) || $this->_is_logged_in){
+				$_inner = str_replace('{_sub_instructions}', $_instr, $_inner);
+			}else{
+				$_inner = str_replace('{_sub_instructions}', '', $_inner);
+			}
 		}else{
 			$_inner = str_replace('{_sub_instructions}', '', $_inner);
 		}

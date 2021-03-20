@@ -122,3 +122,127 @@ Array
 
 "
 
+19:03:2021 11:36:57
+PDO PREPARE ERROR in method _update_sql
+string(945) "19:03:2021 11:36:57
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-03-19 11:36:57
+    [ERROR MESSAGE] => SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tex__instructions' in 'field list'
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update _app_topic_ex set tex__instructions = :tex__instructions where id = :id
+    [_d] => Array
+        (
+            [tex__instructions] => 
+            [id] => 28
+        )
+
+    [_f] => Array
+        (
+            [0] => s
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update _app_top...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_save_field.php(36): _db->_update_sql('update _app_top...', Array, Array)
+#3 {main}
+)
+
+"
+
+19:03:2021 11:41:31
+PDO PREPARE ERROR in method _update_sql
+string(964) "19:03:2021 11:41:31
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-03-19 11:41:31
+    [ERROR MESSAGE] => SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tex__instructions' in 'field list'
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update _app_topic_ex set tex__instructions = :tex__instructions where id = :id
+    [_d] => Array
+        (
+            [tex__instructions] => ddddddddddddddddddd
+            [id] => 28
+        )
+
+    [_f] => Array
+        (
+            [0] => s
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update _app_top...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_save_field.php(36): _db->_update_sql('update _app_top...', Array, Array)
+#3 {main}
+)
+
+"
+
+19:03:2021 11:41:43
+PDO PREPARE ERROR in method _update_sql
+string(964) "19:03:2021 11:41:43
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-03-19 11:41:43
+    [ERROR MESSAGE] => SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tex__instructions' in 'field list'
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update _app_topic_ex set tex__instructions = :tex__instructions where id = :id
+    [_d] => Array
+        (
+            [tex__instructions] => ddddddddddddddddddd
+            [id] => 28
+        )
+
+    [_f] => Array
+        (
+            [0] => s
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update _app_top...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_save_field.php(36): _db->_update_sql('update _app_top...', Array, Array)
+#3 {main}
+)
+
+"
+
+19:03:2021 11:44:14
+PDO PREPARE ERROR in method _update_sql
+string(964) "19:03:2021 11:44:14
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-03-19 11:44:14
+    [ERROR MESSAGE] => SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tex__instructions' in 'field list'
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update _app_topic_ex set tex__instructions = :tex__instructions where id = :id
+    [_d] => Array
+        (
+            [tex__instructions] => ddddddddddddddddddd
+            [id] => 28
+        )
+
+    [_f] => Array
+        (
+            [0] => s
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update _app_top...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_save_field.php(36): _db->_update_sql('update _app_top...', Array, Array)
+#3 {main}
+)
+
+"
+

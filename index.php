@@ -124,7 +124,7 @@ include('app_config.php');
 			$(this).addClass('nms');
 		});
 
-		$(document).on('click', 'div.link', function(evt){
+		$(document).on('click', 'div.link, span.link', function(evt){
 			_load_page(evt, this);
 		});
 
@@ -139,9 +139,11 @@ include('app_config.php');
 			evt.stopImmediatePropagation();
 			var id = $(f).attr('data-id');
 			var main = $(f).attr('data-main');
+			var gid = $(f).attr('data-gid');
 			var fd = new FormData();
 			fd.append('main', main);
 			fd.append('id', id);
+			if (gid){fd.append('gid', gid);}
 			fd.append('app_folder', '<?php echo base64_encode(__s_app_folder__);?>');
 			$.ajax({
 				type		: 'POST',
@@ -176,13 +178,16 @@ include('app_config.php');
 			if (readCookie('navbar') == 'off'){
 				burger_src = './_stdlib/_images/_icons/close50.png';
 				tog = 'on';
+				$('#maincol').addClass('move-over');
 			}else{
 				burger_src = '_stdlib/_images/_icons/menu50.png';
 				tog = 'off';
+				$('#maincol').removeClass('move-over');
 			}
 			this.src = burger_src;
 			createCookie('navbar', tog, 365);
 			$('#navbar').toggleClass('hidden');
+
 		});
 
 
@@ -438,16 +443,17 @@ include('app_config.php');
 			$('#' + id + ' .front').toggleClass('hidden');
 		})
 
-
 	<?php if (is_logged_in()){?>
 		$('.sortable-list').sortable({
 			items: 'li.rc',
 			update: function(event, ui) {
 				var new_list = $(this).sortable('toArray').toString();
 				var db_tbl = $(this.firstChild.nextSibling).attr('data-db-tbl');
+				var sort_list_prefix = $(this.firstChild.nextSibling).attr('data-sort-list-prefix');
 				var fd = new FormData();
 				fd.set('nlist', new_list);
 				fd.set('gen_table', db_tbl);
+				fd.set('sort_list_prefix', sort_list_prefix);
 				fd.set('app_folder', '<?php echo base64_encode(__s_app_folder__);?>');
 				$.ajax({
 					type: 'POST',

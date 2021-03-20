@@ -1,15 +1,15 @@
-<li id="sub{_item_detail_id}">
-	<div class="label">
+<li id='sub{_item_detail_id}'>
+	<div class='label'>
 		{_item_count}.
 	</div>
-	<div class="the-rest wrap">
-		<div class="question">
+	<div class='the-rest wrap'>
+		<div class='question'>
 			{_question}
 		</div>
-		<div class="answer f1">
-			<div id="card{_item_detail_id}" class="card point min-h100 f1 w100pc">
-				<div class = 'front'><img src="_stdlib/_images/_icons/card_back.png"></div>
-				<div class="back hidden">{_answer}</div>
+		<div class='answer f1'>
+			<div id='card{_item_detail_id}' class='card point min-h100 f1'>
+				<div class = 'front'><img src='_stdlib/_images/_icons/card_back.png'></div>
+				<div class='back hidden'>{_answer}</div>
 			</div>
 		</div>
 	</div>

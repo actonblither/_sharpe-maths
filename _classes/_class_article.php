@@ -12,6 +12,7 @@ class _article extends _topic_tab{
 	protected $_field_prefix = 'tart_';
 	protected $_open_close_id_prefix = 'u';
 	protected $_sr;//search replace array
+	protected $_sortable_list_prefix = 'nar';
 
 	public function __construct($_tid){
 		parent::__construct($_tid);
@@ -45,7 +46,8 @@ class _article extends _topic_tab{
 				'_item_title' => rvs($_r['tart_title']),
 				'_item_name' => $this->_item_name,
 				'_body' => rvs($_r['tart_body']),
-				'_field_prefix' => $this->_field_prefix
+				'_field_prefix' => $this->_field_prefix,
+				'_sortable_list_prefix' => $this->_sortable_list_prefix
 		);
 		$_page = file_get_contents($_tpl);
 		foreach ($this->_sr as $_key => $_value){

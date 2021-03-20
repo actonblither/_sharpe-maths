@@ -9,9 +9,11 @@ class _header_body{
 		if (rvs($_COOKIE['navbar'], 'off') === 'on'){
 			$this->_navburger_src = __s_lib_url__.'_images/_icons/close50.png';
 			$this->_navbar = true;
+			echo '<script>$(document).ready(function(){$("#maincol").addClass("move-over");});</script>';
 		}else{
 			$this->_navburger_src = __s_lib_url__.'_images/_icons/menu50.png';
 			$this->_navbar = false;
+			echo '<script>$(document).ready(function(){$("#maincol").removeClass("move-over");});</script>';
 		}
 		if (rvs($_COOKIE['nav-position'], 'l') === 'l'){$this->_left = true;}else{$this->_left = false;}
 	}

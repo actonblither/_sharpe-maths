@@ -1,24 +1,24 @@
 	<li>
-		<div class="label">
-			<img class="ttip" title="Puzzle" alt="Puzzle" src="{_icon_app_url}puzzle32.png">
+		<div class='label'>
+			<img class='ttip' title='Puzzle' alt='Puzzle' src='{_icon_app_url}puzzle32.png'>
 		</div>
-		<div id = '' class="the-rest wrap">
+		<div class='the-rest cwrap p10'>
 			{_pz_puzzle}
 		</div>
 	</li>
 	<li>
-		<div class="label">
-			<img class="ttip point reveal" data-id = '{_item_id}' data-text-div = 'soln' title="Click to reveal the solution" alt="Solution" src="{_icon_app_url}solution32.png">
+		<div class='label'>
+			<img class='ttip point reveal' data-id = '{_item_id}' data-text-div = 'soln' title='Click to reveal the solution' alt='Solution' src='{_icon_app_url}solution32.png'>
 		</div>
-		<div id = 'soln{_item_id}' class="the-rest pt10 hidden">
+		<div id = 'soln{_item_id}' class='the-rest cwrap p10 hidden'>
 			{_pz_solution}
 		</div>
 	</li>
 	<li>
-		<div class="label">
-			<img class="ttip point reveal" data-id = '{_item_id}' data-text-div = 'expln' title="Click to reveal the explanation" alt="Explanation" src="{_icon_app_url}explanation32.png">
+		<div class='label'>
+			<img class='ttip point reveal' data-id = '{_item_id}' data-text-div = 'expln' title='Click to reveal the explanation' alt='Explanation' src='{_icon_app_url}explanation32.png'>
 		</div>
-		<div id = 'expln{_item_id}' class="the-rest pt10 hidden">
+		<div id = 'expln{_item_id}' class='the-rest cwrap p10 hidden'>
 			{_pz_explanation}
 		</div>
 	</li>

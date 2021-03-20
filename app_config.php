@@ -1,7 +1,7 @@
 <?php
 header('Content-Type: text/html; charset=utf-8;');
-error_reporting(E_ALL);
-//error_reporting(E_ERROR && ~E_WARNING && ~E_NOTICE);
+//error_reporting(E_ALL);
+error_reporting(E_ERROR && ~E_WARNING && ~E_NOTICE);
 date_default_timezone_set('Europe/London');
 
 
@@ -38,7 +38,7 @@ include(__s_lib_folder__.'_classes/_class_contact.php');
 include(__s_app_folder__.'_classes/_class_topic.php');
 include(__s_app_folder__.'_classes/_class_topic_tab.php');
 include(__s_app_folder__.'_classes/_class_glossary.php');
-include(__s_app_folder__.'_classes/__ARCHIVE/_class_glossary_OLD.php');
+include(__s_app_folder__.'_classes/_class_glossary_all.php');
 include(__s_app_folder__.'_classes/_class_puzzles.php');
 include(__s_app_folder__.'_classes/_class_intro.php');
 include(__s_app_folder__.'_classes/_class_exercise.php');

@@ -6,11 +6,13 @@ class _setup {
 	protected $_dbh;
 	protected $_cfg_title;
 	protected $_cfg_path;
+	protected $_is_logged_in;
 
 	public function __construct(){
 		$this->_dbh = new _db();
 		$this->_main = rvs($_REQUEST['main'], 'page');
 		$this->_id = rvz($_REQUEST['id'], 1);
+		$this->_is_logged_in = is_logged_in();
 	}
 
 	public function _fetch_current_admin_user_name(){

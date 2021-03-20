@@ -13,6 +13,7 @@ class _glossary extends _topic_tab{
 	protected $_field_prefix = 'glo_';
 	protected $_open_close_id_prefix = 'g';
 	protected $_sr;//search replace array
+	protected $_sortable_list_prefix = 'ngl';
 
 	public function __construct($_tid){
 		$this->_topic_link_tbl = '_app_glossary_topic_link';
@@ -56,7 +57,8 @@ class _glossary extends _topic_tab{
 				'_item_name' => $this->_item_name,
 				'_body' => rvs($_r['body']),
 				'_example_of_use' => rvs($_r['example_of_use']),
-				'_field_prefix' => $this->_field_prefix
+				'_field_prefix' => $this->_field_prefix,
+				'_sortable_list_prefix' => $this->_sortable_list_prefix
 		);
 
 		if ($this->_item_id > 0){

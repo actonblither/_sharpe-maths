@@ -1,14 +1,22 @@
 /* SIDE NAVIGATION CSS */
 
 nav#navbar {
+	position: fixed;
+	top: var(--nav-menu-offset-top);
 	width: var(--nav-menu-width);
+	background-color: #fff;
+	height: 100%;
+	z-index: 300;
 }
 
 nav#navbar > ul {
+	position: absolute;
 	margin: 0;
 	list-style: none;
 	border: 0;
 	padding: 0;
+	height: calc(100% - var(--header-height) - var(--footer-height) - 14px);
+	overflow-y: auto;
 }
 ul.nav-menu-side, ul.nav-menu-side ul{
 	display: flex;

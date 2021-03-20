@@ -10,6 +10,7 @@ class _puzzle extends _topic_tab{
 	protected $_title_prefix = 'Puzzle';
 	protected $_title_field_name = 'pz_title';
 	protected $_open_close_id_prefix = 'p';
+	protected $_sortable_list_prefix = 'npz';
 	protected $_sr;//search replace array
 
 	public function __construct($_tid){
@@ -50,7 +51,8 @@ class _puzzle extends _topic_tab{
 				'_item_name' => $this->_item_name,
 				'_pz_puzzle' => rvs($_r['pz_puzzle']),
 				'_pz_solution' => rvs($_r['pz_solution']),
-				'_pz_explanation' => rvs($_r['pz_explanation'])
+				'_pz_explanation' => rvs($_r['pz_explanation']),
+				'_sortable_list_prefix' => $this->_sortable_list_prefix
 		);
 
 		$_page = file_get_contents($_tpl);

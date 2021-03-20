@@ -85,6 +85,7 @@ footer#fixed-footer{
 	bottom: 0;
 	height: var(--footer-height);
 	border-top: 1px solid var(--s35pc);
+	z-index: 400;
 }
 
 footer#fixed-footer div#idds,

@@ -97,15 +97,22 @@ class _topic extends _setup{
 			$tmp .= "
 				<div class='ifc w25pc col ml10 hh'>
 					<div class='topic-label'>Previous topic:</div>
-					<div class='topic-title prev'>".$_prev_title."</div>
-				</div>
+					<div class='topic-title prev'>".$_prev_title;
+			if ($this->_is_logged_in){
+				$tmp .= "<br />TID: ".$_prev_topic_id."; NRID: ".$prev;
+			}
+			$tmp .= "</div></div>
 				<div class='ifc w10pc'>
 					<img class='point nav_arrow' data-id='".$prev."' data-main= 'topic' src='_stdlib/_images/_icons/arrow_left50.png' alt='Previous topic' />
 				</div>";
 		}else{
 			$tmp .= "<div class='ifc w25pc ml20 hh'></div><div class='w10pc'></div>";
 		}
-		$tmp .= "<div class='ifc col w25pc hh c'><div class='topic-label'>Current topic:</div><div class='topic-title'>".$this->_get_topic_title()."</div></div>";
+		$tmp .= "<div class='ifc col w25pc hh c'><div class='topic-label'>Current topic:</div><div class='topic-title'>".$this->_get_topic_title();
+		if ($this->_is_logged_in){
+			$tmp .= "<br />TID: ".$this->_topic_id."; NRID: ".$this->_topic_route_id;
+		}
+		$tmp .= "</div></div>";
 		if (rvz($next) > 0){
 			$_next_topic_id = $this->_fetch_topic_id_from_route_id($next);
 			$_sql = 'select title from _app_topic where id = :id';
@@ -116,7 +123,11 @@ class _topic extends _setup{
 				<div class='ifc w10pc r'>
 					<img class='point nav_arrow' data-id='".$next."' data-main= 'topic' src='_stdlib/_images/_icons/arrow_right50.png' alt='Next topic' />
 				</div>
-				<div class='ifc w25pc col mr20 hh'><div class='topic-label'>Next topic:</div><div class='topic-title'>".$_next_title."</div></div>";
+				<div class='ifc w25pc col mr20 hh'><div class='topic-label'>Next topic:</div><div class='topic-title'>".$_next_title;
+			if ($this->_is_logged_in){
+				$tmp .= "<br />TID: ".$_next_topic_id."; NRID: ".$next;
+			}
+			$tmp .= "</div></div>";
 		}else{
 			$tmp .= "<div class='ifc w15pc'></div><div class='ifc w25pc mr10 hh'></div>";
 		}

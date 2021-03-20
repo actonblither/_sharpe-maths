@@ -21,6 +21,7 @@ class _exercise extends _topic_tab{
 	protected $_head_elements = true;
 	protected $_sub_instructions = true;
 	protected $_sub_body = false;
+	protected $_sortable_list_prefix = 'nex';
 
 	public function __construct($_tid){
 		parent::__construct($_tid);
@@ -87,8 +88,12 @@ class _exercise extends _topic_tab{
 				'_question' => rvs($_r['question']),
 				'_answer' => rvs($_r['answer']),
 				'_field_prefix' => $this->_field_prefix,
-				'_instructions' => rvs($_r['tex_instructions'])
+				'_sortable_list_prefix' => $this->_sortable_list_prefix
 		);
+
+		if (!empty($_r['tex_instructions'])){
+			$this->_sr['_instructions'] = rvs($_r['tex_instructions']);
+		}
 
 		$_page = file_get_contents($_tpl);
 		foreach ($this->_sr as $_key => $_value){

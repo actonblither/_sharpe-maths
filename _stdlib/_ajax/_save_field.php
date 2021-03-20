@@ -2,7 +2,7 @@
 $_base_folder = base64_decode($_POST['app_folder']);
 $_base_folder = filter_var($_base_folder, FILTER_SANITIZE_STRING);
 include_once($_base_folder.'app_config.php');
-_cl($_POST);
+//_cl($_POST);
 
 $_link = rvb($_POST['link']);
 $_id = rvz($_POST['id']);
