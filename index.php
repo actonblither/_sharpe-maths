@@ -178,16 +178,13 @@ include('app_config.php');
 			if (readCookie('navbar') == 'off'){
 				burger_src = './_stdlib/_images/_icons/close50.png';
 				tog = 'on';
-				$('#maincol').addClass('move-over');
 			}else{
 				burger_src = '_stdlib/_images/_icons/menu50.png';
 				tog = 'off';
-				$('#maincol').removeClass('move-over');
 			}
 			this.src = burger_src;
 			createCookie('navbar', tog, 365);
 			$('#navbar').toggleClass('hidden');
-
 		});
 
 

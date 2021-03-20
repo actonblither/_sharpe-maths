@@ -50,11 +50,8 @@ class _activity extends _topic_tab{
 				'_field_prefix' => $this->_field_prefix,
 				'_sortable_list_prefix' => $this->_sortable_list_prefix
 		);
-		$_page = file_get_contents($_tpl);
-		foreach ($this->_sr as $_key => $_value){
-			$_page = str_replace('{'.$_key.'}', $_value, $_page);
-		}
-		return $_page;
+
+		return $this->_fetch_template_file($_tpl);
 	}
 
 

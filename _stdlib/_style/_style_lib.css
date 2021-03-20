@@ -29,7 +29,7 @@ section#maincontent {
 div#maincol{
 	display: flex;
 	flex-flow: column wrap;
-	width: 100%;
+	flex: 1;
 	margin-top: 1px;
 	overflow: auto;
 }
@@ -434,7 +434,8 @@ a#nav-skip{
 .lh30{line-height: 30px;}
 .lh35{line-height: 35px;}
 
-.move-over{margin-left: 212px;}
+.move-over-l{margin-left: 212px;}
+.move-over-r{margin-right: 212px;}
 
 .i{font-style: italic;}
 .b{font-weight: bold;}

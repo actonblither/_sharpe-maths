@@ -29,12 +29,13 @@ class _topic_tab{
 	protected $_sub_instructions = false;
 	protected $_sub_body = false;
 	protected $_head_elements = false;
-	protected $_template_url = __s_app_url__.'_classes/_templates/';
+	protected $_template_folder = __s_app_folder__.'_classes/_templates/';
 	protected $_field_prefix = '';
 	protected $_topic_link_tbl = '';
 	protected $_topic_link_tbl_field = '';
 	protected $_link_self_ref = false;
 	protected $_sortable_list_prefix = 'n';
+	protected $_sr;//search replace array
 
 	public function __construct($_tid){
 		$this->_dbh = new _db();
@@ -43,15 +44,15 @@ class _topic_tab{
 		// This SQL is the default. It can be overridden in the child class
 		$this->_item_sql = 'select * from '.$this->_main_db_tbl.' where topic_id = :topic_id and display = :display and archived = :archived order by order_num, id';
 		if ($this->_is_logged_in){
-			$this->_tpl_parent = $this->_template_url.'_admin_parent_tpl.txt';
-			$this->_tpl_head = $this->_template_url.'_admin_head_tpl.txt';
-			$this->_tpl_sub_instructions = $this->_template_url.'_admin_sub_instructions_tpl.txt';
-			$this->_tpl_sub_body = $this->_template_url.'_admin_sub_body_tpl.txt';
+			$this->_tpl_parent = $this->_template_folder.'_admin_parent_tpl.txt';
+			$this->_tpl_head = $this->_template_folder.'_admin_head_tpl.txt';
+			$this->_tpl_sub_instructions = $this->_template_folder.'_admin_sub_instructions_tpl.txt';
+			$this->_tpl_sub_body = $this->_template_folder.'_admin_sub_body_tpl.txt';
 		}else{
-			$this->_tpl_parent = $this->_template_url.'_user_parent_tpl.txt';
-			$this->_tpl_head = $this->_template_url.'_user_head_tpl.txt';
-			$this->_tpl_sub_instructions = $this->_template_url.'_user_sub_instructions_tpl.txt';
-			$this->_tpl_sub_body = $this->_template_url.'_user_sub_body_tpl.txt';
+			$this->_tpl_parent = $this->_template_folder.'_user_parent_tpl.txt';
+			$this->_tpl_head = $this->_template_folder.'_user_head_tpl.txt';
+			$this->_tpl_sub_instructions = $this->_template_folder.'_user_sub_instructions_tpl.txt';
+			$this->_tpl_sub_body = $this->_template_folder.'_user_sub_body_tpl.txt';
 		}
 		$this->_del_params = array(
 				'main_db_tbl' => $this->_main_db_tbl,
@@ -79,6 +80,15 @@ class _topic_tab{
 		);
 	}
 
+	protected function _fetch_template_file($_tpl){
+		ob_start();
+		include($_tpl);
+		$_page = ob_get_clean();
+		foreach ($this->_sr as $_key => $_value){
+			$_page = str_replace('{'.$_key.'}', $_value, $_page);
+		}
+		return $_page;
+	}
 
 	protected function _build_items(){
 		$tmp = "";

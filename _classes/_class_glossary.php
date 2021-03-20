@@ -24,11 +24,11 @@ class _glossary extends _topic_tab{
 
 		$this->_is_logged_in = is_logged_in();
 		if ($this->_is_logged_in){
-			$this->_tpl_head = __s_app_url__.'_classes/_templates/_admin_glossary_head_tpl.txt';
-			$this->_tpl_sub = __s_app_url__.'_classes/_templates/_admin_glossary_sub_tpl.txt';
+			$this->_tpl_head = __s_app_folder__.'_classes/_templates/_admin_glossary_head_tpl.txt';
+			$this->_tpl_sub = __s_app_folder__.'_classes/_templates/_admin_glossary_sub_tpl.txt';
 		}else{
-			$this->_tpl_head = __s_app_url__.'_classes/_templates/_user_glossary_head_tpl.txt';
-			$this->_tpl_sub = __s_app_url__.'_classes/_templates/_user_glossary_sub_tpl.txt';
+			$this->_tpl_head = __s_app_folder__.'_classes/_templates/_user_glossary_head_tpl.txt';
+			$this->_tpl_sub = __s_app_folder__.'_classes/_templates/_user_glossary_sub_tpl.txt';
 		}
 		$this->_item_sql = 'select g.* from _app_glossary g left join _app_glossary_topic_link gt on g.id = gt.glossary_id where gt.topic_id = :topic_id and g.display = :display and g.archived = :archived order by g.order_num, g.title, g.id';
 		$this->_sub_sql = false;
@@ -60,32 +60,55 @@ class _glossary extends _topic_tab{
 				'_field_prefix' => $this->_field_prefix,
 				'_sortable_list_prefix' => $this->_sortable_list_prefix
 		);
+		if ($this->_is_logged_in){
+			if ($this->_item_id > 0){
+				$_params['db_tbl_link'] = '_app_glossary_link';
+				$_params['db_tbl_field1'] = 'id_1';
+				$_params['db_tbl_field2'] = 'id_2';
+				$_params['this_item_id'] = $this->_item_id;
+				$_params['select_list_db_tbl'] = '_app_glossary';
+				$_params['select_list_id_prefix'] = 'link_';
+				$_p1 = new _multiple_select($_params);
+				$this->_sr['_self_link_select'] = $_p1->_build_link_self_ref_select();
 
-		if ($this->_item_id > 0){
-			$_params['db_tbl_link'] = '_app_glossary_link';
-			$_params['db_tbl_field1'] = 'id_1';
-			$_params['db_tbl_field2'] = 'id_2';
-			$_params['this_item_id'] = $this->_item_id;
-			$_params['select_list_db_tbl'] = '_app_glossary';
-			$_params['select_list_id_prefix'] = 'link_';
-			$_p1 = new _multiple_select($_params);
-			$this->_sr['_self_link_select'] = $_p1->_build_link_self_ref_select();
-
-			$_params2['db_tbl_link'] = '_app_glossary_topic_link';
-			$_params2['db_tbl_field1'] = 'topic_id';
-			$_params2['db_tbl_field2'] = 'glossary_id';
-			$_params2['this_item_id'] = $this->_item_id;
-			$_params2['select_list_db_tbl'] = '_app_topic';
-			$_params2['select_list_id_prefix'] = 'topic_link_';
-			$_p2 = new _multiple_select($_params2);
-			$this->_sr['_topic_link_select'] = $_p2->_build_link_select();
+				$_params2['db_tbl_link'] = '_app_glossary_topic_link';
+				$_params2['db_tbl_field1'] = 'topic_id';
+				$_params2['db_tbl_field2'] = 'glossary_id';
+				$_params2['this_item_id'] = $this->_item_id;
+				$_params2['select_list_db_tbl'] = '_app_topic';
+				$_params2['select_list_id_prefix'] = 'topic_link_';
+				$_p2 = new _multiple_select($_params2);
+				$this->_sr['_topic_link_select'] = $_p2->_build_link_select();
+			}
+		}else{
+			$this->_sr['_linked_entries'] = $this->_build_connector_str($this->_item_id);
 		}
 
-		$_page = file_get_contents($_tpl);
-		foreach ($this->_sr as $_key => $_value){
-			$_page = str_replace('{'.$_key.'}', $_value, $_page);
-		}
+		$_page = $this->_fetch_template_file($_tpl);
+
 		return $_page;
+	}
+
+
+	private function _build_connector_str($_id){
+		$_sql = 'select distinct g.* from _app_glossary g left join _app_glossary_link lg on (lg.id_1 = g.id or lg.id_2 = g.id) where g.display = :display and g.archived = :archived and (lg.id_1 = :id or lg.id_2 = :id2) order by left(g.title, 1);';
+		$_d = array('display' => 1, 'archived' => 0, 'id' => $_id, 'id2' => $_id);
+		$_f = array('i', 'i');
+		$_rows = $this->_dbh->_fetch_db_rows_p($_sql, $_d, $_f);
+		$tmp = "";
+
+		if (!empty($_rows)){
+			foreach ($_rows as $_r){
+				$_g_letter = substr($_r['title'], 0, 1);
+				$_gid = ord($_g_letter);
+				if ($_r['id'] !== $_id){
+					$tmp .= "<a href = '#glo".$_r['id']."'>".$_r['title']."</a>, ";
+				}
+			}
+		}
+
+		$tmp = substr($tmp, 0, -2);
+		return $tmp;
 	}
 }
 

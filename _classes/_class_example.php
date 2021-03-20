@@ -22,9 +22,9 @@ class _example extends _topic_tab{
 
 		$this->_is_logged_in = is_logged_in();
 		if ($this->_is_logged_in){
-			$this->_tpl_sub = __s_app_url__.'_classes/_templates/_admin_example_sub_tpl.txt';
+			$this->_tpl_sub = __s_app_folder__.'_classes/_templates/_admin_example_sub_tpl.txt';
 		}else{
-			$this->_tpl_sub = __s_app_url__.'_classes/_templates/_user_example_sub_tpl.txt';
+			$this->_tpl_sub = __s_app_folder__.'_classes/_templates/_user_example_sub_tpl.txt';
 		}
 		$this->_sub_sql = false;
 		$this->_build_items();
@@ -59,11 +59,7 @@ class _example extends _topic_tab{
 				'_sortable_list_prefix' => $this->_sortable_list_prefix
 		);
 
-		$_page = file_get_contents($_tpl);
-		foreach ($this->_sr as $_key => $_value){
-			$_page = str_replace('{'.$_key.'}', $_value, $_page);
-		}
-		return $_page;
+		return $this->_fetch_template_file($_tpl);
 	}
 
 

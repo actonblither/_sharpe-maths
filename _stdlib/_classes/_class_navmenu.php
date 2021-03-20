@@ -17,7 +17,7 @@ class _navmenu{
 
 
 	private function _parse_menu_list($output){
-		$tmp = "<ul class = 'nav-menu-side'>";
+		$tmp = "<div><ul class = 'nav-menu-side'>";
 		$arr = array_filter(explode('**', $output));
 		$_start_child = array();
 		$_end_child = array();
@@ -79,7 +79,7 @@ class _navmenu{
 				}
 			}
 		}
-		$tmp .= "</ul>";
+		$tmp .= "</ul></div>";
 		return $tmp;
 	}
 

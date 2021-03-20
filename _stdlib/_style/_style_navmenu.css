@@ -1,15 +1,22 @@
 /* SIDE NAVIGATION CSS */
+nav#navbar{
+	display: flex;
+	flex-flow: row nowrap;
+	width: var(--nav-menu-width);
+	height: 100%;
+	z-index: 250;
+}
 
-nav#navbar {
+/* This div is required to be the fixed element, with the outer nav section being flex so as to move freely to the other side of the screen. */
+nav#navbar > div{
 	position: fixed;
 	top: var(--nav-menu-offset-top);
 	width: var(--nav-menu-width);
-	background-color: #fff;
 	height: 100%;
 	z-index: 300;
 }
 
-nav#navbar > ul {
+nav#navbar > div > ul {
 	position: absolute;
 	margin: 0;
 	list-style: none;

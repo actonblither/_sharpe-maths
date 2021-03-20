@@ -14,7 +14,7 @@ class _exercise extends _topic_tab{
 	protected $_title_field_name = 'tex_title';
 	protected $_field_prefix = 'tex_';
 	protected $_open_close_id_prefix = 'x';
-	protected $_sr;//search replace array
+
 	protected $_topic_ex_id;
 	protected $_topic_ex_num_qs;
 
@@ -30,9 +30,9 @@ class _exercise extends _topic_tab{
 
 		$this->_is_logged_in = is_logged_in();
 		if ($this->_is_logged_in){
-			$this->_tpl_sub = __s_app_url__.'_classes/_templates/_admin_exercise_sub_tpl.txt';
+			$this->_tpl_sub = __s_app_folder__.'_classes/_templates/_admin_exercise_sub_tpl.txt';
 		}else{
-			$this->_tpl_sub = __s_app_url__.'_classes/_templates/_user_exercise_sub_tpl.txt';
+			$this->_tpl_sub = __s_app_folder__.'_classes/_templates/_user_exercise_sub_tpl.txt';
 		}
 
 		$this->_del_params = array(
@@ -94,12 +94,7 @@ class _exercise extends _topic_tab{
 		if (!empty($_r['tex_instructions'])){
 			$this->_sr['_instructions'] = rvs($_r['tex_instructions']);
 		}
-
-		$_page = file_get_contents($_tpl);
-		foreach ($this->_sr as $_key => $_value){
-			$_page = str_replace('{'.$_key.'}', $_value, $_page);
-		}
-		return $_page;
+		return $this->_fetch_template_file($_tpl);
 	}
 
 	protected function _fetch_sub_list($_ex){

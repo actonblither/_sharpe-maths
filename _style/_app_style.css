@@ -52,8 +52,8 @@
 	--header-offset_neg: -58px;
 	--footer-height: 15px;
 	--footer-fontsize: 8pt;
-	--nav-menu-width: 210px;
-	--nav-menu-offset-left: 215px;
+	--nav-menu-width: 200px;
+	--nav-menu-offset-side: 210px;
 	--nav-menu-offset-top: 53px;
 	--p-line-height: 26px;
 }
