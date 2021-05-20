@@ -1,17 +1,5 @@
 <li>
 	<div class='w100pc wrap'>
-		<textarea id='{_field_prefix}body_{_item_id}' data-el-type='textarea' data-field='{_field_prefix}body' data-id='{_item_id}' data-db-tbl='{_main_db_tbl}' name='{_field_prefix}body_{_item_id}' class='field m5'>{_body}</textarea>
-		<script>
-			CKEDITOR.replace('{_field_prefix}body_{_item_id}',{
-				language: 'en',
-				width: '100%',
-				height: '300px',
-				basicEntities : false,
-				entities : false,
-				forceSimpleAmpersand : true,
-				allowedContent : true
-			});
-			</script>
-			<button type='button' class='point page-save save w120 m10' data-db-tbl='{_main_db_tbl}' data-id='{_item_id}' data-field='{_field_prefix}body'>Save {_item_name}</button>
+		{_CKEditor}
 	</div>
 </li>

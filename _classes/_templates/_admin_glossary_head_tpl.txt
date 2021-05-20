@@ -1,5 +1,5 @@
 <li id = '{_sortable_list_prefix}{_item_id}' class='rc' data-db-tbl='{_main_db_tbl}' data-sort-list-prefix = '{_sortable_list_prefix}'>
-	<ul id='{_head_list_id}{_item_id}' class='topic-header-list w100pc'>
+	<ul id='{_head_list_id}{_item_id}' class='list-header w100pc'>
 		<li id='{_open_close_id_prefix}l{_item_id}' class='point' data-list-id='{_sub_list_id}{_item_id}' data-img-cl='{_open_close_id_prefix}c{_item_id}' data-img-op='{_open_close_id_prefix}o{_item_id}'>
 			<img id='img{_item_id}' class='w14 h14 {_del_class} point m5' src='{_icon_lib_url}close14.png' />
 			<div class='row w40 p5'>

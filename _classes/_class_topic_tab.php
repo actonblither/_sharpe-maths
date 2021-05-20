@@ -23,6 +23,7 @@ class _topic_tab{
 	protected $_search_array;
 	protected $_replace_array;
 	protected $_item_sql;
+	protected $_item_sql_admin;
 	protected $_sub_sql = false;
 	protected $_tpl_sub_instructions;
 	protected $_tpl_sub_body;
@@ -36,6 +37,8 @@ class _topic_tab{
 	protected $_link_self_ref = false;
 	protected $_sortable_list_prefix = 'n';
 	protected $_sr;//search replace array
+	protected $_header_edit_elements = '';
+
 
 	public function __construct($_tid){
 		$this->_dbh = new _db();
@@ -43,6 +46,8 @@ class _topic_tab{
 		$this->_is_logged_in = is_logged_in();
 		// This SQL is the default. It can be overridden in the child class
 		$this->_item_sql = 'select * from '.$this->_main_db_tbl.' where topic_id = :topic_id and display = :display and archived = :archived order by order_num, id';
+		$this->_item_sql_admin = 'select * from '.$this->_main_db_tbl.' where topic_id = :topic_id and archived = :archived order by order_num, id';
+
 		if ($this->_is_logged_in){
 			$this->_tpl_parent = $this->_template_folder.'_admin_parent_tpl.txt';
 			$this->_tpl_head = $this->_template_folder.'_admin_head_tpl.txt';
@@ -90,6 +95,34 @@ class _topic_tab{
 		return $_page;
 	}
 
+	protected function _build_edit_elements($_item){
+		$_id = $_item['id'];
+
+		$_title_field_name = $this->_field_prefix.'title';
+		$_title = rvs($_item[$_title_field_name]);
+
+		$_params = array(
+			'db_tbl' => $this->_main_db_tbl,
+			'el_field_id' => $_title_field_name,
+			'el_field_value' => $_title,
+			'el_width' => 500,
+			'el_id_value' => $_id,
+		);
+		$_tf = new _form_element($_params);
+		$this->_header_edit_elements .= $_tf->_build_text_input();
+
+		$_display = $_item['display'];
+		$_params = array(
+			'db_tbl' => $this->_main_db_tbl,
+			'el_field_id' => 'display',
+			'el_field_value' => $_display,
+			'el_id_value' => $_id,
+		);
+		$_df = new _form_element($_params);
+		$_display = $_df->_build_checkbox();
+		$this->_header_edit_elements .= "<label for='display_".$_id."'> &nbsp;&nbsp; Display: </label>".$_display;
+	}
+
 	protected function _build_items(){
 		$tmp = "";
 		if ($this->_is_logged_in){
@@ -109,9 +142,15 @@ class _topic_tab{
 		}
 		$this->_items = $tmp . $this->_fetch_template($this->_tpl_parent);
 		$_inner = '';
-		$_sql = $this->_item_sql;
-		$_d = array('topic_id' => $this->_topic_id, 'display' => 1, 'archived' => 0);
-		$_f = array('i', 'i', 'i');
+		if ($this->_is_logged_in){
+			$_sql = $this->_item_sql_admin;
+			$_d = array('topic_id' => $this->_topic_id, 'archived' => 0);
+			$_f = array('i', 'i');
+		}else{
+			$_sql = $this->_item_sql;
+			$_d = array('topic_id' => $this->_topic_id, 'display' => 1, 'archived' => 0);
+			$_f = array('i', 'i', 'i');
+		}
 
 		$this->_rows = $this->_dbh->_fetch_db_rows_p($_sql, $_d, $_f);
 
@@ -151,14 +190,20 @@ class _topic_tab{
 	}
 
 	private function _fetch_sub_tpls($_inner, $_r){
-		if ($this->_head_elements === true && $this->_is_logged_in){
-			$_head_frm_el = $this->_build_edit_elements($_r);
+		if ($this->_is_logged_in){
+			// Reset before build the next
+			$this->_header_edit_elements = '';
+			$this->_build_edit_elements($_r);
+			$_head_frm_el = $this->_header_edit_elements;
 			$_inner = str_replace('{_head_elements}', $_head_frm_el, $_inner);
+			if (isset($this->_CKEditor)){
+				$_inner = str_replace('{_CKEditor}', $this->_CKEditor, $_inner);
+			}
 		}else{
 			$_inner = str_replace('{_head_elements}', '', $_inner);
 		}
 
-		if (!empty($this->_tpl_sub_instructions) && $this->_sub_instructions === true){
+		if ($this->_sub_instructions){
 			$_instr = $this->_fetch_template($this->_tpl_sub_instructions, $_r);
 			$_instruction_field = $this->_field_prefix.'instructions';
 			if (!empty($_r[$_instruction_field]) || $this->_is_logged_in){

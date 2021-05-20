@@ -5,10 +5,11 @@
 	</div>
 	<div class='the-rest wrap'>
 		<div class='question'>
-			<textarea id='question_{_item_detail_id}' data-el-type='textarea' data-field='question' data-id='{_item_detail_id}' data-db-tbl='_app_topic_ex_q' name='question' class='field w97pc'>{_question}</textarea>
+			<textarea id='question_{_item_detail_id}' data-el-type='textarea' data-field='question' data-id='{_item_detail_id}' data-db-tbl='_app_topic_ex_q' name='question' class='field'>{_question}</textarea>
 		</div>
-		<div class='answer f1'>
-			<textarea id='answer_{_item_detail_id}' data-el-type='textarea' data-field='answer' data-id='{_item_detail_id}' data-db-tbl='_app_topic_ex_q' name='answer' class='field w95pc'>{_answer}</textarea>
+		<div class='f1 row'>
+			<div class='row'><textarea id='answer_{_item_detail_id}' data-el-type='textarea' data-field='answer' data-id='{_item_detail_id}' data-db-tbl='_app_topic_ex_q' name='answer' class='field w80pc'>{_answer}</textarea><div>
+			<div class='row w100'>{_difficulty}</div>
 		</div>
 	</div>
 </li>

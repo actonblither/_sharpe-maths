@@ -31,6 +31,8 @@ class _glossary extends _topic_tab{
 			$this->_tpl_sub = __s_app_folder__.'_classes/_templates/_user_glossary_sub_tpl.txt';
 		}
 		$this->_item_sql = 'select g.* from _app_glossary g left join _app_glossary_topic_link gt on g.id = gt.glossary_id where gt.topic_id = :topic_id and g.display = :display and g.archived = :archived order by g.order_num, g.title, g.id';
+		$this->_item_sql_admin = 'select g.* from _app_glossary g left join _app_glossary_topic_link gt on g.id = gt.glossary_id where gt.topic_id = :topic_id and g.archived = :archived order by g.order_num, g.title, g.id';
+
 		$this->_sub_sql = false;
 		$this->_link_self_ref = true;
 		$this->_build_items();

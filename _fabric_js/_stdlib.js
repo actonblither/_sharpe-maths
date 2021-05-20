@@ -13,3 +13,7 @@ function _deg_to_rad(_deg){
 function _rad_to_deg(_rad){
 	return _rad * 180 / Math.PI;
 }
+
+function get_random_int(max) {
+	return Math.floor(Math.random() * Math.floor(max));
+}

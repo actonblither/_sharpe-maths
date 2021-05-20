@@ -25,7 +25,7 @@ nav#navbar > div > ul {
 	height: calc(100% - var(--header-height) - var(--footer-height) - 14px);
 	overflow-y: auto;
 }
-ul.nav-menu-side, ul.nav-menu-side ul{
+ul.nav-menu-side, ul.nav-menu-side ul, ul.nav-menu-admin, ul.nav-menu-admin ul{
 	display: flex;
 	flex-flow: column nowrap;
 	flex: 1;
@@ -40,7 +40,12 @@ ul.nav-menu-side{
 	width: var(--nav-menu-width);
 }
 
-ul.nav-menu-side li.expand{
+ul.item-admin{
+	flex: 1;
+	margin: 10px;
+}
+
+ul.nav-menu-side li.expand, ul.item-admin li.expand{
 	border-radius: 4px;
 	border: 1px solid var(--s35pc);
 	padding: 5px;
@@ -51,12 +56,19 @@ ul.nav-menu-side li.expand{
 	font-weight: bold;
 }
 
+
+ul.item-admin li.expand{
+	font-style: normal;
+	font-weight: normal;
+	color: #000;
+}
+
 ul.nav-menu-side li.expand:hover{
 	color: var(--s85pc);
 	background-color: var(--s45pc);
 }
 
-ul.nav-menu-side li.link{
+ul.nav-menu-side li.link, ul.item-admin li.link{
 	border-radius: 4px;
 	border: 1px solid var(--s35pc);
 	padding: 5px;
@@ -74,7 +86,7 @@ ul.nav-menu-side li.link:hover{
 
 /* OUTER SET */
 
-ul.nav-menu-side > li.link{
+ul.nav-menu-side > li.link, ul.item-admin > li.link{
 	background-color: var(--s90pc);
 	color: var(--s05pc);
 	font-style: normal;
@@ -87,11 +99,17 @@ ul.nav-menu-side > li.link:hover{
 	font-weight: normal;
 }
 
-ul.nav-menu-side > li.expand{
+ul.nav-menu-side > li.expand, ul.item-admin > li.expand{
 	background-color: var(--s85pc);
 	color: var(--s05pc);
 	font-style: italic;
 	border: 1px solid var(--s35pc);
+}
+
+ul.item-admin > li.expand{
+	font-style: normal;
+	font-weight: normal;
+	color: #000;
 }
 
 ul.nav-menu-side > li.expand:hover{
@@ -104,6 +122,14 @@ ul.nav-menu-side > li.expand:hover{
 ul.nav-menu-side li.nms{
 	color: #fff;
 	background-color: var(--s35pc);
+}
+
+div.container{
+	display: flex;
+	flex-flow: row wrap;
+	flex: 1;
+	background-color: var(--s35pc);
+	color: #fff;
 }
 
 /* START NAVBAR IMAGES */

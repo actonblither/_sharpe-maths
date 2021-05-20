@@ -291,8 +291,8 @@ class _db{
 					$_data_type = PDO::PARAM_STR;
 					$result = false;
 					$_d = etn($_d);
-					if ($this->_f[$i] === 'i'){$_data_type = PDO::PARAM_INT; if (empty($_d) || is_null($_d)){$_d = 0;}}
-					if ($this->_f[$i] === 's'){$_data_type = PDO::PARAM_STR;}
+					if (rvs($this->_f[$i]) === 'i'){$_data_type = PDO::PARAM_INT; if (empty($_d) || is_null($_d)){$_d = 0;}}
+					if (rvs($this->_f[$i]) === 's'){$_data_type = PDO::PARAM_STR;}
 					if (is_null($_d)){$_data_type = PDO::PARAM_NULL;}
 
 					$_place_holder = ':'.$_key;

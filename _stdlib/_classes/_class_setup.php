@@ -7,12 +7,14 @@ class _setup {
 	protected $_cfg_title;
 	protected $_cfg_path;
 	protected $_is_logged_in;
+	protected $_hlf;
 
 	public function __construct(){
 		$this->_dbh = new _db();
 		$this->_main = rvs($_REQUEST['main'], 'page');
-		$this->_id = rvz($_REQUEST['id'], 1);
+		$this->_id = rvz($_REQUEST['nid'], 1);
 		$this->_is_logged_in = is_logged_in();
+		$this->_hlf = new _hlf();
 	}
 
 	public function _fetch_current_admin_user_name(){
@@ -38,6 +40,8 @@ class _setup {
 		$p = $this->_dbh->_fetch_db_datum_p($sql, $_d, $_f);
 		return stripslashes($p);
 	}
+
+
 
 	public function _get_id() { return $this->_id; }
 	public function _get_main() { return $this->_main; }

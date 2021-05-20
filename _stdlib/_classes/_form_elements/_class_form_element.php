@@ -31,10 +31,12 @@ class _form_element {
 
 
 
+
 	public function __construct($_params = []){
 		$this->_dbh = new _db();
 		if (!empty($_params)){
 			$this->_db_tbl = rvs($_params['db_tbl']);
+			$this->_el_id_value = rvs($_params['el_id_value']);
 			$this->_el_display_field = rvs($_params['el_display_field']);
 			$this->_el_field_id = rvs($_params['el_field_id']);
 			$this->_el_fieldset_id = rvs($_params['el_fieldset_id']);
@@ -77,7 +79,7 @@ class _form_element {
 	}
 
 	public function _build_save_btn(){
-		$tmp = "<button type = 'button' class = 'point page-save save ".$this->_el_field_class."' style = 'width:".$this->_el_width.$this->_el_width_units."' data-db-tbl = '".$this->_db_tbl."' data-id = '".$this->_el_id_value."' data-field = '".$this->_el_field_id."'>".$this->_el_field_value."</button>";
+		$tmp = "<button type = 'button' class = 'm10 point page-save save ".$this->_el_field_class."' style = 'width:".$this->_el_width.$this->_el_width_units."' data-db-tbl = '".$this->_db_tbl."' data-id = '".$this->_el_id_value."' data-field = '".$this->_el_field_id."'>".$this->_el_field_value."</button>";
 		return $tmp;
 	}
 
@@ -89,7 +91,7 @@ class _form_element {
 
 		$tmp =  "<input type = 'text' id = '".$this->_el_field_id."_".$this->_el_id_value."' name = '".$this->_el_field_id."' style='width: ".$this->_el_width.$this->_el_width_units."' value = '".$this->_el_field_value."' ";
 		if (!empty($this->_el_pattern)){$tmp.= "pattern = '".$this->_el_pattern."' ";}
-		$tmp .= "maxlength = '".$maxlength."' data-el-type = 'varchar' data-id = '".$this->_el_id_value."' data-db-tbl = '".$this->_db_tbl."' data-field = '".$this->_el_field_id."' class = 'field' />";
+		$tmp .= "maxlength = '".$maxlength."' placeholder = '".$this->_el_place_holder."' data-el-type = 'varchar' data-id = '".$this->_el_id_value."' data-db-tbl = '".$this->_db_tbl."' data-field = '".$this->_el_field_id."' class = 'field' />";
 		return $tmp;
 	}
 
@@ -104,8 +106,8 @@ class _form_element {
 	}
 
 	public function _build_checkbox(){
-		if ($this->_el_field_value == 1){$_checked = ' checked ';}else{$_checked = ' ';}
-		$tmp = "<input type = 'checkbox' id = '".$this->_el_field_id."_".$this->_el_id_value."' data-el-type = 'checkbox' data-field = '".$this->_el_field_id."' data-id = '".$this->_el_id_value."' data-db-tbl = '".$this->_db_tbl."' name = '".$this->_el_field_id."' class = 'field m5'".$_checked."/>";
+		if ($this->_el_field_value == 1){$_checked = ' checked';}else{$_checked = '';}
+		$tmp = "<input type = 'checkbox' id = '".$this->_el_field_id."_".$this->_el_id_value."' data-el-type = 'checkbox' data-field = '".$this->_el_field_id."' data-id = '".$this->_el_id_value."' data-db-tbl = '".$this->_db_tbl."' name = '".$this->_el_field_id."' class = 'chk-field m5'".$_checked."/>";
 		return $tmp;
 
 	}
@@ -117,15 +119,36 @@ class _form_element {
 		$tmp .= $this->_el_field_value;
 		$tmp .= '</textarea>';
 		$tmp .= "<script>
-			CKEDITOR.replace('".$this->_el_field_id."',{
-				language: 'en',
-				width: '".$this->_el_width.$this->_el_width_units."',
-				height: '600px',
-				basicEntities : false,
-				entities : false,
-				forceSimpleAmpersand : true,
-				allowedContent : true
-			});
+								var editor = CKEDITOR.replace('".$this->_el_field_id."_".$this->_el_id_value."',{
+									language: 'en',
+									width: '".$this->_el_width.$this->_el_width_units."',
+									height: '600px',
+									basicEntities : false,
+									entities : false,
+									forceSimpleAmpersand : true,
+									allowedContent : true,
+
+									on: {
+
+										key: function(evt) {
+//console.log(evt.data.keyCode);
+											if (evt.data.keyCode === 112 || evt.data.keyCode === 113 || evt.data.keyCode === 114 || evt.data.keyCode === 27 || evt.data.keyCode === 1114195){
+												for (var i in CKEDITOR.instances) {
+													CKEDITOR.instances[i].updateElement();
+												}
+												var cke = [];
+												cke['tbl'] = this.element.$.attributes[3].value;
+												cke['field'] = this.element.$.attributes[1].value;
+												cke['id'] = this.element.$.attributes[2].value;
+												cke['val'] = this.getData();
+												_save_CKE_field(cke);
+											}
+										}
+									}
+								});
+
+
+
 			</script></div>";
 		return $tmp;
 	}
@@ -161,7 +184,8 @@ class _form_element {
 	public function _fetch_varchar_field_length(){
 		$sql = 'show columns from '.$this->_db_tbl.' where Field = "'.$this->_el_field_id.'"';
 		$row = @$this->_dbh->_fetch_db_row($sql);
-		if (instr('varchar', $row['Type'])){
+
+		if ($row && instr('varchar', $row['Type'])){
 			$length = str_replace('varchar','', $row['Type']);
 			$length = str_replace('(','', $length);
 			$length = str_replace(')','', $length);
@@ -171,17 +195,60 @@ class _form_element {
 		}
 	}
 
-	public function _set_db_tbl($t) {$this->_db_tbl = $t;}
-	public function _set_el_data_id($t) {$this->_el_data_id = $t;}
-	public function _set_el_field_value($t) {$this->_el_field_value = $t;}
-	public function _set_el_field_id($t) {$this->_el_field_id = $t;}
-	public function _set_el_field_class($t) {$this->_el_field_class = $t;}
-	public function _set_el_width($t) {$this->_el_width = $t;}
-	public function _set_el_height($t) {$this->_el_height = $t;}
-	public function _set_el_width_units($t) {$this->_el_width_units = $t;}
-	public function _set_el_height_units($t) {$this->_el_height_units = $t;}
-	public function _set_el_pattern($t) {$this->_el_pattern = $t;}
-	public function _set_el_id_value($t) {$this->_el_id_value = $t;}
+	public function _get_dbh() { return $this->_dbh; }
+	public function _get_db_tbl() { return $this->_db_tbl; }
+	public function _get_el_display_field() { return $this->_el_display_field; }
+	public function _get_el_data_id() { return $this->_el_data_id; }
+	public function _get_el_fieldset_id() { return $this->_el_fieldset_id; }
+	public function _get_el_id_value() { return $this->_el_id_value; }
+	public function _get_el_field_id() { return $this->_el_field_id; }
+	public function _get_el_field_value() { return $this->_el_field_value; }
+	public function _get_el_field_class() { return $this->_el_field_class; }
+	public function _get_el_place_holder() { return $this->_el_place_holder; }
+	public function _get_el_pattern() { return $this->_el_pattern; }
+	public function _get_el_display() { return $this->_el_display; }
+	public function _get_el_hidden() { return $this->_el_hidden; }
+	public function _get_el_return() { return $this->_el_return; }
+	public function _get_el_width() { return $this->_el_width; }
+	public function _get_el_height() { return $this->_el_height; }
+	public function _get_el_width_units() { return $this->_el_width_units; }
+	public function _get_el_height_units() { return $this->_el_height_units; }
+	public function _get_timer_dt() { return $this->_timer_dt; }
+	public function _get_dt_start_empty() { return $this->_dt_start_empty; }
+	public function _get_dt_start_now() { return $this->_dt_start_now; }
+	public function _get_dt_show_clear_img() { return $this->_dt_show_clear_img; }
+	public function _get_dt_format() { return $this->_dt_format; }
+	public function _get_dt_now() { return $this->_dt_now; }
+	public function _get_form_id_prefix() { return $this->_form_id_prefix; }
+	public function _get_list_id_prefix() { return $this->_list_id_prefix; }
+
+	public function _set_dbh($_t) { $this->_dbh = $_t; }
+	public function _set_db_tbl($_t) { $this->_db_tbl = $_t; }
+	public function _set_el_display_field($_t) { $this->_el_display_field = $_t; }
+	public function _set_el_data_id($_t) { $this->_el_data_id = $_t; }
+	public function _set_el_fieldset_id($_t) { $this->_el_fieldset_id = $_t; }
+	public function _set_el_id_value($_t) { $this->_el_id_value = $_t; }
+	public function _set_el_field_id($_t) { $this->_el_field_id = $_t; }
+	public function _set_el_field_value($_t) { $this->_el_field_value = $_t; }
+	public function _set_el_field_class($_t) { $this->_el_field_class = $_t; }
+	public function _set_el_place_holder($_t) { $this->_el_place_holder = $_t; }
+	public function _set_el_pattern($_t) { $this->_el_pattern = $_t; }
+	public function _set_el_display($_t) { $this->_el_display = $_t; }
+	public function _set_el_hidden($_t) { $this->_el_hidden = $_t; }
+	public function _set_el_return($_t) { $this->_el_return = $_t; }
+	public function _set_el_width($_t) { $this->_el_width = $_t; }
+	public function _set_el_height($_t) { $this->_el_height = $_t; }
+	public function _set_el_width_units($_t) { $this->_el_width_units = $_t; }
+	public function _set_el_height_units($_t) { $this->_el_height_units = $_t; }
+	public function _set_timer_dt($_t) { $this->_timer_dt = $_t; }
+	public function _set_dt_start_empty($_t) { $this->_dt_start_empty = $_t; }
+	public function _set_dt_start_now($_t) { $this->_dt_start_now = $_t; }
+	public function _set_dt_show_clear_img($_t) { $this->_dt_show_clear_img = $_t; }
+	public function _set_dt_format($_t) { $this->_dt_format = $_t; }
+	public function _set_dt_now($_t) { $this->_dt_now = $_t; }
+	public function _set_form_id_prefix($_t) { $this->_form_id_prefix = $_t; }
+	public function _set_list_id_prefix($_t) { $this->_list_id_prefix = $_t; }
+
 }
 
 
@@ -216,6 +283,7 @@ class _select{
 	private $_no;
 	private $_el_date_name;
 	private $_el_date_value;
+	private $_top_zero_level = false;
 
 	public function __construct($params = []) {
 		$this->_dbh = new _db();
@@ -243,7 +311,7 @@ class _select{
 			$this->_el_value = rv($params['el_value'],'');
 			$this->_el_style = rvs($params['el_style']);
 			$this->_el_type = rvs($params['el_type'], 'sel');
-			$this->_el_width = rvz($params['el_width'],200);
+			$this->_el_width = rvz($params['el_width'], 200);
 			$this->_el_yn_preselect = rvb($params['el_yn_preselect'], false);
 			$this->_el_yn_value = rvz($params['el_yn_value'],0);
 			$this->_yes = rv($params['yes'], 'y');
@@ -312,8 +380,12 @@ class _select{
 			$tmp = '';
 		}
 
-		$tmp .= "<select data-db-tbl = '".$this->_el_data_db_tbl."' data-field = '".$this->_el_name."' data-id = '".$this->_el_data_id."' id = '".$this->_el_name."_".$this->_el_data_id."' name = '".$this->_el_name."' class = 'sel-field'>";
-		$tmp .= "<option value = 0 class = 'not-set'>Not set...</option>";
+		$tmp .= "<select data-db-tbl = '".$this->_el_data_db_tbl."' data-field = '".$this->_el_name."' data-id = '".$this->_el_data_id."' id = '".$this->_el_name."_".$this->_el_data_id."' name = '".$this->_el_name."' class = 'sel-field' style='width:".$this->_el_width."px'>";
+		if ($this->_top_zero_level){
+			$tmp .= "<option value = '0'>Top Level</option>";
+		}else{
+			$tmp .= "<option value = '0' class = 'not-set'>Not set...</option>";
+		}
 		if (empty($this->_db_sql)){
 			$this->_db_sql = 'select id,'.$this->_db_display_field.' from '.$this->_db_tbl.' where display=1 and archived=0 order by order_num,'.$this->_db_display_field;
 		}
@@ -445,31 +517,64 @@ class _select{
 	}
 
 	// SETTERS
-	public function _set_db_display_field($t) {$this->_db_display_field = $t;}
-	public function _set_db_sql($t) {$this->_db_sql = $t;}
-	public function _set_db_tbl($t) {$this->_db_tbl = $t;}
+	public function _get_dbh() { return $this->_dbh; }
+	public function _get_db_display_field() { return $this->_db_display_field; }
+	public function _get_db_sql() { return $this->_db_sql; }
+	public function _get_db_tbl() { return $this->_db_tbl; }
+	public function _get_db_link_tbl() { return $this->_db_link_tbl; }
+	public function _get_db_tbl_sel() { return $this->_db_tbl_sel; }
+	public function _get_db_link_tbl_field_1() { return $this->_db_link_tbl_field_1; }
+	public function _get_db_link_tbl_field_2() { return $this->_db_link_tbl_field_2; }
+	public function _get_el_data_db_tbl() { return $this->_el_data_db_tbl; }
+	public function _get_el_data_id() { return $this->_el_data_id; }
+	public function _get_el_classes() { return $this->_el_classes; }
+	public function _get_el_label() { return $this->_el_label; }
+	public function _get_el_opt_val() { return $this->_el_opt_val; }
+	public function _get_el_name() { return $this->_el_name; }
+	public function _get_el_number_inc() { return $this->_el_number_inc; }
+	public function _get_el_number_min() { return $this->_el_number_min; }
+	public function _get_el_number_max() { return $this->_el_number_max; }
+	public function _get_el_value() { return $this->_el_value; }
+	public function _get_el_style() { return $this->_el_style; }
+	public function _get_el_type() { return $this->_el_type; }
+	public function _get_el_width() { return $this->_el_width; }
+	public function _get_el_yn_preselect() { return $this->_el_yn_preselect; }
+	public function _get_el_yn_value() { return $this->_el_yn_value; }
+	public function _get_yes() { return $this->_yes; }
+	public function _get_no() { return $this->_no; }
+	public function _get_el_date_name() { return $this->_el_date_name; }
+	public function _get_el_date_value() { return $this->_el_date_value; }
+	public function _get_top_zero_level() { return $this->_top_zero_level; }
 
-	public function _set_el_classes($t) {$this->_el_classes = $t;}
-	public function _set_el_label($t) {$this->_el_label = $t;}
-	public function _set_el_opt_val($t) {$this->_el_opt_val = $t;}
-	public function _set_el_name($t) {$this->_el_name = $t;}
-	public function _set_el_number_min($t) {$this->_el_number_min = $t;}
-	public function _set_el_number_max($t) {$this->_el_number_max = $t;}
-	public function _set_el_number_inc($t) {$this->_el_number_inc = $t;}
-	public function _set_el_value($t) {$this->_el_value = $t;}
+	public function _set_dbh($_t) { $this->_dbh = $_t; }
+	public function _set_db_display_field($_t) { $this->_db_display_field = $_t; }
+	public function _set_db_sql($_t) { $this->_db_sql = $_t; }
+	public function _set_db_tbl($_t) { $this->_db_tbl = $_t; }
+	public function _set_db_link_tbl($_t) { $this->_db_link_tbl = $_t; }
+	public function _set_db_tbl_sel($_t) { $this->_db_tbl_sel = $_t; }
+	public function _set_db_link_tbl_field_1($_t) { $this->_db_link_tbl_field_1 = $_t; }
+	public function _set_db_link_tbl_field_2($_t) { $this->_db_link_tbl_field_2 = $_t; }
+	public function _set_el_data_db_tbl($_t) { $this->_el_data_db_tbl = $_t; }
+	public function _set_el_data_id($_t) { $this->_el_data_id = $_t; }
+	public function _set_el_classes($_t) { $this->_el_classes = $_t; }
+	public function _set_el_label($_t) { $this->_el_label = $_t; }
+	public function _set_el_opt_val($_t) { $this->_el_opt_val = $_t; }
+	public function _set_el_name($_t) { $this->_el_name = $_t; }
+	public function _set_el_number_inc($_t) { $this->_el_number_inc = $_t; }
+	public function _set_el_number_min($_t) { $this->_el_number_min = $_t; }
+	public function _set_el_number_max($_t) { $this->_el_number_max = $_t; }
+	public function _set_el_value($_t) { $this->_el_value = $_t; }
+	public function _set_el_style($_t) { $this->_el_style = $_t; }
+	public function _set_el_type($_t) { $this->_el_type = $_t; }
+	public function _set_el_width($_t) { $this->_el_width = $_t; }
+	public function _set_el_yn_preselect($_t) { $this->_el_yn_preselect = $_t; }
+	public function _set_el_yn_value($_t) { $this->_el_yn_value = $_t; }
+	public function _set_yes($_t) { $this->_yes = $_t; }
+	public function _set_no($_t) { $this->_no = $_t; }
+	public function _set_el_date_name($_t) { $this->_el_date_name = $_t; }
+	public function _set_el_date_value($_t) { $this->_el_date_value = $_t; }
+	public function _set_top_zero_level($_t) { $this->_top_zero_level = $_t; }
 
-	public function _set_el_field_value($t) {$this->_el_field_value = $t;}
-	public function _set_el_field_id($t) {$this->_el_field_id = $t;}
-	public function _set_el_style($t) {$this->_el_style = $t;}
-	public function _set_el_width($t) {$this->_el_width = $t;}
-	public function _set_el_yn_preselect($t) {$this->_el_yn_preselect = $t;}
-	public function _set_el_yn_value($t) {$this->_el_yn_value = $t;}
-	public function _set_yes($t){$this->_yes = $t;}
-	public function _set_no($t){$this->_no = $t;}
-	public function _set_el_date_name($t) {$this->_el_date_name = $t;}
-	public function _set_el_date_value($t) {$this->_el_date_value = $t;}
-	public function _set_el_type($t) { $this->_el_type = $t; }
-	public function _get_el_value(){return $this->_el_value;}
 
 }
 ?>

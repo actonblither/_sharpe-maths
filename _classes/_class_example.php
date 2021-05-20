@@ -30,6 +30,10 @@ class _example extends _topic_tab{
 		$this->_build_items();
 	}
 
+	protected function _build_edit_elements($_art){
+		$this->_header_edit_elements .= parent::_build_edit_elements($_art);
+	}
+
 	public function _fetch_template($_tpl, $_r = array()){
 		$this->_sr = array(
 				'_title_field_name' => $this->_title_field_name,

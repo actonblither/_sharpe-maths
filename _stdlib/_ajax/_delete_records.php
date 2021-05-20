@@ -2,7 +2,7 @@
 $_base_folder = base64_decode($_POST['app_folder']);
 $_base_folder = filter_var($_base_folder, FILTER_SANITIZE_STRING);
 include($_base_folder.'/app_config.php');
-//_cl($_POST);
+//_lg($_POST);
 $_dbh = new _db();
 $_main_db_tbl = rvs($_POST['main_db_tbl']);
 $_main_db_tbl_field = rvs($_POST['main_db_tbl_field']);

@@ -25,6 +25,54 @@ class _pages extends _setup{
 		}
 	}
 
+	public function _build_admin_page_list(){
+		$_tmp = "<div id = 'page-admin'><button class='add_new add w150 ml10' data-db-tbl = '__sys_pages' data-prefix = 'page'>Add new page</button>";
+
+		$_sql = 'select id, title from __sys_pages where archived = :archived order by title';
+		$_d = array('archived' => 0);
+		$_f = array('i');
+		$_rows = $this->_dbh->_fetch_db_rows_p($_sql, $_d, $_f);
+		$_tmp .= "<ul class='item-admin p0'>";
+		if (!empty($_rows)){
+			foreach ($_rows as $_r){
+				$_del_img_path = __s_lib_icon_url__."close14.png";
+				$_del_div = "<div class='w20 row center'><img class = 'del-item' src='".$_del_img_path."' alt='Delete' data-id = '".$_r['id']."' data-db-tbl = '__sys_pages' /></div>";
+				$_r['title'] = $this->_hlf->_build_text_box('title', $_r['title'], '__sys_pages', $_r['id'], 400, 'Page title...');
+				$_tmp .= "<li id = 'pa".$_r['id']."' class='row expand p0'>".$_del_div."<div>".$_r['title']."</div></li>";
+			}
+		}
+
+		$_tmp .= "</ul></div>";
+		return $_tmp;
+	}
+
+	public function _build_empty_template(){
+		if (!is_logged_in()) die();
+		return $this->_parse_admin_template_list();
+	}
+
+	private function _parse_admin_template_list(){
+		$_sql = "insert into __sys_pages set display=:display";
+		$_d = array('display' => 1);
+		$_f = array('i');
+
+		$_pid = $this->_dbh->_insert_sql($_sql, $_d, $_f);
+
+		$_link_data = " data-main = 'page' data-db-tbl='__sys_pages' data-sort-list-prefix='topli' data-del-list = '1'";
+
+		$_del_img_path = __s_lib_icon_url__."close14.png";
+		$_del_div = "<div class='w20 row center'><img class = 'del-item' src='".$_del_img_path."' alt='Delete' data-id = '".$_pid."' data-db-tbl = '__sys_pages' /></div>";
+
+		$_title = $this->_hlf->_build_text_box('title', '', '__sys_pages', $_pid, 390, 'Page title...');
+
+		$_content_divs = "<div class='w400 row center'>".$_title."</div>";
+
+		$tmp = "<ul id = 'topul".$_pid."' class='nav-menu-admin'>";
+		$tmp .= "<li id='topli".$_pid."' class='row link point' data-id = '".$_pid."' ".$_link_data.">".$_del_div.$_content_divs;
+		$tmp .= "</li></ul>";
+		return $tmp;
+	}
+
 	private function _build_edit_page(){
 		$_el = new _form_element();
 		$_el->_set_el_field_id('body');
@@ -82,7 +130,7 @@ class _pages extends _setup{
 		$_sql = 'select body from __sys_pages where id = :id';
 		$_d = array('id' => $this->_page_id);
 		$_f = array('i');
-		$this->_page_body = "<div class = 'pl10'>".$this->_dbh->_fetch_db_datum_p($_sql, $_d, $_f)."</div>";
+		$this->_page_body = $this->_dbh->_fetch_db_datum_p($_sql, $_d, $_f);
 	}
 
 }

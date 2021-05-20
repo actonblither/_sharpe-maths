@@ -19,8 +19,9 @@ class _activity extends _topic_tab{
 		$this->_dbh = new _db();
 		$this->_topic_id = $_tid;
 		$this->_is_logged_in = is_logged_in();
-
-
+		if ($this->_is_logged_in){
+			$this->_tpl_sub_body = $this->_template_folder.'_admin_activity_sub_body_tpl.txt';
+		}
 		$this->_sub_instructions = true;
 		$this->_sub_body = true;
 		$this->_build_items();

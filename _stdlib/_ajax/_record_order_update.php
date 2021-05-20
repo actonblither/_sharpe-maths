@@ -9,7 +9,7 @@ $_db_tbl = rvs($_POST['gen_table']);
 $_sort_list_prefix = rvs($_POST['sort_list_prefix']);
 $_prefix_len = strlen($_sort_list_prefix);
 
-//_cl($_POST);
+//_lg($_POST);
 $ordered_array = array_filter(explode(',', $ordered_list));
 $id_array = [];
 

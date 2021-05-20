@@ -12,6 +12,7 @@ class _exercise extends _topic_tab{
 	protected $_del_img_item_class = 'del_s_ex_q';
 	protected $_title_prefix = 'Exercise';
 	protected $_title_field_name = 'tex_title';
+
 	protected $_field_prefix = 'tex_';
 	protected $_open_close_id_prefix = 'x';
 
@@ -63,6 +64,7 @@ class _exercise extends _topic_tab{
 		$this->_build_items();
 	}
 
+
 	public function _fetch_template($_tpl, $_r = array()){
 		if (isset($_r['topic_id'])){$this->_topic_id = $_r['topic_id'];}
 		$this->_sr = array(
@@ -90,9 +92,13 @@ class _exercise extends _topic_tab{
 				'_field_prefix' => $this->_field_prefix,
 				'_sortable_list_prefix' => $this->_sortable_list_prefix
 		);
-
+		if (!empty($_r['difficulty'])){
+			$this->_sr['_difficulty'] = $this->_build_difficulty_select($_r['id'], $_r['difficulty']);
+		}
 		if (!empty($_r['tex_instructions'])){
 			$this->_sr['_instructions'] = rvs($_r['tex_instructions']);
+		}else{
+			$this->_sr['_instructions'] = '';
 		}
 		return $this->_fetch_template_file($_tpl);
 	}
@@ -110,6 +116,7 @@ class _exercise extends _topic_tab{
 		$_q_count = 1;
 		foreach ($this->_q_rows as $_qs){
 			$_id = $_qs['id'];
+			$_diff = $_qs['difficulty'];
 			$this->_item_count = $_q_count;
 			$_question_rows .= $this->_fetch_template($this->_tpl_sub, $_qs);
 			$_q_count++;
@@ -134,8 +141,13 @@ class _exercise extends _topic_tab{
 			$_qus_array = array_slice($_rows, 0, $this->_topic_ex_num_qs);
 		}else{
 			$_num_qus = $this->_topic_ex_num_qs;
+			//_lg($_num_qus, 'NUM_QS');
 			$_levels = $this->_diff_max - $this->_diff_min + 1;
-			$_num_qus_per_level = intdiv($_num_qus, $_levels) + 1;
+			//_lg($_levels, 'LEVELS');
+			$_num_qus_per_level = intdiv($_num_qus, $_levels);
+			if ($_num_qus_per_level !== $_num_qus/$_levels){
+				$_num_qus_per_level++;
+			}
 			$_qus_array = array();
 			for ($_i = 1; $_i <= $_levels; $_i++){
 				$_sql = 'select * from _app_topic_ex_q where ex_id = :ex_id and difficulty = '.$_i;
@@ -145,7 +157,7 @@ class _exercise extends _topic_tab{
 				array_filter($_rows);
 				shuffle($_rows);
 				$_count = 0;
-				while ($_count < $_num_qus_per_level){
+				while ($_count < $_num_qus_per_level && isset($_rows[$_count])){
 					$_qus_array[] = $_rows[$_count];
 					$_count++;
 				}
@@ -167,6 +179,8 @@ class _exercise extends _topic_tab{
 	}
 
 	protected function _build_edit_elements($_ex){
+		$this->_header_edit_elements .= parent::_build_edit_elements($_ex);
+
 		$_id = $_ex['id'];
 		$_ex_num_qs = $_ex['number_of_questions'];
 
@@ -193,11 +207,27 @@ class _exercise extends _topic_tab{
 			);
 			$_ex_shuffle = _build_checkbox($_params);
 		}
-		$_ret = $this->_build_add_new_question_jq();
-		$_ret .= "<div class='row center'>".$this->_build_add_btn($_id);
-		$_ret .= "<label for='tex_shuffle_".$_id."'> &nbsp;&nbsp; Shuffle: </label>".$_ex_shuffle;
-		$_ret .= "<label for='number_of_questions_".$_id."'> &nbsp;&nbsp; Num qs: </label>".$_num_qs_field."</div>";
-		return $_ret;
+		$this->_header_edit_elements .= $this->_build_add_new_question_jq();
+		$this->_header_edit_elements .= "<div class='row center'>".$this->_build_add_btn($_id);
+		$this->_header_edit_elements .= "<label for='tex_shuffle_".$_id."'> &nbsp;&nbsp; Shuffle: </label>".$_ex_shuffle;
+		$this->_header_edit_elements .= "<label for='number_of_questions_".$_id."'> &nbsp;&nbsp; Num qs: </label>".$_num_qs_field."</div>";
+
+	}
+
+	private function _build_difficulty_select($_id, $_diff){
+		$_params = array(
+				'el_type' => 'number',
+				'el_number_inc' => 1,
+				'el_number_min' => 1,
+				'el_number_max' => 20,
+				'el_name' => 'difficulty',
+				'el_value' => $_diff,
+				'el_data_id' => $_id,
+				'el_data_db_tbl' => '_app_topic_ex_q'
+		);
+		$_dfs = new _select($_params);
+		$_diff_sel = $_dfs->_build_select();
+		return $_diff_sel;
 	}
 
 	private function _build_add_new_question_jq(){
@@ -222,6 +252,7 @@ class _exercise extends _topic_tab{
 						data: fd,
 						dataType: 'json',
 						success: function (data) {
+console.log(data);
 							$('ul#".$this->_sub_list_id."'+id).append(data);
 						}
 					});});

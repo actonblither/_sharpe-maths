@@ -40,6 +40,53 @@ class _topic extends _setup{
 		$this->_topic_route_id = rvz($_id);
 	}
 
+	public function _build_admin_topic_list(){
+		$_tmp = "<div id = 'topic-admin'><button class='add_new add w150 ml10' data-db-tbl = '_app_topic' data-prefix = 'topic'>Add new topic</button>";
+		$_sql = 'select id, title from _app_topic where archived = :archived order by title';
+		$_d = array('archived' => 0);
+		$_f = array('i');
+		$_rows = $this->_dbh->_fetch_db_rows_p($_sql, $_d, $_f);
+
+		$_tmp .= "<ul class='item-admin p0'>";
+		if (!empty($_rows)){
+			foreach ($_rows as $_r){
+				$_del_img_path = __s_lib_icon_url__."close14.png";
+				$_del_div = "<div class='w20 row center'><img class = 'del-item' src='".$_del_img_path."' alt='Delete' data-id = '".$_r['id']."' data-db-tbl = '_app_topic' /></div>";
+				$_r['title'] = $this->_hlf->_build_text_box('title', $_r['title'], '_app_topic', $_r['id'], 400, 'Topic title...');
+				$_tmp .= "<li id = 'ta".$_r['id']."' class='row expand p0'>".$_del_div."<div>".$_r['title']."</div></li>";
+			}
+		}
+		$_tmp .= "</ul></div>";
+		return $_tmp;
+	}
+
+	public function _build_empty_template(){
+		if (!is_logged_in()) die();
+		return $this->_parse_admin_template_list();
+	}
+
+	private function _parse_admin_template_list(){
+		$_sql = "insert into _app_topic set display=:display";
+		$_d = array('display' => 1);
+		$_f = array('i');
+
+		$_tid = $this->_dbh->_insert_sql($_sql, $_d, $_f);
+
+		$_link_data = " data-main = 'topic' data-db-tbl='_app_topic' data-sort-list-prefix='topli' data-del-list = '1'";
+
+		$_del_img_path = __s_lib_icon_url__."close14.png";
+		$_del_div = "<div class='w20 row center'><img class = 'del-item' src='".$_del_img_path."' alt='Delete' data-id = '".$_tid."' data-db-tbl = '_app_topic' /></div>";
+
+		$_title = $this->_hlf->_build_text_box('title', '', '_app_topic', $_tid, 390, 'Topic title...');
+
+		$_content_divs = "<div class='w400 row center'>".$_title."</div>";
+
+		$tmp = "<ul id = 'topul".$_tid."' class='nav-menu-admin'>";
+		$tmp .= "<li id='topli".$_tid."' class='row link point' data-id = '".$_tid."' ".$_link_data.">".$_del_div.$_content_divs;
+		$tmp .= "</li></ul>";
+		return $tmp;
+	}
+
 	public function _build_topic(){
 		$this->_fetch_topic_id();
 		$this->_load_topic_data();
@@ -67,18 +114,14 @@ class _topic extends _setup{
 	}
 
 	private function _fetch_topic_id(){
-		$_sql = 'select id from _app_topic where route_id = :route_id';
-		$_d = array('route_id' => $this->_get_topic_route_id());
-		$_f = array('i');
-		$_id = $this->_dbh->_fetch_db_datum_p($_sql, $_d, $_f);
-		$this->_topic_id = $_id;
 
-		$_sql = 'select parent_id, order_num from _app_nav_routes where id = :id';
+		$_sql = 'select parent_id, order_num, topic_id from _app_nav_routes where id = :id';
 		$_d = array('id' => $this->_topic_route_id);
 		$_f = array('i');
 		$_row = $this->_dbh->_fetch_db_row_p($_sql, $_d, $_f);
 		$this->_topic_parent_id = $_row['parent_id'];
 		$this->_topic_order_num = $_row['order_num'];
+		$this->_topic_id = $_row['topic_id'];
 	}
 
 
@@ -86,7 +129,7 @@ class _topic extends _setup{
 		$index = array_search($this->_topic_route_id, $this->_topic_order_array);
 		if($index !== false && $index > 0 ) $prev = $this->_topic_order_array[$index-1];
 		if($index !== false && $index < count($this->_topic_order_array)-1) $next = $this->_topic_order_array[$index+1];
-		$tmp = "<div class='c page-title mb5'>";
+		$tmp = "<div class='wrap c page-title mb5'>";
 		if (rvz($prev) > 0){
 			$_prev_topic_id = $this->_fetch_topic_id_from_route_id($prev);
 			$_sql = 'select title from _app_topic where id = :id';
@@ -95,20 +138,20 @@ class _topic extends _setup{
 			$_prev_title = $this->_dbh->_fetch_db_datum_p($_sql, $_d, $_f);
 
 			$tmp .= "
-				<div class='ifc w25pc col ml10 hh'>
+				<div class='ifc w25pc cwrap ml10 hh'>
 					<div class='topic-label'>Previous topic:</div>
 					<div class='topic-title prev'>".$_prev_title;
 			if ($this->_is_logged_in){
 				$tmp .= "<br />TID: ".$_prev_topic_id."; NRID: ".$prev;
 			}
 			$tmp .= "</div></div>
-				<div class='ifc w10pc'>
-					<img class='point nav_arrow' data-id='".$prev."' data-main= 'topic' src='_stdlib/_images/_icons/arrow_left50.png' alt='Previous topic' />
+				<div class='cwrap ifc w10pc'>
+					<img class='point nav_arrow' data-id='".$prev."' data-main= 'topic' src='".__s_lib_icon_url__."arrow_left50.png' alt='Previous topic' />
 				</div>";
 		}else{
 			$tmp .= "<div class='ifc w25pc ml20 hh'></div><div class='w10pc'></div>";
 		}
-		$tmp .= "<div class='ifc col w25pc hh c'><div class='topic-label'>Current topic:</div><div class='topic-title'>".$this->_get_topic_title();
+		$tmp .= "<div class='ifc cwrap w25pc hh c'><div class='topic-label'>Current topic:</div><div class='topic-title'>".$this->_get_topic_title();
 		if ($this->_is_logged_in){
 			$tmp .= "<br />TID: ".$this->_topic_id."; NRID: ".$this->_topic_route_id;
 		}
@@ -120,20 +163,18 @@ class _topic extends _setup{
 			$_f = array('i');
 			$_next_title = $this->_dbh->_fetch_db_datum_p($_sql, $_d, $_f);
 			$tmp .= "
-				<div class='ifc w10pc r'>
-					<img class='point nav_arrow' data-id='".$next."' data-main= 'topic' src='_stdlib/_images/_icons/arrow_right50.png' alt='Next topic' />
+				<div class='cwrap ifc w10pc r'>
+					<img class='point nav_arrow' data-id='".$next."' data-main= 'topic' src='".__s_lib_icon_url__."arrow_right50.png' alt='Next topic' />
 				</div>
-				<div class='ifc w25pc col mr20 hh'><div class='topic-label'>Next topic:</div><div class='topic-title'>".$_next_title;
+				<div class='ifc w25pc cwrap mr20 hh'><div class='topic-label'>Next topic:</div><div class='topic-title'>".$_next_title;
 			if ($this->_is_logged_in){
 				$tmp .= "<br />TID: ".$_next_topic_id."; NRID: ".$next;
 			}
 			$tmp .= "</div></div>";
 		}else{
-			$tmp .= "<div class='ifc w15pc'></div><div class='ifc w25pc mr10 hh'></div>";
+			$tmp .= "<div class='cwrap ifc w15pc'></div><div class='ifc w25pc mr10 hh'></div>";
 		}
 		$tmp .="</div>";
-
-
 		return $tmp;
 	}
 
@@ -183,8 +224,6 @@ class _topic extends _setup{
 			$_hlp_arr[] = '';
 			$_txt_arr[] = $this->_topic_act;
 		}
-
-
 
 		if ($this->_show_glo_tab){
 			$_tab_arr[] = 'Glossary';
@@ -245,8 +284,8 @@ class _topic extends _setup{
 	}
 
 	private function _fetch_topic_id_from_route_id($id){
-		$_sql = 'select id from _app_topic where route_id = :route_id';
-		$_d = array('route_id' => $id);
+		$_sql = 'select topic_id from _app_nav_routes where id = :id';
+		$_d = array('id' => $id);
 		$_f = array('i');
 		return $this->_dbh->_fetch_db_datum_p($_sql, $_d, $_f);
 	}

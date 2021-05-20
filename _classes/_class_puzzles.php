@@ -25,6 +25,7 @@ class _puzzle extends _topic_tab{
 		}
 
 		$this->_item_sql = 'select p.* from _app_puzzles p left join _app_puzzle_topic_link pt on pt.puzzle_id = p.id where p.display = :display and p.archived = :archived and pt.topic_id = :topic_id order by p.difficulty';
+		$this->_item_sql_admin = 'select p.* from _app_puzzles p left join _app_puzzle_topic_link pt on pt.puzzle_id = p.id where p.archived = :archived and pt.topic_id = :topic_id order by p.difficulty';
 
 
 		$this->_build_items();

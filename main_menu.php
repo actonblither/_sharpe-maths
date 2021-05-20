@@ -1,6 +1,7 @@
 <?php
 $_main = rvs($_REQUEST['main'], $_SESSION['s_main']);
-$_id = rvz($_REQUEST['id'], $_SESSION['s_id']);
+$_id = rvz($_REQUEST['nid'], $_SESSION['s_id']);
+
 
 if ($_SESSION['s_id'] === 89 || $_SESSION['s_id'] === 90){
 	$_SESSION['s_id'] = 1;

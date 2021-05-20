@@ -114,6 +114,7 @@ div.tab-contents {
 	flex: 1;
 	padding: 0px;
 	min-height: 30px;
+	padding: 10px;
 }
 
 div.tab-contents > p{

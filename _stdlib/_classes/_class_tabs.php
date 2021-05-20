@@ -52,11 +52,13 @@ class _tabs{
 						e.preventDefault();
 						e.stopImmediatePropagation();
 						///Deal with the tabs
+
 						var old_section_id = $('#".$this->_tab_nav_id." a.tab-active').attr('href');
 
 						$('#".$this->_tab_nav_id." a.tab-active').removeClass('tab-active');
 						$(this).addClass('tab-active');
 						///Now deal with the <div> visibility
+						$('.top-tabs-divs > .tab-contents').addClass('hidden');
 						$(old_section_id).addClass('hidden');
 						var new_section_id = $(this).attr('href');
 						$(new_section_id).addClass('tab-active').removeClass('hidden');

@@ -48,7 +48,7 @@ class _header_body{
 		if ($this->_left){$tmp .= " class = 'mr2 ml0'";}else{$tmp .= " class = 'ml2 mr0'";}
 		$tmp .= ">";
 		$nav = new _navmenu();
-		$tmp .= $nav->_get_navmenu();
+		$tmp .= $nav->_build_site_nav_menu();
 		$_SESSION['s_topic_order'] = $nav->_get_topic_order();
 		$tmp .= "</nav>";
 		return $tmp;

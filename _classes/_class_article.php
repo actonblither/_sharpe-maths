@@ -26,6 +26,29 @@ class _article extends _topic_tab{
 		$this->_build_items();
 	}
 
+	protected function _build_edit_elements($_art){
+		$this->_header_edit_elements .= parent::_build_edit_elements($_art);
+		$_el = new _form_element();
+		$_el->_set_el_field_id('tart_body');
+		$_el->_set_el_field_value($_art['tart_body']);
+		$_el->_set_db_tbl('_app_topic_art');
+		$_el->_set_el_id_value($_art['id']);
+		$_el->_set_el_width(100);
+		$_el->_set_el_height(400);
+		$_el->_set_el_width_units('%');
+		$_el->_set_el_height_units('px');
+		$this->_CKEditor = $_el->_build_ckeditor();
+
+		$_el_btn = new _form_element();
+		$_el_btn->_set_db_tbl('_app_topic_art');
+		$_el_btn->_set_el_id_value($_art['id']);
+		$_el_btn->_set_el_field_id('tart_body');
+		$_el_btn->_set_el_field_value('Save article');
+		$_el_btn->_set_el_width(200);
+		$_el_btn->_set_el_width_units('px');
+		$this->_CKEditor .= $_el_btn->_build_save_btn();
+	}
+
 	public function _fetch_template($_tpl, $_r = array()){
 		$this->_sr = array(
 				'_title_field_name' => $this->_title_field_name,
@@ -47,7 +70,8 @@ class _article extends _topic_tab{
 				'_item_name' => $this->_item_name,
 				'_body' => rvs($_r['tart_body']),
 				'_field_prefix' => $this->_field_prefix,
-				'_sortable_list_prefix' => $this->_sortable_list_prefix
+				'_sortable_list_prefix' => $this->_sortable_list_prefix,
+				'_CKEditor' => rv($this->_CKEditor)
 		);
 
 		return $this->_fetch_template_file($_tpl);

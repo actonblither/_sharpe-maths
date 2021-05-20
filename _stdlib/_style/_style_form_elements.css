@@ -19,20 +19,20 @@ textarea{
 	font-size: 10pt;
 }
 
+
 input[type = 'text'],
 input[type = 'button'],
 input[type = 'submit'],
 input[type = 'password']{
-	min-width: 300px;
+	min-width: 100px;
 	max-height: 28px;
 }
 
-
-
 textarea{
+	font-size: 12pt;
 	min-width: 300px;
 	min-height: 200px;
-	margin: 2px;
+	padding: 2px;
 	overflow: auto;
 }
 
