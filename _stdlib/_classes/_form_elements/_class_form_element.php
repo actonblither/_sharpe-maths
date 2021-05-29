@@ -18,7 +18,7 @@ class _form_element {
 	private $_el_height;
 	private $_el_width_units = 'px';
 	private $_el_height_units = 'px';
-
+	private $_parent_path;
 	private $_timer_dt;
 
 	private $_dt_start_empty;
@@ -284,6 +284,8 @@ class _select{
 	private $_el_date_name;
 	private $_el_date_value;
 	private $_top_zero_level = false;
+	private $_parent_path;
+	private $_use_parent_path;
 
 	public function __construct($params = []) {
 		$this->_dbh = new _db();
@@ -291,6 +293,8 @@ class _select{
 			$this->_db_display_field = rvs($params['db_display_field']);
 			$this->_db_sql = rvs($params['db_sql']);
 			$this->_db_tbl = rvs($params['db_tbl']);
+
+			$this->_use_parent_path = rvb($params['use_parent_path']);
 
 			$this->_db_tbl = '_app_puzzle';
 			$this->_db_tbl_sel = '_app_topic';
@@ -399,12 +403,38 @@ class _select{
 				$tmp .= '<option value = '.$row[$this->_el_opt_val].'';
 				if ($row['id'] == $this->_el_value){$tmp .= ' selected = "selected"';}
 				$tmp .= '>';
-				$tmp .= $row[$this->_db_display_field];
+
+				if ($this->_use_parent_path == false){
+					$tmp .= $row['id']." ".$row[$this->_db_display_field];
+				}else{
+					//_cl($row['id'], 'ID');
+					//_cl($row['parent_id'], 'PARENT ID');
+					if (!empty($row['parent_id'])){
+						$tmp .= $this->_build_parent_path($row['id'], $row['title']);
+					}else{
+						$tmp .= $row['id']." ".$row[$this->_db_display_field];
+					}
+				}
 				$tmp .= '</option>'.PHP_EOL;
 			}
 		}
 		$tmp .= '</select>';
 		return $tmp;
+	}
+
+	private function _build_parent_path($_id, $_title){
+		$_pp = "";
+		do{
+			$_sql = 'select id, parent_id, title from _app_nav_routes where id = :id';
+			$_d = array('id' => $_id);
+			$_f = array('i');
+			$_row = $this->_dbh->_fetch_db_row_p($_sql, $_d, $_f);
+			$_id = $_row['parent_id'];
+			$_iid = $_row['id'];
+			$_pp = $_iid." ".$_row['title']." > ".$_pp;
+		}while ($_id != 0);
+		$_pp = substr($_pp, 0, -3);
+		return $_pp;
 	}
 
 	private function _build_yn_date(){

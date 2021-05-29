@@ -1,0 +1,4748 @@
+22:05:2021 09:44:12
+PDO PREPARE ERROR in method _update_sql
+string(925) "22:05:2021 09:44:12
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-05-22 09:44:12
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 10
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+22:05:2021 09:44:12
+PDO PREPARE ERROR in method _update_sql
+string(925) "22:05:2021 09:44:12
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-05-22 09:44:12
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 20
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+22:05:2021 09:44:12
+PDO PREPARE ERROR in method _update_sql
+string(925) "22:05:2021 09:44:12
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-05-22 09:44:12
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 30
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+22:05:2021 09:44:12
+PDO PREPARE ERROR in method _update_sql
+string(925) "22:05:2021 09:44:12
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-05-22 09:44:12
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 40
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+22:05:2021 09:44:12
+PDO PREPARE ERROR in method _update_sql
+string(925) "22:05:2021 09:44:12
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-05-22 09:44:12
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 50
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+22:05:2021 09:44:12
+PDO PREPARE ERROR in method _update_sql
+string(925) "22:05:2021 09:44:12
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-05-22 09:44:12
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 60
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+22:05:2021 09:44:12
+PDO PREPARE ERROR in method _update_sql
+string(925) "22:05:2021 09:44:12
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-05-22 09:44:12
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 70
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+22:05:2021 09:44:12
+PDO PREPARE ERROR in method _update_sql
+string(925) "22:05:2021 09:44:12
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-05-22 09:44:12
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 80
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+22:05:2021 09:44:12
+PDO PREPARE ERROR in method _update_sql
+string(925) "22:05:2021 09:44:12
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-05-22 09:44:12
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 90
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+22:05:2021 09:44:12
+PDO PREPARE ERROR in method _update_sql
+string(926) "22:05:2021 09:44:12
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-05-22 09:44:12
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 100
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+22:05:2021 09:44:12
+PDO PREPARE ERROR in method _update_sql
+string(926) "22:05:2021 09:44:12
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-05-22 09:44:12
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 110
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+22:05:2021 09:44:12
+PDO PREPARE ERROR in method _update_sql
+string(926) "22:05:2021 09:44:12
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-05-22 09:44:12
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 120
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+22:05:2021 09:44:12
+PDO PREPARE ERROR in method _update_sql
+string(926) "22:05:2021 09:44:12
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-05-22 09:44:12
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 130
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+22:05:2021 09:44:12
+PDO PREPARE ERROR in method _update_sql
+string(926) "22:05:2021 09:44:12
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-05-22 09:44:12
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 140
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+22:05:2021 09:44:12
+PDO PREPARE ERROR in method _update_sql
+string(926) "22:05:2021 09:44:12
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-05-22 09:44:12
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 150
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+22:05:2021 09:44:12
+PDO PREPARE ERROR in method _update_sql
+string(926) "22:05:2021 09:44:12
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-05-22 09:44:12
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 160
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+22:05:2021 09:44:12
+PDO PREPARE ERROR in method _update_sql
+string(926) "22:05:2021 09:44:12
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-05-22 09:44:12
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 170
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+22:05:2021 09:44:12
+PDO PREPARE ERROR in method _update_sql
+string(926) "22:05:2021 09:44:12
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-05-22 09:44:12
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 180
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+22:05:2021 09:44:12
+PDO PREPARE ERROR in method _update_sql
+string(926) "22:05:2021 09:44:12
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-05-22 09:44:12
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 190
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+22:05:2021 09:44:12
+PDO PREPARE ERROR in method _update_sql
+string(926) "22:05:2021 09:44:12
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-05-22 09:44:12
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 200
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+22:05:2021 09:44:12
+PDO PREPARE ERROR in method _update_sql
+string(926) "22:05:2021 09:44:12
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-05-22 09:44:12
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 210
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+22:05:2021 09:44:12
+PDO PREPARE ERROR in method _update_sql
+string(926) "22:05:2021 09:44:12
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-05-22 09:44:12
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 220
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+22:05:2021 09:44:12
+PDO PREPARE ERROR in method _update_sql
+string(926) "22:05:2021 09:44:12
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-05-22 09:44:12
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 230
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+22:05:2021 09:44:12
+PDO PREPARE ERROR in method _update_sql
+string(926) "22:05:2021 09:44:12
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-05-22 09:44:12
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 240
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+22:05:2021 09:44:12
+PDO PREPARE ERROR in method _update_sql
+string(926) "22:05:2021 09:44:12
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-05-22 09:44:12
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 250
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+22:05:2021 09:44:12
+PDO PREPARE ERROR in method _update_sql
+string(926) "22:05:2021 09:44:12
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-05-22 09:44:12
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 260
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+22:05:2021 09:44:12
+PDO PREPARE ERROR in method _update_sql
+string(926) "22:05:2021 09:44:12
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-05-22 09:44:12
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 270
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+22:05:2021 09:44:12
+PDO PREPARE ERROR in method _update_sql
+string(926) "22:05:2021 09:44:12
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-05-22 09:44:12
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 280
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+22:05:2021 09:44:12
+PDO PREPARE ERROR in method _update_sql
+string(926) "22:05:2021 09:44:12
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-05-22 09:44:12
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 290
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+22:05:2021 09:44:12
+PDO PREPARE ERROR in method _update_sql
+string(926) "22:05:2021 09:44:12
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-05-22 09:44:12
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 300
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+22:05:2021 09:44:12
+PDO PREPARE ERROR in method _update_sql
+string(926) "22:05:2021 09:44:12
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-05-22 09:44:12
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 310
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+22:05:2021 09:44:12
+PDO PREPARE ERROR in method _update_sql
+string(926) "22:05:2021 09:44:12
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-05-22 09:44:12
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 320
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+22:05:2021 09:44:12
+PDO PREPARE ERROR in method _update_sql
+string(926) "22:05:2021 09:44:12
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-05-22 09:44:12
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 330
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+22:05:2021 09:44:12
+PDO PREPARE ERROR in method _update_sql
+string(926) "22:05:2021 09:44:12
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-05-22 09:44:12
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 340
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+22:05:2021 09:44:12
+PDO PREPARE ERROR in method _update_sql
+string(926) "22:05:2021 09:44:12
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-05-22 09:44:12
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 350
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+22:05:2021 09:44:12
+PDO PREPARE ERROR in method _update_sql
+string(926) "22:05:2021 09:44:12
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-05-22 09:44:12
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 360
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+22:05:2021 09:44:12
+PDO PREPARE ERROR in method _update_sql
+string(926) "22:05:2021 09:44:12
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-05-22 09:44:12
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 370
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+22:05:2021 09:44:12
+PDO PREPARE ERROR in method _update_sql
+string(926) "22:05:2021 09:44:12
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-05-22 09:44:12
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 380
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+22:05:2021 09:44:12
+PDO PREPARE ERROR in method _update_sql
+string(926) "22:05:2021 09:44:12
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-05-22 09:44:12
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 390
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+22:05:2021 09:44:12
+PDO PREPARE ERROR in method _update_sql
+string(926) "22:05:2021 09:44:12
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-05-22 09:44:12
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 400
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+22:05:2021 09:44:12
+PDO PREPARE ERROR in method _update_sql
+string(926) "22:05:2021 09:44:12
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-05-22 09:44:12
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 410
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+22:05:2021 09:44:12
+PDO PREPARE ERROR in method _update_sql
+string(926) "22:05:2021 09:44:12
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-05-22 09:44:12
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 420
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+22:05:2021 09:44:12
+PDO PREPARE ERROR in method _update_sql
+string(926) "22:05:2021 09:44:12
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-05-22 09:44:12
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 430
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+22:05:2021 09:44:12
+PDO PREPARE ERROR in method _update_sql
+string(926) "22:05:2021 09:44:12
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-05-22 09:44:12
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 440
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+22:05:2021 09:44:12
+PDO PREPARE ERROR in method _update_sql
+string(926) "22:05:2021 09:44:12
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-05-22 09:44:12
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 450
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+22:05:2021 09:44:12
+PDO PREPARE ERROR in method _update_sql
+string(926) "22:05:2021 09:44:12
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-05-22 09:44:12
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 460
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+22:05:2021 09:44:12
+PDO PREPARE ERROR in method _update_sql
+string(926) "22:05:2021 09:44:12
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-05-22 09:44:12
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 470
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+22:05:2021 09:44:12
+PDO PREPARE ERROR in method _update_sql
+string(926) "22:05:2021 09:44:12
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-05-22 09:44:12
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 480
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+22:05:2021 09:44:12
+PDO PREPARE ERROR in method _update_sql
+string(926) "22:05:2021 09:44:12
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-05-22 09:44:12
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 490
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+22:05:2021 09:44:12
+PDO PREPARE ERROR in method _update_sql
+string(926) "22:05:2021 09:44:12
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-05-22 09:44:12
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 500
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+22:05:2021 09:44:12
+PDO PREPARE ERROR in method _update_sql
+string(926) "22:05:2021 09:44:12
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-05-22 09:44:12
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 510
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+22:05:2021 09:44:12
+PDO PREPARE ERROR in method _update_sql
+string(926) "22:05:2021 09:44:12
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-05-22 09:44:12
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 520
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+22:05:2021 09:44:12
+PDO PREPARE ERROR in method _update_sql
+string(926) "22:05:2021 09:44:12
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-05-22 09:44:12
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 530
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+22:05:2021 09:44:12
+PDO PREPARE ERROR in method _update_sql
+string(926) "22:05:2021 09:44:12
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-05-22 09:44:12
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 540
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+22:05:2021 09:44:12
+PDO PREPARE ERROR in method _update_sql
+string(926) "22:05:2021 09:44:12
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-05-22 09:44:12
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 550
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+22:05:2021 09:44:12
+PDO PREPARE ERROR in method _update_sql
+string(926) "22:05:2021 09:44:12
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-05-22 09:44:12
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 560
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+22:05:2021 09:44:12
+PDO PREPARE ERROR in method _update_sql
+string(926) "22:05:2021 09:44:12
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-05-22 09:44:12
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 570
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+22:05:2021 09:44:12
+PDO PREPARE ERROR in method _update_sql
+string(926) "22:05:2021 09:44:12
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-05-22 09:44:12
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 580
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+22:05:2021 09:44:12
+PDO PREPARE ERROR in method _update_sql
+string(926) "22:05:2021 09:44:12
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-05-22 09:44:12
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 590
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+22:05:2021 09:44:12
+PDO PREPARE ERROR in method _update_sql
+string(926) "22:05:2021 09:44:12
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-05-22 09:44:12
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 600
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+22:05:2021 09:44:12
+PDO PREPARE ERROR in method _update_sql
+string(926) "22:05:2021 09:44:12
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-05-22 09:44:12
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 610
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+22:05:2021 09:44:12
+PDO PREPARE ERROR in method _update_sql
+string(926) "22:05:2021 09:44:12
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-05-22 09:44:12
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 620
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+22:05:2021 09:44:12
+PDO PREPARE ERROR in method _update_sql
+string(926) "22:05:2021 09:44:12
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-05-22 09:44:12
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 630
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+22:05:2021 09:44:12
+PDO PREPARE ERROR in method _update_sql
+string(926) "22:05:2021 09:44:12
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-05-22 09:44:12
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 640
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+22:05:2021 09:44:12
+PDO PREPARE ERROR in method _update_sql
+string(926) "22:05:2021 09:44:12
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-05-22 09:44:12
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 650
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+22:05:2021 09:44:12
+PDO PREPARE ERROR in method _update_sql
+string(926) "22:05:2021 09:44:12
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-05-22 09:44:12
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 660
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+22:05:2021 09:44:12
+PDO PREPARE ERROR in method _update_sql
+string(926) "22:05:2021 09:44:12
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-05-22 09:44:12
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 670
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+22:05:2021 09:44:12
+PDO PREPARE ERROR in method _update_sql
+string(926) "22:05:2021 09:44:12
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-05-22 09:44:12
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 680
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+22:05:2021 09:44:12
+PDO PREPARE ERROR in method _update_sql
+string(926) "22:05:2021 09:44:12
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-05-22 09:44:12
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 690
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+22:05:2021 09:44:12
+PDO PREPARE ERROR in method _update_sql
+string(926) "22:05:2021 09:44:12
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-05-22 09:44:12
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 700
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+22:05:2021 09:44:12
+PDO PREPARE ERROR in method _update_sql
+string(926) "22:05:2021 09:44:12
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-05-22 09:44:12
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 710
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+22:05:2021 09:44:12
+PDO PREPARE ERROR in method _update_sql
+string(926) "22:05:2021 09:44:12
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-05-22 09:44:12
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 720
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+22:05:2021 09:44:12
+PDO PREPARE ERROR in method _update_sql
+string(926) "22:05:2021 09:44:12
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-05-22 09:44:12
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 730
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+22:05:2021 09:44:12
+PDO PREPARE ERROR in method _update_sql
+string(926) "22:05:2021 09:44:12
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-05-22 09:44:12
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 740
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+22:05:2021 09:44:12
+PDO PREPARE ERROR in method _update_sql
+string(926) "22:05:2021 09:44:12
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-05-22 09:44:12
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 750
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+22:05:2021 09:44:12
+PDO PREPARE ERROR in method _update_sql
+string(926) "22:05:2021 09:44:12
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-05-22 09:44:12
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 760
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+22:05:2021 09:44:12
+PDO PREPARE ERROR in method _update_sql
+string(926) "22:05:2021 09:44:12
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-05-22 09:44:12
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 770
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+22:05:2021 09:44:12
+PDO PREPARE ERROR in method _update_sql
+string(926) "22:05:2021 09:44:12
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-05-22 09:44:12
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 780
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+22:05:2021 09:44:12
+PDO PREPARE ERROR in method _update_sql
+string(926) "22:05:2021 09:44:12
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-05-22 09:44:12
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 790
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+22:05:2021 09:44:12
+PDO PREPARE ERROR in method _update_sql
+string(926) "22:05:2021 09:44:12
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-05-22 09:44:12
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 800
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+22:05:2021 09:44:12
+PDO PREPARE ERROR in method _update_sql
+string(926) "22:05:2021 09:44:12
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-05-22 09:44:12
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 810
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+22:05:2021 09:44:12
+PDO PREPARE ERROR in method _update_sql
+string(926) "22:05:2021 09:44:12
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-05-22 09:44:12
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 820
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+22:05:2021 09:44:12
+PDO PREPARE ERROR in method _update_sql
+string(926) "22:05:2021 09:44:12
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-05-22 09:44:12
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 830
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+22:05:2021 09:44:12
+PDO PREPARE ERROR in method _update_sql
+string(926) "22:05:2021 09:44:12
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-05-22 09:44:12
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 840
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+22:05:2021 09:44:12
+PDO PREPARE ERROR in method _update_sql
+string(926) "22:05:2021 09:44:12
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-05-22 09:44:12
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 850
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+22:05:2021 09:44:12
+PDO PREPARE ERROR in method _update_sql
+string(926) "22:05:2021 09:44:12
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-05-22 09:44:12
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 860
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+22:05:2021 09:44:12
+PDO PREPARE ERROR in method _update_sql
+string(926) "22:05:2021 09:44:12
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-05-22 09:44:12
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 870
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+22:05:2021 09:44:12
+PDO PREPARE ERROR in method _update_sql
+string(926) "22:05:2021 09:44:12
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-05-22 09:44:12
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 880
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+22:05:2021 09:44:12
+PDO PREPARE ERROR in method _update_sql
+string(926) "22:05:2021 09:44:12
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-05-22 09:44:12
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 890
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+22:05:2021 09:44:12
+PDO PREPARE ERROR in method _update_sql
+string(926) "22:05:2021 09:44:12
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-05-22 09:44:12
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 900
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+22:05:2021 09:44:12
+PDO PREPARE ERROR in method _update_sql
+string(926) "22:05:2021 09:44:12
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-05-22 09:44:12
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 910
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+22:05:2021 09:44:12
+PDO PREPARE ERROR in method _update_sql
+string(926) "22:05:2021 09:44:12
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-05-22 09:44:12
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 920
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+22:05:2021 09:44:12
+PDO PREPARE ERROR in method _update_sql
+string(926) "22:05:2021 09:44:12
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-05-22 09:44:12
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 930
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+22:05:2021 09:44:12
+PDO PREPARE ERROR in method _update_sql
+string(926) "22:05:2021 09:44:12
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-05-22 09:44:12
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 940
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+22:05:2021 09:44:12
+PDO PREPARE ERROR in method _update_sql
+string(926) "22:05:2021 09:44:12
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-05-22 09:44:12
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 950
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+22:05:2021 09:49:45
+PDO EXCECUTE ERROR in method _insert_sql
+string(1023) "22:05:2021 09:49:45
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-05-22 09:49:45
+    [ERROR MESSAGE] => SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`maths`.`_app_topic_eg`, CONSTRAINT `topic_id` FOREIGN KEY (`topic_id`) REFERENCES `_app_topic` (`id`) ON DELETE CASCADE ON UPDATE CASCADE)
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 275
+    [_sql] => insert into _app_topic_eg set topic_id = :topic_id
+    [_d] => Array
+        (
+            [topic_id] => 0
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(275): PDOStatement->execute()
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(68): _db->_pdo_execute('PDO EXCECUTE ER...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_add_record.php(21): _db->_insert_sql('insert into _ap...', Array, Array)
+#3 {main}
+)
+
+"
+
+22:05:2021 09:49:50
+PDO EXCECUTE ERROR in method _insert_sql
+string(1023) "22:05:2021 09:49:50
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-05-22 09:49:50
+    [ERROR MESSAGE] => SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`maths`.`_app_topic_eg`, CONSTRAINT `topic_id` FOREIGN KEY (`topic_id`) REFERENCES `_app_topic` (`id`) ON DELETE CASCADE ON UPDATE CASCADE)
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 275
+    [_sql] => insert into _app_topic_eg set topic_id = :topic_id
+    [_d] => Array
+        (
+            [topic_id] => 0
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(275): PDOStatement->execute()
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(68): _db->_pdo_execute('PDO EXCECUTE ER...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_add_record.php(21): _db->_insert_sql('insert into _ap...', Array, Array)
+#3 {main}
+)
+
+"
+
+25:05:2021 18:22:24
+ERROR CONNECTING TO THE DATABASE SERVER
+string(1673) "25:05:2021 18:22:24
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-05-25 18:22:24
+    [ERROR MESSAGE] => SQLSTATE[HY000] [2002] Only one usage of each socket address (protocol/network address/port) is normally permitted
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 38
+    [_sql] => 
+    [_d] => Array
+        (
+        )
+
+    [_f] => Array
+        (
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(38): PDO->__construct('mysql:host=loca...', 'maths', 'maths', Array)
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(18): _db->_fetch_db_connection()
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_lib\_stdlib.php(8): _db->__construct()
+#3 G:\xampp\htdocs\sharpe-maths\_stdlib\_lib\_stdlib.php(4): _lg(NULL, 'PARENT ID')
+#4 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_form_elements\_class_form_element.php(407): _cl(NULL, 'PARENT ID')
+#5 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_form_elements\_class_form_element.php(334): _select->_build_select_element()
+#6 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_form_elements\_class_hl_form_els.php(31): _select->_build_select()
+#7 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_navmenu.php(191): _hlf->_build_select('topic_id', 34, '_app_nav_routes', 52, 'select id, titl...', 240)
+#8 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_navmenu.php(51): _navmenu->_parse_admin_list('0||1||Home||1||...')
+#9 G:\xampp\htdocs\sharpe-maths\_admin\_nav.php(18): _navmenu->_build_admin_nav_menu_list()
+#10 G:\xampp\htdocs\sharpe-maths\_admin\index.php(79): include('G:\\xampp\\htdocs...')
+#11 {main}
+)
+
+"
+
+25:05:2021 18:22:24
+PARENT ID
+NULL
+
+25:05:2021 18:22:24
+ERROR CONNECTING TO THE DATABASE SERVER
+string(1655) "25:05:2021 18:22:24
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-05-25 18:22:24
+    [ERROR MESSAGE] => SQLSTATE[HY000] [2002] Only one usage of each socket address (protocol/network address/port) is normally permitted
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 38
+    [_sql] => 
+    [_d] => Array
+        (
+        )
+
+    [_f] => Array
+        (
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(38): PDO->__construct('mysql:host=loca...', 'maths', 'maths', Array)
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(18): _db->_fetch_db_connection()
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_lib\_stdlib.php(8): _db->__construct()
+#3 G:\xampp\htdocs\sharpe-maths\_stdlib\_lib\_stdlib.php(4): _lg(48, 'ID')
+#4 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_form_elements\_class_form_element.php(406): _cl(48, 'ID')
+#5 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_form_elements\_class_form_element.php(334): _select->_build_select_element()
+#6 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_form_elements\_class_hl_form_els.php(31): _select->_build_select()
+#7 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_navmenu.php(191): _hlf->_build_select('topic_id', 34, '_app_nav_routes', 52, 'select id, titl...', 240)
+#8 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_navmenu.php(51): _navmenu->_parse_admin_list('0||1||Home||1||...')
+#9 G:\xampp\htdocs\sharpe-maths\_admin\_nav.php(18): _navmenu->_build_admin_nav_menu_list()
+#10 G:\xampp\htdocs\sharpe-maths\_admin\index.php(79): include('G:\\xampp\\htdocs...')
+#11 {main}
+)
+
+"
+
+25:05:2021 18:22:24
+ID
+int(48)
+
+25:05:2021 18:22:24
+ERROR CONNECTING TO THE DATABASE SERVER
+string(1673) "25:05:2021 18:22:24
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-05-25 18:22:24
+    [ERROR MESSAGE] => SQLSTATE[HY000] [2002] Only one usage of each socket address (protocol/network address/port) is normally permitted
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 38
+    [_sql] => 
+    [_d] => Array
+        (
+        )
+
+    [_f] => Array
+        (
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(38): PDO->__construct('mysql:host=loca...', 'maths', 'maths', Array)
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(18): _db->_fetch_db_connection()
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_lib\_stdlib.php(8): _db->__construct()
+#3 G:\xampp\htdocs\sharpe-maths\_stdlib\_lib\_stdlib.php(4): _lg(NULL, 'PARENT ID')
+#4 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_form_elements\_class_form_element.php(407): _cl(NULL, 'PARENT ID')
+#5 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_form_elements\_class_form_element.php(334): _select->_build_select_element()
+#6 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_form_elements\_class_hl_form_els.php(31): _select->_build_select()
+#7 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_navmenu.php(191): _hlf->_build_select('topic_id', 34, '_app_nav_routes', 52, 'select id, titl...', 240)
+#8 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_navmenu.php(51): _navmenu->_parse_admin_list('0||1||Home||1||...')
+#9 G:\xampp\htdocs\sharpe-maths\_admin\_nav.php(18): _navmenu->_build_admin_nav_menu_list()
+#10 G:\xampp\htdocs\sharpe-maths\_admin\index.php(79): include('G:\\xampp\\htdocs...')
+#11 {main}
+)
+
+"
+
+25:05:2021 18:22:24
+PARENT ID
+NULL
+
+25:05:2021 18:22:24
+ERROR CONNECTING TO THE DATABASE SERVER
+string(1653) "25:05:2021 18:22:24
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-05-25 18:22:24
+    [ERROR MESSAGE] => SQLSTATE[HY000] [2002] Only one usage of each socket address (protocol/network address/port) is normally permitted
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 38
+    [_sql] => 
+    [_d] => Array
+        (
+        )
+
+    [_f] => Array
+        (
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(38): PDO->__construct('mysql:host=loca...', 'maths', 'maths', Array)
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(18): _db->_fetch_db_connection()
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_lib\_stdlib.php(8): _db->__construct()
+#3 G:\xampp\htdocs\sharpe-maths\_stdlib\_lib\_stdlib.php(4): _lg(4, 'ID')
+#4 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_form_elements\_class_form_element.php(406): _cl(4, 'ID')
+#5 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_form_elements\_class_form_element.php(334): _select->_build_select_element()
+#6 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_form_elements\_class_hl_form_els.php(31): _select->_build_select()
+#7 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_navmenu.php(191): _hlf->_build_select('topic_id', 34, '_app_nav_routes', 52, 'select id, titl...', 240)
+#8 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_navmenu.php(51): _navmenu->_parse_admin_list('0||1||Home||1||...')
+#9 G:\xampp\htdocs\sharpe-maths\_admin\_nav.php(18): _navmenu->_build_admin_nav_menu_list()
+#10 G:\xampp\htdocs\sharpe-maths\_admin\index.php(79): include('G:\\xampp\\htdocs...')
+#11 {main}
+)
+
+"
+
+25:05:2021 18:22:24
+ID
+int(4)
+
+25:05:2021 18:22:24
+ERROR CONNECTING TO THE DATABASE SERVER
+string(1673) "25:05:2021 18:22:24
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-05-25 18:22:24
+    [ERROR MESSAGE] => SQLSTATE[HY000] [2002] Only one usage of each socket address (protocol/network address/port) is normally permitted
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 38
+    [_sql] => 
+    [_d] => Array
+        (
+        )
+
+    [_f] => Array
+        (
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(38): PDO->__construct('mysql:host=loca...', 'maths', 'maths', Array)
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(18): _db->_fetch_db_connection()
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_lib\_stdlib.php(8): _db->__construct()
+#3 G:\xampp\htdocs\sharpe-maths\_stdlib\_lib\_stdlib.php(4): _lg(NULL, 'PARENT ID')
+#4 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_form_elements\_class_form_element.php(407): _cl(NULL, 'PARENT ID')
+#5 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_form_elements\_class_form_element.php(334): _select->_build_select_element()
+#6 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_form_elements\_class_hl_form_els.php(31): _select->_build_select()
+#7 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_navmenu.php(191): _hlf->_build_select('topic_id', 34, '_app_nav_routes', 52, 'select id, titl...', 240)
+#8 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_navmenu.php(51): _navmenu->_parse_admin_list('0||1||Home||1||...')
+#9 G:\xampp\htdocs\sharpe-maths\_admin\_nav.php(18): _navmenu->_build_admin_nav_menu_list()
+#10 G:\xampp\htdocs\sharpe-maths\_admin\index.php(79): include('G:\\xampp\\htdocs...')
+#11 {main}
+)
+
+"
+
+25:05:2021 18:22:24
+PARENT ID
+NULL
+
+25:05:2021 18:22:24
+ERROR CONNECTING TO THE DATABASE SERVER
+string(1655) "25:05:2021 18:22:24
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-05-25 18:22:24
+    [ERROR MESSAGE] => SQLSTATE[HY000] [2002] Only one usage of each socket address (protocol/network address/port) is normally permitted
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 38
+    [_sql] => 
+    [_d] => Array
+        (
+        )
+
+    [_f] => Array
+        (
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(38): PDO->__construct('mysql:host=loca...', 'maths', 'maths', Array)
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(18): _db->_fetch_db_connection()
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_lib\_stdlib.php(8): _db->__construct()
+#3 G:\xampp\htdocs\sharpe-maths\_stdlib\_lib\_stdlib.php(4): _lg(24, 'ID')
+#4 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_form_elements\_class_form_element.php(406): _cl(24, 'ID')
+#5 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_form_elements\_class_form_element.php(334): _select->_build_select_element()
+#6 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_form_elements\_class_hl_form_els.php(31): _select->_build_select()
+#7 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_navmenu.php(191): _hlf->_build_select('topic_id', 34, '_app_nav_routes', 52, 'select id, titl...', 240)
+#8 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_navmenu.php(51): _navmenu->_parse_admin_list('0||1||Home||1||...')
+#9 G:\xampp\htdocs\sharpe-maths\_admin\_nav.php(18): _navmenu->_build_admin_nav_menu_list()
+#10 G:\xampp\htdocs\sharpe-maths\_admin\index.php(79): include('G:\\xampp\\htdocs...')
+#11 {main}
+)
+
+"
+
+25:05:2021 18:22:24
+ID
+int(24)
+
+25:05:2021 18:22:24
+ERROR CONNECTING TO THE DATABASE SERVER
+string(1655) "25:05:2021 18:22:24
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-05-25 18:22:24
+    [ERROR MESSAGE] => SQLSTATE[HY000] [2002] Only one usage of each socket address (protocol/network address/port) is normally permitted
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 38
+    [_sql] => 
+    [_d] => Array
+        (
+        )
+
+    [_f] => Array
+        (
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(38): PDO->__construct('mysql:host=loca...', 'maths', 'maths', Array)
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(18): _db->_fetch_db_connection()
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_lib\_stdlib.php(8): _db->__construct()
+#3 G:\xampp\htdocs\sharpe-maths\_stdlib\_lib\_stdlib.php(4): _lg(18, 'ID')
+#4 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_form_elements\_class_form_element.php(406): _cl(18, 'ID')
+#5 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_form_elements\_class_form_element.php(334): _select->_build_select_element()
+#6 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_form_elements\_class_hl_form_els.php(31): _select->_build_select()
+#7 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_navmenu.php(191): _hlf->_build_select('topic_id', 34, '_app_nav_routes', 52, 'select id, titl...', 240)
+#8 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_navmenu.php(51): _navmenu->_parse_admin_list('0||1||Home||1||...')
+#9 G:\xampp\htdocs\sharpe-maths\_admin\_nav.php(18): _navmenu->_build_admin_nav_menu_list()
+#10 G:\xampp\htdocs\sharpe-maths\_admin\index.php(79): include('G:\\xampp\\htdocs...')
+#11 {main}
+)
+
+"
+
+25:05:2021 18:22:24
+ID
+int(18)
+
+25:05:2021 18:22:24
+ERROR CONNECTING TO THE DATABASE SERVER
+string(1673) "25:05:2021 18:22:24
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-05-25 18:22:24
+    [ERROR MESSAGE] => SQLSTATE[HY000] [2002] Only one usage of each socket address (protocol/network address/port) is normally permitted
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 38
+    [_sql] => 
+    [_d] => Array
+        (
+        )
+
+    [_f] => Array
+        (
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(38): PDO->__construct('mysql:host=loca...', 'maths', 'maths', Array)
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(18): _db->_fetch_db_connection()
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_lib\_stdlib.php(8): _db->__construct()
+#3 G:\xampp\htdocs\sharpe-maths\_stdlib\_lib\_stdlib.php(4): _lg(NULL, 'PARENT ID')
+#4 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_form_elements\_class_form_element.php(407): _cl(NULL, 'PARENT ID')
+#5 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_form_elements\_class_form_element.php(334): _select->_build_select_element()
+#6 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_form_elements\_class_hl_form_els.php(31): _select->_build_select()
+#7 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_navmenu.php(191): _hlf->_build_select('topic_id', 34, '_app_nav_routes', 52, 'select id, titl...', 240)
+#8 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_navmenu.php(51): _navmenu->_parse_admin_list('0||1||Home||1||...')
+#9 G:\xampp\htdocs\sharpe-maths\_admin\_nav.php(18): _navmenu->_build_admin_nav_menu_list()
+#10 G:\xampp\htdocs\sharpe-maths\_admin\index.php(79): include('G:\\xampp\\htdocs...')
+#11 {main}
+)
+
+"
+
+25:05:2021 18:22:24
+PARENT ID
+NULL
+
+25:05:2021 18:22:24
+ERROR CONNECTING TO THE DATABASE SERVER
+string(1655) "25:05:2021 18:22:24
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-05-25 18:22:24
+    [ERROR MESSAGE] => SQLSTATE[HY000] [2002] Only one usage of each socket address (protocol/network address/port) is normally permitted
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 38
+    [_sql] => 
+    [_d] => Array
+        (
+        )
+
+    [_f] => Array
+        (
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(38): PDO->__construct('mysql:host=loca...', 'maths', 'maths', Array)
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(18): _db->_fetch_db_connection()
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_lib\_stdlib.php(8): _db->__construct()
+#3 G:\xampp\htdocs\sharpe-maths\_stdlib\_lib\_stdlib.php(4): _lg(42, 'ID')
+#4 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_form_elements\_class_form_element.php(406): _cl(42, 'ID')
+#5 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_form_elements\_class_form_element.php(334): _select->_build_select_element()
+#6 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_form_elements\_class_hl_form_els.php(31): _select->_build_select()
+#7 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_navmenu.php(191): _hlf->_build_select('topic_id', 34, '_app_nav_routes', 52, 'select id, titl...', 240)
+#8 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_navmenu.php(51): _navmenu->_parse_admin_list('0||1||Home||1||...')
+#9 G:\xampp\htdocs\sharpe-maths\_admin\_nav.php(18): _navmenu->_build_admin_nav_menu_list()
+#10 G:\xampp\htdocs\sharpe-maths\_admin\index.php(79): include('G:\\xampp\\htdocs...')
+#11 {main}
+)
+
+"
+
+25:05:2021 18:22:24
+ID
+int(42)
+
+25:05:2021 18:22:24
+ERROR CONNECTING TO THE DATABASE SERVER
+string(1673) "25:05:2021 18:22:24
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-05-25 18:22:24
+    [ERROR MESSAGE] => SQLSTATE[HY000] [2002] Only one usage of each socket address (protocol/network address/port) is normally permitted
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 38
+    [_sql] => 
+    [_d] => Array
+        (
+        )
+
+    [_f] => Array
+        (
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(38): PDO->__construct('mysql:host=loca...', 'maths', 'maths', Array)
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(18): _db->_fetch_db_connection()
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_lib\_stdlib.php(8): _db->__construct()
+#3 G:\xampp\htdocs\sharpe-maths\_stdlib\_lib\_stdlib.php(4): _lg(NULL, 'PARENT ID')
+#4 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_form_elements\_class_form_element.php(407): _cl(NULL, 'PARENT ID')
+#5 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_form_elements\_class_form_element.php(334): _select->_build_select_element()
+#6 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_form_elements\_class_hl_form_els.php(31): _select->_build_select()
+#7 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_navmenu.php(191): _hlf->_build_select('topic_id', 34, '_app_nav_routes', 52, 'select id, titl...', 240)
+#8 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_navmenu.php(51): _navmenu->_parse_admin_list('0||1||Home||1||...')
+#9 G:\xampp\htdocs\sharpe-maths\_admin\_nav.php(18): _navmenu->_build_admin_nav_menu_list()
+#10 G:\xampp\htdocs\sharpe-maths\_admin\index.php(79): include('G:\\xampp\\htdocs...')
+#11 {main}
+)
+
+"
+
+25:05:2021 18:22:24
+PARENT ID
+NULL
+
+25:05:2021 18:22:24
+ERROR CONNECTING TO THE DATABASE SERVER
+string(1655) "25:05:2021 18:22:24
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-05-25 18:22:24
+    [ERROR MESSAGE] => SQLSTATE[HY000] [2002] Only one usage of each socket address (protocol/network address/port) is normally permitted
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 38
+    [_sql] => 
+    [_d] => Array
+        (
+        )
+
+    [_f] => Array
+        (
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(38): PDO->__construct('mysql:host=loca...', 'maths', 'maths', Array)
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(18): _db->_fetch_db_connection()
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_lib\_stdlib.php(8): _db->__construct()
+#3 G:\xampp\htdocs\sharpe-maths\_stdlib\_lib\_stdlib.php(4): _lg(26, 'ID')
+#4 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_form_elements\_class_form_element.php(406): _cl(26, 'ID')
+#5 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_form_elements\_class_form_element.php(334): _select->_build_select_element()
+#6 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_form_elements\_class_hl_form_els.php(31): _select->_build_select()
+#7 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_navmenu.php(191): _hlf->_build_select('topic_id', 34, '_app_nav_routes', 52, 'select id, titl...', 240)
+#8 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_navmenu.php(51): _navmenu->_parse_admin_list('0||1||Home||1||...')
+#9 G:\xampp\htdocs\sharpe-maths\_admin\_nav.php(18): _navmenu->_build_admin_nav_menu_list()
+#10 G:\xampp\htdocs\sharpe-maths\_admin\index.php(79): include('G:\\xampp\\htdocs...')
+#11 {main}
+)
+
+"
+
+25:05:2021 18:22:24
+ID
+int(26)
+
+25:05:2021 18:22:24
+ERROR CONNECTING TO THE DATABASE SERVER
+string(1673) "25:05:2021 18:22:24
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-05-25 18:22:24
+    [ERROR MESSAGE] => SQLSTATE[HY000] [2002] Only one usage of each socket address (protocol/network address/port) is normally permitted
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 38
+    [_sql] => 
+    [_d] => Array
+        (
+        )
+
+    [_f] => Array
+        (
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(38): PDO->__construct('mysql:host=loca...', 'maths', 'maths', Array)
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(18): _db->_fetch_db_connection()
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_lib\_stdlib.php(8): _db->__construct()
+#3 G:\xampp\htdocs\sharpe-maths\_stdlib\_lib\_stdlib.php(4): _lg(NULL, 'PARENT ID')
+#4 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_form_elements\_class_form_element.php(407): _cl(NULL, 'PARENT ID')
+#5 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_form_elements\_class_form_element.php(334): _select->_build_select_element()
+#6 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_form_elements\_class_hl_form_els.php(31): _select->_build_select()
+#7 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_navmenu.php(191): _hlf->_build_select('topic_id', 34, '_app_nav_routes', 52, 'select id, titl...', 240)
+#8 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_navmenu.php(51): _navmenu->_parse_admin_list('0||1||Home||1||...')
+#9 G:\xampp\htdocs\sharpe-maths\_admin\_nav.php(18): _navmenu->_build_admin_nav_menu_list()
+#10 G:\xampp\htdocs\sharpe-maths\_admin\index.php(79): include('G:\\xampp\\htdocs...')
+#11 {main}
+)
+
+"
+
+25:05:2021 18:22:24
+PARENT ID
+NULL
+
+25:05:2021 18:22:24
+ERROR CONNECTING TO THE DATABASE SERVER
+string(1655) "25:05:2021 18:22:24
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-05-25 18:22:24
+    [ERROR MESSAGE] => SQLSTATE[HY000] [2002] Only one usage of each socket address (protocol/network address/port) is normally permitted
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 38
+    [_sql] => 
+    [_d] => Array
+        (
+        )
+
+    [_f] => Array
+        (
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(38): PDO->__construct('mysql:host=loca...', 'maths', 'maths', Array)
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(18): _db->_fetch_db_connection()
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_lib\_stdlib.php(8): _db->__construct()
+#3 G:\xampp\htdocs\sharpe-maths\_stdlib\_lib\_stdlib.php(4): _lg(30, 'ID')
+#4 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_form_elements\_class_form_element.php(406): _cl(30, 'ID')
+#5 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_form_elements\_class_form_element.php(334): _select->_build_select_element()
+#6 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_form_elements\_class_hl_form_els.php(31): _select->_build_select()
+#7 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_navmenu.php(191): _hlf->_build_select('topic_id', 34, '_app_nav_routes', 52, 'select id, titl...', 240)
+#8 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_navmenu.php(51): _navmenu->_parse_admin_list('0||1||Home||1||...')
+#9 G:\xampp\htdocs\sharpe-maths\_admin\_nav.php(18): _navmenu->_build_admin_nav_menu_list()
+#10 G:\xampp\htdocs\sharpe-maths\_admin\index.php(79): include('G:\\xampp\\htdocs...')
+#11 {main}
+)
+
+"
+
+25:05:2021 18:22:24
+ID
+int(30)
+
+25:05:2021 18:22:24
+ERROR CONNECTING TO THE DATABASE SERVER
+string(1673) "25:05:2021 18:22:24
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-05-25 18:22:24
+    [ERROR MESSAGE] => SQLSTATE[HY000] [2002] Only one usage of each socket address (protocol/network address/port) is normally permitted
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 38
+    [_sql] => 
+    [_d] => Array
+        (
+        )
+
+    [_f] => Array
+        (
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(38): PDO->__construct('mysql:host=loca...', 'maths', 'maths', Array)
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(18): _db->_fetch_db_connection()
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_lib\_stdlib.php(8): _db->__construct()
+#3 G:\xampp\htdocs\sharpe-maths\_stdlib\_lib\_stdlib.php(4): _lg(NULL, 'PARENT ID')
+#4 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_form_elements\_class_form_element.php(407): _cl(NULL, 'PARENT ID')
+#5 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_form_elements\_class_form_element.php(334): _select->_build_select_element()
+#6 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_form_elements\_class_hl_form_els.php(31): _select->_build_select()
+#7 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_navmenu.php(191): _hlf->_build_select('topic_id', 34, '_app_nav_routes', 52, 'select id, titl...', 240)
+#8 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_navmenu.php(51): _navmenu->_parse_admin_list('0||1||Home||1||...')
+#9 G:\xampp\htdocs\sharpe-maths\_admin\_nav.php(18): _navmenu->_build_admin_nav_menu_list()
+#10 G:\xampp\htdocs\sharpe-maths\_admin\index.php(79): include('G:\\xampp\\htdocs...')
+#11 {main}
+)
+
+"
+
+25:05:2021 18:22:24
+PARENT ID
+NULL
+
+25:05:2021 18:22:24
+ERROR CONNECTING TO THE DATABASE SERVER
+string(1655) "25:05:2021 18:22:24
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-05-25 18:22:24
+    [ERROR MESSAGE] => SQLSTATE[HY000] [2002] Only one usage of each socket address (protocol/network address/port) is normally permitted
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 38
+    [_sql] => 
+    [_d] => Array
+        (
+        )
+
+    [_f] => Array
+        (
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(38): PDO->__construct('mysql:host=loca...', 'maths', 'maths', Array)
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(18): _db->_fetch_db_connection()
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_lib\_stdlib.php(8): _db->__construct()
+#3 G:\xampp\htdocs\sharpe-maths\_stdlib\_lib\_stdlib.php(4): _lg(40, 'ID')
+#4 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_form_elements\_class_form_element.php(406): _cl(40, 'ID')
+#5 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_form_elements\_class_form_element.php(334): _select->_build_select_element()
+#6 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_form_elements\_class_hl_form_els.php(31): _select->_build_select()
+#7 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_navmenu.php(191): _hlf->_build_select('topic_id', 34, '_app_nav_routes', 52, 'select id, titl...', 240)
+#8 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_navmenu.php(51): _navmenu->_parse_admin_list('0||1||Home||1||...')
+#9 G:\xampp\htdocs\sharpe-maths\_admin\_nav.php(18): _navmenu->_build_admin_nav_menu_list()
+#10 G:\xampp\htdocs\sharpe-maths\_admin\index.php(79): include('G:\\xampp\\htdocs...')
+#11 {main}
+)
+
+"
+
+25:05:2021 18:22:24
+ID
+int(40)
+
+25:05:2021 18:22:24
+ERROR CONNECTING TO THE DATABASE SERVER
+string(1673) "25:05:2021 18:22:24
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-05-25 18:22:24
+    [ERROR MESSAGE] => SQLSTATE[HY000] [2002] Only one usage of each socket address (protocol/network address/port) is normally permitted
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 38
+    [_sql] => 
+    [_d] => Array
+        (
+        )
+
+    [_f] => Array
+        (
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(38): PDO->__construct('mysql:host=loca...', 'maths', 'maths', Array)
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(18): _db->_fetch_db_connection()
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_lib\_stdlib.php(8): _db->__construct()
+#3 G:\xampp\htdocs\sharpe-maths\_stdlib\_lib\_stdlib.php(4): _lg(NULL, 'PARENT ID')
+#4 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_form_elements\_class_form_element.php(407): _cl(NULL, 'PARENT ID')
+#5 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_form_elements\_class_form_element.php(334): _select->_build_select_element()
+#6 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_form_elements\_class_hl_form_els.php(31): _select->_build_select()
+#7 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_navmenu.php(191): _hlf->_build_select('topic_id', 34, '_app_nav_routes', 52, 'select id, titl...', 240)
+#8 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_navmenu.php(51): _navmenu->_parse_admin_list('0||1||Home||1||...')
+#9 G:\xampp\htdocs\sharpe-maths\_admin\_nav.php(18): _navmenu->_build_admin_nav_menu_list()
+#10 G:\xampp\htdocs\sharpe-maths\_admin\index.php(79): include('G:\\xampp\\htdocs...')
+#11 {main}
+)
+
+"
+
+25:05:2021 18:22:24
+PARENT ID
+NULL
+
+25:05:2021 18:22:24
+ERROR CONNECTING TO THE DATABASE SERVER
+string(1655) "25:05:2021 18:22:24
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-05-25 18:22:24
+    [ERROR MESSAGE] => SQLSTATE[HY000] [2002] Only one usage of each socket address (protocol/network address/port) is normally permitted
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 38
+    [_sql] => 
+    [_d] => Array
+        (
+        )
+
+    [_f] => Array
+        (
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(38): PDO->__construct('mysql:host=loca...', 'maths', 'maths', Array)
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(18): _db->_fetch_db_connection()
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_lib\_stdlib.php(8): _db->__construct()
+#3 G:\xampp\htdocs\sharpe-maths\_stdlib\_lib\_stdlib.php(4): _lg(37, 'ID')
+#4 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_form_elements\_class_form_element.php(406): _cl(37, 'ID')
+#5 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_form_elements\_class_form_element.php(334): _select->_build_select_element()
+#6 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_form_elements\_class_hl_form_els.php(31): _select->_build_select()
+#7 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_navmenu.php(191): _hlf->_build_select('topic_id', 34, '_app_nav_routes', 52, 'select id, titl...', 240)
+#8 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_navmenu.php(51): _navmenu->_parse_admin_list('0||1||Home||1||...')
+#9 G:\xampp\htdocs\sharpe-maths\_admin\_nav.php(18): _navmenu->_build_admin_nav_menu_list()
+#10 G:\xampp\htdocs\sharpe-maths\_admin\index.php(79): include('G:\\xampp\\htdocs...')
+#11 {main}
+)
+
+"
+
+25:05:2021 18:22:24
+ID
+int(37)
+
+25:05:2021 18:22:24
+ERROR CONNECTING TO THE DATABASE SERVER
+string(1673) "25:05:2021 18:22:24
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-05-25 18:22:24
+    [ERROR MESSAGE] => SQLSTATE[HY000] [2002] Only one usage of each socket address (protocol/network address/port) is normally permitted
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 38
+    [_sql] => 
+    [_d] => Array
+        (
+        )
+
+    [_f] => Array
+        (
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(38): PDO->__construct('mysql:host=loca...', 'maths', 'maths', Array)
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(18): _db->_fetch_db_connection()
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_lib\_stdlib.php(8): _db->__construct()
+#3 G:\xampp\htdocs\sharpe-maths\_stdlib\_lib\_stdlib.php(4): _lg(NULL, 'PARENT ID')
+#4 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_form_elements\_class_form_element.php(407): _cl(NULL, 'PARENT ID')
+#5 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_form_elements\_class_form_element.php(334): _select->_build_select_element()
+#6 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_form_elements\_class_hl_form_els.php(31): _select->_build_select()
+#7 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_navmenu.php(191): _hlf->_build_select('topic_id', 34, '_app_nav_routes', 52, 'select id, titl...', 240)
+#8 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_navmenu.php(51): _navmenu->_parse_admin_list('0||1||Home||1||...')
+#9 G:\xampp\htdocs\sharpe-maths\_admin\_nav.php(18): _navmenu->_build_admin_nav_menu_list()
+#10 G:\xampp\htdocs\sharpe-maths\_admin\index.php(79): include('G:\\xampp\\htdocs...')
+#11 {main}
+)
+
+"
+
+25:05:2021 18:22:24
+PARENT ID
+NULL
+
+25:05:2021 18:22:24
+ERROR CONNECTING TO THE DATABASE SERVER
+string(1655) "25:05:2021 18:22:24
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-05-25 18:22:24
+    [ERROR MESSAGE] => SQLSTATE[HY000] [2002] Only one usage of each socket address (protocol/network address/port) is normally permitted
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 38
+    [_sql] => 
+    [_d] => Array
+        (
+        )
+
+    [_f] => Array
+        (
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(38): PDO->__construct('mysql:host=loca...', 'maths', 'maths', Array)
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(18): _db->_fetch_db_connection()
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_lib\_stdlib.php(8): _db->__construct()
+#3 G:\xampp\htdocs\sharpe-maths\_stdlib\_lib\_stdlib.php(4): _lg(38, 'ID')
+#4 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_form_elements\_class_form_element.php(406): _cl(38, 'ID')
+#5 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_form_elements\_class_form_element.php(334): _select->_build_select_element()
+#6 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_form_elements\_class_hl_form_els.php(31): _select->_build_select()
+#7 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_navmenu.php(191): _hlf->_build_select('topic_id', 34, '_app_nav_routes', 52, 'select id, titl...', 240)
+#8 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_navmenu.php(51): _navmenu->_parse_admin_list('0||1||Home||1||...')
+#9 G:\xampp\htdocs\sharpe-maths\_admin\_nav.php(18): _navmenu->_build_admin_nav_menu_list()
+#10 G:\xampp\htdocs\sharpe-maths\_admin\index.php(79): include('G:\\xampp\\htdocs...')
+#11 {main}
+)
+
+"
+
+25:05:2021 18:22:24
+ID
+int(38)
+
+25:05:2021 18:22:24
+ERROR CONNECTING TO THE DATABASE SERVER
+string(1673) "25:05:2021 18:22:24
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-05-25 18:22:24
+    [ERROR MESSAGE] => SQLSTATE[HY000] [2002] Only one usage of each socket address (protocol/network address/port) is normally permitted
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 38
+    [_sql] => 
+    [_d] => Array
+        (
+        )
+
+    [_f] => Array
+        (
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(38): PDO->__construct('mysql:host=loca...', 'maths', 'maths', Array)
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(18): _db->_fetch_db_connection()
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_lib\_stdlib.php(8): _db->__construct()
+#3 G:\xampp\htdocs\sharpe-maths\_stdlib\_lib\_stdlib.php(4): _lg(NULL, 'PARENT ID')
+#4 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_form_elements\_class_form_element.php(407): _cl(NULL, 'PARENT ID')
+#5 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_form_elements\_class_form_element.php(334): _select->_build_select_element()
+#6 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_form_elements\_class_hl_form_els.php(31): _select->_build_select()
+#7 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_navmenu.php(191): _hlf->_build_select('topic_id', 34, '_app_nav_routes', 52, 'select id, titl...', 240)
+#8 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_navmenu.php(51): _navmenu->_parse_admin_list('0||1||Home||1||...')
+#9 G:\xampp\htdocs\sharpe-maths\_admin\_nav.php(18): _navmenu->_build_admin_nav_menu_list()
+#10 G:\xampp\htdocs\sharpe-maths\_admin\index.php(79): include('G:\\xampp\\htdocs...')
+#11 {main}
+)
+
+"
+
+25:05:2021 18:22:24
+PARENT ID
+NULL
+
+25:05:2021 18:22:24
+ERROR CONNECTING TO THE DATABASE SERVER
+string(1655) "25:05:2021 18:22:24
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-05-25 18:22:24
+    [ERROR MESSAGE] => SQLSTATE[HY000] [2002] Only one usage of each socket address (protocol/network address/port) is normally permitted
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 38
+    [_sql] => 
+    [_d] => Array
+        (
+        )
+
+    [_f] => Array
+        (
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(38): PDO->__construct('mysql:host=loca...', 'maths', 'maths', Array)
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(18): _db->_fetch_db_connection()
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_lib\_stdlib.php(8): _db->__construct()
+#3 G:\xampp\htdocs\sharpe-maths\_stdlib\_lib\_stdlib.php(4): _lg(15, 'ID')
+#4 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_form_elements\_class_form_element.php(406): _cl(15, 'ID')
+#5 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_form_elements\_class_form_element.php(334): _select->_build_select_element()
+#6 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_form_elements\_class_hl_form_els.php(31): _select->_build_select()
+#7 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_navmenu.php(191): _hlf->_build_select('topic_id', 34, '_app_nav_routes', 52, 'select id, titl...', 240)
+#8 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_navmenu.php(51): _navmenu->_parse_admin_list('0||1||Home||1||...')
+#9 G:\xampp\htdocs\sharpe-maths\_admin\_nav.php(18): _navmenu->_build_admin_nav_menu_list()
+#10 G:\xampp\htdocs\sharpe-maths\_admin\index.php(79): include('G:\\xampp\\htdocs...')
+#11 {main}
+)
+
+"
+
+25:05:2021 18:22:24
+ID
+int(15)
+
+25:05:2021 18:22:24
+ERROR CONNECTING TO THE DATABASE SERVER
+string(1673) "25:05:2021 18:22:24
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-05-25 18:22:24
+    [ERROR MESSAGE] => SQLSTATE[HY000] [2002] Only one usage of each socket address (protocol/network address/port) is normally permitted
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 38
+    [_sql] => 
+    [_d] => Array
+        (
+        )
+
+    [_f] => Array
+        (
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(38): PDO->__construct('mysql:host=loca...', 'maths', 'maths', Array)
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(18): _db->_fetch_db_connection()
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_lib\_stdlib.php(8): _db->__construct()
+#3 G:\xampp\htdocs\sharpe-maths\_stdlib\_lib\_stdlib.php(4): _lg(NULL, 'PARENT ID')
+#4 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_form_elements\_class_form_element.php(407): _cl(NULL, 'PARENT ID')
+#5 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_form_elements\_class_form_element.php(334): _select->_build_select_element()
+#6 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_form_elements\_class_hl_form_els.php(31): _select->_build_select()
+#7 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_navmenu.php(191): _hlf->_build_select('topic_id', 34, '_app_nav_routes', 52, 'select id, titl...', 240)
+#8 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_navmenu.php(51): _navmenu->_parse_admin_list('0||1||Home||1||...')
+#9 G:\xampp\htdocs\sharpe-maths\_admin\_nav.php(18): _navmenu->_build_admin_nav_menu_list()
+#10 G:\xampp\htdocs\sharpe-maths\_admin\index.php(79): include('G:\\xampp\\htdocs...')
+#11 {main}
+)
+
+"
+
+25:05:2021 18:22:24
+PARENT ID
+NULL
+
+25:05:2021 18:22:24
+ERROR CONNECTING TO THE DATABASE SERVER
+string(1655) "25:05:2021 18:22:24
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-05-25 18:22:24
+    [ERROR MESSAGE] => SQLSTATE[HY000] [2002] Only one usage of each socket address (protocol/network address/port) is normally permitted
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 38
+    [_sql] => 
+    [_d] => Array
+        (
+        )
+
+    [_f] => Array
+        (
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(38): PDO->__construct('mysql:host=loca...', 'maths', 'maths', Array)
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(18): _db->_fetch_db_connection()
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_lib\_stdlib.php(8): _db->__construct()
+#3 G:\xampp\htdocs\sharpe-maths\_stdlib\_lib\_stdlib.php(4): _lg(20, 'ID')
+#4 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_form_elements\_class_form_element.php(406): _cl(20, 'ID')
+#5 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_form_elements\_class_form_element.php(334): _select->_build_select_element()
+#6 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_form_elements\_class_hl_form_els.php(31): _select->_build_select()
+#7 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_navmenu.php(191): _hlf->_build_select('topic_id', 34, '_app_nav_routes', 52, 'select id, titl...', 240)
+#8 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_navmenu.php(51): _navmenu->_parse_admin_list('0||1||Home||1||...')
+#9 G:\xampp\htdocs\sharpe-maths\_admin\_nav.php(18): _navmenu->_build_admin_nav_menu_list()
+#10 G:\xampp\htdocs\sharpe-maths\_admin\index.php(79): include('G:\\xampp\\htdocs...')
+#11 {main}
+)
+
+"
+
+25:05:2021 18:22:24
+ID
+int(20)
+
+25:05:2021 18:22:37
+ERROR CONNECTING TO THE DATABASE SERVER
+string(1675) "25:05:2021 18:22:37
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-05-25 18:22:37
+    [ERROR MESSAGE] => SQLSTATE[HY000] [2002] Only one usage of each socket address (protocol/network address/port) is normally permitted
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 38
+    [_sql] => 
+    [_d] => Array
+        (
+        )
+
+    [_f] => Array
+        (
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(38): PDO->__construct('mysql:host=loca...', 'maths', 'maths', Array)
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(18): _db->_fetch_db_connection()
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_lib\_stdlib.php(8): _db->__construct()
+#3 G:\xampp\htdocs\sharpe-maths\_stdlib\_lib\_stdlib.php(4): _lg(NULL, 'PARENT ID')
+#4 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_form_elements\_class_form_element.php(407): _cl(NULL, 'PARENT ID')
+#5 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_form_elements\_class_form_element.php(334): _select->_build_select_element()
+#6 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_form_elements\_class_hl_form_els.php(31): _select->_build_select()
+#7 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_navmenu.php(194): _hlf->_build_select('parent_id', 51, '_app_nav_routes', 139, 'select id, titl...', 240)
+#8 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_navmenu.php(51): _navmenu->_parse_admin_list('0||1||Home||1||...')
+#9 G:\xampp\htdocs\sharpe-maths\_admin\_nav.php(18): _navmenu->_build_admin_nav_menu_list()
+#10 G:\xampp\htdocs\sharpe-maths\_admin\index.php(79): include('G:\\xampp\\htdocs...')
+#11 {main}
+)
+
+"
+
+25:05:2021 18:22:37
+PARENT ID
+NULL
+
+25:05:2021 18:22:37
+ERROR CONNECTING TO THE DATABASE SERVER
+string(1657) "25:05:2021 18:22:37
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-05-25 18:22:37
+    [ERROR MESSAGE] => SQLSTATE[HY000] [2002] Only one usage of each socket address (protocol/network address/port) is normally permitted
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 38
+    [_sql] => 
+    [_d] => Array
+        (
+        )
+
+    [_f] => Array
+        (
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(38): PDO->__construct('mysql:host=loca...', 'maths', 'maths', Array)
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(18): _db->_fetch_db_connection()
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_lib\_stdlib.php(8): _db->__construct()
+#3 G:\xampp\htdocs\sharpe-maths\_stdlib\_lib\_stdlib.php(4): _lg(66, 'ID')
+#4 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_form_elements\_class_form_element.php(406): _cl(66, 'ID')
+#5 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_form_elements\_class_form_element.php(334): _select->_build_select_element()
+#6 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_form_elements\_class_hl_form_els.php(31): _select->_build_select()
+#7 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_navmenu.php(194): _hlf->_build_select('parent_id', 51, '_app_nav_routes', 139, 'select id, titl...', 240)
+#8 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_navmenu.php(51): _navmenu->_parse_admin_list('0||1||Home||1||...')
+#9 G:\xampp\htdocs\sharpe-maths\_admin\_nav.php(18): _navmenu->_build_admin_nav_menu_list()
+#10 G:\xampp\htdocs\sharpe-maths\_admin\index.php(79): include('G:\\xampp\\htdocs...')
+#11 {main}
+)
+
+"
+
+25:05:2021 18:22:37
+ID
+int(66)
+
+25:05:2021 18:22:37
+ERROR CONNECTING TO THE DATABASE SERVER
+string(1675) "25:05:2021 18:22:37
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-05-25 18:22:37
+    [ERROR MESSAGE] => SQLSTATE[HY000] [2002] Only one usage of each socket address (protocol/network address/port) is normally permitted
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 38
+    [_sql] => 
+    [_d] => Array
+        (
+        )
+
+    [_f] => Array
+        (
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(38): PDO->__construct('mysql:host=loca...', 'maths', 'maths', Array)
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(18): _db->_fetch_db_connection()
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_lib\_stdlib.php(8): _db->__construct()
+#3 G:\xampp\htdocs\sharpe-maths\_stdlib\_lib\_stdlib.php(4): _lg(NULL, 'PARENT ID')
+#4 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_form_elements\_class_form_element.php(407): _cl(NULL, 'PARENT ID')
+#5 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_form_elements\_class_form_element.php(334): _select->_build_select_element()
+#6 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_form_elements\_class_hl_form_els.php(31): _select->_build_select()
+#7 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_navmenu.php(194): _hlf->_build_select('parent_id', 51, '_app_nav_routes', 139, 'select id, titl...', 240)
+#8 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_navmenu.php(51): _navmenu->_parse_admin_list('0||1||Home||1||...')
+#9 G:\xampp\htdocs\sharpe-maths\_admin\_nav.php(18): _navmenu->_build_admin_nav_menu_list()
+#10 G:\xampp\htdocs\sharpe-maths\_admin\index.php(79): include('G:\\xampp\\htdocs...')
+#11 {main}
+)
+
+"
+
+25:05:2021 18:22:37
+PARENT ID
+NULL
+
+25:05:2021 18:22:37
+ERROR CONNECTING TO THE DATABASE SERVER
+string(1657) "25:05:2021 18:22:37
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-05-25 18:22:37
+    [ERROR MESSAGE] => SQLSTATE[HY000] [2002] Only one usage of each socket address (protocol/network address/port) is normally permitted
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 38
+    [_sql] => 
+    [_d] => Array
+        (
+        )
+
+    [_f] => Array
+        (
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(38): PDO->__construct('mysql:host=loca...', 'maths', 'maths', Array)
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(18): _db->_fetch_db_connection()
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_lib\_stdlib.php(8): _db->__construct()
+#3 G:\xampp\htdocs\sharpe-maths\_stdlib\_lib\_stdlib.php(4): _lg(11, 'ID')
+#4 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_form_elements\_class_form_element.php(406): _cl(11, 'ID')
+#5 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_form_elements\_class_form_element.php(334): _select->_build_select_element()
+#6 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_form_elements\_class_hl_form_els.php(31): _select->_build_select()
+#7 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_navmenu.php(194): _hlf->_build_select('parent_id', 51, '_app_nav_routes', 139, 'select id, titl...', 240)
+#8 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_navmenu.php(51): _navmenu->_parse_admin_list('0||1||Home||1||...')
+#9 G:\xampp\htdocs\sharpe-maths\_admin\_nav.php(18): _navmenu->_build_admin_nav_menu_list()
+#10 G:\xampp\htdocs\sharpe-maths\_admin\index.php(79): include('G:\\xampp\\htdocs...')
+#11 {main}
+)
+
+"
+
+25:05:2021 18:22:37
+ID
+int(11)
+
+25:05:2021 18:22:37
+ERROR CONNECTING TO THE DATABASE SERVER
+string(1675) "25:05:2021 18:22:37
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-05-25 18:22:37
+    [ERROR MESSAGE] => SQLSTATE[HY000] [2002] Only one usage of each socket address (protocol/network address/port) is normally permitted
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 38
+    [_sql] => 
+    [_d] => Array
+        (
+        )
+
+    [_f] => Array
+        (
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(38): PDO->__construct('mysql:host=loca...', 'maths', 'maths', Array)
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(18): _db->_fetch_db_connection()
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_lib\_stdlib.php(8): _db->__construct()
+#3 G:\xampp\htdocs\sharpe-maths\_stdlib\_lib\_stdlib.php(4): _lg(NULL, 'PARENT ID')
+#4 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_form_elements\_class_form_element.php(407): _cl(NULL, 'PARENT ID')
+#5 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_form_elements\_class_form_element.php(334): _select->_build_select_element()
+#6 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_form_elements\_class_hl_form_els.php(31): _select->_build_select()
+#7 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_navmenu.php(194): _hlf->_build_select('parent_id', 51, '_app_nav_routes', 139, 'select id, titl...', 240)
+#8 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_navmenu.php(51): _navmenu->_parse_admin_list('0||1||Home||1||...')
+#9 G:\xampp\htdocs\sharpe-maths\_admin\_nav.php(18): _navmenu->_build_admin_nav_menu_list()
+#10 G:\xampp\htdocs\sharpe-maths\_admin\index.php(79): include('G:\\xampp\\htdocs...')
+#11 {main}
+)
+
+"
+
+25:05:2021 18:22:37
+PARENT ID
+NULL
+
+25:05:2021 18:22:37
+ERROR CONNECTING TO THE DATABASE SERVER
+string(1657) "25:05:2021 18:22:37
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-05-25 18:22:37
+    [ERROR MESSAGE] => SQLSTATE[HY000] [2002] Only one usage of each socket address (protocol/network address/port) is normally permitted
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 38
+    [_sql] => 
+    [_d] => Array
+        (
+        )
+
+    [_f] => Array
+        (
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(38): PDO->__construct('mysql:host=loca...', 'maths', 'maths', Array)
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(18): _db->_fetch_db_connection()
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_lib\_stdlib.php(8): _db->__construct()
+#3 G:\xampp\htdocs\sharpe-maths\_stdlib\_lib\_stdlib.php(4): _lg(68, 'ID')
+#4 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_form_elements\_class_form_element.php(406): _cl(68, 'ID')
+#5 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_form_elements\_class_form_element.php(334): _select->_build_select_element()
+#6 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_form_elements\_class_hl_form_els.php(31): _select->_build_select()
+#7 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_navmenu.php(194): _hlf->_build_select('parent_id', 51, '_app_nav_routes', 139, 'select id, titl...', 240)
+#8 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_navmenu.php(51): _navmenu->_parse_admin_list('0||1||Home||1||...')
+#9 G:\xampp\htdocs\sharpe-maths\_admin\_nav.php(18): _navmenu->_build_admin_nav_menu_list()
+#10 G:\xampp\htdocs\sharpe-maths\_admin\index.php(79): include('G:\\xampp\\htdocs...')
+#11 {main}
+)
+
+"
+
+25:05:2021 18:22:37
+ID
+int(68)
+
+25:05:2021 18:22:37
+ERROR CONNECTING TO THE DATABASE SERVER
+string(1675) "25:05:2021 18:22:37
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-05-25 18:22:37
+    [ERROR MESSAGE] => SQLSTATE[HY000] [2002] Only one usage of each socket address (protocol/network address/port) is normally permitted
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 38
+    [_sql] => 
+    [_d] => Array
+        (
+        )
+
+    [_f] => Array
+        (
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(38): PDO->__construct('mysql:host=loca...', 'maths', 'maths', Array)
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(18): _db->_fetch_db_connection()
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_lib\_stdlib.php(8): _db->__construct()
+#3 G:\xampp\htdocs\sharpe-maths\_stdlib\_lib\_stdlib.php(4): _lg(NULL, 'PARENT ID')
+#4 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_form_elements\_class_form_element.php(407): _cl(NULL, 'PARENT ID')
+#5 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_form_elements\_class_form_element.php(334): _select->_build_select_element()
+#6 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_form_elements\_class_hl_form_els.php(31): _select->_build_select()
+#7 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_navmenu.php(194): _hlf->_build_select('parent_id', 51, '_app_nav_routes', 139, 'select id, titl...', 240)
+#8 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_navmenu.php(51): _navmenu->_parse_admin_list('0||1||Home||1||...')
+#9 G:\xampp\htdocs\sharpe-maths\_admin\_nav.php(18): _navmenu->_build_admin_nav_menu_list()
+#10 G:\xampp\htdocs\sharpe-maths\_admin\index.php(79): include('G:\\xampp\\htdocs...')
+#11 {main}
+)
+
+"
+
+25:05:2021 18:22:37
+PARENT ID
+NULL
+
+25:05:2021 18:22:37
+ERROR CONNECTING TO THE DATABASE SERVER
+string(1353) "25:05:2021 18:22:37
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-05-25 18:22:37
+    [ERROR MESSAGE] => SQLSTATE[HY000] [2002] Only one usage of each socket address (protocol/network address/port) is normally permitted
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 38
+    [_sql] => 
+    [_d] => Array
+        (
+        )
+
+    [_f] => Array
+        (
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(38): PDO->__construct('mysql:host=loca...', 'maths', 'maths', Array)
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(18): _db->_fetch_db_connection()
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_form_elements\_class_form_element.php(36): _db->__construct()
+#3 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_form_elements\_class_hl_form_els.php(41): _form_element->__construct(Array)
+#4 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_navmenu.php(196): _hlf->_build_chkbox('link', 1, '_app_nav_routes', 139)
+#5 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_navmenu.php(51): _navmenu->_parse_admin_list('0||1||Home||1||...')
+#6 G:\xampp\htdocs\sharpe-maths\_admin\_nav.php(18): _navmenu->_build_admin_nav_menu_list()
+#7 G:\xampp\htdocs\sharpe-maths\_admin\index.php(79): include('G:\\xampp\\htdocs...')
+#8 {main}
+)
+
+"
+
+25:05:2021 18:22:37
+ERROR CONNECTING TO THE DATABASE SERVER
+string(1356) "25:05:2021 18:22:37
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-05-25 18:22:37
+    [ERROR MESSAGE] => SQLSTATE[HY000] [2002] Only one usage of each socket address (protocol/network address/port) is normally permitted
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 38
+    [_sql] => 
+    [_d] => Array
+        (
+        )
+
+    [_f] => Array
+        (
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(38): PDO->__construct('mysql:host=loca...', 'maths', 'maths', Array)
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(18): _db->_fetch_db_connection()
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_form_elements\_class_form_element.php(36): _db->__construct()
+#3 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_form_elements\_class_hl_form_els.php(41): _form_element->__construct(Array)
+#4 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_navmenu.php(197): _hlf->_build_chkbox('display', 1, '_app_nav_routes', 139)
+#5 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_navmenu.php(51): _navmenu->_parse_admin_list('0||1||Home||1||...')
+#6 G:\xampp\htdocs\sharpe-maths\_admin\_nav.php(18): _navmenu->_build_admin_nav_menu_list()
+#7 G:\xampp\htdocs\sharpe-maths\_admin\index.php(79): include('G:\\xampp\\htdocs...')
+#8 {main}
+)
+
+"
+
+25:05:2021 18:22:37
+ERROR CONNECTING TO THE DATABASE SERVER
+string(1398) "25:05:2021 18:22:37
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-05-25 18:22:37
+    [ERROR MESSAGE] => SQLSTATE[HY000] [2002] Only one usage of each socket address (protocol/network address/port) is normally permitted
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 38
+    [_sql] => 
+    [_d] => Array
+        (
+        )
+
+    [_f] => Array
+        (
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(38): PDO->__construct('mysql:host=loca...', 'maths', 'maths', Array)
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(18): _db->_fetch_db_connection()
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_form_elements\_class_form_element.php(36): _db->__construct()
+#3 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_form_elements\_class_hl_form_els.php(13): _form_element->__construct(Array)
+#4 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_navmenu.php(185): _hlf->_build_text_box('title', 'Quadratic eqns', '_app_nav_routes', 138, 390, 'Text to appear ...')
+#5 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_navmenu.php(51): _navmenu->_parse_admin_list('0||1||Home||1||...')
+#6 G:\xampp\htdocs\sharpe-maths\_admin\_nav.php(18): _navmenu->_build_admin_nav_menu_list()
+#7 G:\xampp\htdocs\sharpe-maths\_admin\index.php(79): include('G:\\xampp\\htdocs...')
+#8 {main}
+)
+
+"
+
+25:05:2021 18:22:56
+ERROR CONNECTING TO THE DATABASE SERVER
+string(1666) "25:05:2021 18:22:56
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-05-25 18:22:56
+    [ERROR MESSAGE] => SQLSTATE[HY000] [2002] Only one usage of each socket address (protocol/network address/port) is normally permitted
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 38
+    [_sql] => 
+    [_d] => Array
+        (
+        )
+
+    [_f] => Array
+        (
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(38): PDO->__construct('mysql:host=loca...', 'maths', 'maths', Array)
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(18): _db->_fetch_db_connection()
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_lib\_stdlib.php(8): _db->__construct()
+#3 G:\xampp\htdocs\sharpe-maths\_stdlib\_lib\_stdlib.php(4): _lg(6, 'PARENT ID')
+#4 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_form_elements\_class_form_element.php(407): _cl(6, 'PARENT ID')
+#5 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_form_elements\_class_form_element.php(334): _select->_build_select_element()
+#6 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_form_elements\_class_hl_form_els.php(31): _select->_build_select()
+#7 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_navmenu.php(194): _hlf->_build_select('parent_id', 0, '_app_nav_routes', 1, 'select id, pare...', 240)
+#8 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_navmenu.php(51): _navmenu->_parse_admin_list('0||1||Home||1||...')
+#9 G:\xampp\htdocs\sharpe-maths\_admin\_nav.php(18): _navmenu->_build_admin_nav_menu_list()
+#10 G:\xampp\htdocs\sharpe-maths\_admin\index.php(79): include('G:\\xampp\\htdocs...')
+#11 {main}
+)
+
+"
+
+25:05:2021 18:22:56
+PARENT ID
+int(6)
+
+25:05:2021 18:22:56
+ERROR CONNECTING TO THE DATABASE SERVER
+string(1666) "25:05:2021 18:22:56
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-05-25 18:22:56
+    [ERROR MESSAGE] => SQLSTATE[HY000] [2002] Only one usage of each socket address (protocol/network address/port) is normally permitted
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 38
+    [_sql] => 
+    [_d] => Array
+        (
+        )
+
+    [_f] => Array
+        (
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(38): PDO->__construct('mysql:host=loca...', 'maths', 'maths', Array)
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(18): _db->_fetch_db_connection()
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_lib\_stdlib.php(8): _db->__construct()
+#3 G:\xampp\htdocs\sharpe-maths\_stdlib\_lib\_stdlib.php(4): _lg(8, 'PARENT ID')
+#4 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_form_elements\_class_form_element.php(407): _cl(8, 'PARENT ID')
+#5 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_form_elements\_class_form_element.php(334): _select->_build_select_element()
+#6 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_form_elements\_class_hl_form_els.php(31): _select->_build_select()
+#7 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_navmenu.php(194): _hlf->_build_select('parent_id', 0, '_app_nav_routes', 1, 'select id, pare...', 240)
+#8 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_navmenu.php(51): _navmenu->_parse_admin_list('0||1||Home||1||...')
+#9 G:\xampp\htdocs\sharpe-maths\_admin\_nav.php(18): _navmenu->_build_admin_nav_menu_list()
+#10 G:\xampp\htdocs\sharpe-maths\_admin\index.php(79): include('G:\\xampp\\htdocs...')
+#11 {main}
+)
+
+"
+
+25:05:2021 18:22:56
+PARENT ID
+int(8)
+
+25:05:2021 18:22:56
+ERROR CONNECTING TO THE DATABASE SERVER
+string(1654) "25:05:2021 18:22:56
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-05-25 18:22:56
+    [ERROR MESSAGE] => SQLSTATE[HY000] [2002] Only one usage of each socket address (protocol/network address/port) is normally permitted
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 38
+    [_sql] => 
+    [_d] => Array
+        (
+        )
+
+    [_f] => Array
+        (
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(38): PDO->__construct('mysql:host=loca...', 'maths', 'maths', Array)
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(18): _db->_fetch_db_connection()
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_lib\_stdlib.php(8): _db->__construct()
+#3 G:\xampp\htdocs\sharpe-maths\_stdlib\_lib\_stdlib.php(4): _lg(84, 'ID')
+#4 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_form_elements\_class_form_element.php(406): _cl(84, 'ID')
+#5 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_form_elements\_class_form_element.php(334): _select->_build_select_element()
+#6 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_form_elements\_class_hl_form_els.php(31): _select->_build_select()
+#7 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_navmenu.php(194): _hlf->_build_select('parent_id', 0, '_app_nav_routes', 1, 'select id, pare...', 240)
+#8 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_navmenu.php(51): _navmenu->_parse_admin_list('0||1||Home||1||...')
+#9 G:\xampp\htdocs\sharpe-maths\_admin\_nav.php(18): _navmenu->_build_admin_nav_menu_list()
+#10 G:\xampp\htdocs\sharpe-maths\_admin\index.php(79): include('G:\\xampp\\htdocs...')
+#11 {main}
+)
+
+"
+
+25:05:2021 18:22:56
+ID
+int(84)
+
+25:05:2021 18:22:56
+ERROR CONNECTING TO THE DATABASE SERVER
+string(1654) "25:05:2021 18:22:56
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-05-25 18:22:56
+    [ERROR MESSAGE] => SQLSTATE[HY000] [2002] Only one usage of each socket address (protocol/network address/port) is normally permitted
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 38
+    [_sql] => 
+    [_d] => Array
+        (
+        )
+
+    [_f] => Array
+        (
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(38): PDO->__construct('mysql:host=loca...', 'maths', 'maths', Array)
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(18): _db->_fetch_db_connection()
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_lib\_stdlib.php(8): _db->__construct()
+#3 G:\xampp\htdocs\sharpe-maths\_stdlib\_lib\_stdlib.php(4): _lg(66, 'ID')
+#4 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_form_elements\_class_form_element.php(406): _cl(66, 'ID')
+#5 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_form_elements\_class_form_element.php(334): _select->_build_select_element()
+#6 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_form_elements\_class_hl_form_els.php(31): _select->_build_select()
+#7 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_navmenu.php(194): _hlf->_build_select('parent_id', 0, '_app_nav_routes', 1, 'select id, pare...', 240)
+#8 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_navmenu.php(51): _navmenu->_parse_admin_list('0||1||Home||1||...')
+#9 G:\xampp\htdocs\sharpe-maths\_admin\_nav.php(18): _navmenu->_build_admin_nav_menu_list()
+#10 G:\xampp\htdocs\sharpe-maths\_admin\index.php(79): include('G:\\xampp\\htdocs...')
+#11 {main}
+)
+
+"
+
+25:05:2021 18:22:56
+ID
+int(66)
+
+25:05:2021 18:22:56
+ERROR CONNECTING TO THE DATABASE SERVER
+string(1668) "25:05:2021 18:22:56
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-05-25 18:22:56
+    [ERROR MESSAGE] => SQLSTATE[HY000] [2002] Only one usage of each socket address (protocol/network address/port) is normally permitted
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 38
+    [_sql] => 
+    [_d] => Array
+        (
+        )
+
+    [_f] => Array
+        (
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(38): PDO->__construct('mysql:host=loca...', 'maths', 'maths', Array)
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(18): _db->_fetch_db_connection()
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_lib\_stdlib.php(8): _db->__construct()
+#3 G:\xampp\htdocs\sharpe-maths\_stdlib\_lib\_stdlib.php(4): _lg(60, 'PARENT ID')
+#4 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_form_elements\_class_form_element.php(407): _cl(60, 'PARENT ID')
+#5 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_form_elements\_class_form_element.php(334): _select->_build_select_element()
+#6 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_form_elements\_class_hl_form_els.php(31): _select->_build_select()
+#7 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_navmenu.php(194): _hlf->_build_select('parent_id', 0, '_app_nav_routes', 1, 'select id, pare...', 240)
+#8 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_navmenu.php(51): _navmenu->_parse_admin_list('0||1||Home||1||...')
+#9 G:\xampp\htdocs\sharpe-maths\_admin\_nav.php(18): _navmenu->_build_admin_nav_menu_list()
+#10 G:\xampp\htdocs\sharpe-maths\_admin\index.php(79): include('G:\\xampp\\htdocs...')
+#11 {main}
+)
+
+"
+
+25:05:2021 18:22:56
+PARENT ID
+int(60)
+
+25:05:2021 18:22:56
+ERROR CONNECTING TO THE DATABASE SERVER
+string(1654) "25:05:2021 18:22:56
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-05-25 18:22:56
+    [ERROR MESSAGE] => SQLSTATE[HY000] [2002] Only one usage of each socket address (protocol/network address/port) is normally permitted
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 38
+    [_sql] => 
+    [_d] => Array
+        (
+        )
+
+    [_f] => Array
+        (
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(38): PDO->__construct('mysql:host=loca...', 'maths', 'maths', Array)
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(18): _db->_fetch_db_connection()
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_lib\_stdlib.php(8): _db->__construct()
+#3 G:\xampp\htdocs\sharpe-maths\_stdlib\_lib\_stdlib.php(4): _lg(11, 'ID')
+#4 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_form_elements\_class_form_element.php(406): _cl(11, 'ID')
+#5 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_form_elements\_class_form_element.php(334): _select->_build_select_element()
+#6 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_form_elements\_class_hl_form_els.php(31): _select->_build_select()
+#7 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_navmenu.php(194): _hlf->_build_select('parent_id', 0, '_app_nav_routes', 1, 'select id, pare...', 240)
+#8 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_navmenu.php(51): _navmenu->_parse_admin_list('0||1||Home||1||...')
+#9 G:\xampp\htdocs\sharpe-maths\_admin\_nav.php(18): _navmenu->_build_admin_nav_menu_list()
+#10 G:\xampp\htdocs\sharpe-maths\_admin\index.php(79): include('G:\\xampp\\htdocs...')
+#11 {main}
+)
+
+"
+
+25:05:2021 18:22:56
+ID
+int(11)
+
+25:05:2021 18:22:56
+ERROR CONNECTING TO THE DATABASE SERVER
+string(1666) "25:05:2021 18:22:56
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-05-25 18:22:56
+    [ERROR MESSAGE] => SQLSTATE[HY000] [2002] Only one usage of each socket address (protocol/network address/port) is normally permitted
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 38
+    [_sql] => 
+    [_d] => Array
+        (
+        )
+
+    [_f] => Array
+        (
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(38): PDO->__construct('mysql:host=loca...', 'maths', 'maths', Array)
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(18): _db->_fetch_db_connection()
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_lib\_stdlib.php(8): _db->__construct()
+#3 G:\xampp\htdocs\sharpe-maths\_stdlib\_lib\_stdlib.php(4): _lg(6, 'PARENT ID')
+#4 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_form_elements\_class_form_element.php(407): _cl(6, 'PARENT ID')
+#5 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_form_elements\_class_form_element.php(334): _select->_build_select_element()
+#6 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_form_elements\_class_hl_form_els.php(31): _select->_build_select()
+#7 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_navmenu.php(194): _hlf->_build_select('parent_id', 0, '_app_nav_routes', 1, 'select id, pare...', 240)
+#8 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_navmenu.php(51): _navmenu->_parse_admin_list('0||1||Home||1||...')
+#9 G:\xampp\htdocs\sharpe-maths\_admin\_nav.php(18): _navmenu->_build_admin_nav_menu_list()
+#10 G:\xampp\htdocs\sharpe-maths\_admin\index.php(79): include('G:\\xampp\\htdocs...')
+#11 {main}
+)
+
+"
+
+25:05:2021 18:22:56
+PARENT ID
+int(6)
+
+25:05:2021 18:22:56
+ERROR CONNECTING TO THE DATABASE SERVER
+string(1654) "25:05:2021 18:22:56
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-05-25 18:22:56
+    [ERROR MESSAGE] => SQLSTATE[HY000] [2002] Only one usage of each socket address (protocol/network address/port) is normally permitted
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 38
+    [_sql] => 
+    [_d] => Array
+        (
+        )
+
+    [_f] => Array
+        (
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(38): PDO->__construct('mysql:host=loca...', 'maths', 'maths', Array)
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(18): _db->_fetch_db_connection()
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_lib\_stdlib.php(8): _db->__construct()
+#3 G:\xampp\htdocs\sharpe-maths\_stdlib\_lib\_stdlib.php(4): _lg(68, 'ID')
+#4 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_form_elements\_class_form_element.php(406): _cl(68, 'ID')
+#5 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_form_elements\_class_form_element.php(334): _select->_build_select_element()
+#6 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_form_elements\_class_hl_form_els.php(31): _select->_build_select()
+#7 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_navmenu.php(194): _hlf->_build_select('parent_id', 0, '_app_nav_routes', 1, 'select id, pare...', 240)
+#8 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_navmenu.php(51): _navmenu->_parse_admin_list('0||1||Home||1||...')
+#9 G:\xampp\htdocs\sharpe-maths\_admin\_nav.php(18): _navmenu->_build_admin_nav_menu_list()
+#10 G:\xampp\htdocs\sharpe-maths\_admin\index.php(79): include('G:\\xampp\\htdocs...')
+#11 {main}
+)
+
+"
+
+25:05:2021 18:22:56
+ID
+int(68)
+
+25:05:2021 18:22:56
+ERROR CONNECTING TO THE DATABASE SERVER
+string(1668) "25:05:2021 18:22:56
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-05-25 18:22:56
+    [ERROR MESSAGE] => SQLSTATE[HY000] [2002] Only one usage of each socket address (protocol/network address/port) is normally permitted
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 38
+    [_sql] => 
+    [_d] => Array
+        (
+        )
+
+    [_f] => Array
+        (
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(38): PDO->__construct('mysql:host=loca...', 'maths', 'maths', Array)
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(18): _db->_fetch_db_connection()
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_lib\_stdlib.php(8): _db->__construct()
+#3 G:\xampp\htdocs\sharpe-maths\_stdlib\_lib\_stdlib.php(4): _lg(15, 'PARENT ID')
+#4 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_form_elements\_class_form_element.php(407): _cl(15, 'PARENT ID')
+#5 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_form_elements\_class_form_element.php(334): _select->_build_select_element()
+#6 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_form_elements\_class_hl_form_els.php(31): _select->_build_select()
+#7 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_navmenu.php(194): _hlf->_build_select('parent_id', 0, '_app_nav_routes', 1, 'select id, pare...', 240)
+#8 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_navmenu.php(51): _navmenu->_parse_admin_list('0||1||Home||1||...')
+#9 G:\xampp\htdocs\sharpe-maths\_admin\_nav.php(18): _navmenu->_build_admin_nav_menu_list()
+#10 G:\xampp\htdocs\sharpe-maths\_admin\index.php(79): include('G:\\xampp\\htdocs...')
+#11 {main}
+)
+
+"
+
+25:05:2021 18:22:56
+PARENT ID
+int(15)
+
+25:05:2021 18:22:56
+ERROR CONNECTING TO THE DATABASE SERVER
+string(1351) "25:05:2021 18:22:56
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-05-25 18:22:56
+    [ERROR MESSAGE] => SQLSTATE[HY000] [2002] Only one usage of each socket address (protocol/network address/port) is normally permitted
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 38
+    [_sql] => 
+    [_d] => Array
+        (
+        )
+
+    [_f] => Array
+        (
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(38): PDO->__construct('mysql:host=loca...', 'maths', 'maths', Array)
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(18): _db->_fetch_db_connection()
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_form_elements\_class_form_element.php(36): _db->__construct()
+#3 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_form_elements\_class_hl_form_els.php(41): _form_element->__construct(Array)
+#4 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_navmenu.php(196): _hlf->_build_chkbox('link', 1, '_app_nav_routes', 1)
+#5 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_navmenu.php(51): _navmenu->_parse_admin_list('0||1||Home||1||...')
+#6 G:\xampp\htdocs\sharpe-maths\_admin\_nav.php(18): _navmenu->_build_admin_nav_menu_list()
+#7 G:\xampp\htdocs\sharpe-maths\_admin\index.php(79): include('G:\\xampp\\htdocs...')
+#8 {main}
+)
+
+"
+
+25:05:2021 18:22:56
+ERROR CONNECTING TO THE DATABASE SERVER
+string(1354) "25:05:2021 18:22:56
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-05-25 18:22:56
+    [ERROR MESSAGE] => SQLSTATE[HY000] [2002] Only one usage of each socket address (protocol/network address/port) is normally permitted
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 38
+    [_sql] => 
+    [_d] => Array
+        (
+        )
+
+    [_f] => Array
+        (
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(38): PDO->__construct('mysql:host=loca...', 'maths', 'maths', Array)
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(18): _db->_fetch_db_connection()
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_form_elements\_class_form_element.php(36): _db->__construct()
+#3 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_form_elements\_class_hl_form_els.php(41): _form_element->__construct(Array)
+#4 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_navmenu.php(197): _hlf->_build_chkbox('display', 1, '_app_nav_routes', 1)
+#5 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_navmenu.php(51): _navmenu->_parse_admin_list('0||1||Home||1||...')
+#6 G:\xampp\htdocs\sharpe-maths\_admin\_nav.php(18): _navmenu->_build_admin_nav_menu_list()
+#7 G:\xampp\htdocs\sharpe-maths\_admin\index.php(79): include('G:\\xampp\\htdocs...')
+#8 {main}
+)
+
+"
+
+25:05:2021 18:22:56
+ERROR CONNECTING TO THE DATABASE SERVER
+string(1395) "25:05:2021 18:22:56
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-05-25 18:22:56
+    [ERROR MESSAGE] => SQLSTATE[HY000] [2002] Only one usage of each socket address (protocol/network address/port) is normally permitted
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 38
+    [_sql] => 
+    [_d] => Array
+        (
+        )
+
+    [_f] => Array
+        (
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(38): PDO->__construct('mysql:host=loca...', 'maths', 'maths', Array)
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(18): _db->_fetch_db_connection()
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_form_elements\_class_form_element.php(36): _db->__construct()
+#3 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_form_elements\_class_hl_form_els.php(13): _form_element->__construct(Array)
+#4 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_navmenu.php(185): _hlf->_build_text_box('title', 'Number topics', '_app_nav_routes', 6, 390, 'Text to appear ...')
+#5 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_navmenu.php(51): _navmenu->_parse_admin_list('0||1||Home||1||...')
+#6 G:\xampp\htdocs\sharpe-maths\_admin\_nav.php(18): _navmenu->_build_admin_nav_menu_list()
+#7 G:\xampp\htdocs\sharpe-maths\_admin\index.php(79): include('G:\\xampp\\htdocs...')
+#8 {main}
+)
+
+"
+
+25:05:2021 18:32:25
+ERROR CONNECTING TO THE DATABASE SERVER
+string(1376) "25:05:2021 18:32:25
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-05-25 18:32:25
+    [ERROR MESSAGE] => SQLSTATE[HY000] [2002] Only one usage of each socket address (protocol/network address/port) is normally permitted
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 38
+    [_sql] => 
+    [_d] => Array
+        (
+        )
+
+    [_f] => Array
+        (
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(38): PDO->__construct('mysql:host=loca...', 'maths', 'maths', Array)
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(18): _db->_fetch_db_connection()
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_form_elements\_class_form_element.php(291): _db->__construct()
+#3 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_form_elements\_class_hl_form_els.php(29): _select->__construct(Array)
+#4 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_navmenu.php(187): _hlf->_build_select('page_id', 1, '_app_nav_routes', 1, 'select id, titl...', 240)
+#5 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_navmenu.php(51): _navmenu->_parse_admin_list('0||1||Home||1||...')
+#6 G:\xampp\htdocs\sharpe-maths\_admin\_nav.php(18): _navmenu->_build_admin_nav_menu_list()
+#7 G:\xampp\htdocs\sharpe-maths\_admin\index.php(79): include('G:\\xampp\\htdocs...')
+#8 {main}
+)
+
+"
+

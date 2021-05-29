@@ -14,7 +14,7 @@ class _hlf{
 		return $_tf->_build_text_input();
 	}
 
-	public function _build_select($_fld, $_value, $_db_tbl, $_id, $_sql, $_wdth){
+	public function _build_select($_fld, $_value, $_db_tbl, $_id, $_sql, $_wdth, $_use_parent_path = false){
 		$_params = array(
 				'el_type' => 'sel',
 				'el_name' => $_fld,
@@ -23,7 +23,8 @@ class _hlf{
 				'el_data_db_tbl' => $_db_tbl,
 				'db_sql' => $_sql,
 				'db_display_field' => 'title',
-				'el_width' => $_wdth
+				'el_width' => $_wdth,
+				'use_parent_path' => $_use_parent_path
 		);
 		$_nqs = new _select($_params);
 		$_nqs->_set_top_zero_level(true);

@@ -159,25 +159,32 @@ div.back{padding-right: 40px;}
 
 /* START LIST CLASSES */
 
-ol.roman, ol.abc, ol.num{
-	display: flex;
-	flex-flow: column wrap;
+
+ol{
+	list-style-type: none;
+	counter-reset: item;
+	padding:0;
+	/* border: 1px solid pink; */
 }
 
-ol.roman{list-style-type: lower-roman;}
-ol.abc{list-style-type: lower-alpha;}
-ol.num{list-style-type: decimal;}
-ol.num2{list-style-type: decimal;}
-
-ol.abc > li,
-ol.roman > li,
-ol.num > li,
-ol.num2 > li {
-	margin: 0;
-	padding: 3px 0 3px 0;
+ol > li{
+	position: relative;
+	margin-left: 30px;
 	line-height:  var(--p-line-height);
-
+	counter-increment: item;
 }
+
+ol > li:before{
+	margin-left: -30px;
+	font-weight: bold;
+	position: absolute;
+}
+
+ol.roman > li:before {content: counter(item, lower-roman) ". ";}
+ol.abc > li:before {content: counter(item, lower-alpha) ". ";}
+ol.num > li:before {content: counter(item, decimal) ". ";}
+ol.num2 > li:before {content: counter(item, decimal) ". ";}
+
 
 ol.num > li.li-title{
 	list-style-type: none !important;

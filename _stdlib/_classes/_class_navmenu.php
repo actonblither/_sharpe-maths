@@ -107,7 +107,7 @@ class _navmenu extends _setup{
 		$_sql = "select id, title from _app_topic where display=1 and archived = 0 order by title";
 		$this->_topic_id[0] = $this->_hlf->_build_select('topic_id', 0, $this->_main_db_tbl, $this->_nid[0], $_sql, $this->_select_width);
 		$_sql = "select id, title from _app_nav_routes where display=1 and archived = 0 order by title";
-		$this->_parent_id[0] = $this->_hlf->_build_select('parent_id', 0, $this->_main_db_tbl, $this->_nid[0], $_sql, $this->_select_width);
+		$this->_parent_id[0] = $this->_hlf->_build_select('parent_id', 0, $this->_main_db_tbl, $this->_nid[0], $_sql, $this->_select_width, true);
 		$this->_link_chk[0] = $this->_hlf->_build_chkbox('link', 0, $this->_main_db_tbl, $this->_nid[0]);
 		$this->_display_chk[0] = $this->_hlf->_build_chkbox('display', 1, $this->_main_db_tbl, $this->_nid[0]);
 
@@ -190,8 +190,8 @@ class _navmenu extends _setup{
 			$_sql = "select id, title from _app_topic where display=1 and archived = 0 order by title";
 			$this->_topic_id[$k] = $this->_hlf->_build_select('topic_id', $this->_topic_id[$k], $this->_main_db_tbl, $this->_nid[$k], $_sql, 240);
 
-		$_sql = "select id, title from _app_nav_routes where display=1 and archived = 0 order by title";
-		$this->_parent_id[$k] = $this->_hlf->_build_select('parent_id', $this->_parent_id[$k], $this->_main_db_tbl, $this->_nid[$k], $_sql, 240);
+		$_sql = "select id, parent_id, title from _app_nav_routes where display=1 and archived = 0 order by title";
+		$this->_parent_id[$k] = $this->_hlf->_build_select('parent_id', $this->_parent_id[$k], $this->_main_db_tbl, $this->_nid[$k], $_sql, 240, true);
 
 		$this->_link_chk[$k] = $this->_hlf->_build_chkbox('link', $this->_link_chk[$k], $this->_main_db_tbl, $this->_nid[$k]);
 		$this->_display_chk[$k] = $this->_hlf->_build_chkbox('display', $this->_display_chk[$k], $this->_main_db_tbl, $this->_nid[$k]);
