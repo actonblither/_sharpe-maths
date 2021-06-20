@@ -13,10 +13,10 @@
  * (1) https://ckeditor.com/cke4/builder
  *     Visit online builder to build CKEditor from scratch.
  *
- * (2) https://ckeditor.com/cke4/builder/92b48c58438a9bb6739cd3cae0199208
+ * (2) https://ckeditor.com/cke4/builder/a6d7377cbebd49398939a028d8d302c4
  *     Visit online builder to build CKEditor, starting with the same setup as before.
  *
- * (3) https://ckeditor.com/cke4/builder/download/92b48c58438a9bb6739cd3cae0199208
+ * (3) https://ckeditor.com/cke4/builder/download/a6d7377cbebd49398939a028d8d302c4
  *     Straight download link to the latest version of CKEditor (Optimized) with the same setup as before.
  *
  * NOTE:
@@ -57,7 +57,6 @@ var CKBUILDER_CONFIG = {
 		'a11yhelp' : 1,
 		'about' : 1,
 		'autocorrect' : 1,
-		'autolink' : 1,
 		'basicstyles' : 1,
 		'bidi' : 1,
 		'blockquote' : 1,
@@ -70,17 +69,15 @@ var CKBUILDER_CONFIG = {
 		'div' : 1,
 		'editorplaceholder' : 1,
 		'elementspath' : 1,
-		'emoji' : 1,
-		'emojione' : 1,
 		'enterkey' : 1,
 		'entities' : 1,
-		'eqneditor' : 1,
+		'exportpdf' : 1,
 		'filebrowser' : 1,
 		'find' : 1,
-		'fixed' : 1,
 		'flash' : 1,
 		'floatingspace' : 1,
 		'font' : 1,
+		'footnotes' : 1,
 		'format' : 1,
 		'forms' : 1,
 		'horizontalrule' : 1,
@@ -92,16 +89,22 @@ var CKBUILDER_CONFIG = {
 		'indentlist' : 1,
 		'justify' : 1,
 		'language' : 1,
+		'lightbox' : 1,
 		'link' : 1,
+		'linkayt' : 1,
 		'list' : 1,
 		'liststyle' : 1,
 		'magicline' : 1,
+		'mathjax' : 1,
 		'maximize' : 1,
+		'nbsp' : 1,
 		'newpage' : 1,
 		'pagebreak' : 1,
 		'pastefromgdocs' : 1,
 		'pastefromlibreoffice' : 1,
+		'pastefromword' : 1,
 		'pastetext' : 1,
+		'pbckcode' : 1,
 		'preview' : 1,
 		'print' : 1,
 		'removeformat' : 1,
@@ -113,8 +116,11 @@ var CKBUILDER_CONFIG = {
 		'showborders' : 1,
 		'smiley' : 1,
 		'sourcearea' : 1,
+		'sourcedialog' : 1,
 		'specialchar' : 1,
+		'stat' : 1,
 		'stylescombo' : 1,
+		'stylesheetparser' : 1,
 		'tab' : 1,
 		'table' : 1,
 		'tableselection' : 1,

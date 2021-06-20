@@ -7,7 +7,7 @@
 			{_question}
 		</div>
 		<div class='answer f1'>
-			<div id='card{_item_detail_id}' class='card point min-h100 f1'>
+			<div id='card{_item_detail_id}' class='card point mnh100 f1'>
 				<div class = 'front'><img src='_stdlib/_images/_icons/card_back.png'></div>
 				<div class='back hidden'>{_answer}</div>
 			</div>

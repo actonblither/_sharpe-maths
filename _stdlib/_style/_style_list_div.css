@@ -46,7 +46,7 @@ ul.list-header{
 	border: 1px solid var(--s25pc);
 	border-radius: 4px;
 	padding: 0;
-	margin-bottom: 5px;
+	margin-bottom: 2px;
 }
 
 ul.list-header > li{
@@ -55,7 +55,7 @@ ul.list-header > li{
 	flex: 1;
 	justify-content: flex-start;
 	align-items: center;
-	margin-bottom: 5px;
+	margin-bottom: 0;
 }
 
 ul.topic-item-list{
@@ -87,16 +87,15 @@ ul.topic-item-list > li{
 ul.topic-item-list > li > div.label{
 	display: flex;
 	justify-content: flex-start;
-	min-width: 32px;
-	max-width: 32px;
-	flex-basis: 6px;
-	margin-right: 0px;
+	width: 32px;
+	margin-right: 0;
 	padding: 5px;
 }
 
 ul.topic-item-list > li > div.the-rest{
 	display: flex;
 	flex-flow: row wrap;
+	justify-content: flex-start;
 	flex: 1;
 }
 
@@ -109,13 +108,43 @@ div.answer{
 	display: flex;
 	flex-flow: column wrap;
 	overflow: hidden;
+	flex: 1;
 }
 
-div.text{ flex-basis: 50%; }
-div.note{ flex-basis: 45%; }
-div.note-title{ flex-basis: 45%; justify-content: center; align-items: center; }
-div.question{ flex-basis: 65%; margin-left: 5px; }
-div.answer{ flex-basis: 30%; justify-content: flex-end; align-items: center; overflow: hidden; padding-right: 0px;}
+div.text, div.note{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-start;
+	flex: 1;
+}
+
+
+
+div.question{
+	width: fit-content;
+	margin-left: 5px;
+	max-width: 60%;
+}
+div.answer{
+	width: fit-content;
+	justify-content: flex-end;
+	align-items: center;
+	padding-right: 0;
+	max-width: 40%;
+}
+
+div.answer-a{
+	width: fit-content;
+	justify-content: flex-end;
+	align-items: center;
+	padding-right: 0;
+	max-width: 30%;
+}
+
+div.difficulty{
+	width: fit-content;
+	max-width: 10%;
+}
 
 ul.disk, ul.disc{
 	list-style: disc;
@@ -160,11 +189,15 @@ div.back{padding-right: 40px;}
 /* START LIST CLASSES */
 
 
+ul.indent{
+	list-style-type: disc;
+	line-height: var(--p-line-height);
+}
+
 ol{
 	list-style-type: none;
 	counter-reset: item;
 	padding:0;
-	/* border: 1px solid pink; */
 }
 
 ol > li{

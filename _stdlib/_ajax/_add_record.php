@@ -1,4 +1,6 @@
 <?php
+
+/// THIS FILE IS SURPLUS TO REQUIREMENTS. VERY INEFFICIENT. REPLACED BY add_new_topic_item.php
 $_base_folder = base64_decode($_POST['app_folder']);
 $_base_folder = filter_var($_base_folder, FILTER_SANITIZE_STRING);
 include_once($_base_folder.'app_config.php');

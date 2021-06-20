@@ -20,7 +20,6 @@ class _exercise extends _topic_tab{
 	protected $_topic_ex_num_qs;
 
 	protected $_head_elements = true;
-	protected $_sub_instructions = true;
 	protected $_sub_body = false;
 	protected $_sortable_list_prefix = 'nex';
 
@@ -57,7 +56,6 @@ class _exercise extends _topic_tab{
 		);
 
 		$this->_sub_sql = true;
-		$this->_sub_instructions = true;
 		$this->_sub_body = false;
 		$this->_head_elements = true;
 
@@ -106,7 +104,6 @@ class _exercise extends _topic_tab{
 	protected function _fetch_sub_list($_ex){
 		$this->_topic_ex_id = $_ex['id'];
 		$this->_topic_ex_num_qs = rvz($_ex['number_of_questions']);
-		if (empty($_ex['tex_instructions']) && !$this->_is_logged_in){$this->_sub_instructions = false;}
 		if ($_ex['tex_shuffle'] && !$this->_is_logged_in){
 			$this->_q_rows = $this->_pick_rnd_questions_by_difficulty();
 		}else{

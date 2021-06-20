@@ -14,9 +14,6 @@ if ($_main === 'page'){
 	if ($_id == 4){
 		$g = new _puzzle($_id);
 		$_return['page'] .= $g->_fetch_all_puzzles();
-	}else if ($_id === 5){
-		$h = new _glossary2();
-		$_return['page'] .= $h->_build_glossary();
 	}else if ($_id == 88){
 		$_c = new _contact();
 		$_return['page'] = $_c->_build_contact_form();

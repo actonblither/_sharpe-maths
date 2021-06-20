@@ -16,7 +16,6 @@ class _topic extends _setup{
 	private $_topic_eg;
 	private $_topic_pz;
 	private $_topic_act;
-	private $_topic_glo;
 	private $_topic_art;
 
 	private $_show_intro_tab = false;
@@ -24,7 +23,6 @@ class _topic extends _setup{
 	private $_show_ex_tab = false;
 	private $_show_pz_tab = false;
 	private $_show_act_tab = false;
-	private $_show_glo_tab = false;
 	private $_show_art_tab = false;
 
 	private $_ex_count;
@@ -95,7 +93,6 @@ class _topic extends _setup{
 		$this->_build_exercises();
 		$this->_build_puzzles();
 		$this->_build_activity();
-		$this->_build_glossary();
 		$this->_build_articles();
 		$tmp = $this->_build_navigation_bar();
 		$tmp .= $this->_build_tab_bar();
@@ -107,14 +104,13 @@ class _topic extends _setup{
 		$_d = array('id' => $this->_topic_id);
 		$_f = array('i');
 		$this->_row = $this->_dbh->_fetch_db_row_p($_sql, $_d, $_f);
-		$this->_set_topic_title($this->_row['title']);
-		$this->_set_topic_intro($this->_row['intro']);
-		$this->_set_topic_title_bar_img($this->_row['title_bar_img']);
+		$this->_set_topic_title(rvs($this->_row['title']));
+		$this->_set_topic_intro(rvs($this->_row['intro']));
+		$this->_set_topic_title_bar_img(rvs($this->_row['title_bar_img']));
 		if (!empty($this->_row['intro'])){$this->_show_intro_tab = true;}
 	}
 
 	private function _fetch_topic_id(){
-
 		$_sql = 'select parent_id, order_num, topic_id from _app_nav_routes where id = :id';
 		$_d = array('id' => $this->_topic_route_id);
 		$_f = array('i');
@@ -129,7 +125,7 @@ class _topic extends _setup{
 		$index = array_search($this->_topic_route_id, $this->_topic_order_array);
 		if($index !== false && $index > 0 ) $prev = $this->_topic_order_array[$index-1];
 		if($index !== false && $index < count($this->_topic_order_array)-1) $next = $this->_topic_order_array[$index+1];
-		$tmp = "<div class='wrap c page-title mb5'>";
+		$tmp = "<div class='wrap c topic-title mb1'>";
 		if (rvz($prev) > 0){
 			$_prev_topic_id = $this->_fetch_topic_id_from_route_id($prev);
 			$_sql = 'select title from _app_topic where id = :id';
@@ -140,7 +136,7 @@ class _topic extends _setup{
 			$tmp .= "
 				<div class='ifc w25pc cwrap ml10 hh'>
 					<div class='topic-label'>Previous topic:</div>
-					<div class='topic-title prev'>".$_prev_title;
+					<div class='topic-title-text prev'>".$_prev_title;
 			if ($this->_is_logged_in){
 				$tmp .= "<br />TID: ".$_prev_topic_id."; NRID: ".$prev;
 			}
@@ -151,7 +147,7 @@ class _topic extends _setup{
 		}else{
 			$tmp .= "<div class='ifc w25pc ml20 hh'></div><div class='w10pc'></div>";
 		}
-		$tmp .= "<div class='ifc cwrap w25pc hh c'><div class='topic-label'>Current topic:</div><div class='topic-title'>".$this->_get_topic_title();
+		$tmp .= "<div class='ifc cwrap w25pc hh c'><div class='topic-label'>Current topic:</div><div class='topic-title-text'>".$this->_get_topic_title();
 		if ($this->_is_logged_in){
 			$tmp .= "<br />TID: ".$this->_topic_id."; NRID: ".$this->_topic_route_id;
 		}
@@ -166,7 +162,7 @@ class _topic extends _setup{
 				<div class='cwrap ifc w10pc r'>
 					<img class='point nav_arrow' data-id='".$next."' data-main= 'topic' src='".__s_lib_icon_url__."arrow_right50.png' alt='Next topic' />
 				</div>
-				<div class='ifc w25pc cwrap mr20 hh'><div class='topic-label'>Next topic:</div><div class='topic-title'>".$_next_title;
+				<div class='ifc w25pc cwrap mr20 hh'><div class='topic-label'>Next topic:</div><div class='topic-title-text'>".$_next_title;
 			if ($this->_is_logged_in){
 				$tmp .= "<br />TID: ".$_next_topic_id."; NRID: ".$next;
 			}
@@ -225,12 +221,6 @@ class _topic extends _setup{
 			$_txt_arr[] = $this->_topic_act;
 		}
 
-		if ($this->_show_glo_tab){
-			$_tab_arr[] = 'Glossary';
-			$_lnk_arr[] = 'glossary-7';
-			$_hlp_arr[] = '';
-			$_txt_arr[] = $this->_topic_glo;
-		}
 
 		$_tab->_set_tab_labels($_tab_arr);
 		$_tab->_set_tab_links($_lnk_arr);
@@ -268,12 +258,6 @@ class _topic extends _setup{
 		$_eg = new _example($this->_topic_id);
 		$this->_topic_eg = $_eg->_get_items();
 		$this->_show_eg_tab = $_eg->_get_make_item_tab();
-	}
-
-	private function _build_glossary(){
-		$_eg = new _glossary($this->_topic_id);
-		$this->_topic_glo = $_eg->_get_items();
-		$this->_show_glo_tab = $_eg->_get_make_item_tab();
 	}
 
 
@@ -318,7 +302,6 @@ class _topic extends _setup{
 	public function _get_topic_eg() { return $this->_topic_eg; }
 	public function _get_topic_pz() { return $this->_topic_pz; }
 	public function _get_topic_act() { return $this->_topic_act; }
-	public function _get_topic_glo() { return $this->_topic_glo; }
 	public function _get_ex_count() { return $this->_ex_count; }
 	public function _get_ex_title() { return $this->_ex_title; }
 	public function _get_ex_instructions() { return $this->_ex_instructions; }
@@ -327,7 +310,6 @@ class _topic extends _setup{
 	public function _get_show_ex_tab() { return $this->_show_ex_tab; }
 	public function _get_show_pz_tab() { return $this->_show_pz_tab; }
 	public function _get_show_act_tab() { return $this->_show_act_tab; }
-	public function _get_show_glo_tab() { return $this->_show_glo_tab; }
 
 	public function _set_topic_id($_t) { $this->_topic_id = $_t; }
 	public function _set_topic_route_id($_t) { $this->_topic_route_id = $_t; }

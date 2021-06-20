@@ -1,18 +1,5 @@
 @CHARSET "ISO-8859-1";
 
-
-ul.indent{
-	margin-left: 25px;
-	list-style-type: disc;
-	height: auto;
-}
-
-ol.indent{
-	margin-left: 0px;
-	line-height: var(--p-line-height);
-}
-
-
 div.topic,
 div.topic > div{
 	display: flex;
@@ -32,18 +19,10 @@ div.list, div.list div{
 }
 
 
-
-ul.glossary{
-	border: 1px solid var(--s25pc);
-	border-radius: 4px;
-	list-style-type: none;
-}
-
 ul.puzzle_container{
 	list-style-type: none;
 }
 
-ul.glossary > li,
 ul.puzzle_container > li{
 	display: flex;
 	flex-flow: row nowrap;
@@ -52,7 +31,6 @@ ul.puzzle_container > li{
 	flex: 1;
 }
 
-ul.glossary > li > div,
 ul.puzzle_container > li > div{
 	display: flex;
 	flex-flow: column wrap;
@@ -73,18 +51,7 @@ ul.puzzle_container > li > div.label{
 	opacity: 30%;
 }
 
-ul.glossary > li > div.title{
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: flex-start;
-	align-items: center;
-	width: 90%;
-	margin: 5px 0 7px 0;
-	color: var(--s25pc);
 
-}
-
-ul.glossary > li > div.text,
 ul.puzzle_container > li > div.text{
 	display: flex;
 	flex-flow: column wrap;
@@ -129,7 +96,7 @@ li.instructions{
 	font-size: 12pt;
 }
 
-.topic-title{
+.topic-title-text{
 	font-family: Tahoma, Geneva, sans-serif;
 	color: var(--s95pc);
 	font-size: 15pt;
@@ -137,7 +104,7 @@ li.instructions{
 
 @media only screen and (max-width: 600px) {
 	.topic-label{font-size: 2vw;}
-	.topic-title{font-size: 2.3vw;}
+	.topic-title-text{font-size: 2.3vw;}
 	.nav_arrow{width: 8vw;}
 	img#main-logo {width: 45vw; height: auto;}
 	img#navburger {width: 2.0vw; height: auto;}

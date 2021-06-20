@@ -12,7 +12,7 @@ include('app_config.php');
 
 
 		<link rel = 'shortcut icon' href = '<?php echo __s_app_url__;?>_images/favicon.ico' />
-		<link rel = 'stylesheet' href = '<?php echo __s_applib_url__;?>jquery/tooltipster/css/tooltipster.bundle.min.css' type = 'text/css' />
+
 		<link rel = 'stylesheet' href = '<?php echo __s_app_url__;?>_style/_app_style.css' type = 'text/css' />
 		<link rel = 'stylesheet' href = '<?php echo __s_lib_url__;?>_style/_style_lib.css' type = 'text/css' />
 		<link rel = 'stylesheet' href = '<?php echo __s_lib_url__;?>_style/_style_navmenu.css' type = 'text/css' />
@@ -25,20 +25,21 @@ include('app_config.php');
 		<link rel = 'stylesheet' href = '<?php echo __s_lib_url__;?>_style/_style_login.css' type = 'text/css' />
 
 		<link rel = 'stylesheet' href = '<?php echo __s_applib_url__;?>jquery/ihavecookies/ihavecookies.css' type = 'text/css' />
+		<link rel="stylesheet" href="<?php echo __s_applib_url__;?>jquery/jquery_ui.css">
+		<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
-		<script src='<?php echo __s_applib_url__;?>jquery/jquery-3.5.1.js'></script>
 
 		<?php if (is_logged_in()){?>
 		<link rel = 'stylesheet' href = '<?php echo __s_applib_url__;?>jquery/iziToast.min.css' type = 'text/css' />
 		<link rel = 'stylesheet' href = '<?php echo __s_applib_url__;?>jquery/anytime.css' type = 'text/css' />
 		<script src = '<?php echo __s_applib_url__;?>classes/ckeditor/ckeditor.js'></script>
-		<script src = '<?php echo __s_applib_url__;?>jquery/jquery-ui.min.js'></script>
+
 		<script src = '<?php echo __s_applib_url__;?>jquery/iziToast.min.js'></script>
 		<script src = '<?php echo __s_applib_url__;?>jquery/dependsOn.js'></script>
 		<script src = '<?php echo __s_applib_url__;?>jquery/anytime.js'></script>
 		<?php }?>
 
-		<script src = '<?php echo __s_applib_url__;?>jquery/tooltipster/js/tooltipster.bundle.min.js'></script>
 		<script src = '<?php echo __s_lib_url__;?>_js/_stdlib.js'></script>
 		<script src = '<?php echo __s_applib_url__;?>jquery/ihavecookies/jquery.ihavecookies.js'></script>
 		<script src = '<?php echo __s_applib_url__;?>js/fabric.4.3.js'></script>
@@ -133,6 +134,13 @@ include('app_config.php');
 		});
 
 		$(document).on('click', 'img.nav_arrow', function(evt){
+			_load_page(evt, this);
+			var id = $(this).attr('data-id');
+			$('ul.nav-menu-side li.link').removeClass('nms');
+			$('li#navli'+id).addClass('nms');
+		});
+
+		$(document).on('click', 'span.topic-link, span.page-link', function(evt){
 			_load_page(evt, this);
 			var id = $(this).attr('data-id');
 			$('ul.nav-menu-side li.link').removeClass('nms');
@@ -277,6 +285,41 @@ include('app_config.php');
 		}
 	});
 
+
+	$(document).on('click', '.add_new', function(e){
+		var item_name = $(this).attr('data-item-name');
+		if (_sure('Are you sure you want to add a new '+ item_name +'?')){
+			e.preventDefault();
+			e.stopImmediatePropagation();
+			var topic_id = $(this).attr('data-topic-id');
+			var db_tbl = $(this).attr('data-db-tbl');
+			var parent_list_name = $(this).attr('data-parent-list-name');
+			var item_class_name = $(this).attr('data-item-class-name');
+			var admin_template = $(this).attr('data-admin-template');
+			var field_prefix = $(this).attr('data-field-prefix');
+			var fd = new FormData();
+			fd.append('app_folder', '<?php echo base64_encode(__s_app_folder__);?>');
+			fd.append('db_tbl', db_tbl);
+			fd.append('item_name', item_name);
+			fd.append('topic_id', topic_id);
+			fd.append('item_class_name', item_class_name);
+			fd.append('admin_template', admin_template);
+			fd.append('field_prefix', field_prefix);
+			$.ajax({
+				type: 'POST',
+				async : true,
+				cache : false,
+				processData	: false,
+				contentType	: false,
+				url: '<?php echo __s_lib_url__;?>_ajax/_add_new_topic_item.php',
+				data: fd,
+				dataType: 'json',
+				success: function (data) {
+					$('ul#' + parent_list_name).append(data);
+				}
+			});
+		}
+	});
 
 	//Listener to save any field with class = 'field'
 	$(document).on('keyup', '.field', function(e){
@@ -522,18 +565,30 @@ include('app_config.php');
 		});
 	<?php }?>
 
-		$(document).on('mouseenter', '.ttip:not(.tooltipstered)', function(){
-			$(this).tooltipster({
-				theme: 'tooltipster-app',
-				animation: 'fade',
-				animationDuration: 900,
-				maxWidth: 500,
-				contentAsHTML: true,
-				trigger: 'hover'
-			}).tooltipster('show');
-		});
-
-
+			$(function() {
+				$(document).tooltip({
+					items: ".ttip",
+					show: { duration: 0 },
+					hide: { effect: "fade", duration: 100 },
+					position: { my: "left top", at: "left bottom" },
+					content: function() {
+						return $('#'+$( this ).attr('data-ttcontent')+'-div').html();
+					},
+				});
+			});
 		</script>
+		<div id = 'ttip_content_container' class='hidden'>
+			<?php
+			$_dbh = new _db();
+			$_sql = 'select * from _app_tips';
+			$_div_rows = $_dbh->_fetch_db_rows($_sql);
+
+			foreach ($_div_rows as $_dr){
+				$_title = "<h3>".$_dr['title']."</h3>".PHP_EOL;
+				$_body = $_title.$_dr['body'];
+				echo "<div id = 'tt".$_dr['id']."-div' class='hidden'>".$_body."</div>".PHP_EOL;
+			}
+		?>
+		</div>
 	</body>
 </html>

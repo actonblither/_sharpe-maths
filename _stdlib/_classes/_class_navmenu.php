@@ -26,6 +26,7 @@ class _navmenu extends _setup{
 	private $_page_id = array();
 	private $_link_chk = array();
 	private $_link = array();
+	private $_type = array();
 	private $_parent_id = array();
 	private $_topic_id = array();
 	private $_order_num = array();
@@ -175,7 +176,7 @@ class _navmenu extends _setup{
 		// Now build the list
 		for ($k = 0; $k < count($this->_depth); $k++){
 
-			if (isset($this->_page_id[$k]) && $this->_page_id[$k] > 0){
+			if (rvs($this->_type[$k]) == 'pl'){
 				$_link_data = " data-main = 'page' data-db-tbl='".$this->_main_db_tbl."' data-sort-list-prefix='navli' data-del-list = '0' ";
 			}else{
 				$_link_data = " data-main = 'topic' data-db-tbl='".$this->_main_db_tbl."' data-sort-list-prefix='navli' data-del-list = '0' ";
@@ -244,7 +245,7 @@ class _navmenu extends _setup{
 		$_f = array('i');
 		$_rows = $this->_dbh->_fetch_db_rows_p($_sql, $_d, $_f);
 		foreach ($_rows as $_r) {
-			$output .= $indent."||".$_r['id']."||".$_r['title']."||".$_r['page_id']."||".$_r['link']."||".$_r['class']."**".PHP_EOL;
+			$output .= $indent."||".$_r['id']."||".$_r['title']."||".$_r['page_id']."||".$_r['link']."||".$_r['class']."||".$_r['type']."**".PHP_EOL;
 			if ($_r['link'] === 1 && empty($_r['page_id'])){
 				$this->_topic_order[] = $_r['id'];
 			}
@@ -268,6 +269,7 @@ class _navmenu extends _setup{
 			$this->_page_id[$i] = rvz($_line[3]);
 			$this->_link[$i] = rvz($_line[4]);
 			$this->_pic_class[$i] = rvs($_line[5]);
+			$this->_type[$i] = rvs($_line[6]);
 		}
 
 		for ($j = 0; $j < count($this->_depth); $j++){
@@ -285,15 +287,23 @@ class _navmenu extends _setup{
 			}
 		}
 
+
+
 		// Now build the list
 		for ($k = 0; $k < count($this->_depth); $k++){
 			//Get the menu class and add it to the li if it exists
-			if (!empty($this->_pic_class[$k])){$_lclass = ' bg_img '.$this->_pic_class[$k];}else{$_lclass = '';}
-			if (isset($this->_page_id[$k]) && $this->_page_id[$k] > 0){
+			if (!empty($this->_pic_class[$k])){
+				$_lclass = ' bg_img '.$this->_pic_class[$k];
+			}else{
+				$_lclass = '';
+			}
+			if ($this->_type[$k] == 'pl'){
 				$_link_data = " data-main = 'page' ";
 			}else{
 				$_link_data = " data-main = 'topic' ";
 			}
+			$_lclass .= ' '.$this->_type[$k];
+
 			$_element = 'uxp'.$this->_nid[$k];
 			$_x = rvs($_COOKIE[$_element], 'c');
 

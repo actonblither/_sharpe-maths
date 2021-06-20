@@ -20,8 +20,12 @@ class _article extends _topic_tab{
 		$this->_topic_id = $_tid;
 		$this->_is_logged_in = is_logged_in();
 
+		if ($this->_is_logged_in){
+			$this->_tpl_head = __s_app_folder__.'_classes/_templates/_admin_article_head_tpl.txt';
+		}else{
+			$this->_tpl_head = __s_app_folder__.'_classes/_templates/_user_article_head_tpl.txt';
+		}
 
-		$this->_sub_instructions = false;
 		$this->_sub_body = true;
 		$this->_build_items();
 	}
@@ -50,6 +54,10 @@ class _article extends _topic_tab{
 	}
 
 	public function _fetch_template($_tpl, $_r = array()){
+		if (!$this->_is_logged_in){
+			$_tips = new _tips(rvs($_r['tart_body']));
+			$_r['tart_body'] = $_tips->_get_return_txt();
+		}
 		$this->_sr = array(
 				'_title_field_name' => $this->_title_field_name,
 				'_title_prefix' => $this->_title_prefix,

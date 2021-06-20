@@ -19,7 +19,13 @@ class _intro{
 		$_d = array('id' => $this->_topic_id);
 		$_f = array('i');
 		$this->_intro = $this->_dbh->_fetch_db_datum_p($_sql, $_d, $_f);
-		if (is_logged_in()){$this->_build_intro_edit();}
+
+		if (is_logged_in()){
+			$this->_build_intro_edit();
+		}else{
+			$_tip = new _tips($this->_intro);
+			$this->_intro = $_tip->_get_return_txt();
+		}
 		if (!empty($this->_intro) || is_logged_in()){
 			$this->_set_make_intro_tab(true);
 		}

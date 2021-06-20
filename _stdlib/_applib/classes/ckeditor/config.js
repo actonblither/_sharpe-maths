@@ -15,8 +15,6 @@ CKEDITOR.editorConfig = function( config ) {
 
 	config.contentsCss = 'http://localhost/sharpe-maths/_stdlib/_applib/classes/ckeditor/_style_CK.css';
 
-
-
 	config.keystrokes = [
 		[ CKEDITOR.ALT + 90 /*Z*/, 'source' ],
 		[ CKEDITOR.CTRL + 81 /*Q*/, 'blockquote' ]

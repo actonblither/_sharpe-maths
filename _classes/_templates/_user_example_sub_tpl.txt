@@ -1,28 +1,33 @@
-	<li class='nb thin'><div class='label'></div><div class='the-rest'><div class='text'></div><div class='note note-title blc'>Notes</div></div></li>
-	<li>
-		<div class='label'>
-			<img class='ttip' title='Problem' alt='Problem' src='{_icon_app_url}problem32.png'>
+	<li class='wrap'>
+		<div class='wrapt m5 w35'>
+			<div class='cwrap label'>
+				<img class='ttip' title='Problem' alt='Problem' src='{_icon_app_url}problem32.png'>
+			</div>
 		</div>
-		<div class='the-rest'>
-			<div class='text p10'>{_question}</div>
-			<div class='note p10'>{_question_note}</div>
-		</div>
-	</li>
-	<li>
-		<div class='label'>
-			<img class='ttip' title='Method' alt='Method' src='{_icon_app_url}method32.png'>
-		</div>
-		<div class='the-rest'>
-			<div class='text p10'>{_method}</div>
-			<div class='note p10'>{_method_note}</div>
+		<div class='the-rest wrapt f1'>
+			<div class='cwrap p5 mnw300'>{_question}</div>
+			<div class='cwrap p5 f1'>{_question_note}</div>
 		</div>
 	</li>
-	<li>
-		<div class='label'>
-			<img class='ttip' title='Solution' alt='Solution' src='{_icon_app_url}solution32.png'>
+	<li class='wrap'>
+		<div class='wrapt m5 w35'>
+			<div class='wrapt label'>
+				<img class='ttip' title='Method' alt='Method' src='{_icon_app_url}method32.png'>
+			</div>
 		</div>
-		<div class='the-rest wrap'>
-			<div class='text p10'>{_answer}</div>
-			<div class='note p10'>{_answer_note}</div>
+		<div class='the-rest wrapt f1'>
+			<div class='cwrap p5 mnw300'>{_method}</div>
+			<div class='cwrap p5 f1'>{_method_note}</div>
+		</div>
+	</li>
+	<li class='wrap'>
+		<div class='wrapt m5 w35'>
+			<div class='wrapt label'>
+				<img class='ttip' title='Solution' alt='Solution' src='{_icon_app_url}solution32.png'>
+			</div>
+		</div>
+		<div class='the-rest wrapt f1'>
+			<div class='cwrap p5 mnw300'>{_answer}</div>
+			<div class='cwrap p5 f1'>{_answer_note}</div>
 		</div>
 	</li>

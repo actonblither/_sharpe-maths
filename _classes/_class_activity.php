@@ -22,12 +22,16 @@ class _activity extends _topic_tab{
 		if ($this->_is_logged_in){
 			$this->_tpl_sub_body = $this->_template_folder.'_admin_activity_sub_body_tpl.txt';
 		}
-		$this->_sub_instructions = true;
+
 		$this->_sub_body = true;
 		$this->_build_items();
 	}
 
 	public function _fetch_template($_tpl, $_r = array()){
+		if (!$this->_is_logged_in){
+			$_tips = new _tips(rvs($_r['tact_instructions']));
+			$_r['tact_instructions'] = $_tips->_get_return_txt();
+		}
 		$this->_sr = array(
 				'_title_field_name' => $this->_title_field_name,
 				'_title_prefix' => $this->_title_prefix,

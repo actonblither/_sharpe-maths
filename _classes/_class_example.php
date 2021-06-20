@@ -23,6 +23,7 @@ class _example extends _topic_tab{
 		$this->_is_logged_in = is_logged_in();
 		if ($this->_is_logged_in){
 			$this->_tpl_sub = __s_app_folder__.'_classes/_templates/_admin_example_sub_tpl.txt';
+			$this->_tpl_head = $this->_template_folder.'_admin_example_head_tpl.txt';
 		}else{
 			$this->_tpl_sub = __s_app_folder__.'_classes/_templates/_user_example_sub_tpl.txt';
 		}
@@ -35,6 +36,29 @@ class _example extends _topic_tab{
 	}
 
 	public function _fetch_template($_tpl, $_r = array()){
+		$_tqn = trim(rvs($_r['teg_question_note']));
+		$_tmn = trim(rvs($_r['teg_method_note']));
+		$_tan = trim(rvs($_r['teg_answer_note']));
+		if (!$this->_is_logged_in){
+			if (!empty($_tqn)){
+				$_r['teg_question_note'] = "<h4>Question notes</h4>".$_tqn;
+			}
+			if (!empty($_tmn)){
+				$_r['teg_method_note'] = "<h4>Method notes</h4>".$_tmn;
+			}
+			if (!empty($_tan)){
+				$_r['teg_answer_note'] = "<h4>Answer notes</h4>".$_tan;
+			}
+			$_tips = new _tips($_r['teg_question_note']);
+			$_r['teg_question_note'] = $_tips->_get_return_txt();
+			$_tips = new _tips($_r['teg_method_note']);
+			$_r['teg_method_note'] = $_tips->_get_return_txt();
+			$_tips = new _tips($_r['teg_answer_note']);
+			$_r['teg_answer_note'] = $_tips->_get_return_txt();
+		}
+
+
+
 		$this->_sr = array(
 				'_title_field_name' => $this->_title_field_name,
 				'_title_prefix' => $this->_title_prefix,

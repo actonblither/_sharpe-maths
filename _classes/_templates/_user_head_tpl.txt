@@ -6,7 +6,7 @@
 				<img alt='Close' title='Click to close the {_item_name}.' class='ttip open-list{_oco_class}' id='{_open_close_id_prefix}c{_item_id}' src='{_icon_lib_url}opened.png' data-list-id='{_sub_list_id}{_item_id}' data-img-cl='{_open_close_id_prefix}c{_item_id}' data-img-op='{_open_close_id_prefix}o{_item_id}' width='32' height='32'>
 			</div>
 			<div class='row f1'>
-				<span class='h3n'>{_title_prefix} #{_list_count}: {_item_title}</span>
+				<div class='h3n'>{_title_prefix} #{_list_count}: {_item_title}</div>
 			</div>
 		</li>
 	</ul>

@@ -21,7 +21,7 @@ class _pages extends _setup{
 		if (is_logged_in()){
 			return $this->_page_title.$this->_build_edit_page();
 		}else{
-			return $this->_build_page_start().$this->_page_title.$this->_page_body.$this->_build_page_end();
+			return $this->_build_page_start().$this->_page_title."<div class='pl10 pr10'>".$this->_page_body."</div>".$this->_build_page_end();
 		}
 	}
 
@@ -130,7 +130,13 @@ class _pages extends _setup{
 		$_sql = 'select body from __sys_pages where id = :id';
 		$_d = array('id' => $this->_page_id);
 		$_f = array('i');
-		$this->_page_body = "<div class='pl10 pr10'>".$this->_dbh->_fetch_db_datum_p($_sql, $_d, $_f)."</div>";
+		$_body = $this->_dbh->_fetch_db_datum_p($_sql, $_d, $_f);
+		if (!$this->_is_logged_in){
+			$_tips = new _tips($_body);
+			$this->_page_body = $_tips->_get_return_txt();
+		}else{
+			$this->_page_body = $_body;
+		}
 	}
 
 }

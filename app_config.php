@@ -19,9 +19,8 @@ define ('__s_doc_folder__', $ini_array['paths']['drive'].$ini_array['paths']['do
 include(__s_lib_folder__.'_classes/_class_db_connect.php');
 include(__s_lib_folder__.'_lib/_stdlib.php');
 
-if (!isset($_SESSION['s_ref'])){
+if (!isset($_SESSION['s_ref']) && isset($_SERVER['HTTP_REFERER'])){
 	$_SESSION['s_ref'] = $_SERVER['HTTP_REFERER'];
-
 }
 
 if (instr('sharpe-maths/', $_SESSION['s_ref']) || instr('sharpe-maths', $_SESSION['s_ref'])){
@@ -55,13 +54,12 @@ include(__s_lib_folder__.'_classes/_class_setup.php');
 include(__s_lib_folder__.'_classes/_class_tabs.php');
 include(__s_lib_folder__.'_classes/_class_navmenu.php');
 include(__s_lib_folder__.'_classes/_class_pages.php');
+include(__s_lib_folder__.'_classes/_class_tips.php');
 include(__s_lib_folder__.'_classes/_class_header_body.php');
 include(__s_lib_folder__.'_classes/_small_classes.php');
 include(__s_lib_folder__.'_classes/_class_contact.php');
 include(__s_app_folder__.'_classes/_class_topic.php');
 include(__s_app_folder__.'_classes/_class_topic_tab.php');
-include(__s_app_folder__.'_classes/_class_glossary.php');
-include(__s_app_folder__.'_classes/_class_glossary_all.php');
 include(__s_app_folder__.'_classes/_class_puzzles.php');
 include(__s_app_folder__.'_classes/_class_intro.php');
 include(__s_app_folder__.'_classes/_class_exercise.php');
@@ -70,7 +68,7 @@ include(__s_app_folder__.'_classes/_class_activity.php');
 include(__s_app_folder__.'_classes/_class_article.php');
 include(__s_lib_folder__.'_classes/_form_elements/_class_form_element.php');
 include(__s_lib_folder__.'_classes/_form_elements/_class_delete.php');
-include(__s_lib_folder__.'_classes/_form_elements/_class_add_new.php');
+include(__s_lib_folder__.'_classes/_form_elements/_class_add_new_topic_item.php');
 include(__s_lib_folder__.'_classes/_form_elements/_class_hl_form_els.php');
 
 

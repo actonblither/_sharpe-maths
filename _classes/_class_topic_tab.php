@@ -27,7 +27,6 @@ class _topic_tab{
 	protected $_sub_sql = false;
 	protected $_tpl_sub_instructions;
 	protected $_tpl_sub_body;
-	protected $_sub_instructions = false;
 	protected $_sub_body = false;
 	protected $_head_elements = false;
 	protected $_template_folder = __s_app_folder__.'_classes/_templates/';
@@ -69,19 +68,13 @@ class _topic_tab{
 		);
 
 		$this->_add_new_params = array(
-				'main_db_tbl' => $this->_main_db_tbl,
-				'add_script_tags' => false,
-				'add_document_ready' => false,
+				'db_tbl' => $this->_main_db_tbl,
 				'parent_list_id' => $this->_parent_list_id,
-				'head_list_id' => $this->_head_list_id,
-				'sub_list_id' => $this->_sub_list_id,
 				'topic_id' => $this->_topic_id,
-				'btn_width' => 150,
 				'item_class' => $this->_item_class,
 				'item_name' => $this->_item_name,
+				'field_prefix' => $this->_field_prefix,
 				'admin_template' => $this->_tpl_head,
-				'topic_link_tbl' => $this->_topic_link_tbl,
-				'topic_link_tbl_field' => $this->_topic_link_tbl_field
 		);
 	}
 
@@ -105,7 +98,7 @@ class _topic_tab{
 			'db_tbl' => $this->_main_db_tbl,
 			'el_field_id' => $_title_field_name,
 			'el_field_value' => $_title,
-			'el_width' => 500,
+			'el_width' => 350,
 			'el_id_value' => $_id,
 		);
 		$_tf = new _form_element($_params);
@@ -134,10 +127,12 @@ class _topic_tab{
 				$_del_i = new _delete($this->_del_item_params);
 				$tmp .= $_del_i->_delete_jq();
 			}
-			$_an = new _add_new($this->_add_new_params);
-			$tmp .= $_an->_build_add_new_jq();
+
+
 			$tmp .= "});";
 			$tmp .= "</script>";
+
+			$_an = new _add_new_topic_item($this->_add_new_params);
 			$tmp .= $_an->_build_add_new_btn();
 		}
 		$this->_items = $tmp . $this->_fetch_template($this->_tpl_parent);
@@ -190,6 +185,7 @@ class _topic_tab{
 	}
 
 	private function _fetch_sub_tpls($_inner, $_r){
+
 		if ($this->_is_logged_in){
 			// Reset before build the next
 			$this->_header_edit_elements = '';
@@ -203,19 +199,19 @@ class _topic_tab{
 			$_inner = str_replace('{_head_elements}', '', $_inner);
 		}
 
-		if ($this->_sub_instructions){
-			$_instr = $this->_fetch_template($this->_tpl_sub_instructions, $_r);
-			$_instruction_field = $this->_field_prefix.'instructions';
-			if (!empty($_r[$_instruction_field]) || $this->_is_logged_in){
-				$_inner = str_replace('{_sub_instructions}', $_instr, $_inner);
-			}else{
-				$_inner = str_replace('{_sub_instructions}', '', $_inner);
-			}
+		$_instr = $this->_fetch_template($this->_tpl_sub_instructions, $_r);
+		$_instruction_field = $this->_field_prefix.'instructions';
+		if (!empty($_r[$_instruction_field]) || $this->_is_logged_in){
+			$_inner = str_replace('{_sub_instructions}', $_instr, $_inner);
 		}else{
 			$_inner = str_replace('{_sub_instructions}', '', $_inner);
 		}
+
 		if (!empty($this->_tpl_sub_body) && $this->_sub_body === true){
 			$_body = $this->_fetch_template($this->_tpl_sub_body, $_r);
+			//_cl($_body);
+			//$_tips = new _tips($_body);
+			//$_body = $_tips->_get_return_txt();
 			$_inner = str_replace('{_sub_body}', $_body, $_inner);
 		}else{
 			$_inner = str_replace('{_sub_body}', '', $_inner);

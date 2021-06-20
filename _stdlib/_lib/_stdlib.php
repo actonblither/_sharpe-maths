@@ -40,6 +40,19 @@ function _build_checkbox($_params){
 
 // String functions
 
+function instr_i($needle, $haystack) {
+	if (!empty($needle) && !empty($haystack)){
+		$pos = stripos($haystack, $needle);
+		if ($pos !== false){
+			return true;
+		}else{
+			return false;
+		}
+	}else{
+		return false;
+	}
+}
+
 function instr($needle, $haystack) {
 	if (!empty($needle) && !empty($haystack)){
 		$pos = strpos($haystack, $needle);
