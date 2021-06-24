@@ -13,7 +13,7 @@
 		</li>
 	</ul>
 
-	<ul id='{_sub_list_id}{_item_id}' class='topic-item-list{_oco_class}'>
+	<ul id='{_sub_list_id}{_item_id}' class='topic-item-list{_oco_class} sortable-list'  data-db-tbl='_app_topic_ex_q' data-sort-list-prefix = 'sub'>
 		{_sub_instructions}
 		{_sub_body}
 		{_sub_tpl}

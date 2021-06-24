@@ -107,7 +107,7 @@ div.question,
 div.answer{
 	display: flex;
 	flex-flow: column wrap;
-	overflow: hidden;
+	overflow: auto;
 	flex: 1;
 }
 
@@ -118,19 +118,20 @@ div.text, div.note{
 	flex: 1;
 }
 
-
-
 div.question{
 	width: fit-content;
 	margin-left: 5px;
 	max-width: 60%;
+	height: fit-content;
+	min-height: 90px;
+	justify-content: center;
 }
 div.answer{
-	width: fit-content;
-	justify-content: flex-end;
-	align-items: center;
+	justify-content: center;
+	align-items: flex-end;
 	padding-right: 0;
 	max-width: 40%;
+	min-height: 90px;
 }
 
 div.answer-a{
@@ -157,34 +158,35 @@ ul.disk, ul.disc{
 }
 
 /* PLAYING CARD CLASSES */
-div.card{
+div.solution, div.method{
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: flex-end;
 	align-items: center;
 	cursor: pointer;
-	height: 100%;
 	width: 100%;
-	min-height: 110px;
 	overflow: auto;
 }
 
-div.card img{
+div.solution img, div.method img{
+	width: 32px;
+	height: 32px;
 	padding: 4px;
 }
-div.front, div.back{
+div.front-s, div.back-s, div.front-m, div.back-m{
 	display: flex;
 	flex-flow: row wrap;
 	flex: 1;
 	justify-content: flex-end;
 	align-items: center;
-	padding-right: 10px;
+	padding-right: 5px;
 	overflow: auto;
+	width: 100%;
 }
 
-div.back{padding-right: 40px;}
 
-/* END OF PLAYING CARD CLASSES */
+
+/* END OF SOLUTION CLASSES */
 
 /* START LIST CLASSES */
 

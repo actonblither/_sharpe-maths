@@ -130,7 +130,7 @@ class _exercise extends _topic_tab{
 		$this->_diff_min = $_row['min'];
 		$this->_diff_max = $_row['max'];
 		if ($this->_diff_min === $this->_diff_max && $this->_diff_min === 1){
-			$_sql = 'select * from _app_topic_ex_q where ex_id = :ex_id';
+			$_sql = 'select * from _app_topic_ex_q where ex_id = :ex_id order by order_num';
 			$_d = array('ex_id' => $this->_topic_ex_id);
 			$_f = array('i');
 			$_rows = $this->_dbh->_fetch_db_rows_p($_sql, $_d, $_f);
@@ -147,7 +147,7 @@ class _exercise extends _topic_tab{
 			}
 			$_qus_array = array();
 			for ($_i = 1; $_i <= $_levels; $_i++){
-				$_sql = 'select * from _app_topic_ex_q where ex_id = :ex_id and difficulty = '.$_i;
+				$_sql = 'select * from _app_topic_ex_q where ex_id = :ex_id and difficulty = '.$_i.' order by order_num';
 				$_d = array('ex_id' => $this->_topic_ex_id);
 				$_f = array('i');
 				$_rows = $this->_dbh->_fetch_db_rows_p($_sql, $_d, $_f);
@@ -165,7 +165,7 @@ class _exercise extends _topic_tab{
 
 	private function _fetch_exercise_questions(){//returns an array of questions
 		// Now load the exercise questions
-		$_sql = 'select * from _app_topic_ex_q where topic_id = :topic_id and ex_id = :ex_id order by difficulty';
+		$_sql = 'select * from _app_topic_ex_q where topic_id = :topic_id and ex_id = :ex_id order by difficulty, order_num';
 		$_d = array('topic_id' => $this->_topic_id, 'ex_id' => $this->_topic_ex_id);
 		$_f = array('i', 'i');
 		$_qus = $this->_dbh->_fetch_db_rows_p($_sql, $_d, $_f);

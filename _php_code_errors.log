@@ -265,3 +265,5273 @@ Array
 
 "
 
+24:06:2021 09:20:28
+PDO PREPARE ERROR in method _update_sql
+string(925) "24:06:2021 09:20:28
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-06-24 09:20:28
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 10
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+24:06:2021 09:20:28
+PDO PREPARE ERROR in method _update_sql
+string(925) "24:06:2021 09:20:28
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-06-24 09:20:28
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 20
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+24:06:2021 09:20:28
+PDO PREPARE ERROR in method _update_sql
+string(925) "24:06:2021 09:20:28
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-06-24 09:20:28
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 30
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+24:06:2021 09:20:28
+PDO PREPARE ERROR in method _update_sql
+string(925) "24:06:2021 09:20:28
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-06-24 09:20:28
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 40
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+24:06:2021 09:20:28
+PDO PREPARE ERROR in method _update_sql
+string(925) "24:06:2021 09:20:28
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-06-24 09:20:28
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 50
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+24:06:2021 09:20:28
+PDO PREPARE ERROR in method _update_sql
+string(925) "24:06:2021 09:20:28
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-06-24 09:20:28
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 60
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+24:06:2021 09:20:28
+PDO PREPARE ERROR in method _update_sql
+string(925) "24:06:2021 09:20:28
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-06-24 09:20:28
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 70
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+24:06:2021 09:20:28
+PDO PREPARE ERROR in method _update_sql
+string(925) "24:06:2021 09:20:28
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-06-24 09:20:28
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 80
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+24:06:2021 09:20:28
+PDO PREPARE ERROR in method _update_sql
+string(925) "24:06:2021 09:20:28
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-06-24 09:20:28
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 90
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+24:06:2021 09:20:28
+PDO PREPARE ERROR in method _update_sql
+string(926) "24:06:2021 09:20:28
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-06-24 09:20:28
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 100
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+24:06:2021 09:21:36
+PDO PREPARE ERROR in method _update_sql
+string(925) "24:06:2021 09:21:36
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-06-24 09:21:36
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 10
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+24:06:2021 09:21:36
+PDO PREPARE ERROR in method _update_sql
+string(925) "24:06:2021 09:21:36
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-06-24 09:21:36
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 20
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+24:06:2021 09:21:36
+PDO PREPARE ERROR in method _update_sql
+string(925) "24:06:2021 09:21:36
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-06-24 09:21:36
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 30
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+24:06:2021 09:21:36
+PDO PREPARE ERROR in method _update_sql
+string(925) "24:06:2021 09:21:36
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-06-24 09:21:36
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 40
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+24:06:2021 09:21:36
+PDO PREPARE ERROR in method _update_sql
+string(925) "24:06:2021 09:21:36
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-06-24 09:21:36
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 50
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+24:06:2021 09:21:36
+PDO PREPARE ERROR in method _update_sql
+string(925) "24:06:2021 09:21:36
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-06-24 09:21:36
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 60
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+24:06:2021 09:21:36
+PDO PREPARE ERROR in method _update_sql
+string(925) "24:06:2021 09:21:36
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-06-24 09:21:36
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 70
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+24:06:2021 09:21:36
+PDO PREPARE ERROR in method _update_sql
+string(925) "24:06:2021 09:21:36
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-06-24 09:21:36
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 80
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+24:06:2021 09:21:36
+PDO PREPARE ERROR in method _update_sql
+string(925) "24:06:2021 09:21:36
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-06-24 09:21:36
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 90
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+24:06:2021 09:21:36
+PDO PREPARE ERROR in method _update_sql
+string(926) "24:06:2021 09:21:36
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-06-24 09:21:36
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 100
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+24:06:2021 09:25:10
+PDO PREPARE ERROR in method _update_sql
+string(925) "24:06:2021 09:25:10
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-06-24 09:25:10
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 10
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+24:06:2021 09:25:10
+PDO PREPARE ERROR in method _update_sql
+string(925) "24:06:2021 09:25:10
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-06-24 09:25:10
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 20
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+24:06:2021 09:25:10
+PDO PREPARE ERROR in method _update_sql
+string(925) "24:06:2021 09:25:10
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-06-24 09:25:10
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 30
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+24:06:2021 09:25:10
+PDO PREPARE ERROR in method _update_sql
+string(925) "24:06:2021 09:25:10
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-06-24 09:25:10
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 40
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+24:06:2021 09:25:10
+PDO PREPARE ERROR in method _update_sql
+string(925) "24:06:2021 09:25:10
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-06-24 09:25:10
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 50
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+24:06:2021 09:25:10
+PDO PREPARE ERROR in method _update_sql
+string(925) "24:06:2021 09:25:10
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-06-24 09:25:10
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 60
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+24:06:2021 09:25:10
+PDO PREPARE ERROR in method _update_sql
+string(925) "24:06:2021 09:25:10
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-06-24 09:25:10
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 70
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+24:06:2021 09:25:10
+PDO PREPARE ERROR in method _update_sql
+string(925) "24:06:2021 09:25:10
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-06-24 09:25:10
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 80
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+24:06:2021 09:25:10
+PDO PREPARE ERROR in method _update_sql
+string(925) "24:06:2021 09:25:10
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-06-24 09:25:10
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 90
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+24:06:2021 09:25:10
+PDO PREPARE ERROR in method _update_sql
+string(926) "24:06:2021 09:25:10
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-06-24 09:25:10
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 100
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+24:06:2021 09:30:31
+PDO PREPARE ERROR in method _update_sql
+string(925) "24:06:2021 09:30:31
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-06-24 09:30:31
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 10
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+24:06:2021 09:30:31
+PDO PREPARE ERROR in method _update_sql
+string(925) "24:06:2021 09:30:31
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-06-24 09:30:31
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 20
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+24:06:2021 09:30:31
+PDO PREPARE ERROR in method _update_sql
+string(925) "24:06:2021 09:30:31
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-06-24 09:30:31
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 30
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+24:06:2021 09:30:31
+PDO PREPARE ERROR in method _update_sql
+string(925) "24:06:2021 09:30:31
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-06-24 09:30:31
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 40
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+24:06:2021 09:30:31
+PDO PREPARE ERROR in method _update_sql
+string(925) "24:06:2021 09:30:31
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-06-24 09:30:31
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 50
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+24:06:2021 09:30:31
+PDO PREPARE ERROR in method _update_sql
+string(925) "24:06:2021 09:30:31
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-06-24 09:30:31
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 60
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+24:06:2021 09:30:31
+PDO PREPARE ERROR in method _update_sql
+string(925) "24:06:2021 09:30:31
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-06-24 09:30:31
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 70
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+24:06:2021 09:30:31
+PDO PREPARE ERROR in method _update_sql
+string(925) "24:06:2021 09:30:31
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-06-24 09:30:31
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 80
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+24:06:2021 09:30:31
+PDO PREPARE ERROR in method _update_sql
+string(925) "24:06:2021 09:30:31
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-06-24 09:30:31
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 90
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+24:06:2021 09:30:31
+PDO PREPARE ERROR in method _update_sql
+string(926) "24:06:2021 09:30:31
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-06-24 09:30:31
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 100
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+24:06:2021 09:32:39
+PDO PREPARE ERROR in method _update_sql
+string(925) "24:06:2021 09:32:39
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-06-24 09:32:39
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 10
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+24:06:2021 09:32:39
+PDO PREPARE ERROR in method _update_sql
+string(925) "24:06:2021 09:32:39
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-06-24 09:32:39
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 20
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+24:06:2021 09:32:39
+PDO PREPARE ERROR in method _update_sql
+string(925) "24:06:2021 09:32:39
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-06-24 09:32:39
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 30
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+24:06:2021 09:32:39
+PDO PREPARE ERROR in method _update_sql
+string(925) "24:06:2021 09:32:39
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-06-24 09:32:39
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 40
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+24:06:2021 09:32:39
+PDO PREPARE ERROR in method _update_sql
+string(925) "24:06:2021 09:32:39
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-06-24 09:32:39
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 50
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+24:06:2021 09:32:39
+PDO PREPARE ERROR in method _update_sql
+string(925) "24:06:2021 09:32:39
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-06-24 09:32:39
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 60
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+24:06:2021 09:32:39
+PDO PREPARE ERROR in method _update_sql
+string(925) "24:06:2021 09:32:39
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-06-24 09:32:39
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 70
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+24:06:2021 09:32:39
+PDO PREPARE ERROR in method _update_sql
+string(925) "24:06:2021 09:32:39
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-06-24 09:32:39
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 80
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+24:06:2021 09:32:39
+PDO PREPARE ERROR in method _update_sql
+string(925) "24:06:2021 09:32:39
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-06-24 09:32:39
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 90
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+24:06:2021 09:32:39
+PDO PREPARE ERROR in method _update_sql
+string(926) "24:06:2021 09:32:39
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-06-24 09:32:39
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 100
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+24:06:2021 09:38:08
+PDO PREPARE ERROR in method _update_sql
+string(925) "24:06:2021 09:38:08
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-06-24 09:38:08
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 10
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+24:06:2021 09:38:08
+PDO PREPARE ERROR in method _update_sql
+string(925) "24:06:2021 09:38:08
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-06-24 09:38:08
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 20
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+24:06:2021 09:38:08
+PDO PREPARE ERROR in method _update_sql
+string(925) "24:06:2021 09:38:08
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-06-24 09:38:08
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 30
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+24:06:2021 09:38:08
+PDO PREPARE ERROR in method _update_sql
+string(925) "24:06:2021 09:38:08
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-06-24 09:38:08
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 40
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+24:06:2021 09:38:08
+PDO PREPARE ERROR in method _update_sql
+string(925) "24:06:2021 09:38:08
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-06-24 09:38:08
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 50
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+24:06:2021 09:38:08
+PDO PREPARE ERROR in method _update_sql
+string(925) "24:06:2021 09:38:08
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-06-24 09:38:08
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 60
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+24:06:2021 09:38:08
+PDO PREPARE ERROR in method _update_sql
+string(925) "24:06:2021 09:38:08
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-06-24 09:38:08
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 70
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+24:06:2021 09:38:08
+PDO PREPARE ERROR in method _update_sql
+string(925) "24:06:2021 09:38:08
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-06-24 09:38:08
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 80
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+24:06:2021 09:38:08
+PDO PREPARE ERROR in method _update_sql
+string(925) "24:06:2021 09:38:08
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-06-24 09:38:08
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 90
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+24:06:2021 09:38:08
+PDO PREPARE ERROR in method _update_sql
+string(926) "24:06:2021 09:38:08
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-06-24 09:38:08
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 100
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+24:06:2021 09:39:33
+PDO PREPARE ERROR in method _update_sql
+string(925) "24:06:2021 09:39:33
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-06-24 09:39:33
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 10
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+24:06:2021 09:39:33
+PDO PREPARE ERROR in method _update_sql
+string(925) "24:06:2021 09:39:33
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-06-24 09:39:33
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 20
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+24:06:2021 09:39:33
+PDO PREPARE ERROR in method _update_sql
+string(925) "24:06:2021 09:39:33
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-06-24 09:39:33
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 30
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+24:06:2021 09:39:33
+PDO PREPARE ERROR in method _update_sql
+string(925) "24:06:2021 09:39:33
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-06-24 09:39:33
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 40
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+24:06:2021 09:39:33
+PDO PREPARE ERROR in method _update_sql
+string(925) "24:06:2021 09:39:33
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-06-24 09:39:33
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 50
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+24:06:2021 09:39:33
+PDO PREPARE ERROR in method _update_sql
+string(925) "24:06:2021 09:39:33
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-06-24 09:39:33
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 60
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+24:06:2021 09:39:33
+PDO PREPARE ERROR in method _update_sql
+string(925) "24:06:2021 09:39:33
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-06-24 09:39:33
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 70
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+24:06:2021 09:39:33
+PDO PREPARE ERROR in method _update_sql
+string(925) "24:06:2021 09:39:33
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-06-24 09:39:33
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 80
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+24:06:2021 09:39:33
+PDO PREPARE ERROR in method _update_sql
+string(925) "24:06:2021 09:39:33
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-06-24 09:39:33
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 90
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+24:06:2021 09:39:33
+PDO PREPARE ERROR in method _update_sql
+string(926) "24:06:2021 09:39:33
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-06-24 09:39:33
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 100
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+24:06:2021 15:21:29
+PDO PREPARE ERROR in method _update_sql
+string(925) "24:06:2021 15:21:29
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-06-24 15:21:29
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 10
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+24:06:2021 15:21:29
+PDO PREPARE ERROR in method _update_sql
+string(925) "24:06:2021 15:21:29
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-06-24 15:21:29
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 20
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+24:06:2021 15:21:29
+PDO PREPARE ERROR in method _update_sql
+string(925) "24:06:2021 15:21:29
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-06-24 15:21:29
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 30
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+24:06:2021 15:21:29
+PDO PREPARE ERROR in method _update_sql
+string(925) "24:06:2021 15:21:29
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-06-24 15:21:29
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 40
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+24:06:2021 15:21:29
+PDO PREPARE ERROR in method _update_sql
+string(925) "24:06:2021 15:21:29
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-06-24 15:21:29
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 50
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+24:06:2021 15:21:29
+PDO PREPARE ERROR in method _update_sql
+string(925) "24:06:2021 15:21:29
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-06-24 15:21:29
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 60
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+24:06:2021 15:21:29
+PDO PREPARE ERROR in method _update_sql
+string(925) "24:06:2021 15:21:29
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-06-24 15:21:29
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 70
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+24:06:2021 15:21:29
+PDO PREPARE ERROR in method _update_sql
+string(925) "24:06:2021 15:21:29
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-06-24 15:21:29
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 80
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+24:06:2021 15:21:29
+PDO PREPARE ERROR in method _update_sql
+string(925) "24:06:2021 15:21:29
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-06-24 15:21:29
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 90
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+24:06:2021 15:21:29
+PDO PREPARE ERROR in method _update_sql
+string(926) "24:06:2021 15:21:29
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-06-24 15:21:29
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 100
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+24:06:2021 15:23:46
+PDO PREPARE ERROR in method _update_sql
+string(925) "24:06:2021 15:23:46
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-06-24 15:23:46
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 10
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+24:06:2021 15:23:46
+PDO PREPARE ERROR in method _update_sql
+string(925) "24:06:2021 15:23:46
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-06-24 15:23:46
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 20
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+24:06:2021 15:23:46
+PDO PREPARE ERROR in method _update_sql
+string(925) "24:06:2021 15:23:46
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-06-24 15:23:46
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 30
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+24:06:2021 15:23:46
+PDO PREPARE ERROR in method _update_sql
+string(925) "24:06:2021 15:23:46
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-06-24 15:23:46
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 40
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+24:06:2021 15:23:46
+PDO PREPARE ERROR in method _update_sql
+string(925) "24:06:2021 15:23:46
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-06-24 15:23:46
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 50
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+24:06:2021 15:23:46
+PDO PREPARE ERROR in method _update_sql
+string(925) "24:06:2021 15:23:46
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-06-24 15:23:46
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 60
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+24:06:2021 15:23:46
+PDO PREPARE ERROR in method _update_sql
+string(925) "24:06:2021 15:23:46
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-06-24 15:23:46
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 70
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+24:06:2021 15:23:46
+PDO PREPARE ERROR in method _update_sql
+string(925) "24:06:2021 15:23:46
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-06-24 15:23:46
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 80
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+24:06:2021 15:23:46
+PDO PREPARE ERROR in method _update_sql
+string(925) "24:06:2021 15:23:46
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-06-24 15:23:46
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 90
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+24:06:2021 15:23:46
+PDO PREPARE ERROR in method _update_sql
+string(926) "24:06:2021 15:23:46
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-06-24 15:23:46
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 100
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+24:06:2021 15:34:02
+PDO PREPARE ERROR in method _update_sql
+string(925) "24:06:2021 15:34:02
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-06-24 15:34:02
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 10
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+24:06:2021 15:34:02
+PDO PREPARE ERROR in method _update_sql
+string(925) "24:06:2021 15:34:02
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-06-24 15:34:02
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 20
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+24:06:2021 15:34:02
+PDO PREPARE ERROR in method _update_sql
+string(925) "24:06:2021 15:34:02
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-06-24 15:34:02
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 30
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+24:06:2021 15:34:02
+PDO PREPARE ERROR in method _update_sql
+string(925) "24:06:2021 15:34:02
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-06-24 15:34:02
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 40
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+24:06:2021 15:34:02
+PDO PREPARE ERROR in method _update_sql
+string(925) "24:06:2021 15:34:02
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-06-24 15:34:02
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 50
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+24:06:2021 15:34:02
+PDO PREPARE ERROR in method _update_sql
+string(925) "24:06:2021 15:34:02
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-06-24 15:34:02
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 60
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+24:06:2021 15:34:02
+PDO PREPARE ERROR in method _update_sql
+string(925) "24:06:2021 15:34:02
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-06-24 15:34:02
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 70
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+24:06:2021 15:34:02
+PDO PREPARE ERROR in method _update_sql
+string(925) "24:06:2021 15:34:02
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-06-24 15:34:02
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 80
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+24:06:2021 15:34:02
+PDO PREPARE ERROR in method _update_sql
+string(925) "24:06:2021 15:34:02
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-06-24 15:34:02
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 90
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+24:06:2021 15:34:02
+PDO PREPARE ERROR in method _update_sql
+string(926) "24:06:2021 15:34:02
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-06-24 15:34:02
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 100
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+24:06:2021 15:37:59
+PDO PREPARE ERROR in method _update_sql
+string(925) "24:06:2021 15:37:59
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-06-24 15:37:59
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 10
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+24:06:2021 15:37:59
+PDO PREPARE ERROR in method _update_sql
+string(925) "24:06:2021 15:37:59
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-06-24 15:37:59
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 20
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+24:06:2021 15:37:59
+PDO PREPARE ERROR in method _update_sql
+string(925) "24:06:2021 15:37:59
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-06-24 15:37:59
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 30
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+24:06:2021 15:37:59
+PDO PREPARE ERROR in method _update_sql
+string(925) "24:06:2021 15:37:59
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-06-24 15:37:59
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 40
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+24:06:2021 15:37:59
+PDO PREPARE ERROR in method _update_sql
+string(925) "24:06:2021 15:37:59
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-06-24 15:37:59
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 50
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+24:06:2021 15:37:59
+PDO PREPARE ERROR in method _update_sql
+string(925) "24:06:2021 15:37:59
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-06-24 15:37:59
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 60
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+24:06:2021 15:37:59
+PDO PREPARE ERROR in method _update_sql
+string(925) "24:06:2021 15:37:59
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-06-24 15:37:59
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 70
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+24:06:2021 15:37:59
+PDO PREPARE ERROR in method _update_sql
+string(925) "24:06:2021 15:37:59
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-06-24 15:37:59
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 80
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+24:06:2021 15:37:59
+PDO PREPARE ERROR in method _update_sql
+string(925) "24:06:2021 15:37:59
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-06-24 15:37:59
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 90
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+24:06:2021 15:37:59
+PDO PREPARE ERROR in method _update_sql
+string(926) "24:06:2021 15:37:59
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-06-24 15:37:59
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 100
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+24:06:2021 15:38:54
+PDO PREPARE ERROR in method _update_sql
+string(925) "24:06:2021 15:38:54
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-06-24 15:38:54
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 10
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+24:06:2021 15:38:54
+PDO PREPARE ERROR in method _update_sql
+string(925) "24:06:2021 15:38:54
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-06-24 15:38:54
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 20
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+24:06:2021 15:38:54
+PDO PREPARE ERROR in method _update_sql
+string(925) "24:06:2021 15:38:54
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-06-24 15:38:54
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 30
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+24:06:2021 15:38:54
+PDO PREPARE ERROR in method _update_sql
+string(925) "24:06:2021 15:38:54
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-06-24 15:38:54
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 40
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+24:06:2021 15:38:54
+PDO PREPARE ERROR in method _update_sql
+string(925) "24:06:2021 15:38:54
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-06-24 15:38:54
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 50
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+24:06:2021 15:38:54
+PDO PREPARE ERROR in method _update_sql
+string(925) "24:06:2021 15:38:54
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-06-24 15:38:54
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 60
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+24:06:2021 15:38:54
+PDO PREPARE ERROR in method _update_sql
+string(925) "24:06:2021 15:38:54
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-06-24 15:38:54
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 70
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+24:06:2021 15:38:54
+PDO PREPARE ERROR in method _update_sql
+string(925) "24:06:2021 15:38:54
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-06-24 15:38:54
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 80
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+24:06:2021 15:38:54
+PDO PREPARE ERROR in method _update_sql
+string(925) "24:06:2021 15:38:54
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-06-24 15:38:54
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 90
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+24:06:2021 15:38:54
+PDO PREPARE ERROR in method _update_sql
+string(926) "24:06:2021 15:38:54
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-06-24 15:38:54
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 100
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+24:06:2021 15:41:33
+PDO PREPARE ERROR in method _update_sql
+string(925) "24:06:2021 15:41:33
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-06-24 15:41:33
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 10
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+24:06:2021 15:41:33
+PDO PREPARE ERROR in method _update_sql
+string(925) "24:06:2021 15:41:33
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-06-24 15:41:33
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 20
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+24:06:2021 15:41:33
+PDO PREPARE ERROR in method _update_sql
+string(925) "24:06:2021 15:41:33
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-06-24 15:41:33
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 30
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+24:06:2021 15:41:33
+PDO PREPARE ERROR in method _update_sql
+string(925) "24:06:2021 15:41:33
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-06-24 15:41:33
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 40
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+24:06:2021 15:41:33
+PDO PREPARE ERROR in method _update_sql
+string(925) "24:06:2021 15:41:33
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-06-24 15:41:33
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 50
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+24:06:2021 15:41:33
+PDO PREPARE ERROR in method _update_sql
+string(925) "24:06:2021 15:41:33
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-06-24 15:41:33
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 60
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+24:06:2021 15:41:33
+PDO PREPARE ERROR in method _update_sql
+string(925) "24:06:2021 15:41:33
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-06-24 15:41:33
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 70
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+24:06:2021 15:41:33
+PDO PREPARE ERROR in method _update_sql
+string(925) "24:06:2021 15:41:33
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-06-24 15:41:33
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 80
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+24:06:2021 15:41:33
+PDO PREPARE ERROR in method _update_sql
+string(925) "24:06:2021 15:41:33
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-06-24 15:41:33
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 90
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+24:06:2021 15:41:33
+PDO PREPARE ERROR in method _update_sql
+string(926) "24:06:2021 15:41:33
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-06-24 15:41:33
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 100
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+24:06:2021 15:42:17
+PDO PREPARE ERROR in method _update_sql
+string(925) "24:06:2021 15:42:17
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-06-24 15:42:17
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 10
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+24:06:2021 15:42:17
+PDO PREPARE ERROR in method _update_sql
+string(925) "24:06:2021 15:42:17
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-06-24 15:42:17
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 20
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+24:06:2021 15:42:17
+PDO PREPARE ERROR in method _update_sql
+string(925) "24:06:2021 15:42:17
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-06-24 15:42:17
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 30
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+24:06:2021 15:42:17
+PDO PREPARE ERROR in method _update_sql
+string(925) "24:06:2021 15:42:17
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-06-24 15:42:17
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 40
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+24:06:2021 15:42:17
+PDO PREPARE ERROR in method _update_sql
+string(925) "24:06:2021 15:42:17
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-06-24 15:42:17
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 50
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+24:06:2021 15:42:17
+PDO PREPARE ERROR in method _update_sql
+string(925) "24:06:2021 15:42:17
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-06-24 15:42:17
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 60
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+24:06:2021 15:42:17
+PDO PREPARE ERROR in method _update_sql
+string(925) "24:06:2021 15:42:17
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-06-24 15:42:17
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 70
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+24:06:2021 15:42:17
+PDO PREPARE ERROR in method _update_sql
+string(925) "24:06:2021 15:42:17
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-06-24 15:42:17
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 80
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+24:06:2021 15:42:17
+PDO PREPARE ERROR in method _update_sql
+string(925) "24:06:2021 15:42:17
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-06-24 15:42:17
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 90
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+24:06:2021 15:42:17
+PDO PREPARE ERROR in method _update_sql
+string(926) "24:06:2021 15:42:17
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-06-24 15:42:17
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 100
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+24:06:2021 15:47:33
+PDO PREPARE ERROR in method _update_sql
+string(925) "24:06:2021 15:47:33
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-06-24 15:47:33
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 10
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+24:06:2021 15:47:33
+PDO PREPARE ERROR in method _update_sql
+string(925) "24:06:2021 15:47:33
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-06-24 15:47:33
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 20
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+24:06:2021 15:47:33
+PDO PREPARE ERROR in method _update_sql
+string(925) "24:06:2021 15:47:33
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-06-24 15:47:33
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 30
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+24:06:2021 15:47:33
+PDO PREPARE ERROR in method _update_sql
+string(925) "24:06:2021 15:47:33
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-06-24 15:47:33
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 40
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+24:06:2021 15:47:33
+PDO PREPARE ERROR in method _update_sql
+string(925) "24:06:2021 15:47:33
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-06-24 15:47:33
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 50
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+24:06:2021 15:47:33
+PDO PREPARE ERROR in method _update_sql
+string(925) "24:06:2021 15:47:33
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-06-24 15:47:33
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 60
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+24:06:2021 15:47:33
+PDO PREPARE ERROR in method _update_sql
+string(925) "24:06:2021 15:47:33
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-06-24 15:47:33
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 70
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+24:06:2021 15:47:33
+PDO PREPARE ERROR in method _update_sql
+string(925) "24:06:2021 15:47:33
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-06-24 15:47:33
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 80
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+24:06:2021 15:47:33
+PDO PREPARE ERROR in method _update_sql
+string(925) "24:06:2021 15:47:33
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-06-24 15:47:33
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 90
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+24:06:2021 15:47:33
+PDO PREPARE ERROR in method _update_sql
+string(926) "24:06:2021 15:47:33
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-06-24 15:47:33
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 100
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+24:06:2021 15:49:48
+PDO PREPARE ERROR in method _update_sql
+string(925) "24:06:2021 15:49:48
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-06-24 15:49:48
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 10
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+24:06:2021 15:49:48
+PDO PREPARE ERROR in method _update_sql
+string(925) "24:06:2021 15:49:48
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-06-24 15:49:48
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 20
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+24:06:2021 15:49:48
+PDO PREPARE ERROR in method _update_sql
+string(925) "24:06:2021 15:49:48
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-06-24 15:49:48
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 30
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+24:06:2021 15:49:48
+PDO PREPARE ERROR in method _update_sql
+string(925) "24:06:2021 15:49:48
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-06-24 15:49:48
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 40
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+24:06:2021 15:49:48
+PDO PREPARE ERROR in method _update_sql
+string(925) "24:06:2021 15:49:48
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-06-24 15:49:48
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 50
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+24:06:2021 15:49:48
+PDO PREPARE ERROR in method _update_sql
+string(925) "24:06:2021 15:49:48
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-06-24 15:49:48
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 60
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+24:06:2021 15:49:48
+PDO PREPARE ERROR in method _update_sql
+string(925) "24:06:2021 15:49:48
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-06-24 15:49:48
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 70
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+24:06:2021 15:49:48
+PDO PREPARE ERROR in method _update_sql
+string(925) "24:06:2021 15:49:48
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-06-24 15:49:48
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 80
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+24:06:2021 15:49:48
+PDO PREPARE ERROR in method _update_sql
+string(925) "24:06:2021 15:49:48
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-06-24 15:49:48
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 90
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+24:06:2021 15:49:48
+PDO PREPARE ERROR in method _update_sql
+string(926) "24:06:2021 15:49:48
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-06-24 15:49:48
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 100
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+24:06:2021 15:53:40
+PDO PREPARE ERROR in method _update_sql
+string(925) "24:06:2021 15:53:40
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-06-24 15:53:40
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 10
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+24:06:2021 15:53:40
+PDO PREPARE ERROR in method _update_sql
+string(925) "24:06:2021 15:53:40
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-06-24 15:53:40
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 20
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+24:06:2021 15:53:40
+PDO PREPARE ERROR in method _update_sql
+string(925) "24:06:2021 15:53:40
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-06-24 15:53:40
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 30
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+24:06:2021 15:53:40
+PDO PREPARE ERROR in method _update_sql
+string(925) "24:06:2021 15:53:40
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-06-24 15:53:40
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 40
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+24:06:2021 15:53:40
+PDO PREPARE ERROR in method _update_sql
+string(925) "24:06:2021 15:53:40
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-06-24 15:53:40
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 50
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+24:06:2021 15:53:40
+PDO PREPARE ERROR in method _update_sql
+string(925) "24:06:2021 15:53:40
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-06-24 15:53:40
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 60
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+24:06:2021 15:53:40
+PDO PREPARE ERROR in method _update_sql
+string(925) "24:06:2021 15:53:40
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-06-24 15:53:40
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 70
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+24:06:2021 15:53:40
+PDO PREPARE ERROR in method _update_sql
+string(925) "24:06:2021 15:53:40
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-06-24 15:53:40
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 80
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+24:06:2021 15:53:40
+PDO PREPARE ERROR in method _update_sql
+string(925) "24:06:2021 15:53:40
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-06-24 15:53:40
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 90
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+
+24:06:2021 15:53:40
+PDO PREPARE ERROR in method _update_sql
+string(926) "24:06:2021 15:53:40
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-06-24 15:53:40
+    [ERROR MESSAGE] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'maths.undefined' doesn't exist
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update undefined set order_num = :order_num where id = :id
+    [_d] => Array
+        (
+            [order_num] => 100
+            [id] => 
+        )
+
+    [_f] => Array
+        (
+            [0] => i
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update undefine...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_record_order_update.php(26): _db->_update_sql('update undefine...', Array, Array)
+#3 {main}
+)
+
+"
+

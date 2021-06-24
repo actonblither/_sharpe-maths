@@ -39,7 +39,6 @@ ul.puzzle_container > li > div{
 	align-self: flex-start;
 }
 
-ul.glossary > li > div.label,
 ul.puzzle_container > li > div.label{
 	flex-flow: row wrap;
 	justify-content: flex-start;
@@ -77,8 +76,6 @@ li.line{
 
 
 div.full{width: 100%; height: 20px;}
-
-ul.glossary ul{margin-left:30px; list-style-type: disc;}
 
 li.instructions{
 	display: flex;

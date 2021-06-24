@@ -524,12 +524,21 @@ include('app_config.php');
 		});
 
 
-		$(document).on('click', '.card', function(evt){
+		$(document).on('click', '.solution', function(evt){
 			var id = $(this).attr('id');
 			if (evt.ctrlKey == false){
 				//console.log(id);
-				$('#' + id + ' .back').toggleClass('hidden');
-				$('#' + id + ' .front').toggleClass('hidden');
+				$('#' + id + ' .back-s').toggleClass('hidden');
+				$('#' + id + ' .front-s').toggleClass('hidden');
+			}
+		});
+
+		$(document).on('click', '.method', function(evt){
+			var id = $(this).attr('id');
+			if (evt.ctrlKey == false){
+				//console.log(id);
+				$('#' + id + ' .back-m').toggleClass('hidden');
+				$('#' + id + ' .front-m').toggleClass('hidden');
 			}
 		});
 
@@ -538,8 +547,9 @@ include('app_config.php');
 			items: 'li.rc',
 			update: function(event, ui) {
 				var new_list = $(this).sortable('toArray').toString();
-				var db_tbl = $(this.firstChild.nextElementSibling).attr('data-db-tbl');
-				var sort_list_prefix = $(this.firstChild.nextElementSibling).attr('data-sort-list-prefix');
+				console.log($(this).attr('data-db-tbl'));
+				var db_tbl = $(this).attr('data-db-tbl');
+				var sort_list_prefix = $(this).attr('data-sort-list-prefix');
 				var fd = new FormData();
 				fd.set('nlist', new_list);
 				fd.set('gen_table', db_tbl);
@@ -580,7 +590,7 @@ include('app_config.php');
 		<div id = 'ttip_content_container' class='hidden'>
 			<?php
 			$_dbh = new _db();
-			$_sql = 'select * from _app_tips';
+			$_sql = 'select * from _app_tips where display=1';
 			$_div_rows = $_dbh->_fetch_db_rows($_sql);
 
 			foreach ($_div_rows as $_dr){
