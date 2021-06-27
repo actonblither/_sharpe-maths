@@ -522,11 +522,11 @@ a#nav-skip{
 .normal{font-weight: normal; font-style: normal; text-decoration: none;}
 
 
-.row{display: flex; flex-flow: row nowrap; align-items: center;}
-.wrap{display: flex; flex-flow: row wrap; align-items: center;}
+.row{display: flex; flex-flow: row nowrap; align-items: center;flex-shrink: 1;}
+.wrap{display: flex; flex-flow: row wrap; align-items: center;flex-shrink: 1;}
 
-.rowt{display: flex; flex-flow: row nowrap; align-items: flex-start;}
-.wrapt{display: flex; flex-flow: row wrap; align-items: flex-start;}
+.rowt{display: flex; flex-flow: row nowrap; align-items: flex-start;flex-shrink: 1;}
+.wrapt{display: flex; flex-flow: row wrap; align-items: flex-start; flex-shrink: 1;}
 
 .col{display: flex; flex-flow: column nowrap; justify-content: center;}
 .cwrap{display: flex; flex-flow: column wrap; justify-content: center; height: 100%;}

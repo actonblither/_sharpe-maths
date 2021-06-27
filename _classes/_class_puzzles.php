@@ -8,6 +8,7 @@ class _puzzle extends _topic_tab{
 	protected $_item_class = '_puzzle';
 	protected $_del_img_class = 'del_m_pz';
 	protected $_title_prefix = 'Puzzle';
+	protected $_field_prefix = 'pz_';
 	protected $_title_field_name = 'pz_title';
 	protected $_open_close_id_prefix = 'p';
 	protected $_sortable_list_prefix = 'npz';
@@ -20,6 +21,7 @@ class _puzzle extends _topic_tab{
 		$this->_is_logged_in = is_logged_in();
 		if ($this->_is_logged_in){
 			$this->_tpl_sub = __s_app_folder__.'_classes/_templates/_admin_puzzle_sub_tpl.txt';
+			$this->_tpl_head = __s_app_folder__.'_classes/_templates/_admin_head_noinstr_tpl.txt';
 		}else{
 			$this->_tpl_sub = __s_app_folder__.'_classes/_templates/_user_puzzle_sub_tpl.txt';
 		}
@@ -27,7 +29,7 @@ class _puzzle extends _topic_tab{
 		$this->_item_sql = 'select p.* from _app_puzzles p left join _app_puzzle_topic_link pt on pt.puzzle_id = p.id where p.display = :display and p.archived = :archived and pt.topic_id = :topic_id order by p.difficulty';
 		$this->_item_sql_admin = 'select p.* from _app_puzzles p left join _app_puzzle_topic_link pt on pt.puzzle_id = p.id where p.archived = :archived and pt.topic_id = :topic_id order by p.difficulty';
 
-
+		$this->_sub_sql = false;
 		$this->_build_items();
 	}
 
@@ -55,7 +57,7 @@ class _puzzle extends _topic_tab{
 				'_pz_explanation' => rvs($_r['pz_explanation']),
 				'_sortable_list_prefix' => $this->_sortable_list_prefix
 		);
-
+_cl($this->_sr);
 		return $this->_fetch_template_file($_tpl);
 	}
 

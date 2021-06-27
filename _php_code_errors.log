@@ -5535,3 +5535,282 @@ Array
 
 "
 
+27:06:2021 10:45:10
+PDO PREPARE ERROR in method _update_sql
+string(901) "27:06:2021 10:45:10
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-06-27 10:45:10
+    [ERROR MESSAGE] => SQLSTATE[42S22]: Column not found: 1054 Unknown column 'title' in 'field list'
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update _app_puzzles set title = :title where id = :id
+    [_d] => Array
+        (
+            [title] => ddddd
+            [id] => 11
+        )
+
+    [_f] => Array
+        (
+            [0] => s
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update _app_puz...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_save_field.php(40): _db->_update_sql('update _app_puz...', Array, Array)
+#3 {main}
+)
+
+"
+
+27:06:2021 10:50:10
+PDO PREPARE ERROR in method _update_sql
+string(901) "27:06:2021 10:50:10
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-06-27 10:50:10
+    [ERROR MESSAGE] => SQLSTATE[42S22]: Column not found: 1054 Unknown column 'title' in 'field list'
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update _app_puzzles set title = :title where id = :id
+    [_d] => Array
+        (
+            [title] => ddddd
+            [id] => 11
+        )
+
+    [_f] => Array
+        (
+            [0] => s
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update _app_puz...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_save_field.php(40): _db->_update_sql('update _app_puz...', Array, Array)
+#3 {main}
+)
+
+"
+
+27:06:2021 10:50:15
+PDO PREPARE ERROR in method _update_sql
+string(901) "27:06:2021 10:50:15
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-06-27 10:50:15
+    [ERROR MESSAGE] => SQLSTATE[42S22]: Column not found: 1054 Unknown column 'title' in 'field list'
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update _app_puzzles set title = :title where id = :id
+    [_d] => Array
+        (
+            [title] => ddddd
+            [id] => 11
+        )
+
+    [_f] => Array
+        (
+            [0] => s
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update _app_puz...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_save_field.php(40): _db->_update_sql('update _app_puz...', Array, Array)
+#3 {main}
+)
+
+"
+
+27:06:2021 10:50:25
+PDO PREPARE ERROR in method _update_sql
+string(901) "27:06:2021 10:50:25
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-06-27 10:50:25
+    [ERROR MESSAGE] => SQLSTATE[42S22]: Column not found: 1054 Unknown column 'title' in 'field list'
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update _app_puzzles set title = :title where id = :id
+    [_d] => Array
+        (
+            [title] => ddddd
+            [id] => 11
+        )
+
+    [_f] => Array
+        (
+            [0] => s
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update _app_puz...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_save_field.php(40): _db->_update_sql('update _app_puz...', Array, Array)
+#3 {main}
+)
+
+"
+
+27:06:2021 10:51:35
+PDO PREPARE ERROR in method _update_sql
+string(901) "27:06:2021 10:51:35
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-06-27 10:51:35
+    [ERROR MESSAGE] => SQLSTATE[42S22]: Column not found: 1054 Unknown column 'title' in 'field list'
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update _app_puzzles set title = :title where id = :id
+    [_d] => Array
+        (
+            [title] => ddddd
+            [id] => 11
+        )
+
+    [_f] => Array
+        (
+            [0] => s
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update _app_puz...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_save_field.php(40): _db->_update_sql('update _app_puz...', Array, Array)
+#3 {main}
+)
+
+"
+
+27:06:2021 10:53:30
+PDO PREPARE ERROR in method _update_sql
+string(896) "27:06:2021 10:53:30
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-06-27 10:53:30
+    [ERROR MESSAGE] => SQLSTATE[42S22]: Column not found: 1054 Unknown column 'title' in 'field list'
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update _app_puzzles set title = :title where id = :id
+    [_d] => Array
+        (
+            [title] => 
+            [id] => 11
+        )
+
+    [_f] => Array
+        (
+            [0] => s
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update _app_puz...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_save_field.php(40): _db->_update_sql('update _app_puz...', Array, Array)
+#3 {main}
+)
+
+"
+
+27:06:2021 10:54:15
+PDO PREPARE ERROR in method _update_sql
+string(896) "27:06:2021 10:54:15
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-06-27 10:54:15
+    [ERROR MESSAGE] => SQLSTATE[42S22]: Column not found: 1054 Unknown column 'title' in 'field list'
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update _app_puzzles set title = :title where id = :id
+    [_d] => Array
+        (
+            [title] => 
+            [id] => 11
+        )
+
+    [_f] => Array
+        (
+            [0] => s
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update _app_puz...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_save_field.php(40): _db->_update_sql('update _app_puz...', Array, Array)
+#3 {main}
+)
+
+"
+
+27:06:2021 10:55:15
+PDO PREPARE ERROR in method _update_sql
+string(896) "27:06:2021 10:55:15
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-06-27 10:55:15
+    [ERROR MESSAGE] => SQLSTATE[42S22]: Column not found: 1054 Unknown column 'title' in 'field list'
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update _app_puzzles set title = :title where id = :id
+    [_d] => Array
+        (
+            [title] => 
+            [id] => 11
+        )
+
+    [_f] => Array
+        (
+            [0] => s
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update _app_puz...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_save_field.php(40): _db->_update_sql('update _app_puz...', Array, Array)
+#3 {main}
+)
+
+"
+
+27:06:2021 10:56:31
+PDO PREPARE ERROR in method _update_sql
+string(896) "27:06:2021 10:56:31
+ERROR BLOCK
+Array
+(
+    [DATE] => 2021-06-27 10:56:31
+    [ERROR MESSAGE] => SQLSTATE[42S22]: Column not found: 1054 Unknown column 'title' in 'field list'
+    [IN FILE] => G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php
+    [AT LINE] => 316
+    [_sql] => update _app_puzzles set title = :title where id = :id
+    [_d] => Array
+        (
+            [title] => 
+            [id] => 11
+        )
+
+    [_f] => Array
+        (
+            [0] => s
+            [1] => i
+        )
+
+    [TRACE] => #0 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(316): PDO->prepare('update _app_puz...')
+#1 G:\xampp\htdocs\sharpe-maths\_stdlib\_classes\_class_db_connect.php(93): _db->_pdo_prepare('PDO PREPARE ERR...')
+#2 G:\xampp\htdocs\sharpe-maths\_stdlib\_ajax\_save_field.php(40): _db->_update_sql('update _app_puz...', Array, Array)
+#3 {main}
+)
+
+"
+

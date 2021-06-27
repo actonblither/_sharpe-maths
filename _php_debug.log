@@ -1,0 +1,3729 @@
+27:06:2021 11:15:59
+
+Array
+(
+    [_title_field_name] => pz_title
+    [_title_prefix] => Puzzle
+    [_parent_list_id] => puzzles
+    [_head_list_id] => pzh
+    [_sub_list_id] => pzi
+    [_open_close_id_prefix] => p
+    [_main_db_tbl] => _app_puzzles
+    [_item_id] => 
+    [_topic_id] => 10
+    [_list_count] => 
+    [_del_class] => del_m_pz
+    [_icon_lib_url] => http://localhost/sharpe-maths/_stdlib/_images/_icons/
+    [_icon_app_url] => http://localhost/sharpe-maths/_images/_icons/
+    [_occ_class] => 
+    [_oco_class] => 
+    [_item_title] => 
+    [_item_name] => puzzle
+    [_pz_puzzle] => 
+    [_pz_solution] => 
+    [_pz_explanation] => 
+    [_sortable_list_prefix] => npz
+)
+
+27:06:2021 11:15:59
+
+Array
+(
+    [_title_field_name] => pz_title
+    [_title_prefix] => Puzzle
+    [_parent_list_id] => puzzles
+    [_head_list_id] => pzh
+    [_sub_list_id] => pzi
+    [_open_close_id_prefix] => p
+    [_main_db_tbl] => _app_puzzles
+    [_item_id] => 11
+    [_topic_id] => 10
+    [_list_count] => 1
+    [_del_class] => del_m_pz
+    [_icon_lib_url] => http://localhost/sharpe-maths/_stdlib/_images/_icons/
+    [_icon_app_url] => http://localhost/sharpe-maths/_images/_icons/
+    [_occ_class] =>  hidden
+    [_oco_class] => 
+    [_item_title] => 
+    [_item_name] => puzzle
+    [_pz_puzzle] => <p>If you have $12$ square tiles, how many different rectangles can you make which use up all $12$ tiles and produce a fully filled in rectangle?</p>
+    [_pz_solution] => <p>There are $3$ possible rectangles: $1 \times 12$, $2 \times 6$ and $3 \times 4$.</p>
+    [_pz_explanation] => <div class='cwrap'>
+<p>The three solutions are from the three factor pairs of $12$</p>
+<p>
+\[\begin{aligned}[t]
+&1 \times 12\\
+&2 \times 6\\
+&3 \times 4
+\end{aligned}\]
+</p>
+</div>
+    [_sortable_list_prefix] => npz
+)
+
+27:06:2021 11:15:59
+
+Array
+(
+    [_title_field_name] => pz_title
+    [_title_prefix] => Puzzle
+    [_parent_list_id] => puzzles
+    [_head_list_id] => pzh
+    [_sub_list_id] => pzi
+    [_open_close_id_prefix] => p
+    [_main_db_tbl] => _app_puzzles
+    [_item_id] => 11
+    [_topic_id] => 10
+    [_list_count] => 1
+    [_del_class] => del_m_pz
+    [_icon_lib_url] => http://localhost/sharpe-maths/_stdlib/_images/_icons/
+    [_icon_app_url] => http://localhost/sharpe-maths/_images/_icons/
+    [_occ_class] =>  hidden
+    [_oco_class] => 
+    [_item_title] => 
+    [_item_name] => puzzle
+    [_pz_puzzle] => <p>If you have $12$ square tiles, how many different rectangles can you make which use up all $12$ tiles and produce a fully filled in rectangle?</p>
+    [_pz_solution] => <p>There are $3$ possible rectangles: $1 \times 12$, $2 \times 6$ and $3 \times 4$.</p>
+    [_pz_explanation] => <div class='cwrap'>
+<p>The three solutions are from the three factor pairs of $12$</p>
+<p>
+\[\begin{aligned}[t]
+&1 \times 12\\
+&2 \times 6\\
+&3 \times 4
+\end{aligned}\]
+</p>
+</div>
+    [_sortable_list_prefix] => npz
+)
+
+27:06:2021 11:15:59
+
+Array
+(
+    [_title_field_name] => pz_title
+    [_title_prefix] => Puzzle
+    [_parent_list_id] => puzzles
+    [_head_list_id] => pzh
+    [_sub_list_id] => pzi
+    [_open_close_id_prefix] => p
+    [_main_db_tbl] => _app_puzzles
+    [_item_id] => 11
+    [_topic_id] => 10
+    [_list_count] => 1
+    [_del_class] => del_m_pz
+    [_icon_lib_url] => http://localhost/sharpe-maths/_stdlib/_images/_icons/
+    [_icon_app_url] => http://localhost/sharpe-maths/_images/_icons/
+    [_occ_class] =>  hidden
+    [_oco_class] => 
+    [_item_title] => 
+    [_item_name] => puzzle
+    [_pz_puzzle] => <p>If you have $12$ square tiles, how many different rectangles can you make which use up all $12$ tiles and produce a fully filled in rectangle?</p>
+    [_pz_solution] => <p>There are $3$ possible rectangles: $1 \times 12$, $2 \times 6$ and $3 \times 4$.</p>
+    [_pz_explanation] => <div class='cwrap'>
+<p>The three solutions are from the three factor pairs of $12$</p>
+<p>
+\[\begin{aligned}[t]
+&1 \times 12\\
+&2 \times 6\\
+&3 \times 4
+\end{aligned}\]
+</p>
+</div>
+    [_sortable_list_prefix] => npz
+)
+
+27:06:2021 11:16:40
+
+Array
+(
+    [_title_field_name] => pz_title
+    [_title_prefix] => Puzzle
+    [_parent_list_id] => puzzles
+    [_head_list_id] => pzh
+    [_sub_list_id] => pzi
+    [_open_close_id_prefix] => p
+    [_main_db_tbl] => _app_puzzles
+    [_item_id] => 
+    [_topic_id] => 10
+    [_list_count] => 
+    [_del_class] => del_m_pz
+    [_icon_lib_url] => http://localhost/sharpe-maths/_stdlib/_images/_icons/
+    [_icon_app_url] => http://localhost/sharpe-maths/_images/_icons/
+    [_occ_class] => 
+    [_oco_class] => 
+    [_item_title] => 
+    [_item_name] => puzzle
+    [_pz_puzzle] => 
+    [_pz_solution] => 
+    [_pz_explanation] => 
+    [_sortable_list_prefix] => npz
+)
+
+27:06:2021 11:16:40
+
+Array
+(
+    [_title_field_name] => pz_title
+    [_title_prefix] => Puzzle
+    [_parent_list_id] => puzzles
+    [_head_list_id] => pzh
+    [_sub_list_id] => pzi
+    [_open_close_id_prefix] => p
+    [_main_db_tbl] => _app_puzzles
+    [_item_id] => 11
+    [_topic_id] => 10
+    [_list_count] => 1
+    [_del_class] => del_m_pz
+    [_icon_lib_url] => http://localhost/sharpe-maths/_stdlib/_images/_icons/
+    [_icon_app_url] => http://localhost/sharpe-maths/_images/_icons/
+    [_occ_class] =>  hidden
+    [_oco_class] => 
+    [_item_title] => 
+    [_item_name] => puzzle
+    [_pz_puzzle] => <p>If you have $12$ square tiles, how many different rectangles can you make which use up all $12$ tiles and produce a fully filled in rectangle?</p>
+    [_pz_solution] => <p>There are $3$ possible rectangles: $1 \times 12$, $2 \times 6$ and $3 \times 4$.</p>
+    [_pz_explanation] => <div class='cwrap'>
+<p>The three solutions are from the three factor pairs of $12$</p>
+<p>
+\[\begin{aligned}[t]
+&1 \times 12\\
+&2 \times 6\\
+&3 \times 4
+\end{aligned}\]
+</p>
+</div>
+    [_sortable_list_prefix] => npz
+)
+
+27:06:2021 11:16:40
+
+Array
+(
+    [_title_field_name] => pz_title
+    [_title_prefix] => Puzzle
+    [_parent_list_id] => puzzles
+    [_head_list_id] => pzh
+    [_sub_list_id] => pzi
+    [_open_close_id_prefix] => p
+    [_main_db_tbl] => _app_puzzles
+    [_item_id] => 11
+    [_topic_id] => 10
+    [_list_count] => 1
+    [_del_class] => del_m_pz
+    [_icon_lib_url] => http://localhost/sharpe-maths/_stdlib/_images/_icons/
+    [_icon_app_url] => http://localhost/sharpe-maths/_images/_icons/
+    [_occ_class] =>  hidden
+    [_oco_class] => 
+    [_item_title] => 
+    [_item_name] => puzzle
+    [_pz_puzzle] => <p>If you have $12$ square tiles, how many different rectangles can you make which use up all $12$ tiles and produce a fully filled in rectangle?</p>
+    [_pz_solution] => <p>There are $3$ possible rectangles: $1 \times 12$, $2 \times 6$ and $3 \times 4$.</p>
+    [_pz_explanation] => <div class='cwrap'>
+<p>The three solutions are from the three factor pairs of $12$</p>
+<p>
+\[\begin{aligned}[t]
+&1 \times 12\\
+&2 \times 6\\
+&3 \times 4
+\end{aligned}\]
+</p>
+</div>
+    [_sortable_list_prefix] => npz
+)
+
+27:06:2021 11:16:40
+
+Array
+(
+    [_title_field_name] => pz_title
+    [_title_prefix] => Puzzle
+    [_parent_list_id] => puzzles
+    [_head_list_id] => pzh
+    [_sub_list_id] => pzi
+    [_open_close_id_prefix] => p
+    [_main_db_tbl] => _app_puzzles
+    [_item_id] => 11
+    [_topic_id] => 10
+    [_list_count] => 1
+    [_del_class] => del_m_pz
+    [_icon_lib_url] => http://localhost/sharpe-maths/_stdlib/_images/_icons/
+    [_icon_app_url] => http://localhost/sharpe-maths/_images/_icons/
+    [_occ_class] =>  hidden
+    [_oco_class] => 
+    [_item_title] => 
+    [_item_name] => puzzle
+    [_pz_puzzle] => <p>If you have $12$ square tiles, how many different rectangles can you make which use up all $12$ tiles and produce a fully filled in rectangle?</p>
+    [_pz_solution] => <p>There are $3$ possible rectangles: $1 \times 12$, $2 \times 6$ and $3 \times 4$.</p>
+    [_pz_explanation] => <div class='cwrap'>
+<p>The three solutions are from the three factor pairs of $12$</p>
+<p>
+\[\begin{aligned}[t]
+&1 \times 12\\
+&2 \times 6\\
+&3 \times 4
+\end{aligned}\]
+</p>
+</div>
+    [_sortable_list_prefix] => npz
+)
+
+27:06:2021 11:17:04
+
+Array
+(
+    [_title_field_name] => pz_title
+    [_title_prefix] => Puzzle
+    [_parent_list_id] => puzzles
+    [_head_list_id] => pzh
+    [_sub_list_id] => pzi
+    [_open_close_id_prefix] => p
+    [_main_db_tbl] => _app_puzzles
+    [_item_id] => 
+    [_topic_id] => 10
+    [_list_count] => 
+    [_del_class] => del_m_pz
+    [_icon_lib_url] => http://localhost/sharpe-maths/_stdlib/_images/_icons/
+    [_icon_app_url] => http://localhost/sharpe-maths/_images/_icons/
+    [_occ_class] => 
+    [_oco_class] => 
+    [_item_title] => 
+    [_item_name] => puzzle
+    [_pz_puzzle] => 
+    [_pz_solution] => 
+    [_pz_explanation] => 
+    [_sortable_list_prefix] => npz
+)
+
+27:06:2021 11:17:04
+
+Array
+(
+    [_title_field_name] => pz_title
+    [_title_prefix] => Puzzle
+    [_parent_list_id] => puzzles
+    [_head_list_id] => pzh
+    [_sub_list_id] => pzi
+    [_open_close_id_prefix] => p
+    [_main_db_tbl] => _app_puzzles
+    [_item_id] => 11
+    [_topic_id] => 10
+    [_list_count] => 1
+    [_del_class] => del_m_pz
+    [_icon_lib_url] => http://localhost/sharpe-maths/_stdlib/_images/_icons/
+    [_icon_app_url] => http://localhost/sharpe-maths/_images/_icons/
+    [_occ_class] =>  hidden
+    [_oco_class] => 
+    [_item_title] => $12$ Squares
+    [_item_name] => puzzle
+    [_pz_puzzle] => <p>If you have $12$ square tiles, how many different rectangles can you make which use up all $12$ tiles and produce a fully filled in rectangle?</p>
+    [_pz_solution] => <p>There are $3$ possible rectangles: $1 \times 12$, $2 \times 6$ and $3 \times 4$.</p>
+    [_pz_explanation] => <div class='cwrap'>
+<p>The three solutions are from the three factor pairs of $12$</p>
+<p>
+\[\begin{aligned}[t]
+&1 \times 12\\
+&2 \times 6\\
+&3 \times 4
+\end{aligned}\]
+</p>
+</div>
+    [_sortable_list_prefix] => npz
+)
+
+27:06:2021 11:17:04
+
+Array
+(
+    [_title_field_name] => pz_title
+    [_title_prefix] => Puzzle
+    [_parent_list_id] => puzzles
+    [_head_list_id] => pzh
+    [_sub_list_id] => pzi
+    [_open_close_id_prefix] => p
+    [_main_db_tbl] => _app_puzzles
+    [_item_id] => 11
+    [_topic_id] => 10
+    [_list_count] => 1
+    [_del_class] => del_m_pz
+    [_icon_lib_url] => http://localhost/sharpe-maths/_stdlib/_images/_icons/
+    [_icon_app_url] => http://localhost/sharpe-maths/_images/_icons/
+    [_occ_class] =>  hidden
+    [_oco_class] => 
+    [_item_title] => $12$ Squares
+    [_item_name] => puzzle
+    [_pz_puzzle] => <p>If you have $12$ square tiles, how many different rectangles can you make which use up all $12$ tiles and produce a fully filled in rectangle?</p>
+    [_pz_solution] => <p>There are $3$ possible rectangles: $1 \times 12$, $2 \times 6$ and $3 \times 4$.</p>
+    [_pz_explanation] => <div class='cwrap'>
+<p>The three solutions are from the three factor pairs of $12$</p>
+<p>
+\[\begin{aligned}[t]
+&1 \times 12\\
+&2 \times 6\\
+&3 \times 4
+\end{aligned}\]
+</p>
+</div>
+    [_sortable_list_prefix] => npz
+)
+
+27:06:2021 11:17:04
+
+Array
+(
+    [_title_field_name] => pz_title
+    [_title_prefix] => Puzzle
+    [_parent_list_id] => puzzles
+    [_head_list_id] => pzh
+    [_sub_list_id] => pzi
+    [_open_close_id_prefix] => p
+    [_main_db_tbl] => _app_puzzles
+    [_item_id] => 11
+    [_topic_id] => 10
+    [_list_count] => 1
+    [_del_class] => del_m_pz
+    [_icon_lib_url] => http://localhost/sharpe-maths/_stdlib/_images/_icons/
+    [_icon_app_url] => http://localhost/sharpe-maths/_images/_icons/
+    [_occ_class] =>  hidden
+    [_oco_class] => 
+    [_item_title] => $12$ Squares
+    [_item_name] => puzzle
+    [_pz_puzzle] => <p>If you have $12$ square tiles, how many different rectangles can you make which use up all $12$ tiles and produce a fully filled in rectangle?</p>
+    [_pz_solution] => <p>There are $3$ possible rectangles: $1 \times 12$, $2 \times 6$ and $3 \times 4$.</p>
+    [_pz_explanation] => <div class='cwrap'>
+<p>The three solutions are from the three factor pairs of $12$</p>
+<p>
+\[\begin{aligned}[t]
+&1 \times 12\\
+&2 \times 6\\
+&3 \times 4
+\end{aligned}\]
+</p>
+</div>
+    [_sortable_list_prefix] => npz
+)
+
+27:06:2021 11:17:09
+
+Array
+(
+    [_title_field_name] => pz_title
+    [_title_prefix] => Puzzle
+    [_parent_list_id] => puzzles
+    [_head_list_id] => pzh
+    [_sub_list_id] => pzi
+    [_open_close_id_prefix] => p
+    [_main_db_tbl] => _app_puzzles
+    [_item_id] => 
+    [_topic_id] => 10
+    [_list_count] => 
+    [_del_class] => del_m_pz
+    [_icon_lib_url] => http://localhost/sharpe-maths/_stdlib/_images/_icons/
+    [_icon_app_url] => http://localhost/sharpe-maths/_images/_icons/
+    [_occ_class] => 
+    [_oco_class] => 
+    [_item_title] => 
+    [_item_name] => puzzle
+    [_pz_puzzle] => 
+    [_pz_solution] => 
+    [_pz_explanation] => 
+    [_sortable_list_prefix] => npz
+)
+
+27:06:2021 11:17:09
+
+Array
+(
+    [_title_field_name] => pz_title
+    [_title_prefix] => Puzzle
+    [_parent_list_id] => puzzles
+    [_head_list_id] => pzh
+    [_sub_list_id] => pzi
+    [_open_close_id_prefix] => p
+    [_main_db_tbl] => _app_puzzles
+    [_item_id] => 11
+    [_topic_id] => 10
+    [_list_count] => 1
+    [_del_class] => del_m_pz
+    [_icon_lib_url] => http://localhost/sharpe-maths/_stdlib/_images/_icons/
+    [_icon_app_url] => http://localhost/sharpe-maths/_images/_icons/
+    [_occ_class] =>  hidden
+    [_oco_class] => 
+    [_item_title] => $12$ Squares
+    [_item_name] => puzzle
+    [_pz_puzzle] => <p>If you have $12$ square tiles, how many different rectangles can you make which use up all $12$ tiles and produce a fully filled in rectangle?</p>
+    [_pz_solution] => <p>There are $3$ possible rectangles: $1 \times 12$, $2 \times 6$ and $3 \times 4$.</p>
+    [_pz_explanation] => <div class='cwrap'>
+<p>The three solutions are from the three factor pairs of $12$</p>
+<p>
+\[\begin{aligned}[t]
+&1 \times 12\\
+&2 \times 6\\
+&3 \times 4
+\end{aligned}\]
+</p>
+</div>
+    [_sortable_list_prefix] => npz
+)
+
+27:06:2021 11:17:09
+
+Array
+(
+    [_title_field_name] => pz_title
+    [_title_prefix] => Puzzle
+    [_parent_list_id] => puzzles
+    [_head_list_id] => pzh
+    [_sub_list_id] => pzi
+    [_open_close_id_prefix] => p
+    [_main_db_tbl] => _app_puzzles
+    [_item_id] => 11
+    [_topic_id] => 10
+    [_list_count] => 1
+    [_del_class] => del_m_pz
+    [_icon_lib_url] => http://localhost/sharpe-maths/_stdlib/_images/_icons/
+    [_icon_app_url] => http://localhost/sharpe-maths/_images/_icons/
+    [_occ_class] =>  hidden
+    [_oco_class] => 
+    [_item_title] => $12$ Squares
+    [_item_name] => puzzle
+    [_pz_puzzle] => <p>If you have $12$ square tiles, how many different rectangles can you make which use up all $12$ tiles and produce a fully filled in rectangle?</p>
+    [_pz_solution] => <p>There are $3$ possible rectangles: $1 \times 12$, $2 \times 6$ and $3 \times 4$.</p>
+    [_pz_explanation] => <div class='cwrap'>
+<p>The three solutions are from the three factor pairs of $12$</p>
+<p>
+\[\begin{aligned}[t]
+&1 \times 12\\
+&2 \times 6\\
+&3 \times 4
+\end{aligned}\]
+</p>
+</div>
+    [_sortable_list_prefix] => npz
+)
+
+27:06:2021 11:17:09
+
+Array
+(
+    [_title_field_name] => pz_title
+    [_title_prefix] => Puzzle
+    [_parent_list_id] => puzzles
+    [_head_list_id] => pzh
+    [_sub_list_id] => pzi
+    [_open_close_id_prefix] => p
+    [_main_db_tbl] => _app_puzzles
+    [_item_id] => 11
+    [_topic_id] => 10
+    [_list_count] => 1
+    [_del_class] => del_m_pz
+    [_icon_lib_url] => http://localhost/sharpe-maths/_stdlib/_images/_icons/
+    [_icon_app_url] => http://localhost/sharpe-maths/_images/_icons/
+    [_occ_class] =>  hidden
+    [_oco_class] => 
+    [_item_title] => $12$ Squares
+    [_item_name] => puzzle
+    [_pz_puzzle] => <p>If you have $12$ square tiles, how many different rectangles can you make which use up all $12$ tiles and produce a fully filled in rectangle?</p>
+    [_pz_solution] => <p>There are $3$ possible rectangles: $1 \times 12$, $2 \times 6$ and $3 \times 4$.</p>
+    [_pz_explanation] => <div class='cwrap'>
+<p>The three solutions are from the three factor pairs of $12$</p>
+<p>
+\[\begin{aligned}[t]
+&1 \times 12\\
+&2 \times 6\\
+&3 \times 4
+\end{aligned}\]
+</p>
+</div>
+    [_sortable_list_prefix] => npz
+)
+
+27:06:2021 11:17:23
+
+Array
+(
+    [_title_field_name] => pz_title
+    [_title_prefix] => Puzzle
+    [_parent_list_id] => puzzles
+    [_head_list_id] => pzh
+    [_sub_list_id] => pzi
+    [_open_close_id_prefix] => p
+    [_main_db_tbl] => _app_puzzles
+    [_item_id] => 
+    [_topic_id] => 10
+    [_list_count] => 
+    [_del_class] => del_m_pz
+    [_icon_lib_url] => http://localhost/sharpe-maths/_stdlib/_images/_icons/
+    [_icon_app_url] => http://localhost/sharpe-maths/_images/_icons/
+    [_occ_class] => 
+    [_oco_class] => 
+    [_item_title] => 
+    [_item_name] => puzzle
+    [_pz_puzzle] => 
+    [_pz_solution] => 
+    [_pz_explanation] => 
+    [_sortable_list_prefix] => npz
+)
+
+27:06:2021 11:17:23
+
+Array
+(
+    [_title_field_name] => pz_title
+    [_title_prefix] => Puzzle
+    [_parent_list_id] => puzzles
+    [_head_list_id] => pzh
+    [_sub_list_id] => pzi
+    [_open_close_id_prefix] => p
+    [_main_db_tbl] => _app_puzzles
+    [_item_id] => 11
+    [_topic_id] => 10
+    [_list_count] => 1
+    [_del_class] => del_m_pz
+    [_icon_lib_url] => http://localhost/sharpe-maths/_stdlib/_images/_icons/
+    [_icon_app_url] => http://localhost/sharpe-maths/_images/_icons/
+    [_occ_class] =>  hidden
+    [_oco_class] => 
+    [_item_title] => $ \ 12 \ $ Squares
+    [_item_name] => puzzle
+    [_pz_puzzle] => <p>If you have $12$ square tiles, how many different rectangles can you make which use up all $12$ tiles and produce a fully filled in rectangle?</p>
+    [_pz_solution] => <p>There are $3$ possible rectangles: $1 \times 12$, $2 \times 6$ and $3 \times 4$.</p>
+    [_pz_explanation] => <div class='cwrap'>
+<p>The three solutions are from the three factor pairs of $12$</p>
+<p>
+\[\begin{aligned}[t]
+&1 \times 12\\
+&2 \times 6\\
+&3 \times 4
+\end{aligned}\]
+</p>
+</div>
+    [_sortable_list_prefix] => npz
+)
+
+27:06:2021 11:17:23
+
+Array
+(
+    [_title_field_name] => pz_title
+    [_title_prefix] => Puzzle
+    [_parent_list_id] => puzzles
+    [_head_list_id] => pzh
+    [_sub_list_id] => pzi
+    [_open_close_id_prefix] => p
+    [_main_db_tbl] => _app_puzzles
+    [_item_id] => 11
+    [_topic_id] => 10
+    [_list_count] => 1
+    [_del_class] => del_m_pz
+    [_icon_lib_url] => http://localhost/sharpe-maths/_stdlib/_images/_icons/
+    [_icon_app_url] => http://localhost/sharpe-maths/_images/_icons/
+    [_occ_class] =>  hidden
+    [_oco_class] => 
+    [_item_title] => $ \ 12 \ $ Squares
+    [_item_name] => puzzle
+    [_pz_puzzle] => <p>If you have $12$ square tiles, how many different rectangles can you make which use up all $12$ tiles and produce a fully filled in rectangle?</p>
+    [_pz_solution] => <p>There are $3$ possible rectangles: $1 \times 12$, $2 \times 6$ and $3 \times 4$.</p>
+    [_pz_explanation] => <div class='cwrap'>
+<p>The three solutions are from the three factor pairs of $12$</p>
+<p>
+\[\begin{aligned}[t]
+&1 \times 12\\
+&2 \times 6\\
+&3 \times 4
+\end{aligned}\]
+</p>
+</div>
+    [_sortable_list_prefix] => npz
+)
+
+27:06:2021 11:17:23
+
+Array
+(
+    [_title_field_name] => pz_title
+    [_title_prefix] => Puzzle
+    [_parent_list_id] => puzzles
+    [_head_list_id] => pzh
+    [_sub_list_id] => pzi
+    [_open_close_id_prefix] => p
+    [_main_db_tbl] => _app_puzzles
+    [_item_id] => 11
+    [_topic_id] => 10
+    [_list_count] => 1
+    [_del_class] => del_m_pz
+    [_icon_lib_url] => http://localhost/sharpe-maths/_stdlib/_images/_icons/
+    [_icon_app_url] => http://localhost/sharpe-maths/_images/_icons/
+    [_occ_class] =>  hidden
+    [_oco_class] => 
+    [_item_title] => $ \ 12 \ $ Squares
+    [_item_name] => puzzle
+    [_pz_puzzle] => <p>If you have $12$ square tiles, how many different rectangles can you make which use up all $12$ tiles and produce a fully filled in rectangle?</p>
+    [_pz_solution] => <p>There are $3$ possible rectangles: $1 \times 12$, $2 \times 6$ and $3 \times 4$.</p>
+    [_pz_explanation] => <div class='cwrap'>
+<p>The three solutions are from the three factor pairs of $12$</p>
+<p>
+\[\begin{aligned}[t]
+&1 \times 12\\
+&2 \times 6\\
+&3 \times 4
+\end{aligned}\]
+</p>
+</div>
+    [_sortable_list_prefix] => npz
+)
+
+27:06:2021 11:18:33
+
+Array
+(
+    [_title_field_name] => pz_title
+    [_title_prefix] => Puzzle
+    [_parent_list_id] => puzzles
+    [_head_list_id] => pzh
+    [_sub_list_id] => pzi
+    [_open_close_id_prefix] => p
+    [_main_db_tbl] => _app_puzzles
+    [_item_id] => 
+    [_topic_id] => 10
+    [_list_count] => 
+    [_del_class] => del_m_pz
+    [_icon_lib_url] => http://localhost/sharpe-maths/_stdlib/_images/_icons/
+    [_icon_app_url] => http://localhost/sharpe-maths/_images/_icons/
+    [_occ_class] => 
+    [_oco_class] => 
+    [_item_title] => 
+    [_item_name] => puzzle
+    [_pz_puzzle] => 
+    [_pz_solution] => 
+    [_pz_explanation] => 
+    [_sortable_list_prefix] => npz
+)
+
+27:06:2021 11:18:33
+
+Array
+(
+    [_title_field_name] => pz_title
+    [_title_prefix] => Puzzle
+    [_parent_list_id] => puzzles
+    [_head_list_id] => pzh
+    [_sub_list_id] => pzi
+    [_open_close_id_prefix] => p
+    [_main_db_tbl] => _app_puzzles
+    [_item_id] => 11
+    [_topic_id] => 10
+    [_list_count] => 1
+    [_del_class] => del_m_pz
+    [_icon_lib_url] => http://localhost/sharpe-maths/_stdlib/_images/_icons/
+    [_icon_app_url] => http://localhost/sharpe-maths/_images/_icons/
+    [_occ_class] =>  hidden
+    [_oco_class] => 
+    [_item_title] => $ \ 12 \ $ Squares
+    [_item_name] => puzzle
+    [_pz_puzzle] => <p>If you have $12$ square tiles, how many different rectangles can you make which use up all $12$ tiles and produce a fully filled in rectangle?</p>
+    [_pz_solution] => <p>There are $3$ possible rectangles: </p>
+
+\[\begin{aligned}[t]
+1 &\times 12 \\
+2 &\times 6 \\
+3 \times 4
+
+\end{aligned}\]
+    [_pz_explanation] => <div class='cwrap'>
+<p>The three solutions are from the three factor pairs of $12$</p>
+<p>
+\[\begin{aligned}[t]
+&1 \times 12\\
+&2 \times 6\\
+&3 \times 4
+\end{aligned}\]
+</p>
+</div>
+    [_sortable_list_prefix] => npz
+)
+
+27:06:2021 11:18:33
+
+Array
+(
+    [_title_field_name] => pz_title
+    [_title_prefix] => Puzzle
+    [_parent_list_id] => puzzles
+    [_head_list_id] => pzh
+    [_sub_list_id] => pzi
+    [_open_close_id_prefix] => p
+    [_main_db_tbl] => _app_puzzles
+    [_item_id] => 11
+    [_topic_id] => 10
+    [_list_count] => 1
+    [_del_class] => del_m_pz
+    [_icon_lib_url] => http://localhost/sharpe-maths/_stdlib/_images/_icons/
+    [_icon_app_url] => http://localhost/sharpe-maths/_images/_icons/
+    [_occ_class] =>  hidden
+    [_oco_class] => 
+    [_item_title] => $ \ 12 \ $ Squares
+    [_item_name] => puzzle
+    [_pz_puzzle] => <p>If you have $12$ square tiles, how many different rectangles can you make which use up all $12$ tiles and produce a fully filled in rectangle?</p>
+    [_pz_solution] => <p>There are $3$ possible rectangles: </p>
+
+\[\begin{aligned}[t]
+1 &\times 12 \\
+2 &\times 6 \\
+3 \times 4
+
+\end{aligned}\]
+    [_pz_explanation] => <div class='cwrap'>
+<p>The three solutions are from the three factor pairs of $12$</p>
+<p>
+\[\begin{aligned}[t]
+&1 \times 12\\
+&2 \times 6\\
+&3 \times 4
+\end{aligned}\]
+</p>
+</div>
+    [_sortable_list_prefix] => npz
+)
+
+27:06:2021 11:18:33
+
+Array
+(
+    [_title_field_name] => pz_title
+    [_title_prefix] => Puzzle
+    [_parent_list_id] => puzzles
+    [_head_list_id] => pzh
+    [_sub_list_id] => pzi
+    [_open_close_id_prefix] => p
+    [_main_db_tbl] => _app_puzzles
+    [_item_id] => 11
+    [_topic_id] => 10
+    [_list_count] => 1
+    [_del_class] => del_m_pz
+    [_icon_lib_url] => http://localhost/sharpe-maths/_stdlib/_images/_icons/
+    [_icon_app_url] => http://localhost/sharpe-maths/_images/_icons/
+    [_occ_class] =>  hidden
+    [_oco_class] => 
+    [_item_title] => $ \ 12 \ $ Squares
+    [_item_name] => puzzle
+    [_pz_puzzle] => <p>If you have $12$ square tiles, how many different rectangles can you make which use up all $12$ tiles and produce a fully filled in rectangle?</p>
+    [_pz_solution] => <p>There are $3$ possible rectangles: </p>
+
+\[\begin{aligned}[t]
+1 &\times 12 \\
+2 &\times 6 \\
+3 \times 4
+
+\end{aligned}\]
+    [_pz_explanation] => <div class='cwrap'>
+<p>The three solutions are from the three factor pairs of $12$</p>
+<p>
+\[\begin{aligned}[t]
+&1 \times 12\\
+&2 \times 6\\
+&3 \times 4
+\end{aligned}\]
+</p>
+</div>
+    [_sortable_list_prefix] => npz
+)
+
+27:06:2021 11:18:43
+
+Array
+(
+    [_title_field_name] => pz_title
+    [_title_prefix] => Puzzle
+    [_parent_list_id] => puzzles
+    [_head_list_id] => pzh
+    [_sub_list_id] => pzi
+    [_open_close_id_prefix] => p
+    [_main_db_tbl] => _app_puzzles
+    [_item_id] => 
+    [_topic_id] => 10
+    [_list_count] => 
+    [_del_class] => del_m_pz
+    [_icon_lib_url] => http://localhost/sharpe-maths/_stdlib/_images/_icons/
+    [_icon_app_url] => http://localhost/sharpe-maths/_images/_icons/
+    [_occ_class] => 
+    [_oco_class] => 
+    [_item_title] => 
+    [_item_name] => puzzle
+    [_pz_puzzle] => 
+    [_pz_solution] => 
+    [_pz_explanation] => 
+    [_sortable_list_prefix] => npz
+)
+
+27:06:2021 11:18:43
+
+Array
+(
+    [_title_field_name] => pz_title
+    [_title_prefix] => Puzzle
+    [_parent_list_id] => puzzles
+    [_head_list_id] => pzh
+    [_sub_list_id] => pzi
+    [_open_close_id_prefix] => p
+    [_main_db_tbl] => _app_puzzles
+    [_item_id] => 11
+    [_topic_id] => 10
+    [_list_count] => 1
+    [_del_class] => del_m_pz
+    [_icon_lib_url] => http://localhost/sharpe-maths/_stdlib/_images/_icons/
+    [_icon_app_url] => http://localhost/sharpe-maths/_images/_icons/
+    [_occ_class] =>  hidden
+    [_oco_class] => 
+    [_item_title] => $ \ 12 \ $ Squares
+    [_item_name] => puzzle
+    [_pz_puzzle] => <p>If you have $12$ square tiles, how many different rectangles can you make which use up all $12$ tiles and produce a fully filled in rectangle?</p>
+    [_pz_solution] => <p>There are $3$ possible rectangles: </p>
+
+\[\begin{aligned}[t]
+1 &\times 12 \\
+2 &\times 6 \\
+3 &\times 4
+
+\end{aligned}\]
+    [_pz_explanation] => <div class='cwrap'>
+<p>The three solutions are from the three factor pairs of $12$</p>
+<p>
+\[\begin{aligned}[t]
+&1 \times 12\\
+&2 \times 6\\
+&3 \times 4
+\end{aligned}\]
+</p>
+</div>
+    [_sortable_list_prefix] => npz
+)
+
+27:06:2021 11:18:43
+
+Array
+(
+    [_title_field_name] => pz_title
+    [_title_prefix] => Puzzle
+    [_parent_list_id] => puzzles
+    [_head_list_id] => pzh
+    [_sub_list_id] => pzi
+    [_open_close_id_prefix] => p
+    [_main_db_tbl] => _app_puzzles
+    [_item_id] => 11
+    [_topic_id] => 10
+    [_list_count] => 1
+    [_del_class] => del_m_pz
+    [_icon_lib_url] => http://localhost/sharpe-maths/_stdlib/_images/_icons/
+    [_icon_app_url] => http://localhost/sharpe-maths/_images/_icons/
+    [_occ_class] =>  hidden
+    [_oco_class] => 
+    [_item_title] => $ \ 12 \ $ Squares
+    [_item_name] => puzzle
+    [_pz_puzzle] => <p>If you have $12$ square tiles, how many different rectangles can you make which use up all $12$ tiles and produce a fully filled in rectangle?</p>
+    [_pz_solution] => <p>There are $3$ possible rectangles: </p>
+
+\[\begin{aligned}[t]
+1 &\times 12 \\
+2 &\times 6 \\
+3 &\times 4
+
+\end{aligned}\]
+    [_pz_explanation] => <div class='cwrap'>
+<p>The three solutions are from the three factor pairs of $12$</p>
+<p>
+\[\begin{aligned}[t]
+&1 \times 12\\
+&2 \times 6\\
+&3 \times 4
+\end{aligned}\]
+</p>
+</div>
+    [_sortable_list_prefix] => npz
+)
+
+27:06:2021 11:18:44
+
+Array
+(
+    [_title_field_name] => pz_title
+    [_title_prefix] => Puzzle
+    [_parent_list_id] => puzzles
+    [_head_list_id] => pzh
+    [_sub_list_id] => pzi
+    [_open_close_id_prefix] => p
+    [_main_db_tbl] => _app_puzzles
+    [_item_id] => 11
+    [_topic_id] => 10
+    [_list_count] => 1
+    [_del_class] => del_m_pz
+    [_icon_lib_url] => http://localhost/sharpe-maths/_stdlib/_images/_icons/
+    [_icon_app_url] => http://localhost/sharpe-maths/_images/_icons/
+    [_occ_class] =>  hidden
+    [_oco_class] => 
+    [_item_title] => $ \ 12 \ $ Squares
+    [_item_name] => puzzle
+    [_pz_puzzle] => <p>If you have $12$ square tiles, how many different rectangles can you make which use up all $12$ tiles and produce a fully filled in rectangle?</p>
+    [_pz_solution] => <p>There are $3$ possible rectangles: </p>
+
+\[\begin{aligned}[t]
+1 &\times 12 \\
+2 &\times 6 \\
+3 &\times 4
+
+\end{aligned}\]
+    [_pz_explanation] => <div class='cwrap'>
+<p>The three solutions are from the three factor pairs of $12$</p>
+<p>
+\[\begin{aligned}[t]
+&1 \times 12\\
+&2 \times 6\\
+&3 \times 4
+\end{aligned}\]
+</p>
+</div>
+    [_sortable_list_prefix] => npz
+)
+
+27:06:2021 11:19:29
+
+Array
+(
+    [_title_field_name] => pz_title
+    [_title_prefix] => Puzzle
+    [_parent_list_id] => puzzles
+    [_head_list_id] => pzh
+    [_sub_list_id] => pzi
+    [_open_close_id_prefix] => p
+    [_main_db_tbl] => _app_puzzles
+    [_item_id] => 
+    [_topic_id] => 10
+    [_list_count] => 
+    [_del_class] => del_m_pz
+    [_icon_lib_url] => http://localhost/sharpe-maths/_stdlib/_images/_icons/
+    [_icon_app_url] => http://localhost/sharpe-maths/_images/_icons/
+    [_occ_class] => 
+    [_oco_class] => 
+    [_item_title] => 
+    [_item_name] => puzzle
+    [_pz_puzzle] => 
+    [_pz_solution] => 
+    [_pz_explanation] => 
+    [_sortable_list_prefix] => npz
+)
+
+27:06:2021 11:19:29
+
+Array
+(
+    [_title_field_name] => pz_title
+    [_title_prefix] => Puzzle
+    [_parent_list_id] => puzzles
+    [_head_list_id] => pzh
+    [_sub_list_id] => pzi
+    [_open_close_id_prefix] => p
+    [_main_db_tbl] => _app_puzzles
+    [_item_id] => 11
+    [_topic_id] => 10
+    [_list_count] => 1
+    [_del_class] => del_m_pz
+    [_icon_lib_url] => http://localhost/sharpe-maths/_stdlib/_images/_icons/
+    [_icon_app_url] => http://localhost/sharpe-maths/_images/_icons/
+    [_occ_class] =>  hidden
+    [_oco_class] => 
+    [_item_title] => $ \ 12 \ $ Squares
+    [_item_name] => puzzle
+    [_pz_puzzle] => <p>If you have $12$ square tiles, how many different rectangles can you make which use up all $12$ tiles and produce a fully filled in rectangle?</p>
+    [_pz_solution] => <p>There are $3$ possible rectangles: </p>
+<p>
+\[\begin{aligned}[t]
+1 &\times 12 \\
+2 &\times 6 \\
+3 &\times 4
+
+\end{aligned}\]
+</p>
+    [_pz_explanation] => <div class='cwrap'>
+<p>The three solutions are from the three factor pairs of $12$</p>
+<p>
+\[\begin{aligned}[t]
+&1 \times 12\\
+&2 \times 6\\
+&3 \times 4
+\end{aligned}\]
+</p>
+</div>
+    [_sortable_list_prefix] => npz
+)
+
+27:06:2021 11:19:29
+
+Array
+(
+    [_title_field_name] => pz_title
+    [_title_prefix] => Puzzle
+    [_parent_list_id] => puzzles
+    [_head_list_id] => pzh
+    [_sub_list_id] => pzi
+    [_open_close_id_prefix] => p
+    [_main_db_tbl] => _app_puzzles
+    [_item_id] => 11
+    [_topic_id] => 10
+    [_list_count] => 1
+    [_del_class] => del_m_pz
+    [_icon_lib_url] => http://localhost/sharpe-maths/_stdlib/_images/_icons/
+    [_icon_app_url] => http://localhost/sharpe-maths/_images/_icons/
+    [_occ_class] =>  hidden
+    [_oco_class] => 
+    [_item_title] => $ \ 12 \ $ Squares
+    [_item_name] => puzzle
+    [_pz_puzzle] => <p>If you have $12$ square tiles, how many different rectangles can you make which use up all $12$ tiles and produce a fully filled in rectangle?</p>
+    [_pz_solution] => <p>There are $3$ possible rectangles: </p>
+<p>
+\[\begin{aligned}[t]
+1 &\times 12 \\
+2 &\times 6 \\
+3 &\times 4
+
+\end{aligned}\]
+</p>
+    [_pz_explanation] => <div class='cwrap'>
+<p>The three solutions are from the three factor pairs of $12$</p>
+<p>
+\[\begin{aligned}[t]
+&1 \times 12\\
+&2 \times 6\\
+&3 \times 4
+\end{aligned}\]
+</p>
+</div>
+    [_sortable_list_prefix] => npz
+)
+
+27:06:2021 11:19:29
+
+Array
+(
+    [_title_field_name] => pz_title
+    [_title_prefix] => Puzzle
+    [_parent_list_id] => puzzles
+    [_head_list_id] => pzh
+    [_sub_list_id] => pzi
+    [_open_close_id_prefix] => p
+    [_main_db_tbl] => _app_puzzles
+    [_item_id] => 11
+    [_topic_id] => 10
+    [_list_count] => 1
+    [_del_class] => del_m_pz
+    [_icon_lib_url] => http://localhost/sharpe-maths/_stdlib/_images/_icons/
+    [_icon_app_url] => http://localhost/sharpe-maths/_images/_icons/
+    [_occ_class] =>  hidden
+    [_oco_class] => 
+    [_item_title] => $ \ 12 \ $ Squares
+    [_item_name] => puzzle
+    [_pz_puzzle] => <p>If you have $12$ square tiles, how many different rectangles can you make which use up all $12$ tiles and produce a fully filled in rectangle?</p>
+    [_pz_solution] => <p>There are $3$ possible rectangles: </p>
+<p>
+\[\begin{aligned}[t]
+1 &\times 12 \\
+2 &\times 6 \\
+3 &\times 4
+
+\end{aligned}\]
+</p>
+    [_pz_explanation] => <div class='cwrap'>
+<p>The three solutions are from the three factor pairs of $12$</p>
+<p>
+\[\begin{aligned}[t]
+&1 \times 12\\
+&2 \times 6\\
+&3 \times 4
+\end{aligned}\]
+</p>
+</div>
+    [_sortable_list_prefix] => npz
+)
+
+27:06:2021 11:19:55
+
+Array
+(
+    [_title_field_name] => pz_title
+    [_title_prefix] => Puzzle
+    [_parent_list_id] => puzzles
+    [_head_list_id] => pzh
+    [_sub_list_id] => pzi
+    [_open_close_id_prefix] => p
+    [_main_db_tbl] => _app_puzzles
+    [_item_id] => 
+    [_topic_id] => 10
+    [_list_count] => 
+    [_del_class] => del_m_pz
+    [_icon_lib_url] => http://localhost/sharpe-maths/_stdlib/_images/_icons/
+    [_icon_app_url] => http://localhost/sharpe-maths/_images/_icons/
+    [_occ_class] => 
+    [_oco_class] => 
+    [_item_title] => 
+    [_item_name] => puzzle
+    [_pz_puzzle] => 
+    [_pz_solution] => 
+    [_pz_explanation] => 
+    [_sortable_list_prefix] => npz
+)
+
+27:06:2021 11:19:55
+
+Array
+(
+    [_title_field_name] => pz_title
+    [_title_prefix] => Puzzle
+    [_parent_list_id] => puzzles
+    [_head_list_id] => pzh
+    [_sub_list_id] => pzi
+    [_open_close_id_prefix] => p
+    [_main_db_tbl] => _app_puzzles
+    [_item_id] => 11
+    [_topic_id] => 10
+    [_list_count] => 1
+    [_del_class] => del_m_pz
+    [_icon_lib_url] => http://localhost/sharpe-maths/_stdlib/_images/_icons/
+    [_icon_app_url] => http://localhost/sharpe-maths/_images/_icons/
+    [_occ_class] =>  hidden
+    [_oco_class] => 
+    [_item_title] => $ \ 12 \ $ Squares
+    [_item_name] => puzzle
+    [_pz_puzzle] => <p>If you have $12$ square tiles, how many different rectangles can you make which use up all $12$ tiles and produce a fully filled in rectangle?</p>
+    [_pz_solution] => <div class='cwrap'>
+<p>There are $3$ possible rectangles: </p>
+<p>
+\[\begin{aligned}[t]
+1 &\times 12 \\
+2 &\times 6 \\
+3 &\times 4
+
+\end{aligned}\]
+</p>
+</div>
+    [_pz_explanation] => <div class='cwrap'>
+<p>The three solutions are from the three factor pairs of $12$</p>
+<p>
+\[\begin{aligned}[t]
+&1 \times 12\\
+&2 \times 6\\
+&3 \times 4
+\end{aligned}\]
+</p>
+</div>
+    [_sortable_list_prefix] => npz
+)
+
+27:06:2021 11:19:55
+
+Array
+(
+    [_title_field_name] => pz_title
+    [_title_prefix] => Puzzle
+    [_parent_list_id] => puzzles
+    [_head_list_id] => pzh
+    [_sub_list_id] => pzi
+    [_open_close_id_prefix] => p
+    [_main_db_tbl] => _app_puzzles
+    [_item_id] => 11
+    [_topic_id] => 10
+    [_list_count] => 1
+    [_del_class] => del_m_pz
+    [_icon_lib_url] => http://localhost/sharpe-maths/_stdlib/_images/_icons/
+    [_icon_app_url] => http://localhost/sharpe-maths/_images/_icons/
+    [_occ_class] =>  hidden
+    [_oco_class] => 
+    [_item_title] => $ \ 12 \ $ Squares
+    [_item_name] => puzzle
+    [_pz_puzzle] => <p>If you have $12$ square tiles, how many different rectangles can you make which use up all $12$ tiles and produce a fully filled in rectangle?</p>
+    [_pz_solution] => <div class='cwrap'>
+<p>There are $3$ possible rectangles: </p>
+<p>
+\[\begin{aligned}[t]
+1 &\times 12 \\
+2 &\times 6 \\
+3 &\times 4
+
+\end{aligned}\]
+</p>
+</div>
+    [_pz_explanation] => <div class='cwrap'>
+<p>The three solutions are from the three factor pairs of $12$</p>
+<p>
+\[\begin{aligned}[t]
+&1 \times 12\\
+&2 \times 6\\
+&3 \times 4
+\end{aligned}\]
+</p>
+</div>
+    [_sortable_list_prefix] => npz
+)
+
+27:06:2021 11:19:55
+
+Array
+(
+    [_title_field_name] => pz_title
+    [_title_prefix] => Puzzle
+    [_parent_list_id] => puzzles
+    [_head_list_id] => pzh
+    [_sub_list_id] => pzi
+    [_open_close_id_prefix] => p
+    [_main_db_tbl] => _app_puzzles
+    [_item_id] => 11
+    [_topic_id] => 10
+    [_list_count] => 1
+    [_del_class] => del_m_pz
+    [_icon_lib_url] => http://localhost/sharpe-maths/_stdlib/_images/_icons/
+    [_icon_app_url] => http://localhost/sharpe-maths/_images/_icons/
+    [_occ_class] =>  hidden
+    [_oco_class] => 
+    [_item_title] => $ \ 12 \ $ Squares
+    [_item_name] => puzzle
+    [_pz_puzzle] => <p>If you have $12$ square tiles, how many different rectangles can you make which use up all $12$ tiles and produce a fully filled in rectangle?</p>
+    [_pz_solution] => <div class='cwrap'>
+<p>There are $3$ possible rectangles: </p>
+<p>
+\[\begin{aligned}[t]
+1 &\times 12 \\
+2 &\times 6 \\
+3 &\times 4
+
+\end{aligned}\]
+</p>
+</div>
+    [_pz_explanation] => <div class='cwrap'>
+<p>The three solutions are from the three factor pairs of $12$</p>
+<p>
+\[\begin{aligned}[t]
+&1 \times 12\\
+&2 \times 6\\
+&3 \times 4
+\end{aligned}\]
+</p>
+</div>
+    [_sortable_list_prefix] => npz
+)
+
+27:06:2021 11:20:53
+
+Array
+(
+    [_title_field_name] => pz_title
+    [_title_prefix] => Puzzle
+    [_parent_list_id] => puzzles
+    [_head_list_id] => pzh
+    [_sub_list_id] => pzi
+    [_open_close_id_prefix] => p
+    [_main_db_tbl] => _app_puzzles
+    [_item_id] => 
+    [_topic_id] => 10
+    [_list_count] => 
+    [_del_class] => del_m_pz
+    [_icon_lib_url] => http://localhost/sharpe-maths/_stdlib/_images/_icons/
+    [_icon_app_url] => http://localhost/sharpe-maths/_images/_icons/
+    [_occ_class] => 
+    [_oco_class] => 
+    [_item_title] => 
+    [_item_name] => puzzle
+    [_pz_puzzle] => 
+    [_pz_solution] => 
+    [_pz_explanation] => 
+    [_sortable_list_prefix] => npz
+)
+
+27:06:2021 11:20:53
+
+Array
+(
+    [_title_field_name] => pz_title
+    [_title_prefix] => Puzzle
+    [_parent_list_id] => puzzles
+    [_head_list_id] => pzh
+    [_sub_list_id] => pzi
+    [_open_close_id_prefix] => p
+    [_main_db_tbl] => _app_puzzles
+    [_item_id] => 11
+    [_topic_id] => 10
+    [_list_count] => 1
+    [_del_class] => del_m_pz
+    [_icon_lib_url] => http://localhost/sharpe-maths/_stdlib/_images/_icons/
+    [_icon_app_url] => http://localhost/sharpe-maths/_images/_icons/
+    [_occ_class] =>  hidden
+    [_oco_class] => 
+    [_item_title] => $ \ 12 \ $ Squares
+    [_item_name] => puzzle
+    [_pz_puzzle] => <p>If you have $12$ square tiles, how many different rectangles can you make which use up all $12$ tiles and produce a fully filled in rectangle?</p>
+    [_pz_solution] => <div class='cwrap'>
+<p>There are $3$ possible rectangles: </p>
+<p>
+\[\begin{aligned}[t]
+1 &\text{ by } 12 \\
+2 &\text{ by } 6 \\
+3 &\text{ by } 4
+
+\end{aligned}\]
+</p>
+</div>
+    [_pz_explanation] => <div class='cwrap'>
+<p>The three solutions are from the three factor pairs of $12$</p>
+<p>
+\[\begin{aligned}[t]
+&1 \times 12\\
+&2 \times 6\\
+&3 \times 4
+\end{aligned}\]
+</p>
+</div>
+    [_sortable_list_prefix] => npz
+)
+
+27:06:2021 11:20:53
+
+Array
+(
+    [_title_field_name] => pz_title
+    [_title_prefix] => Puzzle
+    [_parent_list_id] => puzzles
+    [_head_list_id] => pzh
+    [_sub_list_id] => pzi
+    [_open_close_id_prefix] => p
+    [_main_db_tbl] => _app_puzzles
+    [_item_id] => 11
+    [_topic_id] => 10
+    [_list_count] => 1
+    [_del_class] => del_m_pz
+    [_icon_lib_url] => http://localhost/sharpe-maths/_stdlib/_images/_icons/
+    [_icon_app_url] => http://localhost/sharpe-maths/_images/_icons/
+    [_occ_class] =>  hidden
+    [_oco_class] => 
+    [_item_title] => $ \ 12 \ $ Squares
+    [_item_name] => puzzle
+    [_pz_puzzle] => <p>If you have $12$ square tiles, how many different rectangles can you make which use up all $12$ tiles and produce a fully filled in rectangle?</p>
+    [_pz_solution] => <div class='cwrap'>
+<p>There are $3$ possible rectangles: </p>
+<p>
+\[\begin{aligned}[t]
+1 &\text{ by } 12 \\
+2 &\text{ by } 6 \\
+3 &\text{ by } 4
+
+\end{aligned}\]
+</p>
+</div>
+    [_pz_explanation] => <div class='cwrap'>
+<p>The three solutions are from the three factor pairs of $12$</p>
+<p>
+\[\begin{aligned}[t]
+&1 \times 12\\
+&2 \times 6\\
+&3 \times 4
+\end{aligned}\]
+</p>
+</div>
+    [_sortable_list_prefix] => npz
+)
+
+27:06:2021 11:20:53
+
+Array
+(
+    [_title_field_name] => pz_title
+    [_title_prefix] => Puzzle
+    [_parent_list_id] => puzzles
+    [_head_list_id] => pzh
+    [_sub_list_id] => pzi
+    [_open_close_id_prefix] => p
+    [_main_db_tbl] => _app_puzzles
+    [_item_id] => 11
+    [_topic_id] => 10
+    [_list_count] => 1
+    [_del_class] => del_m_pz
+    [_icon_lib_url] => http://localhost/sharpe-maths/_stdlib/_images/_icons/
+    [_icon_app_url] => http://localhost/sharpe-maths/_images/_icons/
+    [_occ_class] =>  hidden
+    [_oco_class] => 
+    [_item_title] => $ \ 12 \ $ Squares
+    [_item_name] => puzzle
+    [_pz_puzzle] => <p>If you have $12$ square tiles, how many different rectangles can you make which use up all $12$ tiles and produce a fully filled in rectangle?</p>
+    [_pz_solution] => <div class='cwrap'>
+<p>There are $3$ possible rectangles: </p>
+<p>
+\[\begin{aligned}[t]
+1 &\text{ by } 12 \\
+2 &\text{ by } 6 \\
+3 &\text{ by } 4
+
+\end{aligned}\]
+</p>
+</div>
+    [_pz_explanation] => <div class='cwrap'>
+<p>The three solutions are from the three factor pairs of $12$</p>
+<p>
+\[\begin{aligned}[t]
+&1 \times 12\\
+&2 \times 6\\
+&3 \times 4
+\end{aligned}\]
+</p>
+</div>
+    [_sortable_list_prefix] => npz
+)
+
+27:06:2021 11:25:56
+
+Array
+(
+    [_title_field_name] => pz_title
+    [_title_prefix] => Puzzle
+    [_parent_list_id] => puzzles
+    [_head_list_id] => pzh
+    [_sub_list_id] => pzi
+    [_open_close_id_prefix] => p
+    [_main_db_tbl] => _app_puzzles
+    [_item_id] => 
+    [_topic_id] => 10
+    [_list_count] => 
+    [_del_class] => del_m_pz
+    [_icon_lib_url] => http://localhost/sharpe-maths/_stdlib/_images/_icons/
+    [_icon_app_url] => http://localhost/sharpe-maths/_images/_icons/
+    [_occ_class] => 
+    [_oco_class] => 
+    [_item_title] => 
+    [_item_name] => puzzle
+    [_pz_puzzle] => 
+    [_pz_solution] => 
+    [_pz_explanation] => 
+    [_sortable_list_prefix] => npz
+)
+
+27:06:2021 11:25:56
+
+Array
+(
+    [_title_field_name] => pz_title
+    [_title_prefix] => Puzzle
+    [_parent_list_id] => puzzles
+    [_head_list_id] => pzh
+    [_sub_list_id] => pzi
+    [_open_close_id_prefix] => p
+    [_main_db_tbl] => _app_puzzles
+    [_item_id] => 11
+    [_topic_id] => 10
+    [_list_count] => 1
+    [_del_class] => del_m_pz
+    [_icon_lib_url] => http://localhost/sharpe-maths/_stdlib/_images/_icons/
+    [_icon_app_url] => http://localhost/sharpe-maths/_images/_icons/
+    [_occ_class] =>  hidden
+    [_oco_class] => 
+    [_item_title] => $ \ 12 \ $ Squares
+    [_item_name] => puzzle
+    [_pz_puzzle] => <p>If you have $12$ square tiles, how many different rectangles can you make which use up all $12$ tiles and produce a fully filled in rectangle?</p>
+    [_pz_solution] => <div class='cwrap'>
+<p>There are $3$ possible rectangles: </p>
+<p>
+\[\begin{aligned}[t]
+1 &\text{ by } 12 \\
+2 &\text{ by } 6 \\
+3 &\text{ by } 4
+
+\end{aligned}\]
+<img class='w200' src='_images/_maths_images/number/mult_fact_prime/pz_01.png' alt='Rectangles - factors of 12' />
+</p>
+</div>
+    [_pz_explanation] => <div class='cwrap'>
+<p>The three solutions are from the three factor pairs of $12$</p>
+<p>
+\[\begin{aligned}[t]
+&1 \times 12\\
+&2 \times 6\\
+&3 \times 4
+\end{aligned}\]
+</p>
+</div>
+    [_sortable_list_prefix] => npz
+)
+
+27:06:2021 11:25:56
+
+Array
+(
+    [_title_field_name] => pz_title
+    [_title_prefix] => Puzzle
+    [_parent_list_id] => puzzles
+    [_head_list_id] => pzh
+    [_sub_list_id] => pzi
+    [_open_close_id_prefix] => p
+    [_main_db_tbl] => _app_puzzles
+    [_item_id] => 11
+    [_topic_id] => 10
+    [_list_count] => 1
+    [_del_class] => del_m_pz
+    [_icon_lib_url] => http://localhost/sharpe-maths/_stdlib/_images/_icons/
+    [_icon_app_url] => http://localhost/sharpe-maths/_images/_icons/
+    [_occ_class] =>  hidden
+    [_oco_class] => 
+    [_item_title] => $ \ 12 \ $ Squares
+    [_item_name] => puzzle
+    [_pz_puzzle] => <p>If you have $12$ square tiles, how many different rectangles can you make which use up all $12$ tiles and produce a fully filled in rectangle?</p>
+    [_pz_solution] => <div class='cwrap'>
+<p>There are $3$ possible rectangles: </p>
+<p>
+\[\begin{aligned}[t]
+1 &\text{ by } 12 \\
+2 &\text{ by } 6 \\
+3 &\text{ by } 4
+
+\end{aligned}\]
+<img class='w200' src='_images/_maths_images/number/mult_fact_prime/pz_01.png' alt='Rectangles - factors of 12' />
+</p>
+</div>
+    [_pz_explanation] => <div class='cwrap'>
+<p>The three solutions are from the three factor pairs of $12$</p>
+<p>
+\[\begin{aligned}[t]
+&1 \times 12\\
+&2 \times 6\\
+&3 \times 4
+\end{aligned}\]
+</p>
+</div>
+    [_sortable_list_prefix] => npz
+)
+
+27:06:2021 11:25:56
+
+Array
+(
+    [_title_field_name] => pz_title
+    [_title_prefix] => Puzzle
+    [_parent_list_id] => puzzles
+    [_head_list_id] => pzh
+    [_sub_list_id] => pzi
+    [_open_close_id_prefix] => p
+    [_main_db_tbl] => _app_puzzles
+    [_item_id] => 11
+    [_topic_id] => 10
+    [_list_count] => 1
+    [_del_class] => del_m_pz
+    [_icon_lib_url] => http://localhost/sharpe-maths/_stdlib/_images/_icons/
+    [_icon_app_url] => http://localhost/sharpe-maths/_images/_icons/
+    [_occ_class] =>  hidden
+    [_oco_class] => 
+    [_item_title] => $ \ 12 \ $ Squares
+    [_item_name] => puzzle
+    [_pz_puzzle] => <p>If you have $12$ square tiles, how many different rectangles can you make which use up all $12$ tiles and produce a fully filled in rectangle?</p>
+    [_pz_solution] => <div class='cwrap'>
+<p>There are $3$ possible rectangles: </p>
+<p>
+\[\begin{aligned}[t]
+1 &\text{ by } 12 \\
+2 &\text{ by } 6 \\
+3 &\text{ by } 4
+
+\end{aligned}\]
+<img class='w200' src='_images/_maths_images/number/mult_fact_prime/pz_01.png' alt='Rectangles - factors of 12' />
+</p>
+</div>
+    [_pz_explanation] => <div class='cwrap'>
+<p>The three solutions are from the three factor pairs of $12$</p>
+<p>
+\[\begin{aligned}[t]
+&1 \times 12\\
+&2 \times 6\\
+&3 \times 4
+\end{aligned}\]
+</p>
+</div>
+    [_sortable_list_prefix] => npz
+)
+
+27:06:2021 11:26:39
+
+Array
+(
+    [_title_field_name] => pz_title
+    [_title_prefix] => Puzzle
+    [_parent_list_id] => puzzles
+    [_head_list_id] => pzh
+    [_sub_list_id] => pzi
+    [_open_close_id_prefix] => p
+    [_main_db_tbl] => _app_puzzles
+    [_item_id] => 
+    [_topic_id] => 10
+    [_list_count] => 
+    [_del_class] => del_m_pz
+    [_icon_lib_url] => http://localhost/sharpe-maths/_stdlib/_images/_icons/
+    [_icon_app_url] => http://localhost/sharpe-maths/_images/_icons/
+    [_occ_class] => 
+    [_oco_class] => 
+    [_item_title] => 
+    [_item_name] => puzzle
+    [_pz_puzzle] => 
+    [_pz_solution] => 
+    [_pz_explanation] => 
+    [_sortable_list_prefix] => npz
+)
+
+27:06:2021 11:26:39
+
+Array
+(
+    [_title_field_name] => pz_title
+    [_title_prefix] => Puzzle
+    [_parent_list_id] => puzzles
+    [_head_list_id] => pzh
+    [_sub_list_id] => pzi
+    [_open_close_id_prefix] => p
+    [_main_db_tbl] => _app_puzzles
+    [_item_id] => 11
+    [_topic_id] => 10
+    [_list_count] => 1
+    [_del_class] => del_m_pz
+    [_icon_lib_url] => http://localhost/sharpe-maths/_stdlib/_images/_icons/
+    [_icon_app_url] => http://localhost/sharpe-maths/_images/_icons/
+    [_occ_class] =>  hidden
+    [_oco_class] => 
+    [_item_title] => $ \ 12 \ $ Squares
+    [_item_name] => puzzle
+    [_pz_puzzle] => <p>If you have $12$ square tiles, how many different rectangles can you make which use up all $12$ tiles and produce a fully filled in rectangle?</p>
+    [_pz_solution] => <div class='cwrap'>
+<p>There are $3$ possible rectangles: </p>
+<div class='wrap'>
+\[\begin{aligned}[t]
+1 &\text{ by } 12 \\
+2 &\text{ by } 6 \\
+3 &\text{ by } 4
+
+\end{aligned}\]
+<img class='w200' src='_images/_maths_images/number/mult_fact_prime/pz_01.png' alt='Rectangles - factors of 12' />
+</div>
+</div>
+    [_pz_explanation] => <div class='cwrap'>
+<p>The three solutions are from the three factor pairs of $12$</p>
+<p>
+\[\begin{aligned}[t]
+&1 \times 12\\
+&2 \times 6\\
+&3 \times 4
+\end{aligned}\]
+</p>
+</div>
+    [_sortable_list_prefix] => npz
+)
+
+27:06:2021 11:26:39
+
+Array
+(
+    [_title_field_name] => pz_title
+    [_title_prefix] => Puzzle
+    [_parent_list_id] => puzzles
+    [_head_list_id] => pzh
+    [_sub_list_id] => pzi
+    [_open_close_id_prefix] => p
+    [_main_db_tbl] => _app_puzzles
+    [_item_id] => 11
+    [_topic_id] => 10
+    [_list_count] => 1
+    [_del_class] => del_m_pz
+    [_icon_lib_url] => http://localhost/sharpe-maths/_stdlib/_images/_icons/
+    [_icon_app_url] => http://localhost/sharpe-maths/_images/_icons/
+    [_occ_class] =>  hidden
+    [_oco_class] => 
+    [_item_title] => $ \ 12 \ $ Squares
+    [_item_name] => puzzle
+    [_pz_puzzle] => <p>If you have $12$ square tiles, how many different rectangles can you make which use up all $12$ tiles and produce a fully filled in rectangle?</p>
+    [_pz_solution] => <div class='cwrap'>
+<p>There are $3$ possible rectangles: </p>
+<div class='wrap'>
+\[\begin{aligned}[t]
+1 &\text{ by } 12 \\
+2 &\text{ by } 6 \\
+3 &\text{ by } 4
+
+\end{aligned}\]
+<img class='w200' src='_images/_maths_images/number/mult_fact_prime/pz_01.png' alt='Rectangles - factors of 12' />
+</div>
+</div>
+    [_pz_explanation] => <div class='cwrap'>
+<p>The three solutions are from the three factor pairs of $12$</p>
+<p>
+\[\begin{aligned}[t]
+&1 \times 12\\
+&2 \times 6\\
+&3 \times 4
+\end{aligned}\]
+</p>
+</div>
+    [_sortable_list_prefix] => npz
+)
+
+27:06:2021 11:26:39
+
+Array
+(
+    [_title_field_name] => pz_title
+    [_title_prefix] => Puzzle
+    [_parent_list_id] => puzzles
+    [_head_list_id] => pzh
+    [_sub_list_id] => pzi
+    [_open_close_id_prefix] => p
+    [_main_db_tbl] => _app_puzzles
+    [_item_id] => 11
+    [_topic_id] => 10
+    [_list_count] => 1
+    [_del_class] => del_m_pz
+    [_icon_lib_url] => http://localhost/sharpe-maths/_stdlib/_images/_icons/
+    [_icon_app_url] => http://localhost/sharpe-maths/_images/_icons/
+    [_occ_class] =>  hidden
+    [_oco_class] => 
+    [_item_title] => $ \ 12 \ $ Squares
+    [_item_name] => puzzle
+    [_pz_puzzle] => <p>If you have $12$ square tiles, how many different rectangles can you make which use up all $12$ tiles and produce a fully filled in rectangle?</p>
+    [_pz_solution] => <div class='cwrap'>
+<p>There are $3$ possible rectangles: </p>
+<div class='wrap'>
+\[\begin{aligned}[t]
+1 &\text{ by } 12 \\
+2 &\text{ by } 6 \\
+3 &\text{ by } 4
+
+\end{aligned}\]
+<img class='w200' src='_images/_maths_images/number/mult_fact_prime/pz_01.png' alt='Rectangles - factors of 12' />
+</div>
+</div>
+    [_pz_explanation] => <div class='cwrap'>
+<p>The three solutions are from the three factor pairs of $12$</p>
+<p>
+\[\begin{aligned}[t]
+&1 \times 12\\
+&2 \times 6\\
+&3 \times 4
+\end{aligned}\]
+</p>
+</div>
+    [_sortable_list_prefix] => npz
+)
+
+27:06:2021 11:27:12
+
+Array
+(
+    [_title_field_name] => pz_title
+    [_title_prefix] => Puzzle
+    [_parent_list_id] => puzzles
+    [_head_list_id] => pzh
+    [_sub_list_id] => pzi
+    [_open_close_id_prefix] => p
+    [_main_db_tbl] => _app_puzzles
+    [_item_id] => 
+    [_topic_id] => 13
+    [_list_count] => 
+    [_del_class] => del_m_pz
+    [_icon_lib_url] => http://localhost/sharpe-maths/_stdlib/_images/_icons/
+    [_icon_app_url] => http://localhost/sharpe-maths/_images/_icons/
+    [_occ_class] => 
+    [_oco_class] => 
+    [_item_title] => 
+    [_item_name] => puzzle
+    [_pz_puzzle] => 
+    [_pz_solution] => 
+    [_pz_explanation] => 
+    [_sortable_list_prefix] => npz
+)
+
+27:06:2021 11:28:25
+
+Array
+(
+    [_title_field_name] => pz_title
+    [_title_prefix] => Puzzle
+    [_parent_list_id] => puzzles
+    [_head_list_id] => pzh
+    [_sub_list_id] => pzi
+    [_open_close_id_prefix] => p
+    [_main_db_tbl] => _app_puzzles
+    [_item_id] => 
+    [_topic_id] => 13
+    [_list_count] => 
+    [_del_class] => del_m_pz
+    [_icon_lib_url] => http://localhost/sharpe-maths/_stdlib/_images/_icons/
+    [_icon_app_url] => http://localhost/sharpe-maths/_images/_icons/
+    [_occ_class] => 
+    [_oco_class] => 
+    [_item_title] => 
+    [_item_name] => puzzle
+    [_pz_puzzle] => 
+    [_pz_solution] => 
+    [_pz_explanation] => 
+    [_sortable_list_prefix] => npz
+)
+
+27:06:2021 11:29:10
+
+Array
+(
+    [_title_field_name] => pz_title
+    [_title_prefix] => Puzzle
+    [_parent_list_id] => puzzles
+    [_head_list_id] => pzh
+    [_sub_list_id] => pzi
+    [_open_close_id_prefix] => p
+    [_main_db_tbl] => _app_puzzles
+    [_item_id] => 
+    [_topic_id] => 13
+    [_list_count] => 
+    [_del_class] => del_m_pz
+    [_icon_lib_url] => http://localhost/sharpe-maths/_stdlib/_images/_icons/
+    [_icon_app_url] => http://localhost/sharpe-maths/_images/_icons/
+    [_occ_class] => 
+    [_oco_class] => 
+    [_item_title] => 
+    [_item_name] => puzzle
+    [_pz_puzzle] => 
+    [_pz_solution] => 
+    [_pz_explanation] => 
+    [_sortable_list_prefix] => npz
+)
+
+27:06:2021 11:29:36
+
+Array
+(
+    [_title_field_name] => pz_title
+    [_title_prefix] => Puzzle
+    [_parent_list_id] => puzzles
+    [_head_list_id] => pzh
+    [_sub_list_id] => pzi
+    [_open_close_id_prefix] => p
+    [_main_db_tbl] => _app_puzzles
+    [_item_id] => 
+    [_topic_id] => 13
+    [_list_count] => 
+    [_del_class] => del_m_pz
+    [_icon_lib_url] => http://localhost/sharpe-maths/_stdlib/_images/_icons/
+    [_icon_app_url] => http://localhost/sharpe-maths/_images/_icons/
+    [_occ_class] => 
+    [_oco_class] => 
+    [_item_title] => 
+    [_item_name] => puzzle
+    [_pz_puzzle] => 
+    [_pz_solution] => 
+    [_pz_explanation] => 
+    [_sortable_list_prefix] => npz
+)
+
+27:06:2021 11:30:02
+
+Array
+(
+    [_title_field_name] => pz_title
+    [_title_prefix] => Puzzle
+    [_parent_list_id] => puzzles
+    [_head_list_id] => pzh
+    [_sub_list_id] => pzi
+    [_open_close_id_prefix] => p
+    [_main_db_tbl] => _app_puzzles
+    [_item_id] => 
+    [_topic_id] => 13
+    [_list_count] => 
+    [_del_class] => del_m_pz
+    [_icon_lib_url] => http://localhost/sharpe-maths/_stdlib/_images/_icons/
+    [_icon_app_url] => http://localhost/sharpe-maths/_images/_icons/
+    [_occ_class] => 
+    [_oco_class] => 
+    [_item_title] => 
+    [_item_name] => puzzle
+    [_pz_puzzle] => 
+    [_pz_solution] => 
+    [_pz_explanation] => 
+    [_sortable_list_prefix] => npz
+)
+
+27:06:2021 11:30:16
+
+Array
+(
+    [_title_field_name] => pz_title
+    [_title_prefix] => Puzzle
+    [_parent_list_id] => puzzles
+    [_head_list_id] => pzh
+    [_sub_list_id] => pzi
+    [_open_close_id_prefix] => p
+    [_main_db_tbl] => _app_puzzles
+    [_item_id] => 
+    [_topic_id] => 13
+    [_list_count] => 
+    [_del_class] => del_m_pz
+    [_icon_lib_url] => http://localhost/sharpe-maths/_stdlib/_images/_icons/
+    [_icon_app_url] => http://localhost/sharpe-maths/_images/_icons/
+    [_occ_class] => 
+    [_oco_class] => 
+    [_item_title] => 
+    [_item_name] => puzzle
+    [_pz_puzzle] => 
+    [_pz_solution] => 
+    [_pz_explanation] => 
+    [_sortable_list_prefix] => npz
+)
+
+27:06:2021 11:31:49
+
+Array
+(
+    [_title_field_name] => pz_title
+    [_title_prefix] => Puzzle
+    [_parent_list_id] => puzzles
+    [_head_list_id] => pzh
+    [_sub_list_id] => pzi
+    [_open_close_id_prefix] => p
+    [_main_db_tbl] => _app_puzzles
+    [_item_id] => 
+    [_topic_id] => 13
+    [_list_count] => 
+    [_del_class] => del_m_pz
+    [_icon_lib_url] => http://localhost/sharpe-maths/_stdlib/_images/_icons/
+    [_icon_app_url] => http://localhost/sharpe-maths/_images/_icons/
+    [_occ_class] => 
+    [_oco_class] => 
+    [_item_title] => 
+    [_item_name] => puzzle
+    [_pz_puzzle] => 
+    [_pz_solution] => 
+    [_pz_explanation] => 
+    [_sortable_list_prefix] => npz
+)
+
+27:06:2021 11:33:09
+
+Array
+(
+    [_title_field_name] => pz_title
+    [_title_prefix] => Puzzle
+    [_parent_list_id] => puzzles
+    [_head_list_id] => pzh
+    [_sub_list_id] => pzi
+    [_open_close_id_prefix] => p
+    [_main_db_tbl] => _app_puzzles
+    [_item_id] => 
+    [_topic_id] => 13
+    [_list_count] => 
+    [_del_class] => del_m_pz
+    [_icon_lib_url] => http://localhost/sharpe-maths/_stdlib/_images/_icons/
+    [_icon_app_url] => http://localhost/sharpe-maths/_images/_icons/
+    [_occ_class] => 
+    [_oco_class] => 
+    [_item_title] => 
+    [_item_name] => puzzle
+    [_pz_puzzle] => 
+    [_pz_solution] => 
+    [_pz_explanation] => 
+    [_sortable_list_prefix] => npz
+)
+
+27:06:2021 11:33:31
+
+Array
+(
+    [_title_field_name] => pz_title
+    [_title_prefix] => Puzzle
+    [_parent_list_id] => puzzles
+    [_head_list_id] => pzh
+    [_sub_list_id] => pzi
+    [_open_close_id_prefix] => p
+    [_main_db_tbl] => _app_puzzles
+    [_item_id] => 
+    [_topic_id] => 13
+    [_list_count] => 
+    [_del_class] => del_m_pz
+    [_icon_lib_url] => http://localhost/sharpe-maths/_stdlib/_images/_icons/
+    [_icon_app_url] => http://localhost/sharpe-maths/_images/_icons/
+    [_occ_class] => 
+    [_oco_class] => 
+    [_item_title] => 
+    [_item_name] => puzzle
+    [_pz_puzzle] => 
+    [_pz_solution] => 
+    [_pz_explanation] => 
+    [_sortable_list_prefix] => npz
+)
+
+27:06:2021 11:33:35
+
+Array
+(
+    [_title_field_name] => pz_title
+    [_title_prefix] => Puzzle
+    [_parent_list_id] => puzzles
+    [_head_list_id] => pzh
+    [_sub_list_id] => pzi
+    [_open_close_id_prefix] => p
+    [_main_db_tbl] => _app_puzzles
+    [_item_id] => 
+    [_topic_id] => 13
+    [_list_count] => 
+    [_del_class] => del_m_pz
+    [_icon_lib_url] => http://localhost/sharpe-maths/_stdlib/_images/_icons/
+    [_icon_app_url] => http://localhost/sharpe-maths/_images/_icons/
+    [_occ_class] => 
+    [_oco_class] => 
+    [_item_title] => 
+    [_item_name] => puzzle
+    [_pz_puzzle] => 
+    [_pz_solution] => 
+    [_pz_explanation] => 
+    [_sortable_list_prefix] => npz
+)
+
+27:06:2021 11:34:14
+
+Array
+(
+    [_title_field_name] => pz_title
+    [_title_prefix] => Puzzle
+    [_parent_list_id] => puzzles
+    [_head_list_id] => pzh
+    [_sub_list_id] => pzi
+    [_open_close_id_prefix] => p
+    [_main_db_tbl] => _app_puzzles
+    [_item_id] => 
+    [_topic_id] => 13
+    [_list_count] => 
+    [_del_class] => del_m_pz
+    [_icon_lib_url] => http://localhost/sharpe-maths/_stdlib/_images/_icons/
+    [_icon_app_url] => http://localhost/sharpe-maths/_images/_icons/
+    [_occ_class] => 
+    [_oco_class] => 
+    [_item_title] => 
+    [_item_name] => puzzle
+    [_pz_puzzle] => 
+    [_pz_solution] => 
+    [_pz_explanation] => 
+    [_sortable_list_prefix] => npz
+)
+
+27:06:2021 11:34:28
+
+Array
+(
+    [_title_field_name] => pz_title
+    [_title_prefix] => Puzzle
+    [_parent_list_id] => puzzles
+    [_head_list_id] => pzh
+    [_sub_list_id] => pzi
+    [_open_close_id_prefix] => p
+    [_main_db_tbl] => _app_puzzles
+    [_item_id] => 
+    [_topic_id] => 13
+    [_list_count] => 
+    [_del_class] => del_m_pz
+    [_icon_lib_url] => http://localhost/sharpe-maths/_stdlib/_images/_icons/
+    [_icon_app_url] => http://localhost/sharpe-maths/_images/_icons/
+    [_occ_class] => 
+    [_oco_class] => 
+    [_item_title] => 
+    [_item_name] => puzzle
+    [_pz_puzzle] => 
+    [_pz_solution] => 
+    [_pz_explanation] => 
+    [_sortable_list_prefix] => npz
+)
+
+27:06:2021 11:34:46
+
+Array
+(
+    [_title_field_name] => pz_title
+    [_title_prefix] => Puzzle
+    [_parent_list_id] => puzzles
+    [_head_list_id] => pzh
+    [_sub_list_id] => pzi
+    [_open_close_id_prefix] => p
+    [_main_db_tbl] => _app_puzzles
+    [_item_id] => 
+    [_topic_id] => 13
+    [_list_count] => 
+    [_del_class] => del_m_pz
+    [_icon_lib_url] => http://localhost/sharpe-maths/_stdlib/_images/_icons/
+    [_icon_app_url] => http://localhost/sharpe-maths/_images/_icons/
+    [_occ_class] => 
+    [_oco_class] => 
+    [_item_title] => 
+    [_item_name] => puzzle
+    [_pz_puzzle] => 
+    [_pz_solution] => 
+    [_pz_explanation] => 
+    [_sortable_list_prefix] => npz
+)
+
+27:06:2021 11:34:49
+
+Array
+(
+    [_title_field_name] => pz_title
+    [_title_prefix] => Puzzle
+    [_parent_list_id] => puzzles
+    [_head_list_id] => pzh
+    [_sub_list_id] => pzi
+    [_open_close_id_prefix] => p
+    [_main_db_tbl] => _app_puzzles
+    [_item_id] => 
+    [_topic_id] => 13
+    [_list_count] => 
+    [_del_class] => del_m_pz
+    [_icon_lib_url] => http://localhost/sharpe-maths/_stdlib/_images/_icons/
+    [_icon_app_url] => http://localhost/sharpe-maths/_images/_icons/
+    [_occ_class] => 
+    [_oco_class] => 
+    [_item_title] => 
+    [_item_name] => puzzle
+    [_pz_puzzle] => 
+    [_pz_solution] => 
+    [_pz_explanation] => 
+    [_sortable_list_prefix] => npz
+)
+
+27:06:2021 11:35:35
+
+Array
+(
+    [_title_field_name] => pz_title
+    [_title_prefix] => Puzzle
+    [_parent_list_id] => puzzles
+    [_head_list_id] => pzh
+    [_sub_list_id] => pzi
+    [_open_close_id_prefix] => p
+    [_main_db_tbl] => _app_puzzles
+    [_item_id] => 
+    [_topic_id] => 13
+    [_list_count] => 
+    [_del_class] => del_m_pz
+    [_icon_lib_url] => http://localhost/sharpe-maths/_stdlib/_images/_icons/
+    [_icon_app_url] => http://localhost/sharpe-maths/_images/_icons/
+    [_occ_class] => 
+    [_oco_class] => 
+    [_item_title] => 
+    [_item_name] => puzzle
+    [_pz_puzzle] => 
+    [_pz_solution] => 
+    [_pz_explanation] => 
+    [_sortable_list_prefix] => npz
+)
+
+27:06:2021 11:36:52
+
+Array
+(
+    [_title_field_name] => pz_title
+    [_title_prefix] => Puzzle
+    [_parent_list_id] => puzzles
+    [_head_list_id] => pzh
+    [_sub_list_id] => pzi
+    [_open_close_id_prefix] => p
+    [_main_db_tbl] => _app_puzzles
+    [_item_id] => 
+    [_topic_id] => 13
+    [_list_count] => 
+    [_del_class] => del_m_pz
+    [_icon_lib_url] => http://localhost/sharpe-maths/_stdlib/_images/_icons/
+    [_icon_app_url] => http://localhost/sharpe-maths/_images/_icons/
+    [_occ_class] => 
+    [_oco_class] => 
+    [_item_title] => 
+    [_item_name] => puzzle
+    [_pz_puzzle] => 
+    [_pz_solution] => 
+    [_pz_explanation] => 
+    [_sortable_list_prefix] => npz
+)
+
+27:06:2021 11:37:41
+
+Array
+(
+    [_title_field_name] => pz_title
+    [_title_prefix] => Puzzle
+    [_parent_list_id] => puzzles
+    [_head_list_id] => pzh
+    [_sub_list_id] => pzi
+    [_open_close_id_prefix] => p
+    [_main_db_tbl] => _app_puzzles
+    [_item_id] => 
+    [_topic_id] => 13
+    [_list_count] => 
+    [_del_class] => del_m_pz
+    [_icon_lib_url] => http://localhost/sharpe-maths/_stdlib/_images/_icons/
+    [_icon_app_url] => http://localhost/sharpe-maths/_images/_icons/
+    [_occ_class] => 
+    [_oco_class] => 
+    [_item_title] => 
+    [_item_name] => puzzle
+    [_pz_puzzle] => 
+    [_pz_solution] => 
+    [_pz_explanation] => 
+    [_sortable_list_prefix] => npz
+)
+
+27:06:2021 11:38:00
+
+Array
+(
+    [_title_field_name] => pz_title
+    [_title_prefix] => Puzzle
+    [_parent_list_id] => puzzles
+    [_head_list_id] => pzh
+    [_sub_list_id] => pzi
+    [_open_close_id_prefix] => p
+    [_main_db_tbl] => _app_puzzles
+    [_item_id] => 
+    [_topic_id] => 13
+    [_list_count] => 
+    [_del_class] => del_m_pz
+    [_icon_lib_url] => http://localhost/sharpe-maths/_stdlib/_images/_icons/
+    [_icon_app_url] => http://localhost/sharpe-maths/_images/_icons/
+    [_occ_class] => 
+    [_oco_class] => 
+    [_item_title] => 
+    [_item_name] => puzzle
+    [_pz_puzzle] => 
+    [_pz_solution] => 
+    [_pz_explanation] => 
+    [_sortable_list_prefix] => npz
+)
+
+27:06:2021 11:38:20
+
+Array
+(
+    [_title_field_name] => pz_title
+    [_title_prefix] => Puzzle
+    [_parent_list_id] => puzzles
+    [_head_list_id] => pzh
+    [_sub_list_id] => pzi
+    [_open_close_id_prefix] => p
+    [_main_db_tbl] => _app_puzzles
+    [_item_id] => 
+    [_topic_id] => 13
+    [_list_count] => 
+    [_del_class] => del_m_pz
+    [_icon_lib_url] => http://localhost/sharpe-maths/_stdlib/_images/_icons/
+    [_icon_app_url] => http://localhost/sharpe-maths/_images/_icons/
+    [_occ_class] => 
+    [_oco_class] => 
+    [_item_title] => 
+    [_item_name] => puzzle
+    [_pz_puzzle] => 
+    [_pz_solution] => 
+    [_pz_explanation] => 
+    [_sortable_list_prefix] => npz
+)
+
+27:06:2021 11:39:01
+
+Array
+(
+    [_title_field_name] => pz_title
+    [_title_prefix] => Puzzle
+    [_parent_list_id] => puzzles
+    [_head_list_id] => pzh
+    [_sub_list_id] => pzi
+    [_open_close_id_prefix] => p
+    [_main_db_tbl] => _app_puzzles
+    [_item_id] => 
+    [_topic_id] => 25
+    [_list_count] => 
+    [_del_class] => del_m_pz
+    [_icon_lib_url] => http://localhost/sharpe-maths/_stdlib/_images/_icons/
+    [_icon_app_url] => http://localhost/sharpe-maths/_images/_icons/
+    [_occ_class] => 
+    [_oco_class] => 
+    [_item_title] => 
+    [_item_name] => puzzle
+    [_pz_puzzle] => 
+    [_pz_solution] => 
+    [_pz_explanation] => 
+    [_sortable_list_prefix] => npz
+)
+
+27:06:2021 11:39:05
+
+Array
+(
+    [_title_field_name] => pz_title
+    [_title_prefix] => Puzzle
+    [_parent_list_id] => puzzles
+    [_head_list_id] => pzh
+    [_sub_list_id] => pzi
+    [_open_close_id_prefix] => p
+    [_main_db_tbl] => _app_puzzles
+    [_item_id] => 
+    [_topic_id] => 25
+    [_list_count] => 
+    [_del_class] => del_m_pz
+    [_icon_lib_url] => http://localhost/sharpe-maths/_stdlib/_images/_icons/
+    [_icon_app_url] => http://localhost/sharpe-maths/_images/_icons/
+    [_occ_class] => 
+    [_oco_class] => 
+    [_item_title] => 
+    [_item_name] => puzzle
+    [_pz_puzzle] => 
+    [_pz_solution] => 
+    [_pz_explanation] => 
+    [_sortable_list_prefix] => npz
+)
+
+27:06:2021 11:39:18
+
+Array
+(
+    [_title_field_name] => pz_title
+    [_title_prefix] => Puzzle
+    [_parent_list_id] => puzzles
+    [_head_list_id] => pzh
+    [_sub_list_id] => pzi
+    [_open_close_id_prefix] => p
+    [_main_db_tbl] => _app_puzzles
+    [_item_id] => 
+    [_topic_id] => 25
+    [_list_count] => 
+    [_del_class] => del_m_pz
+    [_icon_lib_url] => http://localhost/sharpe-maths/_stdlib/_images/_icons/
+    [_icon_app_url] => http://localhost/sharpe-maths/_images/_icons/
+    [_occ_class] => 
+    [_oco_class] => 
+    [_item_title] => 
+    [_item_name] => puzzle
+    [_pz_puzzle] => 
+    [_pz_solution] => 
+    [_pz_explanation] => 
+    [_sortable_list_prefix] => npz
+)
+
+27:06:2021 11:40:11
+
+Array
+(
+    [_title_field_name] => pz_title
+    [_title_prefix] => Puzzle
+    [_parent_list_id] => puzzles
+    [_head_list_id] => pzh
+    [_sub_list_id] => pzi
+    [_open_close_id_prefix] => p
+    [_main_db_tbl] => _app_puzzles
+    [_item_id] => 
+    [_topic_id] => 25
+    [_list_count] => 
+    [_del_class] => del_m_pz
+    [_icon_lib_url] => http://localhost/sharpe-maths/_stdlib/_images/_icons/
+    [_icon_app_url] => http://localhost/sharpe-maths/_images/_icons/
+    [_occ_class] => 
+    [_oco_class] => 
+    [_item_title] => 
+    [_item_name] => puzzle
+    [_pz_puzzle] => 
+    [_pz_solution] => 
+    [_pz_explanation] => 
+    [_sortable_list_prefix] => npz
+)
+
+27:06:2021 11:40:15
+
+Array
+(
+    [_title_field_name] => pz_title
+    [_title_prefix] => Puzzle
+    [_parent_list_id] => puzzles
+    [_head_list_id] => pzh
+    [_sub_list_id] => pzi
+    [_open_close_id_prefix] => p
+    [_main_db_tbl] => _app_puzzles
+    [_item_id] => 
+    [_topic_id] => 25
+    [_list_count] => 
+    [_del_class] => del_m_pz
+    [_icon_lib_url] => http://localhost/sharpe-maths/_stdlib/_images/_icons/
+    [_icon_app_url] => http://localhost/sharpe-maths/_images/_icons/
+    [_occ_class] => 
+    [_oco_class] => 
+    [_item_title] => 
+    [_item_name] => puzzle
+    [_pz_puzzle] => 
+    [_pz_solution] => 
+    [_pz_explanation] => 
+    [_sortable_list_prefix] => npz
+)
+
+27:06:2021 11:44:34
+
+Array
+(
+    [_title_field_name] => pz_title
+    [_title_prefix] => Puzzle
+    [_parent_list_id] => puzzles
+    [_head_list_id] => pzh
+    [_sub_list_id] => pzi
+    [_open_close_id_prefix] => p
+    [_main_db_tbl] => _app_puzzles
+    [_item_id] => 
+    [_topic_id] => 25
+    [_list_count] => 
+    [_del_class] => del_m_pz
+    [_icon_lib_url] => http://localhost/sharpe-maths/_stdlib/_images/_icons/
+    [_icon_app_url] => http://localhost/sharpe-maths/_images/_icons/
+    [_occ_class] => 
+    [_oco_class] => 
+    [_item_title] => 
+    [_item_name] => puzzle
+    [_pz_puzzle] => 
+    [_pz_solution] => 
+    [_pz_explanation] => 
+    [_sortable_list_prefix] => npz
+)
+
+27:06:2021 11:44:40
+
+Array
+(
+    [_title_field_name] => pz_title
+    [_title_prefix] => Puzzle
+    [_parent_list_id] => puzzles
+    [_head_list_id] => pzh
+    [_sub_list_id] => pzi
+    [_open_close_id_prefix] => p
+    [_main_db_tbl] => _app_puzzles
+    [_item_id] => 
+    [_topic_id] => 25
+    [_list_count] => 
+    [_del_class] => del_m_pz
+    [_icon_lib_url] => http://localhost/sharpe-maths/_stdlib/_images/_icons/
+    [_icon_app_url] => http://localhost/sharpe-maths/_images/_icons/
+    [_occ_class] => 
+    [_oco_class] => 
+    [_item_title] => 
+    [_item_name] => puzzle
+    [_pz_puzzle] => 
+    [_pz_solution] => 
+    [_pz_explanation] => 
+    [_sortable_list_prefix] => npz
+)
+
+27:06:2021 11:45:07
+
+Array
+(
+    [_title_field_name] => pz_title
+    [_title_prefix] => Puzzle
+    [_parent_list_id] => puzzles
+    [_head_list_id] => pzh
+    [_sub_list_id] => pzi
+    [_open_close_id_prefix] => p
+    [_main_db_tbl] => _app_puzzles
+    [_item_id] => 
+    [_topic_id] => 25
+    [_list_count] => 
+    [_del_class] => del_m_pz
+    [_icon_lib_url] => http://localhost/sharpe-maths/_stdlib/_images/_icons/
+    [_icon_app_url] => http://localhost/sharpe-maths/_images/_icons/
+    [_occ_class] => 
+    [_oco_class] => 
+    [_item_title] => 
+    [_item_name] => puzzle
+    [_pz_puzzle] => 
+    [_pz_solution] => 
+    [_pz_explanation] => 
+    [_sortable_list_prefix] => npz
+)
+
+27:06:2021 11:45:18
+
+Array
+(
+    [_title_field_name] => pz_title
+    [_title_prefix] => Puzzle
+    [_parent_list_id] => puzzles
+    [_head_list_id] => pzh
+    [_sub_list_id] => pzi
+    [_open_close_id_prefix] => p
+    [_main_db_tbl] => _app_puzzles
+    [_item_id] => 
+    [_topic_id] => 13
+    [_list_count] => 
+    [_del_class] => del_m_pz
+    [_icon_lib_url] => http://localhost/sharpe-maths/_stdlib/_images/_icons/
+    [_icon_app_url] => http://localhost/sharpe-maths/_images/_icons/
+    [_occ_class] => 
+    [_oco_class] => 
+    [_item_title] => 
+    [_item_name] => puzzle
+    [_pz_puzzle] => 
+    [_pz_solution] => 
+    [_pz_explanation] => 
+    [_sortable_list_prefix] => npz
+)
+
+27:06:2021 11:46:23
+
+Array
+(
+    [_title_field_name] => pz_title
+    [_title_prefix] => Puzzle
+    [_parent_list_id] => puzzles
+    [_head_list_id] => pzh
+    [_sub_list_id] => pzi
+    [_open_close_id_prefix] => p
+    [_main_db_tbl] => _app_puzzles
+    [_item_id] => 
+    [_topic_id] => 13
+    [_list_count] => 
+    [_del_class] => del_m_pz
+    [_icon_lib_url] => http://localhost/sharpe-maths/_stdlib/_images/_icons/
+    [_icon_app_url] => http://localhost/sharpe-maths/_images/_icons/
+    [_occ_class] => 
+    [_oco_class] => 
+    [_item_title] => 
+    [_item_name] => puzzle
+    [_pz_puzzle] => 
+    [_pz_solution] => 
+    [_pz_explanation] => 
+    [_sortable_list_prefix] => npz
+)
+
+27:06:2021 11:47:05
+
+Array
+(
+    [_title_field_name] => pz_title
+    [_title_prefix] => Puzzle
+    [_parent_list_id] => puzzles
+    [_head_list_id] => pzh
+    [_sub_list_id] => pzi
+    [_open_close_id_prefix] => p
+    [_main_db_tbl] => _app_puzzles
+    [_item_id] => 
+    [_topic_id] => 13
+    [_list_count] => 
+    [_del_class] => del_m_pz
+    [_icon_lib_url] => http://localhost/sharpe-maths/_stdlib/_images/_icons/
+    [_icon_app_url] => http://localhost/sharpe-maths/_images/_icons/
+    [_occ_class] => 
+    [_oco_class] => 
+    [_item_title] => 
+    [_item_name] => puzzle
+    [_pz_puzzle] => 
+    [_pz_solution] => 
+    [_pz_explanation] => 
+    [_sortable_list_prefix] => npz
+)
+
+27:06:2021 11:47:30
+
+Array
+(
+    [_title_field_name] => pz_title
+    [_title_prefix] => Puzzle
+    [_parent_list_id] => puzzles
+    [_head_list_id] => pzh
+    [_sub_list_id] => pzi
+    [_open_close_id_prefix] => p
+    [_main_db_tbl] => _app_puzzles
+    [_item_id] => 
+    [_topic_id] => 13
+    [_list_count] => 
+    [_del_class] => del_m_pz
+    [_icon_lib_url] => http://localhost/sharpe-maths/_stdlib/_images/_icons/
+    [_icon_app_url] => http://localhost/sharpe-maths/_images/_icons/
+    [_occ_class] => 
+    [_oco_class] => 
+    [_item_title] => 
+    [_item_name] => puzzle
+    [_pz_puzzle] => 
+    [_pz_solution] => 
+    [_pz_explanation] => 
+    [_sortable_list_prefix] => npz
+)
+
+27:06:2021 11:47:45
+
+Array
+(
+    [_title_field_name] => pz_title
+    [_title_prefix] => Puzzle
+    [_parent_list_id] => puzzles
+    [_head_list_id] => pzh
+    [_sub_list_id] => pzi
+    [_open_close_id_prefix] => p
+    [_main_db_tbl] => _app_puzzles
+    [_item_id] => 
+    [_topic_id] => 13
+    [_list_count] => 
+    [_del_class] => del_m_pz
+    [_icon_lib_url] => http://localhost/sharpe-maths/_stdlib/_images/_icons/
+    [_icon_app_url] => http://localhost/sharpe-maths/_images/_icons/
+    [_occ_class] => 
+    [_oco_class] => 
+    [_item_title] => 
+    [_item_name] => puzzle
+    [_pz_puzzle] => 
+    [_pz_solution] => 
+    [_pz_explanation] => 
+    [_sortable_list_prefix] => npz
+)
+
+27:06:2021 11:47:58
+
+Array
+(
+    [_title_field_name] => pz_title
+    [_title_prefix] => Puzzle
+    [_parent_list_id] => puzzles
+    [_head_list_id] => pzh
+    [_sub_list_id] => pzi
+    [_open_close_id_prefix] => p
+    [_main_db_tbl] => _app_puzzles
+    [_item_id] => 
+    [_topic_id] => 13
+    [_list_count] => 
+    [_del_class] => del_m_pz
+    [_icon_lib_url] => http://localhost/sharpe-maths/_stdlib/_images/_icons/
+    [_icon_app_url] => http://localhost/sharpe-maths/_images/_icons/
+    [_occ_class] => 
+    [_oco_class] => 
+    [_item_title] => 
+    [_item_name] => puzzle
+    [_pz_puzzle] => 
+    [_pz_solution] => 
+    [_pz_explanation] => 
+    [_sortable_list_prefix] => npz
+)
+
+27:06:2021 11:48:10
+
+Array
+(
+    [_title_field_name] => pz_title
+    [_title_prefix] => Puzzle
+    [_parent_list_id] => puzzles
+    [_head_list_id] => pzh
+    [_sub_list_id] => pzi
+    [_open_close_id_prefix] => p
+    [_main_db_tbl] => _app_puzzles
+    [_item_id] => 
+    [_topic_id] => 13
+    [_list_count] => 
+    [_del_class] => del_m_pz
+    [_icon_lib_url] => http://localhost/sharpe-maths/_stdlib/_images/_icons/
+    [_icon_app_url] => http://localhost/sharpe-maths/_images/_icons/
+    [_occ_class] => 
+    [_oco_class] => 
+    [_item_title] => 
+    [_item_name] => puzzle
+    [_pz_puzzle] => 
+    [_pz_solution] => 
+    [_pz_explanation] => 
+    [_sortable_list_prefix] => npz
+)
+
+27:06:2021 11:48:29
+
+Array
+(
+    [_title_field_name] => pz_title
+    [_title_prefix] => Puzzle
+    [_parent_list_id] => puzzles
+    [_head_list_id] => pzh
+    [_sub_list_id] => pzi
+    [_open_close_id_prefix] => p
+    [_main_db_tbl] => _app_puzzles
+    [_item_id] => 
+    [_topic_id] => 13
+    [_list_count] => 
+    [_del_class] => del_m_pz
+    [_icon_lib_url] => http://localhost/sharpe-maths/_stdlib/_images/_icons/
+    [_icon_app_url] => http://localhost/sharpe-maths/_images/_icons/
+    [_occ_class] => 
+    [_oco_class] => 
+    [_item_title] => 
+    [_item_name] => puzzle
+    [_pz_puzzle] => 
+    [_pz_solution] => 
+    [_pz_explanation] => 
+    [_sortable_list_prefix] => npz
+)
+
+27:06:2021 11:48:58
+
+Array
+(
+    [_title_field_name] => pz_title
+    [_title_prefix] => Puzzle
+    [_parent_list_id] => puzzles
+    [_head_list_id] => pzh
+    [_sub_list_id] => pzi
+    [_open_close_id_prefix] => p
+    [_main_db_tbl] => _app_puzzles
+    [_item_id] => 
+    [_topic_id] => 13
+    [_list_count] => 
+    [_del_class] => del_m_pz
+    [_icon_lib_url] => http://localhost/sharpe-maths/_stdlib/_images/_icons/
+    [_icon_app_url] => http://localhost/sharpe-maths/_images/_icons/
+    [_occ_class] => 
+    [_oco_class] => 
+    [_item_title] => 
+    [_item_name] => puzzle
+    [_pz_puzzle] => 
+    [_pz_solution] => 
+    [_pz_explanation] => 
+    [_sortable_list_prefix] => npz
+)
+
+27:06:2021 11:49:03
+
+Array
+(
+    [_title_field_name] => pz_title
+    [_title_prefix] => Puzzle
+    [_parent_list_id] => puzzles
+    [_head_list_id] => pzh
+    [_sub_list_id] => pzi
+    [_open_close_id_prefix] => p
+    [_main_db_tbl] => _app_puzzles
+    [_item_id] => 
+    [_topic_id] => 13
+    [_list_count] => 
+    [_del_class] => del_m_pz
+    [_icon_lib_url] => http://localhost/sharpe-maths/_stdlib/_images/_icons/
+    [_icon_app_url] => http://localhost/sharpe-maths/_images/_icons/
+    [_occ_class] => 
+    [_oco_class] => 
+    [_item_title] => 
+    [_item_name] => puzzle
+    [_pz_puzzle] => 
+    [_pz_solution] => 
+    [_pz_explanation] => 
+    [_sortable_list_prefix] => npz
+)
+
+27:06:2021 11:49:23
+
+Array
+(
+    [_title_field_name] => pz_title
+    [_title_prefix] => Puzzle
+    [_parent_list_id] => puzzles
+    [_head_list_id] => pzh
+    [_sub_list_id] => pzi
+    [_open_close_id_prefix] => p
+    [_main_db_tbl] => _app_puzzles
+    [_item_id] => 
+    [_topic_id] => 13
+    [_list_count] => 
+    [_del_class] => del_m_pz
+    [_icon_lib_url] => http://localhost/sharpe-maths/_stdlib/_images/_icons/
+    [_icon_app_url] => http://localhost/sharpe-maths/_images/_icons/
+    [_occ_class] => 
+    [_oco_class] => 
+    [_item_title] => 
+    [_item_name] => puzzle
+    [_pz_puzzle] => 
+    [_pz_solution] => 
+    [_pz_explanation] => 
+    [_sortable_list_prefix] => npz
+)
+
+27:06:2021 11:50:26
+
+Array
+(
+    [_title_field_name] => pz_title
+    [_title_prefix] => Puzzle
+    [_parent_list_id] => puzzles
+    [_head_list_id] => pzh
+    [_sub_list_id] => pzi
+    [_open_close_id_prefix] => p
+    [_main_db_tbl] => _app_puzzles
+    [_item_id] => 
+    [_topic_id] => 13
+    [_list_count] => 
+    [_del_class] => del_m_pz
+    [_icon_lib_url] => http://localhost/sharpe-maths/_stdlib/_images/_icons/
+    [_icon_app_url] => http://localhost/sharpe-maths/_images/_icons/
+    [_occ_class] => 
+    [_oco_class] => 
+    [_item_title] => 
+    [_item_name] => puzzle
+    [_pz_puzzle] => 
+    [_pz_solution] => 
+    [_pz_explanation] => 
+    [_sortable_list_prefix] => npz
+)
+
+27:06:2021 11:50:31
+
+Array
+(
+    [_title_field_name] => pz_title
+    [_title_prefix] => Puzzle
+    [_parent_list_id] => puzzles
+    [_head_list_id] => pzh
+    [_sub_list_id] => pzi
+    [_open_close_id_prefix] => p
+    [_main_db_tbl] => _app_puzzles
+    [_item_id] => 
+    [_topic_id] => 13
+    [_list_count] => 
+    [_del_class] => del_m_pz
+    [_icon_lib_url] => http://localhost/sharpe-maths/_stdlib/_images/_icons/
+    [_icon_app_url] => http://localhost/sharpe-maths/_images/_icons/
+    [_occ_class] => 
+    [_oco_class] => 
+    [_item_title] => 
+    [_item_name] => puzzle
+    [_pz_puzzle] => 
+    [_pz_solution] => 
+    [_pz_explanation] => 
+    [_sortable_list_prefix] => npz
+)
+
+27:06:2021 11:50:54
+
+Array
+(
+    [_title_field_name] => pz_title
+    [_title_prefix] => Puzzle
+    [_parent_list_id] => puzzles
+    [_head_list_id] => pzh
+    [_sub_list_id] => pzi
+    [_open_close_id_prefix] => p
+    [_main_db_tbl] => _app_puzzles
+    [_item_id] => 
+    [_topic_id] => 13
+    [_list_count] => 
+    [_del_class] => del_m_pz
+    [_icon_lib_url] => http://localhost/sharpe-maths/_stdlib/_images/_icons/
+    [_icon_app_url] => http://localhost/sharpe-maths/_images/_icons/
+    [_occ_class] => 
+    [_oco_class] => 
+    [_item_title] => 
+    [_item_name] => puzzle
+    [_pz_puzzle] => 
+    [_pz_solution] => 
+    [_pz_explanation] => 
+    [_sortable_list_prefix] => npz
+)
+
+27:06:2021 11:51:12
+
+Array
+(
+    [_title_field_name] => pz_title
+    [_title_prefix] => Puzzle
+    [_parent_list_id] => puzzles
+    [_head_list_id] => pzh
+    [_sub_list_id] => pzi
+    [_open_close_id_prefix] => p
+    [_main_db_tbl] => _app_puzzles
+    [_item_id] => 
+    [_topic_id] => 13
+    [_list_count] => 
+    [_del_class] => del_m_pz
+    [_icon_lib_url] => http://localhost/sharpe-maths/_stdlib/_images/_icons/
+    [_icon_app_url] => http://localhost/sharpe-maths/_images/_icons/
+    [_occ_class] => 
+    [_oco_class] => 
+    [_item_title] => 
+    [_item_name] => puzzle
+    [_pz_puzzle] => 
+    [_pz_solution] => 
+    [_pz_explanation] => 
+    [_sortable_list_prefix] => npz
+)
+
+27:06:2021 11:51:26
+
+Array
+(
+    [_title_field_name] => pz_title
+    [_title_prefix] => Puzzle
+    [_parent_list_id] => puzzles
+    [_head_list_id] => pzh
+    [_sub_list_id] => pzi
+    [_open_close_id_prefix] => p
+    [_main_db_tbl] => _app_puzzles
+    [_item_id] => 
+    [_topic_id] => 13
+    [_list_count] => 
+    [_del_class] => del_m_pz
+    [_icon_lib_url] => http://localhost/sharpe-maths/_stdlib/_images/_icons/
+    [_icon_app_url] => http://localhost/sharpe-maths/_images/_icons/
+    [_occ_class] => 
+    [_oco_class] => 
+    [_item_title] => 
+    [_item_name] => puzzle
+    [_pz_puzzle] => 
+    [_pz_solution] => 
+    [_pz_explanation] => 
+    [_sortable_list_prefix] => npz
+)
+
+27:06:2021 11:52:08
+
+Array
+(
+    [_title_field_name] => pz_title
+    [_title_prefix] => Puzzle
+    [_parent_list_id] => puzzles
+    [_head_list_id] => pzh
+    [_sub_list_id] => pzi
+    [_open_close_id_prefix] => p
+    [_main_db_tbl] => _app_puzzles
+    [_item_id] => 
+    [_topic_id] => 13
+    [_list_count] => 
+    [_del_class] => del_m_pz
+    [_icon_lib_url] => http://localhost/sharpe-maths/_stdlib/_images/_icons/
+    [_icon_app_url] => http://localhost/sharpe-maths/_images/_icons/
+    [_occ_class] => 
+    [_oco_class] => 
+    [_item_title] => 
+    [_item_name] => puzzle
+    [_pz_puzzle] => 
+    [_pz_solution] => 
+    [_pz_explanation] => 
+    [_sortable_list_prefix] => npz
+)
+
+27:06:2021 11:53:17
+
+Array
+(
+    [_title_field_name] => pz_title
+    [_title_prefix] => Puzzle
+    [_parent_list_id] => puzzles
+    [_head_list_id] => pzh
+    [_sub_list_id] => pzi
+    [_open_close_id_prefix] => p
+    [_main_db_tbl] => _app_puzzles
+    [_item_id] => 
+    [_topic_id] => 13
+    [_list_count] => 
+    [_del_class] => del_m_pz
+    [_icon_lib_url] => http://localhost/sharpe-maths/_stdlib/_images/_icons/
+    [_icon_app_url] => http://localhost/sharpe-maths/_images/_icons/
+    [_occ_class] => 
+    [_oco_class] => 
+    [_item_title] => 
+    [_item_name] => puzzle
+    [_pz_puzzle] => 
+    [_pz_solution] => 
+    [_pz_explanation] => 
+    [_sortable_list_prefix] => npz
+)
+
+27:06:2021 11:53:21
+
+Array
+(
+    [_title_field_name] => pz_title
+    [_title_prefix] => Puzzle
+    [_parent_list_id] => puzzles
+    [_head_list_id] => pzh
+    [_sub_list_id] => pzi
+    [_open_close_id_prefix] => p
+    [_main_db_tbl] => _app_puzzles
+    [_item_id] => 
+    [_topic_id] => 13
+    [_list_count] => 
+    [_del_class] => del_m_pz
+    [_icon_lib_url] => http://localhost/sharpe-maths/_stdlib/_images/_icons/
+    [_icon_app_url] => http://localhost/sharpe-maths/_images/_icons/
+    [_occ_class] => 
+    [_oco_class] => 
+    [_item_title] => 
+    [_item_name] => puzzle
+    [_pz_puzzle] => 
+    [_pz_solution] => 
+    [_pz_explanation] => 
+    [_sortable_list_prefix] => npz
+)
+
+27:06:2021 11:53:38
+
+Array
+(
+    [_title_field_name] => pz_title
+    [_title_prefix] => Puzzle
+    [_parent_list_id] => puzzles
+    [_head_list_id] => pzh
+    [_sub_list_id] => pzi
+    [_open_close_id_prefix] => p
+    [_main_db_tbl] => _app_puzzles
+    [_item_id] => 
+    [_topic_id] => 13
+    [_list_count] => 
+    [_del_class] => del_m_pz
+    [_icon_lib_url] => http://localhost/sharpe-maths/_stdlib/_images/_icons/
+    [_icon_app_url] => http://localhost/sharpe-maths/_images/_icons/
+    [_occ_class] => 
+    [_oco_class] => 
+    [_item_title] => 
+    [_item_name] => puzzle
+    [_pz_puzzle] => 
+    [_pz_solution] => 
+    [_pz_explanation] => 
+    [_sortable_list_prefix] => npz
+)
+
+27:06:2021 11:54:19
+
+Array
+(
+    [_title_field_name] => pz_title
+    [_title_prefix] => Puzzle
+    [_parent_list_id] => puzzles
+    [_head_list_id] => pzh
+    [_sub_list_id] => pzi
+    [_open_close_id_prefix] => p
+    [_main_db_tbl] => _app_puzzles
+    [_item_id] => 
+    [_topic_id] => 13
+    [_list_count] => 
+    [_del_class] => del_m_pz
+    [_icon_lib_url] => http://localhost/sharpe-maths/_stdlib/_images/_icons/
+    [_icon_app_url] => http://localhost/sharpe-maths/_images/_icons/
+    [_occ_class] => 
+    [_oco_class] => 
+    [_item_title] => 
+    [_item_name] => puzzle
+    [_pz_puzzle] => 
+    [_pz_solution] => 
+    [_pz_explanation] => 
+    [_sortable_list_prefix] => npz
+)
+
+27:06:2021 11:54:39
+
+Array
+(
+    [_title_field_name] => pz_title
+    [_title_prefix] => Puzzle
+    [_parent_list_id] => puzzles
+    [_head_list_id] => pzh
+    [_sub_list_id] => pzi
+    [_open_close_id_prefix] => p
+    [_main_db_tbl] => _app_puzzles
+    [_item_id] => 
+    [_topic_id] => 13
+    [_list_count] => 
+    [_del_class] => del_m_pz
+    [_icon_lib_url] => http://localhost/sharpe-maths/_stdlib/_images/_icons/
+    [_icon_app_url] => http://localhost/sharpe-maths/_images/_icons/
+    [_occ_class] => 
+    [_oco_class] => 
+    [_item_title] => 
+    [_item_name] => puzzle
+    [_pz_puzzle] => 
+    [_pz_solution] => 
+    [_pz_explanation] => 
+    [_sortable_list_prefix] => npz
+)
+
+27:06:2021 11:54:55
+
+Array
+(
+    [_title_field_name] => pz_title
+    [_title_prefix] => Puzzle
+    [_parent_list_id] => puzzles
+    [_head_list_id] => pzh
+    [_sub_list_id] => pzi
+    [_open_close_id_prefix] => p
+    [_main_db_tbl] => _app_puzzles
+    [_item_id] => 
+    [_topic_id] => 13
+    [_list_count] => 
+    [_del_class] => del_m_pz
+    [_icon_lib_url] => http://localhost/sharpe-maths/_stdlib/_images/_icons/
+    [_icon_app_url] => http://localhost/sharpe-maths/_images/_icons/
+    [_occ_class] => 
+    [_oco_class] => 
+    [_item_title] => 
+    [_item_name] => puzzle
+    [_pz_puzzle] => 
+    [_pz_solution] => 
+    [_pz_explanation] => 
+    [_sortable_list_prefix] => npz
+)
+
+27:06:2021 11:55:37
+
+Array
+(
+    [_title_field_name] => pz_title
+    [_title_prefix] => Puzzle
+    [_parent_list_id] => puzzles
+    [_head_list_id] => pzh
+    [_sub_list_id] => pzi
+    [_open_close_id_prefix] => p
+    [_main_db_tbl] => _app_puzzles
+    [_item_id] => 
+    [_topic_id] => 13
+    [_list_count] => 
+    [_del_class] => del_m_pz
+    [_icon_lib_url] => http://localhost/sharpe-maths/_stdlib/_images/_icons/
+    [_icon_app_url] => http://localhost/sharpe-maths/_images/_icons/
+    [_occ_class] => 
+    [_oco_class] => 
+    [_item_title] => 
+    [_item_name] => puzzle
+    [_pz_puzzle] => 
+    [_pz_solution] => 
+    [_pz_explanation] => 
+    [_sortable_list_prefix] => npz
+)
+
+27:06:2021 11:55:41
+
+Array
+(
+    [_title_field_name] => pz_title
+    [_title_prefix] => Puzzle
+    [_parent_list_id] => puzzles
+    [_head_list_id] => pzh
+    [_sub_list_id] => pzi
+    [_open_close_id_prefix] => p
+    [_main_db_tbl] => _app_puzzles
+    [_item_id] => 
+    [_topic_id] => 13
+    [_list_count] => 
+    [_del_class] => del_m_pz
+    [_icon_lib_url] => http://localhost/sharpe-maths/_stdlib/_images/_icons/
+    [_icon_app_url] => http://localhost/sharpe-maths/_images/_icons/
+    [_occ_class] => 
+    [_oco_class] => 
+    [_item_title] => 
+    [_item_name] => puzzle
+    [_pz_puzzle] => 
+    [_pz_solution] => 
+    [_pz_explanation] => 
+    [_sortable_list_prefix] => npz
+)
+
+27:06:2021 11:56:11
+
+Array
+(
+    [_title_field_name] => pz_title
+    [_title_prefix] => Puzzle
+    [_parent_list_id] => puzzles
+    [_head_list_id] => pzh
+    [_sub_list_id] => pzi
+    [_open_close_id_prefix] => p
+    [_main_db_tbl] => _app_puzzles
+    [_item_id] => 
+    [_topic_id] => 13
+    [_list_count] => 
+    [_del_class] => del_m_pz
+    [_icon_lib_url] => http://localhost/sharpe-maths/_stdlib/_images/_icons/
+    [_icon_app_url] => http://localhost/sharpe-maths/_images/_icons/
+    [_occ_class] => 
+    [_oco_class] => 
+    [_item_title] => 
+    [_item_name] => puzzle
+    [_pz_puzzle] => 
+    [_pz_solution] => 
+    [_pz_explanation] => 
+    [_sortable_list_prefix] => npz
+)
+
+27:06:2021 11:56:38
+
+Array
+(
+    [_title_field_name] => pz_title
+    [_title_prefix] => Puzzle
+    [_parent_list_id] => puzzles
+    [_head_list_id] => pzh
+    [_sub_list_id] => pzi
+    [_open_close_id_prefix] => p
+    [_main_db_tbl] => _app_puzzles
+    [_item_id] => 
+    [_topic_id] => 25
+    [_list_count] => 
+    [_del_class] => del_m_pz
+    [_icon_lib_url] => http://localhost/sharpe-maths/_stdlib/_images/_icons/
+    [_icon_app_url] => http://localhost/sharpe-maths/_images/_icons/
+    [_occ_class] => 
+    [_oco_class] => 
+    [_item_title] => 
+    [_item_name] => puzzle
+    [_pz_puzzle] => 
+    [_pz_solution] => 
+    [_pz_explanation] => 
+    [_sortable_list_prefix] => npz
+)
+
+27:06:2021 11:56:41
+
+Array
+(
+    [_title_field_name] => pz_title
+    [_title_prefix] => Puzzle
+    [_parent_list_id] => puzzles
+    [_head_list_id] => pzh
+    [_sub_list_id] => pzi
+    [_open_close_id_prefix] => p
+    [_main_db_tbl] => _app_puzzles
+    [_item_id] => 
+    [_topic_id] => 25
+    [_list_count] => 
+    [_del_class] => del_m_pz
+    [_icon_lib_url] => http://localhost/sharpe-maths/_stdlib/_images/_icons/
+    [_icon_app_url] => http://localhost/sharpe-maths/_images/_icons/
+    [_occ_class] => 
+    [_oco_class] => 
+    [_item_title] => 
+    [_item_name] => puzzle
+    [_pz_puzzle] => 
+    [_pz_solution] => 
+    [_pz_explanation] => 
+    [_sortable_list_prefix] => npz
+)
+
+27:06:2021 11:57:23
+
+Array
+(
+    [_title_field_name] => pz_title
+    [_title_prefix] => Puzzle
+    [_parent_list_id] => puzzles
+    [_head_list_id] => pzh
+    [_sub_list_id] => pzi
+    [_open_close_id_prefix] => p
+    [_main_db_tbl] => _app_puzzles
+    [_item_id] => 
+    [_topic_id] => 25
+    [_list_count] => 
+    [_del_class] => del_m_pz
+    [_icon_lib_url] => http://localhost/sharpe-maths/_stdlib/_images/_icons/
+    [_icon_app_url] => http://localhost/sharpe-maths/_images/_icons/
+    [_occ_class] => 
+    [_oco_class] => 
+    [_item_title] => 
+    [_item_name] => puzzle
+    [_pz_puzzle] => 
+    [_pz_solution] => 
+    [_pz_explanation] => 
+    [_sortable_list_prefix] => npz
+)
+
+27:06:2021 11:57:52
+
+Array
+(
+    [_title_field_name] => pz_title
+    [_title_prefix] => Puzzle
+    [_parent_list_id] => puzzles
+    [_head_list_id] => pzh
+    [_sub_list_id] => pzi
+    [_open_close_id_prefix] => p
+    [_main_db_tbl] => _app_puzzles
+    [_item_id] => 
+    [_topic_id] => 25
+    [_list_count] => 
+    [_del_class] => del_m_pz
+    [_icon_lib_url] => http://localhost/sharpe-maths/_stdlib/_images/_icons/
+    [_icon_app_url] => http://localhost/sharpe-maths/_images/_icons/
+    [_occ_class] => 
+    [_oco_class] => 
+    [_item_title] => 
+    [_item_name] => puzzle
+    [_pz_puzzle] => 
+    [_pz_solution] => 
+    [_pz_explanation] => 
+    [_sortable_list_prefix] => npz
+)
+
+27:06:2021 11:58:07
+
+Array
+(
+    [_title_field_name] => pz_title
+    [_title_prefix] => Puzzle
+    [_parent_list_id] => puzzles
+    [_head_list_id] => pzh
+    [_sub_list_id] => pzi
+    [_open_close_id_prefix] => p
+    [_main_db_tbl] => _app_puzzles
+    [_item_id] => 
+    [_topic_id] => 25
+    [_list_count] => 
+    [_del_class] => del_m_pz
+    [_icon_lib_url] => http://localhost/sharpe-maths/_stdlib/_images/_icons/
+    [_icon_app_url] => http://localhost/sharpe-maths/_images/_icons/
+    [_occ_class] => 
+    [_oco_class] => 
+    [_item_title] => 
+    [_item_name] => puzzle
+    [_pz_puzzle] => 
+    [_pz_solution] => 
+    [_pz_explanation] => 
+    [_sortable_list_prefix] => npz
+)
+
+27:06:2021 11:58:23
+
+Array
+(
+    [_title_field_name] => pz_title
+    [_title_prefix] => Puzzle
+    [_parent_list_id] => puzzles
+    [_head_list_id] => pzh
+    [_sub_list_id] => pzi
+    [_open_close_id_prefix] => p
+    [_main_db_tbl] => _app_puzzles
+    [_item_id] => 
+    [_topic_id] => 25
+    [_list_count] => 
+    [_del_class] => del_m_pz
+    [_icon_lib_url] => http://localhost/sharpe-maths/_stdlib/_images/_icons/
+    [_icon_app_url] => http://localhost/sharpe-maths/_images/_icons/
+    [_occ_class] => 
+    [_oco_class] => 
+    [_item_title] => 
+    [_item_name] => puzzle
+    [_pz_puzzle] => 
+    [_pz_solution] => 
+    [_pz_explanation] => 
+    [_sortable_list_prefix] => npz
+)
+
+27:06:2021 11:58:35
+
+Array
+(
+    [_title_field_name] => pz_title
+    [_title_prefix] => Puzzle
+    [_parent_list_id] => puzzles
+    [_head_list_id] => pzh
+    [_sub_list_id] => pzi
+    [_open_close_id_prefix] => p
+    [_main_db_tbl] => _app_puzzles
+    [_item_id] => 
+    [_topic_id] => 25
+    [_list_count] => 
+    [_del_class] => del_m_pz
+    [_icon_lib_url] => http://localhost/sharpe-maths/_stdlib/_images/_icons/
+    [_icon_app_url] => http://localhost/sharpe-maths/_images/_icons/
+    [_occ_class] => 
+    [_oco_class] => 
+    [_item_title] => 
+    [_item_name] => puzzle
+    [_pz_puzzle] => 
+    [_pz_solution] => 
+    [_pz_explanation] => 
+    [_sortable_list_prefix] => npz
+)
+
+27:06:2021 11:59:20
+
+Array
+(
+    [_title_field_name] => pz_title
+    [_title_prefix] => Puzzle
+    [_parent_list_id] => puzzles
+    [_head_list_id] => pzh
+    [_sub_list_id] => pzi
+    [_open_close_id_prefix] => p
+    [_main_db_tbl] => _app_puzzles
+    [_item_id] => 
+    [_topic_id] => 25
+    [_list_count] => 
+    [_del_class] => del_m_pz
+    [_icon_lib_url] => http://localhost/sharpe-maths/_stdlib/_images/_icons/
+    [_icon_app_url] => http://localhost/sharpe-maths/_images/_icons/
+    [_occ_class] => 
+    [_oco_class] => 
+    [_item_title] => 
+    [_item_name] => puzzle
+    [_pz_puzzle] => 
+    [_pz_solution] => 
+    [_pz_explanation] => 
+    [_sortable_list_prefix] => npz
+)
+
+27:06:2021 12:01:47
+
+Array
+(
+    [_title_field_name] => pz_title
+    [_title_prefix] => Puzzle
+    [_parent_list_id] => puzzles
+    [_head_list_id] => pzh
+    [_sub_list_id] => pzi
+    [_open_close_id_prefix] => p
+    [_main_db_tbl] => _app_puzzles
+    [_item_id] => 
+    [_topic_id] => 25
+    [_list_count] => 
+    [_del_class] => del_m_pz
+    [_icon_lib_url] => http://localhost/sharpe-maths/_stdlib/_images/_icons/
+    [_icon_app_url] => http://localhost/sharpe-maths/_images/_icons/
+    [_occ_class] => 
+    [_oco_class] => 
+    [_item_title] => 
+    [_item_name] => puzzle
+    [_pz_puzzle] => 
+    [_pz_solution] => 
+    [_pz_explanation] => 
+    [_sortable_list_prefix] => npz
+)
+
+27:06:2021 12:03:03
+
+Array
+(
+    [_title_field_name] => pz_title
+    [_title_prefix] => Puzzle
+    [_parent_list_id] => puzzles
+    [_head_list_id] => pzh
+    [_sub_list_id] => pzi
+    [_open_close_id_prefix] => p
+    [_main_db_tbl] => _app_puzzles
+    [_item_id] => 
+    [_topic_id] => 25
+    [_list_count] => 
+    [_del_class] => del_m_pz
+    [_icon_lib_url] => http://localhost/sharpe-maths/_stdlib/_images/_icons/
+    [_icon_app_url] => http://localhost/sharpe-maths/_images/_icons/
+    [_occ_class] => 
+    [_oco_class] => 
+    [_item_title] => 
+    [_item_name] => puzzle
+    [_pz_puzzle] => 
+    [_pz_solution] => 
+    [_pz_explanation] => 
+    [_sortable_list_prefix] => npz
+)
+
+27:06:2021 12:06:34
+
+Array
+(
+    [_title_field_name] => pz_title
+    [_title_prefix] => Puzzle
+    [_parent_list_id] => puzzles
+    [_head_list_id] => pzh
+    [_sub_list_id] => pzi
+    [_open_close_id_prefix] => p
+    [_main_db_tbl] => _app_puzzles
+    [_item_id] => 
+    [_topic_id] => 25
+    [_list_count] => 
+    [_del_class] => del_m_pz
+    [_icon_lib_url] => http://localhost/sharpe-maths/_stdlib/_images/_icons/
+    [_icon_app_url] => http://localhost/sharpe-maths/_images/_icons/
+    [_occ_class] => 
+    [_oco_class] => 
+    [_item_title] => 
+    [_item_name] => puzzle
+    [_pz_puzzle] => 
+    [_pz_solution] => 
+    [_pz_explanation] => 
+    [_sortable_list_prefix] => npz
+)
+
+27:06:2021 12:06:52
+
+Array
+(
+    [_title_field_name] => pz_title
+    [_title_prefix] => Puzzle
+    [_parent_list_id] => puzzles
+    [_head_list_id] => pzh
+    [_sub_list_id] => pzi
+    [_open_close_id_prefix] => p
+    [_main_db_tbl] => _app_puzzles
+    [_item_id] => 
+    [_topic_id] => 25
+    [_list_count] => 
+    [_del_class] => del_m_pz
+    [_icon_lib_url] => http://localhost/sharpe-maths/_stdlib/_images/_icons/
+    [_icon_app_url] => http://localhost/sharpe-maths/_images/_icons/
+    [_occ_class] => 
+    [_oco_class] => 
+    [_item_title] => 
+    [_item_name] => puzzle
+    [_pz_puzzle] => 
+    [_pz_solution] => 
+    [_pz_explanation] => 
+    [_sortable_list_prefix] => npz
+)
+
+27:06:2021 12:07:37
+
+Array
+(
+    [_title_field_name] => pz_title
+    [_title_prefix] => Puzzle
+    [_parent_list_id] => puzzles
+    [_head_list_id] => pzh
+    [_sub_list_id] => pzi
+    [_open_close_id_prefix] => p
+    [_main_db_tbl] => _app_puzzles
+    [_item_id] => 
+    [_topic_id] => 25
+    [_list_count] => 
+    [_del_class] => del_m_pz
+    [_icon_lib_url] => http://localhost/sharpe-maths/_stdlib/_images/_icons/
+    [_icon_app_url] => http://localhost/sharpe-maths/_images/_icons/
+    [_occ_class] => 
+    [_oco_class] => 
+    [_item_title] => 
+    [_item_name] => puzzle
+    [_pz_puzzle] => 
+    [_pz_solution] => 
+    [_pz_explanation] => 
+    [_sortable_list_prefix] => npz
+)
+
+27:06:2021 12:08:55
+
+Array
+(
+    [_title_field_name] => pz_title
+    [_title_prefix] => Puzzle
+    [_parent_list_id] => puzzles
+    [_head_list_id] => pzh
+    [_sub_list_id] => pzi
+    [_open_close_id_prefix] => p
+    [_main_db_tbl] => _app_puzzles
+    [_item_id] => 
+    [_topic_id] => 25
+    [_list_count] => 
+    [_del_class] => del_m_pz
+    [_icon_lib_url] => http://localhost/sharpe-maths/_stdlib/_images/_icons/
+    [_icon_app_url] => http://localhost/sharpe-maths/_images/_icons/
+    [_occ_class] => 
+    [_oco_class] => 
+    [_item_title] => 
+    [_item_name] => puzzle
+    [_pz_puzzle] => 
+    [_pz_solution] => 
+    [_pz_explanation] => 
+    [_sortable_list_prefix] => npz
+)
+
+27:06:2021 12:09:46
+
+Array
+(
+    [_title_field_name] => pz_title
+    [_title_prefix] => Puzzle
+    [_parent_list_id] => puzzles
+    [_head_list_id] => pzh
+    [_sub_list_id] => pzi
+    [_open_close_id_prefix] => p
+    [_main_db_tbl] => _app_puzzles
+    [_item_id] => 
+    [_topic_id] => 25
+    [_list_count] => 
+    [_del_class] => del_m_pz
+    [_icon_lib_url] => http://localhost/sharpe-maths/_stdlib/_images/_icons/
+    [_icon_app_url] => http://localhost/sharpe-maths/_images/_icons/
+    [_occ_class] => 
+    [_oco_class] => 
+    [_item_title] => 
+    [_item_name] => puzzle
+    [_pz_puzzle] => 
+    [_pz_solution] => 
+    [_pz_explanation] => 
+    [_sortable_list_prefix] => npz
+)
+
+27:06:2021 12:10:23
+
+Array
+(
+    [_title_field_name] => pz_title
+    [_title_prefix] => Puzzle
+    [_parent_list_id] => puzzles
+    [_head_list_id] => pzh
+    [_sub_list_id] => pzi
+    [_open_close_id_prefix] => p
+    [_main_db_tbl] => _app_puzzles
+    [_item_id] => 
+    [_topic_id] => 6
+    [_list_count] => 
+    [_del_class] => del_m_pz
+    [_icon_lib_url] => http://localhost/sharpe-maths/_stdlib/_images/_icons/
+    [_icon_app_url] => http://localhost/sharpe-maths/_images/_icons/
+    [_occ_class] => 
+    [_oco_class] => 
+    [_item_title] => 
+    [_item_name] => puzzle
+    [_pz_puzzle] => 
+    [_pz_solution] => 
+    [_pz_explanation] => 
+    [_sortable_list_prefix] => npz
+)
+
+27:06:2021 12:10:36
+
+Array
+(
+    [_title_field_name] => pz_title
+    [_title_prefix] => Puzzle
+    [_parent_list_id] => puzzles
+    [_head_list_id] => pzh
+    [_sub_list_id] => pzi
+    [_open_close_id_prefix] => p
+    [_main_db_tbl] => _app_puzzles
+    [_item_id] => 
+    [_topic_id] => 24
+    [_list_count] => 
+    [_del_class] => del_m_pz
+    [_icon_lib_url] => http://localhost/sharpe-maths/_stdlib/_images/_icons/
+    [_icon_app_url] => http://localhost/sharpe-maths/_images/_icons/
+    [_occ_class] => 
+    [_oco_class] => 
+    [_item_title] => 
+    [_item_name] => puzzle
+    [_pz_puzzle] => 
+    [_pz_solution] => 
+    [_pz_explanation] => 
+    [_sortable_list_prefix] => npz
+)
+
+27:06:2021 12:12:44
+
+Array
+(
+    [_title_field_name] => pz_title
+    [_title_prefix] => Puzzle
+    [_parent_list_id] => puzzles
+    [_head_list_id] => pzh
+    [_sub_list_id] => pzi
+    [_open_close_id_prefix] => p
+    [_main_db_tbl] => _app_puzzles
+    [_item_id] => 
+    [_topic_id] => 5
+    [_list_count] => 
+    [_del_class] => del_m_pz
+    [_icon_lib_url] => http://localhost/sharpe-maths/_stdlib/_images/_icons/
+    [_icon_app_url] => http://localhost/sharpe-maths/_images/_icons/
+    [_occ_class] => 
+    [_oco_class] => 
+    [_item_title] => 
+    [_item_name] => puzzle
+    [_pz_puzzle] => 
+    [_pz_solution] => 
+    [_pz_explanation] => 
+    [_sortable_list_prefix] => npz
+)
+
