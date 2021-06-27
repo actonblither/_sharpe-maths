@@ -57,7 +57,7 @@ class _puzzle extends _topic_tab{
 				'_pz_explanation' => rvs($_r['pz_explanation']),
 				'_sortable_list_prefix' => $this->_sortable_list_prefix
 		);
-_cl($this->_sr);
+//_cl($this->_sr);
 		return $this->_fetch_template_file($_tpl);
 	}
 
