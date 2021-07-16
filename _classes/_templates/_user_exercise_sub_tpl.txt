@@ -9,7 +9,7 @@
 		<div class='answer f1'>
 			<div id='soln{_item_detail_id}' class='solution point f1'>
 				<div class = 'front-s'><img src='_stdlib/_images/_icons/32/answer32.png'></div>
-				<div class='back-s hidden'>{_answer}</div>
+				<div class='back-s hidden mr10'>{_answer}</div>
 			</div>
 			<!--<div id='meth{_item_detail_id}' class='method point f1'>
 				<div class = 'front-m'><img src='_stdlib/_images/_icons/32/method32.png'></div>

@@ -96,12 +96,18 @@ h1, h2, h3, h4, .h1, .h2, .h3, .h4, .h3n{
 	align-items: center;
 }
 
+h3.black, h2.black{
+	color: #000;
+}
+
 .ttip{text-decoration: underline; color: #333; cursor: pointer;}
 
-h1, .h1{ font-size: 20pt; margin: 10px 0 10px 0; }
+h1, .h1{ font-size: 20pt; }
 h2, .h2{ font-size: 16pt; }
 h3, .h3{ font-size: 13pt; }
 h4, .h4{ font-size: 10pt; }
+
+h1.big-latex{font-size: 20pt; color: #000; margin: 0; padding:0;}
 
 .h3n{font-size: 13pt; font-weight: normal; white-space: nowrap;margin-bottom: 0;}
 
@@ -119,7 +125,6 @@ figcaption{
 	text-align: left;
 	color: var(--s25pc);
 }
-
 
 li.row-container,
 div.row-container{
@@ -499,6 +504,9 @@ a#nav-skip{
 .mxw40pc{max-width: 40%;}
 .mxw45pc{max-width: 45%;}
 .mxw50pc{max-width: 50%;}
+.mxw60pc{max-width: 60%;}
+.mxw70pc{max-width: 70%;}
+.mxw80pc{max-width: 80%;}
 .mxw90pc{max-width: 90%;}
 .mxw100pc{max-width: 100%;}
 
@@ -615,6 +623,13 @@ li.thin > div > div{
 	background-color: var(--s55pc);
 	margin-bottom: 5px;
 }
+
+.fit{
+	width: fit-content;
+}
+
+.cbase{justify-content: flex-end;}
+.base{align-items: flex-end;}
 
 .l{display: flex !important; justify-content: flex-start !important;}
 .r{display: flex !important; justify-content: flex-end !important;}

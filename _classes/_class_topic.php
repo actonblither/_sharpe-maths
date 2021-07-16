@@ -6,7 +6,7 @@ class _topic extends _setup{
 	private $_topic_parent_id;
 	private $_topic_route_id;
 	private $_topic_tab_bar;
-	private $_topic_order_array;
+	private $_topic_order_array = array();
 
 	private $_topic_title_bar_img;
 	private $_topic_title;
@@ -34,8 +34,9 @@ class _topic extends _setup{
 	public function __construct($_id = null){
 		parent::__construct();
 		$this->_dbh = new _db();
-		$this->_topic_order_array = $_SESSION['s_topic_order'];
+		$this->_topic_order_array = rva($_SESSION['s_topic_order']);
 		$this->_topic_route_id = rvz($_id);
+		$this->_fetch_topic_id();
 	}
 
 	public function _build_admin_topic_list(){
@@ -86,7 +87,7 @@ class _topic extends _setup{
 	}
 
 	public function _build_topic(){
-		$this->_fetch_topic_id();
+
 		$this->_load_topic_data();
 		$this->_build_intro_text();
 		$this->_build_examples();
@@ -115,9 +116,9 @@ class _topic extends _setup{
 		$_d = array('id' => $this->_topic_route_id);
 		$_f = array('i');
 		$_row = $this->_dbh->_fetch_db_row_p($_sql, $_d, $_f);
-		$this->_topic_parent_id = $_row['parent_id'];
-		$this->_topic_order_num = $_row['order_num'];
-		$this->_topic_id = $_row['topic_id'];
+		$this->_topic_parent_id = rvz($_row['parent_id']);
+		$this->_topic_order_num = rvz($_row['order_num']);
+		$this->_topic_id = rvz($_row['topic_id']);
 	}
 
 
@@ -263,7 +264,7 @@ class _topic extends _setup{
 
 	private function _build_intro_text(){
 		$_intro = new _intro($this->_topic_id);
-		$this->_topic_intro = $_intro->_fetch_intro_text();
+		$this->_topic_intro = "<h2>".$this->_topic_title."</h2>".$_intro->_fetch_intro_text();
 		$this->_show_intro_tab = $_intro->_get_make_intro_tab();
 	}
 

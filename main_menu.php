@@ -37,13 +37,7 @@ switch ($_main){
 		break;
 
 	case 'page':
-		if ($_id === 4){
-			//$g = new _puzzle();
-			//echo $g->_fetch_all_puzzles();
-		}else if ($_id === 5){
-			$h = new _glossary2();
-			echo $h->_build_glossary();
-		}else if ($_id === 88){
+		if ($_id === 88){
 			$_c = new _contact();
 			echo $_c->_build_contact_form();
 		}else{
@@ -54,7 +48,21 @@ switch ($_main){
 
 	case 'topic':
 		$h = new _topic($_id);
+		$_topic_id = $h->_get_topic_id();
+		$_dbh = new _db();
 		echo $h->_build_topic();
+
+		$_sql = 'select age_levels from _app_topic where id = :id';
+		$_d = array('id' => $_topic_id);
+		$_f = array('i');
+		$_age_level = $_dbh->_fetch_db_datum_p($_sql, $_d, $_f);
+		//_cl($_age_level, 'AGE LEVELS MM');
+		if ($_age_level > 3){
+			$_SESSION['s_adv_content'] = true;
+		}else{
+			$_SESSION['s_adv_content'] = false;
+		}
+		//_cl($_SESSION['s_adv_content'], 'ADV CONTENT MM');
 		break;
 
 }

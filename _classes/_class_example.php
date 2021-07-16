@@ -49,11 +49,11 @@ class _example extends _topic_tab{
 			if (!empty($_tan)){
 				$_r['teg_answer_note'] = "<h4>Answer notes</h4>".$_tan;
 			}
-			$_tips = new _tips($_r['teg_question_note']);
+			$_tips = new _tips($_r['teg_question_note'], $this->_topic_id);
 			$_r['teg_question_note'] = $_tips->_get_return_txt();
-			$_tips = new _tips($_r['teg_method_note']);
+			$_tips = new _tips($_r['teg_method_note'], $this->_topic_id);
 			$_r['teg_method_note'] = $_tips->_get_return_txt();
-			$_tips = new _tips($_r['teg_answer_note']);
+			$_tips = new _tips($_r['teg_answer_note'], $this->_topic_id);
 			$_r['teg_answer_note'] = $_tips->_get_return_txt();
 		}
 

@@ -207,14 +207,14 @@ ol{
 
 ol > li{
 	position: relative;
-	margin-left: 10px;
+	margin-left: 15px;
 	padding-left: 10px;
 	line-height:  var(--p-line-height);
 	counter-increment: item;
 }
 
 ol > li:before{
-	margin-left: -20px;
+	margin-left: -25px;
 	font-weight: bold;
 	position: absolute;
 }

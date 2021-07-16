@@ -169,11 +169,12 @@ include('app_config.php');
 					$('#ajax-loader').removeClass('hidden');
 				},
 				success : function(data) {
-					//var page = atob(data['page']);
 					var page = data['page'];
 					$('#maincol').html(page);
-					MathJax.typeset();
+					$('#ttip_content_container').html(data['tooltips']);
+
 					$('title').html(data['page-title']);
+					MathJax.typeset();
 				},
 				complete: function(){
 					$('#ajax-loader').addClass('hidden');
@@ -196,7 +197,11 @@ include('app_config.php');
 			}
 			this.src = burger_src;
 			createCookie('navbar', tog, 365);
-			$('#navbar').toggleClass('hidden');
+			if (tog === 'on'){
+				$('#navbar').removeClass('hidden');
+			}else{
+				$('#navbar').addClass('hidden');
+			}
 		});
 
 
@@ -547,9 +552,12 @@ include('app_config.php');
 			items: 'li.rc',
 			update: function(event, ui) {
 				var new_list = $(this).sortable('toArray').toString();
-				console.log($(this).attr('data-db-tbl'));
 				var db_tbl = $(this).attr('data-db-tbl');
 				var sort_list_prefix = $(this).attr('data-sort-list-prefix');
+				if (db_tbl === undefined){
+					var db_tbl = $(this.firstChild.nextElementSibling).attr('data-db-tbl');
+					var sort_list_prefix = $(this.firstChild.nextElementSibling).attr('data-sort-list-prefix');
+				}
 				var fd = new FormData();
 				fd.set('nlist', new_list);
 				fd.set('gen_table', db_tbl);
@@ -590,12 +598,15 @@ include('app_config.php');
 		<div id = 'ttip_content_container' class='hidden'>
 			<?php
 			$_dbh = new _db();
-			$_sql = 'select * from _app_tips where display=1';
+			$_sql = 'select * from _app_tips where display = 1';
 			$_div_rows = $_dbh->_fetch_db_rows($_sql);
 
 			foreach ($_div_rows as $_dr){
 				$_title = "<h3>".$_dr['title']."</h3>".PHP_EOL;
 				$_body = $_title.$_dr['body'];
+				if ($_SESSION['s_adv_content']){
+					$_body .= $_dr['adv_content'];
+				}
 				echo "<div id = 'tt".$_dr['id']."-div' class='hidden'>".$_body."</div>".PHP_EOL;
 			}
 		?>

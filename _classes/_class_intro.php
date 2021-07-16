@@ -23,7 +23,7 @@ class _intro{
 		if (is_logged_in()){
 			$this->_build_intro_edit();
 		}else{
-			$_tip = new _tips($this->_intro);
+			$_tip = new _tips($this->_intro, $this->_topic_id);
 			$this->_intro = $_tip->_get_return_txt();
 		}
 		if (!empty($this->_intro) || is_logged_in()){

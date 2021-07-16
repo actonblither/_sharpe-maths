@@ -4,12 +4,21 @@ class _tips extends _setup{
 	private $_ttip_content;
 	private $_stuffing = '####';
 	private $_exclude = '!!';
+	private $_age_level;
+	private $_topic_id;
+	private $_adv_content = false;
 
 
 
-	public function __construct($_txt){
+
+	public function __construct($_txt, $_topic_id = null){
 		parent::__construct();
 		$this->_return_txt = $_txt;
+		if (!is_null($_topic_id)){
+			$this->_topic_id = $_topic_id;
+			$this->_fetch_age_level();
+			if ($this->_age_level > 3){$this->_adv_content = true;}
+		}
 
 		$_words = $this->_fetch_keywords();
 		$this->_parse_text($_words);
@@ -20,6 +29,13 @@ class _tips extends _setup{
 		$_nsb = array(', ', '. ', '; ', ': ');
 		$this->_return_txt = preg_replace($_sb, $_nsb, $this->_return_txt);
 
+	}
+
+	private function _fetch_age_level(){
+		$_sql = 'select age_levels from _app_topic where id = :id';
+		$_d = array('id' => $this->_topic_id);
+		$_f = array('i');
+		$this->_age_level = $this->_dbh->_fetch_db_datum_p($_sql, $_d, $_f);
 	}
 
 	private function _fetch_keywords(){
@@ -65,7 +81,7 @@ class _tips extends _setup{
 
 	private function _set_tooltips($_word, $_id){
 		$_ws = '/\b'.$_word.'\b/';
-		$_ttip_span = " <span class = 'ttip' title = 'tt' data-ttcontent = 'tt".$_id."'>".$_word."</span> ";
+		$_ttip_span = " <span class = 'ttip' title = 'tt' data-ttcontent = 'tt".$_id."'>".$_word."</span>";
 		$this->_return_txt = preg_replace($_ws, $_ttip_span, $this->_return_txt);
 	}
 

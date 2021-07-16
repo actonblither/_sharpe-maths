@@ -55,8 +55,9 @@ class _article extends _topic_tab{
 
 	public function _fetch_template($_tpl, $_r = array()){
 		if (!$this->_is_logged_in){
-			$_tips = new _tips(rvs($_r['tart_body']));
-			$_r['tart_body'] = $_tips->_get_return_txt();
+			$_tips = new _tips(rvs($_r['tart_body']), $this->_topic_id);
+			$_title = "<h2>".rvs($_r['tart_title'])."</h2>";
+			$_r['tart_body'] = $_title.$_tips->_get_return_txt();
 		}
 		$this->_sr = array(
 				'_title_field_name' => $this->_title_field_name,

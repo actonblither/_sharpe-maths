@@ -29,7 +29,7 @@ class _activity extends _topic_tab{
 
 	public function _fetch_template($_tpl, $_r = array()){
 		if (!$this->_is_logged_in){
-			$_tips = new _tips(rvs($_r['tact_instructions']));
+			$_tips = new _tips(rvs($_r['tact_instructions']), $this->_topic_id);
 			$_r['tact_instructions'] = $_tips->_get_return_txt();
 		}
 		$this->_sr = array(

@@ -19,6 +19,7 @@ define ('__s_doc_folder__', $ini_array['paths']['drive'].$ini_array['paths']['do
 include(__s_lib_folder__.'_classes/_class_db_connect.php');
 include(__s_lib_folder__.'_lib/_stdlib.php');
 
+rvs($_SESSION['s_ref']);
 if (!isset($_SESSION['s_ref']) && isset($_SERVER['HTTP_REFERER'])){
 	$_SESSION['s_ref'] = $_SERVER['HTTP_REFERER'];
 }
