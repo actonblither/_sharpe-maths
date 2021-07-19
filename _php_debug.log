@@ -1,132 +1,20 @@
-07:07:2021 18:55:41
-AGE LEVELS LP
-int(4)
-
-07:07:2021 18:55:41
-ADV CONTENT LP
-bool(true)
-
-07:07:2021 19:02:39
-AGE LEVELS MM
-int(2)
-
-07:07:2021 19:02:39
-ADV CONTENT MM
-bool(false)
-
-07:07:2021 19:02:58
-AGE LEVELS LP
-int(3)
-
-07:07:2021 19:02:58
-TOPIC ID
-int(61)
-
-07:07:2021 19:02:58
-ADV CONTENT LP
-bool(false)
-
-07:07:2021 19:03:08
-AGE LEVELS LP
-int(2)
-
-07:07:2021 19:03:08
-TOPIC ID
-int(60)
-
-07:07:2021 19:03:08
-ADV CONTENT LP
-bool(false)
-
-07:07:2021 19:03:26
-AGE LEVELS LP
-int(5)
-
-07:07:2021 19:03:26
-TOPIC ID
-int(86)
-
-07:07:2021 19:03:26
-ADV CONTENT LP
-bool(true)
-
-08:07:2021 10:53:44
+19:07:2021 11:59:04
 
 Array
 (
-    [nlist] => ,navli11,,navli28,navli29,navli38,navli24,navli13,navli12,,navli21,navli22,navli26,navli25,navli18,navli19,navli20,navli49,navli60,,navli14,navli61,navli62,navli63,navli64,navli66,navli15,,navli67,navli68,navli69,navli70,navli71,navli155
-    [gen_table] => _app_nav_routes
-    [sort_list_prefix] => navli
+    [nlist] => sub2947,sub2948,sub2949,sub2950,sub2951,sub2952,sub2953,sub2954,sub2956,sub2955
+    [gen_table] => _app_topic_ex_q
+    [sort_list_prefix] => sub
     [app_folder] => RzoveGFtcHAvaHRkb2NzL3NoYXJwZS1tYXRocy8=
 )
 
-11:07:2021 13:22:58
+19:07:2021 11:59:19
 
 Array
 (
-    [nlist] => nar72,nar69,nar70,nar71
-    [gen_table] => _app_topic_art
-    [sort_list_prefix] => nar
-    [app_folder] => RzoveGFtcHAvaHRkb2NzL3NoYXJwZS1tYXRocy8=
-)
-
-12:07:2021 10:55:34
-
-Array
-(
-    [nlist] => nar69,nar70,nar71,nar72
-    [gen_table] => _app_topic_art
-    [sort_list_prefix] => nar
-    [app_folder] => RzoveGFtcHAvaHRkb2NzL3NoYXJwZS1tYXRocy8=
-)
-
-14:07:2021 10:17:05
-
-Array
-(
-    [nlist] => nex232,nex225,sub2882,sub2883,sub2884,sub2885,sub2886,sub2887,sub2888,sub2889,sub2890,sub2891,nex226,sub2892,sub2893,sub2894,sub2895,sub2896,sub2897,sub2898,sub2899,sub2900,sub2901
-    [gen_table] => _app_topic_ex
-    [sort_list_prefix] => nex
-    [app_folder] => RzoveGFtcHAvaHRkb2NzL3NoYXJwZS1tYXRocy8=
-)
-
-14:07:2021 10:33:48
-
-Array
-(
-    [nlist] => neg250,neg241,neg242,neg243,neg251
-    [gen_table] => _app_topic_eg
-    [sort_list_prefix] => neg
-    [app_folder] => RzoveGFtcHAvaHRkb2NzL3NoYXJwZS1tYXRocy8=
-)
-
-14:07:2021 10:33:50
-
-Array
-(
-    [nlist] => neg250,neg251,neg241,neg242,neg243
-    [gen_table] => _app_topic_eg
-    [sort_list_prefix] => neg
-    [app_folder] => RzoveGFtcHAvaHRkb2NzL3NoYXJwZS1tYXRocy8=
-)
-
-14:07:2021 10:35:17
-
-Array
-(
-    [nlist] => neg252,neg250,neg241,neg242,neg243,neg251
-    [gen_table] => _app_topic_eg
-    [sort_list_prefix] => neg
-    [app_folder] => RzoveGFtcHAvaHRkb2NzL3NoYXJwZS1tYXRocy8=
-)
-
-14:07:2021 10:35:24
-
-Array
-(
-    [nlist] => neg252,neg241,neg242,neg243,neg250,neg251
-    [gen_table] => _app_topic_eg
-    [sort_list_prefix] => neg
+    [nlist] => sub2947,sub2948,sub2949,sub2950,sub2951,sub2952,sub2953,sub2954,sub2955,sub2956
+    [gen_table] => _app_topic_ex_q
+    [sort_list_prefix] => sub
     [app_folder] => RzoveGFtcHAvaHRkb2NzL3NoYXJwZS1tYXRocy8=
 )
 

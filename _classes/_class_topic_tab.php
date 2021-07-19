@@ -44,8 +44,8 @@ class _topic_tab{
 		$this->_topic_id = $_tid;
 		$this->_is_logged_in = is_logged_in();
 		// This SQL is the default. It can be overridden in the child class
-		$this->_item_sql = 'select * from '.$this->_main_db_tbl.' where topic_id = :topic_id and display = :display and archived = :archived order by order_num, id';
-		$this->_item_sql_admin = 'select * from '.$this->_main_db_tbl.' where topic_id = :topic_id and archived = :archived order by order_num, id';
+		$this->_item_sql = 'select * from '.$this->_main_db_tbl.' where topic_id = :topic_id and display = :display and archived = :archived order by order_num';
+		$this->_item_sql_admin = 'select * from '.$this->_main_db_tbl.' where topic_id = :topic_id and archived = :archived order by order_num';
 
 		if ($this->_is_logged_in){
 			$this->_tpl_parent = $this->_template_folder.'_admin_parent_tpl.txt';

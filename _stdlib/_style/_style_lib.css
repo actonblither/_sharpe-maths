@@ -100,14 +100,15 @@ h3.black, h2.black{
 	color: #000;
 }
 
-.ttip{text-decoration: underline; color: #333; cursor: pointer;}
+.ttip{text-decoration: #999 wavy underline; color: #000; cursor: pointer;}
 
-h1, .h1{ font-size: 20pt; }
+h1, .h1{ font-size: 18pt; }
 h2, .h2{ font-size: 16pt; }
-h3, .h3{ font-size: 13pt; }
-h4, .h4{ font-size: 10pt; }
+h3, .h3{ font-size: 14pt; }
+h4, .h4{ font-size: 12pt; }
+h5, .h5{ font-size: 10pt; }
 
-h1.big-latex{font-size: 20pt; color: #000; margin: 0; padding:0;}
+h1.big-latex{font-size: 18pt; color: #000; margin: 0; padding:0;}
 
 .h3n{font-size: 13pt; font-weight: normal; white-space: nowrap;margin-bottom: 0;}
 
