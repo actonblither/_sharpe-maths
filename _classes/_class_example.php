@@ -41,13 +41,13 @@ class _example extends _topic_tab{
 		$_tan = trim(rvs($_r['teg_answer_note']));
 		if (!$this->_is_logged_in){
 			if (!empty($_tqn)){
-				$_r['teg_question_note'] = "<h4>Question notes</h4>".$_tqn;
+				$_r['teg_question_note'] = "<div class='h4'>Question notes</div>".$_tqn;
 			}
 			if (!empty($_tmn)){
-				$_r['teg_method_note'] = "<h4>Method notes</h4>".$_tmn;
+				$_r['teg_method_note'] = "<div class='h4'>Method notes</div>".$_tmn;
 			}
 			if (!empty($_tan)){
-				$_r['teg_answer_note'] = "<h4>Answer notes</h4>".$_tan;
+				$_r['teg_answer_note'] = "<div class='h4'>Answer notes</div>".$_tan;
 			}
 			$_tips = new _tips($_r['teg_question_note'], $this->_topic_id);
 			$_r['teg_question_note'] = $_tips->_get_return_txt();

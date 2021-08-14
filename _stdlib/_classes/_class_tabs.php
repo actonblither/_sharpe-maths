@@ -19,7 +19,7 @@ class _tabs{
 	public function _build_tabs(){
 		$count = 1;
 		$tmp = "
-		<nav id = '".$this->_tab_nav_id."' class = 'nav-tab-class'>";
+		<nav id = '".$this->_tab_nav_id."' class = 'nav-tab-class' aria-label = 'Topic tabs'>";
 		for($i = 0; $i < count($this->_tab_labels); $i++){
 			$tmp .= "<div class = 'tab-gap'><div class = 'gap-a'></div><div class = 'base'></div></div>";
 			$tmp .= "<div class = 'tab-container'>";

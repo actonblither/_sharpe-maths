@@ -3,16 +3,16 @@
 		{_item_count}.
 	</div>
 	<div class='the-rest wrap'>
-		<div class='question'>
+		<div class='question mxw60pc'>
 			{_question}
 		</div>
 		<div class='answer f1'>
 			<div id='soln{_item_detail_id}' class='solution point f1'>
-				<div class = 'front-s'><img src='_stdlib/_images/_icons/32/answer32.png'></div>
+				<div class = 'front-s'><img class='ttip' title='Answer' aria-label='Answer' alt='Answer' src='_stdlib/_images/_icons/32/answer32.png'></div>
 				<div class='back-s hidden mr10'>{_answer}</div>
 			</div>
 			<!--<div id='meth{_item_detail_id}' class='method point f1'>
-				<div class = 'front-m'><img src='_stdlib/_images/_icons/32/method32.png'></div>
+				<div class = 'front-m'><img class=ttip' title='Method' aria-label='Method' alt = 'Method' src='_stdlib/_images/_icons/32/method32.png'></div>
 				<div class='back-m hidden'>{_method}</div>
 			</div>-->
 		</div>

@@ -6,6 +6,7 @@
 	?>
 </header>
 <section id = 'maincontent'>
+
 	<?php echo $_h->_build_body();?>
 </section>
 <footer id = 'fixed-footer'>

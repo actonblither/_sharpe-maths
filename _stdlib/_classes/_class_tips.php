@@ -80,8 +80,8 @@ class _tips extends _setup{
 	}
 
 	private function _set_tooltips($_word, $_id){
-		$_ws = '/\b'.$_word.'\b/';
-		$_ttip_span = " <span class = 'ttip' title = 'tt' data-ttcontent = 'tt".$_id."'>".$_word."</span>";
+		$_ws = '/\b'.$_word.'\b(?!.*<\/h\d{1}>)(?![^\[$<]*[\]$>])/';
+		$_ttip_span = " <span class = 'glosstip' title = 'tt' data-ttcontent = 'tt".$_id."'>".$_word."</span>";
 		$this->_return_txt = preg_replace($_ws, $_ttip_span, $this->_return_txt);
 	}
 

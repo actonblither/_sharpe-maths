@@ -1,6 +1,6 @@
 <li>
 	<div class='label'>
-		<img class='ttip' title='Instructions' alt='Problem' src='{_icon_lib_url}32/instructions32.png'>
+		<img class='ttip' aria-label = 'Instructions' title='Instructions' alt='Problem' src='{_icon_lib_url}32/instructions32.png'>
 	</div>
 	<div class='the-rest wrap'>
 		{_instructions}

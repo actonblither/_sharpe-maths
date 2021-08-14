@@ -20,7 +20,7 @@ include('app_config.php');
 		<link rel = 'stylesheet' href = '<?php echo __s_lib_url__;?>_style/_style_form_elements.css' type = 'text/css' />
 		<link rel = 'stylesheet' href = '<?php echo __s_lib_url__;?>_style/_style_header_footer.css' type = 'text/css' />
 		<link rel = 'stylesheet' href = '<?php echo __s_lib_url__;?>_style/_style_list_div.css' type = 'text/css' />
-
+		<link rel = 'stylesheet' href = '<?php echo __s_applib_url__;?>jquery/tooltipster/css/tooltipster.bundle.min.css' type = 'text/css' />
 		<link rel = 'stylesheet' href = '<?php echo __s_app_url__;?>_style/_style.css' type = 'text/css' />
 		<link rel = 'stylesheet' href = '<?php echo __s_lib_url__;?>_style/_style_login.css' type = 'text/css' />
 
@@ -39,7 +39,7 @@ include('app_config.php');
 		<script src = '<?php echo __s_applib_url__;?>jquery/dependsOn.js'></script>
 		<script src = '<?php echo __s_applib_url__;?>jquery/anytime.js'></script>
 		<?php }?>
-
+		<script src = '<?php echo __s_applib_url__;?>jquery/tooltipster/js/tooltipster.bundle.min.js'></script>
 		<script src = '<?php echo __s_lib_url__;?>_js/_stdlib.js'></script>
 		<script src = '<?php echo __s_applib_url__;?>jquery/ihavecookies/jquery.ihavecookies.js'></script>
 		<script src = '<?php echo __s_applib_url__;?>js/fabric.4.3.js'></script>
@@ -99,10 +99,24 @@ include('app_config.php');
 	</head>
 	<body>
 	<?php
-	include_once(__s_app_folder__.'/main.php');
-	echo _set_browser_tab_title();?>
+	include_once(__s_app_folder__.'/main.php');?>
+
+	<?php echo _set_browser_tab_title();?>
 
 	<script>
+
+
+		history.pushState(null, null, location.href);
+		console.log(location.href);
+    window.onpopstate = function () {
+      console.log(history);
+        history.go(1);
+    };
+
+
+
+
+
 		$(document).on('keyup','#sfilter', function(){
 			var str = $(this).val().toLowerCase();
 			$('.filter-field').parent('li').parent('ul').filter(function(){
@@ -110,7 +124,7 @@ include('app_config.php');
 			});
 		});
 
-		$(document).on('click', 'li.expand', function(evt){
+		$(document).on('click touch', 'li.expand', function(evt){
 			evt.stopImmediatePropagation();
 			if ($(this).hasClass('link') == false){
 				var id = $(this).attr('data-id');
@@ -123,39 +137,58 @@ include('app_config.php');
 			}
 		});
 
-		$(document).on('click', 'li.link', function(evt){
+		$(document).on('click touch', 'li.link', function(evt){
 			_load_page(evt, this);
 			$('ul.nav-menu-side li.link').removeClass('nms');
 			$(this).addClass('nms');
 		});
 
-		$(document).on('click', 'div.link, span.link', function(evt){
+		$(document).on('click touch', 'div.link, span.link', function(evt){
 			_load_page(evt, this);
 		});
 
-		$(document).on('click', 'img.nav_arrow', function(evt){
-			_load_page(evt, this);
-			var id = $(this).attr('data-id');
-			$('ul.nav-menu-side li.link').removeClass('nms');
-			$('li#navli'+id).addClass('nms');
-		});
-
-		$(document).on('click', 'span.topic-link, span.page-link', function(evt){
+		$(document).on('click touch', 'img.nav_arrow', function(evt){
 			_load_page(evt, this);
 			var id = $(this).attr('data-id');
 			$('ul.nav-menu-side li.link').removeClass('nms');
 			$('li#navli'+id).addClass('nms');
 		});
 
-		var _load_page = function(evt, f){
+		$(document).on('click touch', 'span.topic-link, span.page-link', function(evt){
+			_load_page(evt, this);
+			var id = $(this).attr('data-id');
+			$('ul.nav-menu-side li.link').removeClass('nms');
+			$('li#navli'+id).addClass('nms');
+		});
+
+		$(document).on('click touch', '#b_btn', function(e) {
+			if ($(this).hasClass('inactive') == false){
+				_load_page(e, this, 'back');
+			}
+		});
+
+		$(document).on('click touch', '#f_btn', function(e) {
+			if ($(this).hasClass('inactive') == false){
+				_load_page(e, this, 'forward');
+			}
+		});
+
+
+
+
+		var _load_page = function(evt, f, link_type = 'link'){
 			evt.stopImmediatePropagation();
-			var id = $(f).attr('data-id');
-			var main = $(f).attr('data-main');
-			var gid = $(f).attr('data-gid');
+			if (link_type == 'link'){
+				var id = $(f).attr('data-id');
+				var main = $(f).attr('data-main');
+			}else{
+				var id = 0;
+				var main = '';
+			}
 			var fd = new FormData();
 			fd.append('main', main);
 			fd.append('id', id);
-			if (gid){fd.append('gid', gid);}
+			fd.append('link_type', link_type);
 			fd.append('app_folder', '<?php echo base64_encode(__s_app_folder__);?>');
 			$.ajax({
 				type		: 'POST',
@@ -169,11 +202,27 @@ include('app_config.php');
 					$('#ajax-loader').removeClass('hidden');
 				},
 				success : function(data) {
-					var page = data['page'];
-					$('#maincol').html(page);
-					$('#ttip_content_container').html(data['tooltips']);
-
+					console.log(data['page']);
+					$('#maincol').html(data['page']);
+					$('#glosstip_content_container').html(data['tooltips']);
 					$('title').html(data['page-title']);
+
+					var id = data['data-id'];
+					var h_pos = data['history-pos'];
+					var h_end_pos = data['history-end-pos'];
+					if (h_pos == 0){
+						$('#b_btn').addClass('inactive');
+					}else{
+						$('#b_btn').removeClass('inactive');
+					}
+					if (h_pos == h_end_pos){
+						$('#f_btn').addClass('inactive');
+					}else{
+						$('#f_btn').removeClass('inactive');
+					}
+					//$('ul.nav-menu-side li.link').removeClass('nms');
+					//$('li#navli'+id).addClass('nms');
+
 					MathJax.typeset();
 				},
 				complete: function(){
@@ -185,7 +234,7 @@ include('app_config.php');
 			});
 		}
 
-		$(document).on('click', '#navburger', function(){
+		$(document).on('click touch', '#navburger', function(){
 			var tog;
 			var burger_src;
 			if (readCookie('navbar') == 'off'){
@@ -205,7 +254,7 @@ include('app_config.php');
 		});
 
 
-		$(document).on('click', '#navswitch', function(){
+		$(document).on('click touch', '#navswitch', function(){
 			nav_switch();
 		});
 
@@ -223,8 +272,19 @@ include('app_config.php');
 			createCookie('nav-position', new_pos, 365);
 		}
 
+		$(document).on('click touch', '#b_btn', function(e) {
+			e.preventDefault();
+			e.stopImmediatePropagation();
 
-		$(document).on('click', '.reveal', function(e) {
+		});
+
+		$(document).on('click touch', '#f_btn', function(e) {
+			e.preventDefault();
+			e.stopImmediatePropagation();
+
+		});
+
+		$(document).on('click touch', '.reveal', function(e) {
 			e.preventDefault();
 			e.stopImmediatePropagation();
 			var id = $(this).attr('data-id');
@@ -264,7 +324,7 @@ include('app_config.php');
 
 	<?php if (is_logged_in()){?>
 
-	$(document).on('click', '.del_s_ex_q', function(e){
+	$(document).on('click touch', '.del_s_ex_q', function(e){
 		if (_sure('Are you sure you want to delete this question?')){
 		e.preventDefault();
 		e.stopImmediatePropagation();
@@ -291,7 +351,7 @@ include('app_config.php');
 	});
 
 
-	$(document).on('click', '.add_new', function(e){
+	$(document).on('click touch', '.add_new', function(e){
 		var item_name = $(this).attr('data-item-name');
 		if (_sure('Are you sure you want to add a new '+ item_name +'?')){
 			e.preventDefault();
@@ -351,7 +411,7 @@ include('app_config.php');
 		_save_field(this, e, false, true);
 	});
 
-	$(document).on('click', '.page-save', function(e){
+	$(document).on('click touch', '.page-save', function(e){
 		_save_field(this, e, false, false);
 	});
 
@@ -460,7 +520,7 @@ include('app_config.php');
 		}
 		<?php }?>
 
-		$(document).on('click', '.open-list', function(e){
+		$(document).on('click touch', '.open-list', function(e){
 			e.preventDefault();
 			e.stopImmediatePropagation();
 
@@ -483,7 +543,7 @@ include('app_config.php');
 			createCookie(oid, state, 365);
 		});
 
-		$(document).on('click', '.open_eg', function(e){
+		$(document).on('click touch', '.open_eg', function(e){
 			e.preventDefault();
 			e.stopImmediatePropagation();
 			var id = $(this).attr('id').substring(2);
@@ -498,7 +558,9 @@ include('app_config.php');
 			}
 		});
 
-		$(document).on('click', '.open_ex', function(e){
+
+
+		$(document).on('click touch', '.open_ex', function(e){
 			e.preventDefault();
 			e.stopImmediatePropagation();
 			var id = $(this).attr('id').substring(2);
@@ -513,7 +575,7 @@ include('app_config.php');
 			}
 		});
 
-		$(document).on('click', '.open_act', function(e){
+		$(document).on('click touch', '.open_act', function(e){
 			e.preventDefault();
 			e.stopImmediatePropagation();
 			var id = $(this).attr('id').substring(2);
@@ -528,8 +590,18 @@ include('app_config.php');
 			}
 		});
 
+		$(document).on('click touch', '.ans', function(e){
+			var id = $(this).attr('id');
+			var oid = $(this).attr('data-oid')
 
-		$(document).on('click', '.solution', function(evt){
+			if (e.ctrlKey == false){
+				$('#' + id ).toggleClass('hidden');
+				$('#' + oid ).toggleClass('hidden');
+			}
+		});
+
+
+		$(document).on('click touch', '.solution', function(evt){
 			var id = $(this).attr('id');
 			if (evt.ctrlKey == false){
 				//console.log(id);
@@ -538,7 +610,7 @@ include('app_config.php');
 			}
 		});
 
-		$(document).on('click', '.method', function(evt){
+		$(document).on('click touch', '.method', function(evt){
 			var id = $(this).attr('id');
 			if (evt.ctrlKey == false){
 				//console.log(id);
@@ -581,11 +653,29 @@ include('app_config.php');
 				});
 			}
 		});
+
+		$(document).on('keydown', "textarea", function(e) {
+			if(e.keyCode === 9) { // tab was pressed
+				// get caret position/selection
+				var start = this.selectionStart;
+				var end = this.selectionEnd;
+				var $this = $(this);
+
+				// set textarea value to: text before caret + tab + text after caret
+				$this.val($this.val().substring(0, start) + "\t" + $this.val().substring(end));
+
+				// put caret at right position again
+				this.selectionStart = this.selectionEnd = start + 1;
+
+				// prevent the focus lose
+				return false;
+			}
+		});
 	<?php }?>
 
 			$(function() {
 				$(document).tooltip({
-					items: ".ttip",
+					items: ".glosstip",
 					show: { duration: 0 },
 					hide: { effect: "fade", duration: 100 },
 					position: { my: "left top", at: "left bottom" },
@@ -594,15 +684,27 @@ include('app_config.php');
 					},
 				});
 			});
+
+			$(document).on('mouseenter', '.ttip:not(.tooltipstered)', function(){
+				$(this).tooltipster({
+					theme: 'tooltipster-app',
+					animation: 'fade',
+					animationDuration: 900,
+					maxWidth: 500,
+					contentAsHTML: true,
+					trigger: 'hover'
+				}).tooltipster('show');
+			});
+
 		</script>
-		<div id = 'ttip_content_container' class='hidden'>
+		<div id = 'glosstip_content_container' class='hidden'>
 			<?php
 			$_dbh = new _db();
 			$_sql = 'select * from _app_tips where display = 1';
 			$_div_rows = $_dbh->_fetch_db_rows($_sql);
 
 			foreach ($_div_rows as $_dr){
-				$_title = "<h3>".$_dr['title']."</h3>".PHP_EOL;
+				$_title = "<div class='h2 white'>".$_dr['title']."</div>".PHP_EOL;
 				$_body = $_title.$_dr['body'];
 				if ($_SESSION['s_adv_content']){
 					$_body .= $_dr['adv_content'];

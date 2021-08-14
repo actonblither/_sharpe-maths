@@ -258,13 +258,14 @@ class _topic extends _setup{
 	private function _build_examples(){
 		$_eg = new _example($this->_topic_id);
 		$this->_topic_eg = $_eg->_get_items();
+		//_cl($this->_topic_eg);
 		$this->_show_eg_tab = $_eg->_get_make_item_tab();
 	}
 
 
 	private function _build_intro_text(){
 		$_intro = new _intro($this->_topic_id);
-		$this->_topic_intro = "<h2>".$this->_topic_title."</h2>".$_intro->_fetch_intro_text();
+		$this->_topic_intro = "<h1>".$this->_topic_title."</h1>".$_intro->_fetch_intro_text();
 		$this->_show_intro_tab = $_intro->_get_make_intro_tab();
 	}
 

@@ -20,6 +20,15 @@ include(__s_lib_folder__.'_classes/_class_db_connect.php');
 include(__s_lib_folder__.'_lib/_stdlib.php');
 
 rvs($_SESSION['s_ref']);
+
+//Iniatialise array to hold history for my back/forward buttons
+if (!isset($_SESSION['s_history']) || empty($_SESSION['s_history'])){
+	$_SESSION['s_history'][0]['main'] = 'page';
+	$_SESSION['s_history'][0]['id'] = 1;
+	$_SESSION['s_history_pos'] = 0;
+	$_SESSION['s_history_end_pos'] = 0;
+}
+
 if (!isset($_SESSION['s_ref']) && isset($_SERVER['HTTP_REFERER'])){
 	$_SESSION['s_ref'] = $_SERVER['HTTP_REFERER'];
 }

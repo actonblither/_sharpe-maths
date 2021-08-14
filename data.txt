@@ -1,0 +1,65 @@
+<div class="wrapt">
+<div class="w50pc wrap">
+<p>Let’s first remind ourselves about Pythagoras theorem, which states that</p>
+
+<blockquote>
+<p>The square on the hypotenuse of a right triangle is equal to the sum of the squares on the other two sides.</p>
+</blockquote>
+
+<p>Or in maths where it is written much more succinctly: \[a^2+b^2 \equiv 1\]</p>
+
+sine
+
+<h4>ssine</h4>
+<h1> sine </h1>
+<p>where the length of the hypotenuse is $1$ unit long and $a, \ b$ are the lengths of the other two sides.</p>
+</div>
+
+<div class="img-shrink wrap f1"><img alt="Pythagoras" class="mxw400 mnw200 hauto" src="_images/_maths_images/geometry/pythagoras/pythag_gen.png" width="100%" /></div>
+</div>
+
+<p>Now let's look a little bit closer at that green triangle and pull it apart a bit. Firstly, the length of the hypotenuse is $1$ for reasons which will become apparent shortly. Secondly, the values of $a$ and $b$ are not very helpful here. Suppose we try to write these two lengths in terms of the angle $\theta$.</p>
+
+<p>Let's remind ourselves of the formulas for <h3></h3> and cos!!ine.</p>
+
+<p>\[\begin{aligned}[t] \sin{\theta} = \frac{\text{Opposite}}{\text{Hypotenuse}}\\ \cos{\theta} = \frac{\text{Adjacent}}{\text{Hypotenuse}} \end{aligned}\]</p>
+
+<div class="wrapt">
+<div class="w50pc cwrap">
+<p>Substituting our values into these formulas, we get</p>
+\[\begin{aligned}[t] \sin{\theta} = \frac{b}{1} &= b\\ \cos{\theta} = \frac{a}{1} &= a \end{aligned}\]
+
+<p>And reversing these, we can say that</p>
+\[\begin{aligned}[t] a &= \cos{\theta}\\ b &= \sinsse{\theta} \end{aligned}\]
+
+<p>giving us the pinkish triangle on the right.</p>
+
+<p>From here, we are able to give Pythagoras Theorem in its grown up form. No longer will we define it in terms of hypotenuses, opposites & adjacents, we will simply state</p>
+\[\sin^2{\theta}+\cos^2{\theta} \equiv 1\]
+
+<p>Please notice that $\sin^2{\theta}$ is a shorthand, which we will use with many functions, for $(\sin{theta})^2$. This notation is universal and should always be used in preference to the clumsy bracketed version.</p>
+</div>
+
+<div class="img-shrink cwrap f1"><img alt="" class="mxw400 mnw200 hauto" src="_images/_maths_images/geometry/pythagoras/pythag_gen_02.png" width="100%" /></div>
+</div>
+
+<p>This identity (hence the $\equiv$ symbol) is the first and most important Pythagorean Identity. Remember that an Identity is true for all values of the variable.</p>
+
+<p>The other two are derived very simply from the first, by, in the first instance, dividing through by $\cos^2{\theta}$ and the second by dividing through by $\sin^2{\theta}$.</p>
+
+<p>\[\begin{aligned}[t] \sin^2{\theta}+\cos^2{\theta} &\equiv 1\\ \Rightarrow \frac{\sin^2{\theta}}{\cos^2{\theta}}+\frac{\cos^2{\theta}}{\cos^2{\theta}} &\equiv \frac{1}{\cos^2{\theta}}\\ \Rightarrow \tan^2{\theta}+1 &\equiv \sec^2{\theta}\\ \\ \text{and} \hspace{100px}&\\ \sin^2{\theta}+\cos^2{\theta} &\equiv 1\\ \Rightarrow \frac{\sin^2{\theta}}{\sin^2{\theta}}+\frac{\cos^2{\theta}}{\sin^2{\theta}} &\equiv \frac{1}{\sin^2{\theta}}\\ \Rightarrow \cot^2{\theta}+1 &\equiv \text{cosec}^2{\theta}\\ \end{aligned}\]</p>
+
+<p>So our three identities together are</p>
+
+<h3>Hello</h3>
+
+<div class="h3">The Pythagorean Identities</div>
+
+
+<h4>Heading 4</h4>
+
+<p>\[\begin{aligned}[t] \sin^2{\theta}+\cos^2{\theta} &\equiv 1\\ \tan^2{\theta}+1 &\equiv \sec^2{\theta}\\ \cot^2{\theta}+1 &\equiv \text{cosec}^2{\theta} \end{aligned}\]</p>
+
+<p>It is important to know these. In the first instance, you should learn the first one, as it is simple to derive the other pair, but ultimately, you should aim to know all three.</p>
+
+<p>We will use these results, in much of what follows. You can quote them as true and do not need to prove them unless you are explicitly asked to do so.</p>

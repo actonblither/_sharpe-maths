@@ -4,14 +4,14 @@
 		{_item_count}.
 	</div>
 	<div class='the-rest row'>
-		<div class='question'>
-			<textarea id='question_{_item_detail_id}' data-el-type='textarea' data-field='question' data-id='{_item_detail_id}' data-db-tbl='_app_topic_ex_q' name='question' class='field'>{_question}</textarea>
+		<div class='question-a'>
+			Question:<textarea id='question_{_item_detail_id}' data-el-type='textarea' data-field='question' data-id='{_item_detail_id}' data-db-tbl='_app_topic_ex_q' name='question' class='field w100pc'>{_question}</textarea>
 		</div>
 		<div class='answer-a'>
-			<textarea id='answer_{_item_detail_id}' data-el-type='textarea' data-field='answer' data-id='{_item_detail_id}' data-db-tbl='_app_topic_ex_q' name='answer' class='field'>{_answer}</textarea>
+			Answer:<textarea id='answer_{_item_detail_id}' data-el-type='textarea' data-field='answer' data-id='{_item_detail_id}' data-db-tbl='_app_topic_ex_q' name='answer' class='field w100pcs'>{_answer}</textarea>
 		</div>
-		<div class='difficulty'>
-			{_difficulty}
+		<div class='difficulty-a'>
+			Difficulty:{_difficulty}
 		</div>
 	</div>
 </li>

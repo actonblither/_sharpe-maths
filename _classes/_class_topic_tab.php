@@ -85,6 +85,7 @@ class _topic_tab{
 		foreach ($this->_sr as $_key => $_value){
 			$_page = str_replace('{'.$_key.'}', $_value, $_page);
 		}
+		//_cl($_page);
 		return $_page;
 	}
 
